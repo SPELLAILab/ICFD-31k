@@ -1,0 +1,109 @@
+[SCENARIO 1]
+description: Ponzi scheme investment fraud promising consistent high returns (15-20% monthly) through "secret trading strategy" or proprietary algorithm. Early investors paid with new investor money, collapses when recruitment slows.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate investments are registered with SEC and provide detailed prospectus
+Rule B: Real investment returns fluctuate with market conditions and can't be guaranteed
+Rule C: Authentic investment firms are licensed and bonded financial advisors
+Rule D: Legitimate investments have transparent fee structures and exit procedures
+fraud_indicators: ["guaranteed returns", "pyramid structure", "recruiting focus", "withdrawal difficulties", "unregistered securities"]
+legitimate_indicators: ["SEC registration", "variable returns", "licensed advisors", "transparent fees", "proper documentation"]
+
+[SCENARIO 2]
+description: Fake real estate investment opportunity offering "guaranteed rental income" from vacation properties. Scammer shows fake property documents, inflated rental projections, and pressure to invest before "limited spots fill up".
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate real estate investments have verifiable property titles and deeds
+Rule B: Real estate transactions involve licensed agents, attorneys, and title companies
+Rule C: Authentic rental income projections are based on market data and local comps
+Rule D: Legitimate property investments allow thorough due diligence and inspections
+fraud_indicators: ["fake documents", "guaranteed rental income", "pressure tactics", "no inspections allowed", "unverifiable property"]
+legitimate_indicators: ["verified title", "licensed professionals", "realistic projections", "proper due diligence", "recorded deeds"]
+
+[SCENARIO 3]
+description: Timeshare resale scam targeting existing timeshare owners. Scammer claims to have buyer ready but requires upfront fees for closing costs, taxes, or listing fees. Buyer never materializes and scammer disappears after payment.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate real estate transactions have fees paid at closing from proceeds
+Rule B: Real timeshare resales involve licensed brokers and escrow accounts
+Rule C: Authentic sales have verifiable buyers with proof of funds
+Rule D: Legitimate transactions don't require large upfront payments from sellers
+fraud_indicators: ["upfront fees from seller", "phantom buyer", "pressure for quick payment", "no escrow", "unverifiable buyer"]
+legitimate_indicators: ["fees from proceeds", "licensed broker", "verified buyer", "escrow account", "proper closing process"]
+
+[SCENARIO 4]
+description: Stock pump and dump scheme. Scammer promotes "hot stock tip" for penny stock they control, creates artificial demand through social media and paid promoters, sells holdings at peak leaving victims with worthless shares.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate investment advice comes from licensed financial advisors with fiduciary duty
+Rule B: Real stock recommendations disclose conflicts of interest and ownership
+Rule C: Authentic investment information is based on fundamental analysis not hype
+Rule D: Legitimate advisors don't coordinate mass buying campaigns
+fraud_indicators: ["coordinated promotion", "penny stock focus", "no fundamental analysis", "undisclosed ownership", "urgent buying pressure"]
+legitimate_indicators: ["licensed advisor", "conflict disclosure", "fundamental analysis", "no coordination", "patient approach"]
+
+[SCENARIO 5]
+description: Fake cryptocurrency mining operation investment. Scammer sells shares in "mining farm" promising passive Bitcoin income, shows fabricated earnings reports, but no actual mining equipment exists.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate mining operations have verifiable facilities with physical addresses
+Rule B: Real mining investments provide hash rate proofs and pool connectivity
+Rule C: Authentic operations have realistic ROI calculations based on difficulty and costs
+Rule D: Legitimate mining companies allow facility tours and third-party audits
+fraud_indicators: ["no physical facility", "fabricated earnings", "unrealistic ROI", "can't visit operation", "no hash proof"]
+legitimate_indicators: ["verifiable facility", "hash rate proofs", "realistic returns", "audit access", "transparent operations"]
+
+[SCENARIO 6]
+description: Oil and gas investment scam offering shares in "proven wells" with guaranteed royalties. Scammer uses technical jargon, fake geological reports, and pressure tactics to sell worthless interests in non-existent or depleted wells.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate oil/gas investments are registered securities with SEC filings
+Rule B: Real energy investments involve licensed brokers and accredited investors
+Rule C: Authentic well investments have verifiable geological surveys and production data
+Rule D: Legitimate energy investments carry significant risk disclosures
+fraud_indicators: ["guaranteed royalties", "fake geological reports", "unregistered securities", "high-pressure sales", "no verification"]
+legitimate_indicators: ["SEC registration", "licensed brokers", "verified geology", "risk disclosures", "accredited investor requirements"]
+
+[SCENARIO 7]
+description: Forex trading education scam. Scammer sells expensive course or mentorship promising to teach "secret forex strategy" that generates consistent income, but strategy doesn't work and support disappears after payment.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate trading education provides realistic expectations about risks and challenges
+Rule B: Real trading courses are from licensed professionals with verifiable track records
+Rule C: Authentic education doesn't guarantee income or promise specific returns
+Rule D: Legitimate instructors offer refunds and maintain ongoing student support
+fraud_indicators: ["guaranteed income claims", "secret strategy", "high course cost", "no refunds", "disappearing support"]
+legitimate_indicators: ["realistic expectations", "licensed instructor", "reasonable pricing", "refund policy", "ongoing support"]
+
+[SCENARIO 8]
+description: Pre-IPO investment scam offering "insider access" to pre-IPO shares of well-known private companies (like SpaceX or Stripe). Scammer creates fake share certificates and collects money for shares that don't exist or aren't authorized for sale.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate pre-IPO investments are only available through registered broker-dealers
+Rule B: Real private company shares have proper documentation from transfer agents
+Rule C: Authentic pre-IPO access requires accredited investor verification
+Rule D: Legitimate private placements are registered with SEC or qualify for exemptions
+fraud_indicators: ["fake certificates", "unauthorized shares", "no broker-dealer", "no accreditation check", "too-good-to-be-true access"]
+legitimate_indicators: ["registered broker", "verified certificates", "accredited investor process", "proper documentation", "transfer agent"]
+
+[SCENARIO 9]
+description: Gold/precious metals investment fraud claiming "IRS-approved" gold IRA with tax benefits. Scammer charges inflated prices for coins, excessive fees, and makes false claims about gold being "safe haven" investment with guaranteed appreciation.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate precious metals dealers are accredited by industry associations
+Rule B: Real gold IRAs must use IRS-approved custodians with transparent fee structures
+Rule C: Authentic dealers sell at reasonable premiums over spot prices
+Rule D: Legitimate advisors disclose that gold prices fluctuate and returns aren't guaranteed
+fraud_indicators: ["inflated prices", "guaranteed appreciation", "excessive fees", "high-pressure tactics", "misleading IRS claims"]
+legitimate_indicators: ["fair pricing", "IRS-approved custodian", "transparent fees", "risk disclosures", "industry accreditation"]
+
+[SCENARIO 10]
+description: Multi-level marketing (MLM) scheme disguised as investment opportunity. Scammer recruits "business partners" to invest in product inventory with promises of exponential returns through downline recruitment, but emphasis is on recruiting not product sales.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate businesses generate revenue from product sales not recruitment
+Rule B: Real MLM companies follow FTC guidelines with income disclosures
+Rule C: Authentic business opportunities don't require large upfront inventory purchases
+Rule D: Legitimate companies focus on product value not recruiting compensation
+fraud_indicators: ["recruitment focus", "large inventory requirement", "income from recruiting", "pyramid structure", "no retail customers"]
+legitimate_indicators: ["product sales focus", "reasonable startup costs", "income from sales", "retail customer base", "FTC compliance"]

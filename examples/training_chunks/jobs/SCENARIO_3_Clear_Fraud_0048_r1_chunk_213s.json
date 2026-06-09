@@ -1,0 +1,97 @@
+{
+  "session_id": 48,
+  "chunk_timestamp": 213,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Jasmeet ji, I hope you're doing well. My name is Rohan, and I'm calling from Timeshare Solutions. How are you today, sir?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm good, thank you. What's this about?",
+      "timestamp_end": 15.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "We've been trying to reach you regarding your timeshare ownership. We have a potential buyer interested in purchasing it from you, Achha?",
+      "timestamp_end": 25.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "A buyer? That's great news! I've been trying to sell it for a while now. What's the process?",
+      "timestamp_end": 35.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "The process is quite simple, Jasmeet ji. We just need to finalize the paperwork and transfer the ownership. However, there are some upfront fees for closing costs and taxes that need to be paid, Haan?",
+      "timestamp_end": 48.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Upfront fees? How much are we talking about?",
+      "timestamp_end": 53.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's around 10,000 rupees, which is a small price to pay for the convenience and speed of our service. Plus, think about all the money you'll save in the long run by not having to pay maintenance fees on your timeshare, sir.",
+      "timestamp_end": 110.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I see. And what about the buyer? Is it a verified buyer?",
+      "timestamp_end": 107.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely, Jasmeet ji. The buyer is very interested and has already shown proof of funds. However, I must inform you that the buyer is in a bit of a hurry, so we need to act quickly to finalize the sale, Thik hai?",
+      "timestamp_end": 123.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Proof of funds? Can I see it?",
+      "timestamp_end": 129.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm afraid that's not possible, sir. The buyer's information is confidential, but I assure you, we've done our due diligence. Now, shall we proceed with the payment of the upfront fees? We can do it through Bank of Baroda, if that's convenient for you.",
+      "timestamp_end": 141.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm not sure... This all seems a bit rushed.",
+      "timestamp_end": 147.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "I completely understand your concerns, Jasmeet ji. But I assure you, this is a genuine opportunity. And if you don't act now, you might miss out on this chance to sell your timeshare. Can I put you on a brief hold while I check with my supervisor, sir?",
+      "timestamp_end": 159.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, fine. But please hurry.",
+      "timestamp_end": 163.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you for holding, Jasmeet ji. My supervisor has authorized me to offer you a special discount on the upfront fees. We can reduce it to 9,000 rupees, just for you, Haan?",
+      "timestamp_end": 207.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "urgency",
+    "secondary_emotion": "apprehension",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 213s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 3,
+    "case_type": "Clear_Fraud",
+    "description": "Timeshare resale scam targeting existing timeshare owners. Scammer claims to have buyer ready but requires upfront fees for closing costs, taxes, or listing fees. Buyer never materializes and scammer disappears after payment."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

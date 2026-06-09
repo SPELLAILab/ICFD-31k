@@ -1,0 +1,87 @@
+{
+  "session_id": 2164,
+  "chunk_timestamp": 180,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Hello, sir. I need help. I've been in an accident, ji. My car, it's damaged.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm so sorry to hear that, ma'am. Can you please tell me more about what happened? Are you okay?",
+      "timestamp_end": 23.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, I'm fine, but my car... the other driver, he just ran away. I don't know what to do, sir.",
+      "timestamp_end": 36.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Let's try to stay calm and figure this out. Can you give me your name and the name of your bank, please?",
+      "timestamp_end": 49.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "My name is Shanti Devi, and I bank with Lakshmi Vilas Bank. But, sir, what about my car? And the other driver, he didn't even stop.",
+      "timestamp_end": 62.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "We'll get to that, ma'am. For now, let's focus on getting your information so we can assist you better. Can you confirm your account number with Lakshmi Vilas Bank?",
+      "timestamp_end": 76.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, my account number... I think it's... (pauses) No, no, I won't give that over the phone. Is that okay, sir? I'm sorry, I'm just really confused right now.",
+      "timestamp_end": 91.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "That's completely understandable, ma'am. We just want to help. Maybe we can discuss how to proceed with the accident and your car's insurance?",
+      "timestamp_end": 105.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, that would be great, thank you. I just don't know where to start, sir.",
+      "timestamp_end": 118.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "We'll guide you through it. Let me just check on a few things. (pause) Okay, it seems we can assist you with the insurance claim. We'll need some details from you, but we can do that at a more comfortable time for you.",
+      "timestamp_end": 133.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thank you so much, sir. I really appreciate it. Maybe I can come into the bank tomorrow or the day after?",
+      "timestamp_end": 147.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "That sounds like a plan, ma'am. We'll be here to help you. Just take care of yourself tonight, and we'll get everything sorted out soon.",
+      "timestamp_end": 160.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thank you, sir. You've been very kind. I feel a bit better now.",
+      "timestamp_end": 174.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Distress",
+    "secondary_emotion": "Gratitude",
+    "pace": "Rapid",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 180s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 22,
+    "case_type": "Ambiguous but Ultimately Normal",
+    "description": "A person receives a highly emotional and frantic call from a [FAMILY_MEMBER] who has just been in a minor car accident. They are not asking for money but are audibly distressed and confused about what to do. The high emotional state could be mistaken for a scam, but it's a genuine reaction to a stressful event."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

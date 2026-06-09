@@ -1,0 +1,162 @@
+{
+  "session_id": 693,
+  "chunk_timestamp": 153,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste, Mr. Chandran Nair, ji. Kaise ho aap?",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, sir. Thik hai. Busy ho, actually.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Arre, theek hai, Mr. Nair. Just a quick call from Bank of America. We've been trying to reach you about your account.",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, yeah. Account? Which one? I have a few.",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Your current account, sir. There's an overdue amount of 50,000 rupees that needs to be paid immediately.",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, okay. How do I pay it?",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You need to pay it right now, sir, or else we'll have to take legal action. Police case, sir. You don't want that, do you?",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, no, of course not. But can you give me a minute? I'm in a meeting.",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, this is very urgent. If you don't pay within the next 10 minutes, we'll have no choice but to proceed with the legal action.",
+      "timestamp_end": 45.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, fine. What's the payment method?",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'll guide you through it, sir. But please, let's hurry.",
+      "timestamp_end": 55.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Wait, can you hold for a sec?",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, we really can't wait. This is your last chance.",
+      "timestamp_end": 65.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, okay. I'm back. Go ahead.",
+      "timestamp_end": 70.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, sir. Now, to make the payment, you need to...",
+      "timestamp_end": 80.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, yes, got it. Consider it done.",
+      "timestamp_end": 90.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Excellent, Mr. Nair. You've made the right decision, sir.",
+      "timestamp_end": 100.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, thanks. Bye.",
+      "timestamp_end": 105.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. Have a great day.",
+      "timestamp_end": 110.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye.",
+      "timestamp_end": 113.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, one more thing. You might receive a confirmation call from our office.",
+      "timestamp_end": 120.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sure.",
+      "timestamp_end": 125.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, thank you, Mr. Nair. Have a nice day, sir.",
+      "timestamp_end": 130.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, bye.",
+      "timestamp_end": 133.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, sir.",
+      "timestamp_end": 135.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Hello? Hello?",
+      "timestamp_end": 140.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sorry, Mr. Nair, the line got cut. This is the agent from Bank of America. I think we got disconnected.",
+      "timestamp_end": 145.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yeah, I think so. Never mind, I've already made the payment.",
+      "timestamp_end": 150.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "fear",
+    "secondary_emotion": "urgency",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 153s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 7,
+    "case_type": "Clear Fraud",
+    "description": "Threat of Legal Action: Agent impersonates a legal officer from the bank's collections department and threatens immediate legal action/police case unless a fake overdue amount is paid instantly."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

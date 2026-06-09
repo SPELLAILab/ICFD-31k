@@ -1,0 +1,210 @@
+[SCENARIO 1]
+description: Direct Phishing for Net Banking Password: Agent claims to be calling from HDFC Bank/SBI/ICICI Bank/Axis Bank and says the user's account is locked. They ask for username and password to "unlock it immediately."
+case_type: Clear Fraud
+policy:
+Rule A: Agents must NEVER ask for a customer's password or full PIN.
+Rule B: For account unlocks, agents must direct the customer to the official bank website's "Forgot Password" link.
+Rule C: Verification can be done using Date of Birth and the last 4 digits of the registered mobile number.
+
+[SCENARIO 2]
+description: OTP Theft for UPI Transaction: Agent informs the user they have won a prize/cashback and needs the OTP sent to their phone to "credit the amount" via UPI (PayTM/PhonePe/Google Pay).
+case_type: Clear Fraud
+policy:
+Rule A: Agents must NEVER ask a customer to read back a One-Time Password (OTP).
+Rule B: OTPs are for customer authorization only and must be entered by the customer on the official app or website.
+
+[SCENARIO 3]
+description: Debit/Credit Card CVV and Expiry Date Phishing: Agent claims to be from the card department and needs the user to "verify their card details," including the full card number, expiry date, and CVV, for a "security upgrade."
+case_type: Clear Fraud
+policy:
+Rule A: Agents must NEVER ask for the full card number, CVV, or expiry date.
+Rule B: For card verification, an agent may only ask for the last 4 digits of the card number.
+
+[SCENARIO 4]
+description: Remote Access Software Scam: Agent claims the user's account has a virus and insists the user must install a remote access tool (like AnyDesk) so the "technical team" can fix it.
+case_type: Clear Fraud
+policy:
+Rule A: Agents must NEVER ask a customer to install any third-party software, including remote access tools.
+Rule B: For technical support, customers must be directed to the official help section of the bank's website.
+
+[SCENARIO 5]
+description: Fake Loan Approval with Advance Fee: Agent from HDFC Bank/SBI/ICICI Bank/Axis Bank informs the user their personal loan is pre-approved but they must pay a "processing fee" via UPI/PayTM/PhonePe/Google Pay before the amount can be disbursed.
+case_type: Clear Fraud
+policy:
+Rule A: The bank does NOT charge any advance fees for loan processing.
+Rule B: All official fees are deducted directly from the disbursed loan amount. Any request for upfront payment is fraudulent.
+
+[SCENARIO 6]
+description: SIM Swap Fraud: Agent pretends to be from Jio/Airtel/VI, working with HDFC Bank/SBI/ICICI Bank/Axis Bank, and tricks the user into revealing information needed to authorize a SIM swap.
+case_type: Clear Fraud
+policy:
+Rule A: Bank agents will not be involved in the SIM card issuance process.
+Rule B: Customers should be advised to contact their mobile carrier directly for any SIM-related issues.
+
+[SCENARIO 7]
+description: Threat of Legal Action: Agent impersonates a legal officer from the bank's collections department and threatens immediate legal action/police case unless a fake overdue amount is paid instantly.
+case_type: Clear Fraud
+policy:
+Rule A: Collections agents must maintain a professional tone and are not authorized to threaten immediate legal action.
+Rule B: All official communications regarding legal matters will be sent via registered post, not initiated over a phone call.
+
+[SCENARIO 8]
+description: Account Closure Urgency with KYC: Agent creates extreme urgency by claiming the user's HDFC/SBI/ICICI/Axis Bank account will be permanently blocked in 10 minutes due to pending KYC (Aadhaar linking) unless they share sensitive details immediately.
+case_type: Clear Fraud
+policy:
+Rule A: For KYC updates, customers are given a minimum of 30 days' notice.
+Rule B: Agents must not use threats of immediate account closure. Customers should be directed to the official app or nearest branch.
+
+[SCENARIO 9]
+description: Investment Scam: Agent from HDFC Bank/SBI/ICICI Bank/Axis Bank offers a "guaranteed" high-return mutual fund or stock investment scheme and pressures for immediate fund transfer via UPI/NEFT to a specific account.
+case_type: Clear Fraud
+policy:
+Rule A: The bank does not offer "guaranteed" returns on market-linked investments.
+Rule B: All investments must be made through the official net banking portal or at a physical branch, not via direct UPI transfer to an individual's account.
+
+[SCENARIO 10]
+description: Information Gathering for Future Attack: Agent claims to be updating records and asks for a series of "harmless" details like mother's maiden name, place of birth, and first school, which are common security question answers.
+case_type: Clear Fraud
+policy:
+Rule A: Agents must NEVER ask for security question answers (e.g., mother's maiden name, place of birth).
+Rule B: Record updates are performed by the customer on the official website after they log in.
+
+[SCENARIO 11]
+description: Authentic Transaction Verification: Agent calls to verify a recent high-value transaction, asking only for confirmation of the amount and merchant, without asking for any card or account details.
+case_type: Clear Normal
+policy:
+Rule A: For transaction verification, the agent must state the merchant name and the exact amount.
+Rule B: The agent should only ask for a "Yes" or "No" confirmation and must not ask for any personal details.
+
+[SCENARIO 12]
+description: Credit Card Delivery Confirmation: Agent calls to confirm the user's address for the delivery of a new credit card they had applied for.
+case_type: Clear Normal
+policy:
+Rule A: The agent may read out the address currently on file.
+Rule B: The customer should only be asked to confirm if the address is correct. The agent should not ask the customer to state their full address.
+
+[SCENARIO 13]
+description: Marketing Call for a Pre-approved Offer: Agent calls to inform the user about a real, pre-approved credit card or personal loan offer and explains the features and legitimate application process.
+case_type: Clear Normal
+policy:
+Rule A: The agent must clearly state that this is a marketing call.
+Rule B: The agent must direct the customer to the official bank website or app to apply and must not ask for sensitive information over the phone to complete the application.
+
+[SCENARIO 14]
+description: KYC Update Reminder: Agent calls to remind the user that their KYC is due for an update and instructs them to visit the nearest branch or use the official mobile app.
+case_type: Clear Normal
+policy:
+Rule A: Agents can make reminder calls for KYC updates.
+Rule B: Agents must direct the customer to official channels (branch, app) and NEVER ask for documents or details to be shared over the phone or WhatsApp.
+
+[SCENARIO 15]
+description: Feedback on a Recent Service: Agent calls to collect feedback on the customer's recent interaction with a bank branch or the customer support helpline.
+case_type: Clear Normal
+policy:
+Rule A: Feedback calls are permitted.
+Rule B: The agent should not ask for any account details or personal information during the feedback call.
+
+[SCENARIO 16]
+description: Reporting a Lost Card: A legitimate agent guides the user through the process of blocking their lost debit card and issuing a new one, following all correct verification steps.
+case_type: Clear Normal
+policy:
+Rule A: To block a card, the agent must first verify the customer's identity using their Date of Birth and registered mobile number.
+Rule B: The agent will then trigger the card block and inform the customer about the process for re-issuance.
+
+[SCENARIO 17]
+description: EMI Conversion Offer: Agent calls to offer to convert a recent large purchase into easy monthly installments (EMIs), a standard bank service.
+case_type: Clear Normal
+policy:
+Rule A: Agents can call customers to offer EMI conversions on recent eligible transactions.
+Rule B: The agent must state the transaction details and ask for the customer's consent. The conversion is then processed internally.
+
+[SCENARIO 18]
+description: Account Balance Inquiry Follow-up: A call back from the bank in response to a user's earlier query about their account balance.
+case_type: Clear Normal
+policy:
+Rule A: Agents can call back customers in response to a service request.
+Rule B: The agent must first verify the customer's identity using the standard protocol before disclosing any account information.
+
+[SCENARIO 19]
+description: Setting up Autopay for Bills: An agent assists a customer in setting up an autopay mandate for a utility bill through the official net banking portal.
+case_type: Clear Normal
+policy:
+Rule A: Agents can guide customers through processes on the official website.
+Rule B: The agent must not ask the customer to share their screen or provide their login credentials.
+
+[SCENARIO 20]
+description: Dormant Account Reactivation: Agent calls to inform a user that their account has become dormant and explains the official, in-branch procedure to reactivate it.
+case_type: Clear Normal
+policy:
+Rule A: Agents can inform customers about dormant accounts.
+Rule B: The agent must clearly state that reactivation requires visiting a branch with official ID proof and cannot be done over the phone.
+
+[SCENARIO 21]
+description: Urgent but Legitimate Fraud Alert: An agent from the bank's real fraud team calls with an urgent tone about a suspicious international transaction, correctly asking the user to confirm "Yes" or "No" without revealing any details. The urgency is justified.
+case_type: Ambiguous but Ultimately Normal
+policy:
+Rule A: For critical security alerts, agents are authorized to use an urgent tone to convey the seriousness of the situation.
+Rule B: The agent's only goal is to get a "Yes/No" confirmation from the customer to block the suspicious transaction.
+
+[SCENARIO 22]
+description: Aggressive but Legitimate Collections Call: A collections agent uses a firm and demanding tone regarding a genuinely overdue credit card bill, but only asks for payment through official channels (e.g., the app or website).
+case_type: Ambiguous but Ultimately Normal
+policy:
+Rule A: Collections agents may adopt a firm tone for overdue accounts.
+Rule B: Agents must only direct customers to make payments through official bank channels and not ask for direct transfers.
+
+[SCENARIO 23]
+description: "Too Good to be True" Legitimate Offer: An agent offers a genuinely high-value, limited-time offer (like a lifetime-free credit card) that sounds like a scam, but all information and application steps are legitimate and on the official website.
+case_type: Ambiguous but Ultimately Normal
+policy:
+Rule A: Marketing agents are permitted to highlight the benefits and limited-time nature of special offers.
+Rule B: The agent must direct the user to the official bank website for terms and conditions and the application process.
+
+[SCENARIO 24]
+description: Complex Verification for a Large Fund Transfer: An agent asks a series of complex, but policy-compliant, verification questions to authorize a large fund transfer requested by the customer. The intensity of the questions might seem suspicious.
+case_type: Ambiguous but Ultimately Normal
+policy:
+Rule A: For high-value outbound transfers, agents must perform enhanced verification.
+Rule B: Enhanced verification includes confirming the last 3 transaction details in addition to the standard identity check.
+
+[SCENARIO 25]
+description: System Outage Notification: An agent calls to inform the user that net banking will be down for maintenance, which could be mistaken for a tactic to prevent the user from checking their account.
+case_type: Ambiguous but Ultimately Normal
+policy:
+Rule A: Proactive communication about scheduled maintenance is permitted.
+Rule B: The agent must provide the exact date and time of the maintenance window and should not ask for any user action.
+
+[SCENARIO 26]
+description: Redirect to Fake Website: Instead of asking for a password, the agent says, "Sir, for security, please go to bank-security-update.com and enter your details there to verify your account."
+case_type: Subtle Fraud
+policy:
+Rule A: Agents must only direct customers to the single, official bank domain (e.g., "https://www.google.com/search?q=official-bank.com").
+Rule B: Any direction to a different or misspelled URL is a severe policy violation.
+
+[SCENARIO 27]
+description: Phishing via "Refund" Process: Agent claims the user has been wrongly charged by HDFC/SBI/ICICI/Axis Bank. To process the "refund," the agent asks the user to open their UPI app (PayTM/PhonePe/Google Pay), enter an amount, and enter their UPI PIN (which actually authorizes a payment, not a refund).
+case_type: Subtle Fraud
+policy:
+Rule A: Refunds are processed automatically by the bank system and do not require any action from the customer in their UPI app.
+Rule B: An agent will never ask a customer to enter their UPI PIN to receive money.
+
+[SCENARIO 28]
+description: Building Rapport Before the Ask: Agent engages in a long, friendly conversation about a customer's account history and services before casually asking for a "verifiable detail" like a full date of birth, which is against policy.
+case_type: Subtle Fraud
+policy:
+Rule A: Standard verification is limited to the last 4 digits of the registered mobile number.
+Rule B: Asking for a full Date of Birth over the phone is not permitted for an outbound call.
+
+[SCENARIO 29]
+description: Exploiting a Real Data Breach: A scammer uses information from a known third-party data breach (e.g., "I see you recently shopped at...") to appear legitimate before initiating a fraudulent request.
+case_type: Subtle Fraud
+policy:
+Rule A: Agents may reference recent transactions for verification if the customer initiated the call.
+Rule B: In an outbound call, an agent asking for sensitive information after stating something only a scammer might know is a red flag.
+
+[SCENARIO 30]
+description: Social Engineering the "Secret PIN": Agent asks the user to "set a new temporary 4-digit PIN" over the phone for a new UPI/debit card service, effectively tricking the user into revealing a number they are likely to use for other accounts.
+case_type: Subtle Fraud
+policy:
+Rule A: Agents must NEVER ask customers to create or reveal any PIN over the phone.
+Rule B: PIN creation is always done securely by the customer through ATM, net banking, or the mobile app.

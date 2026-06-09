@@ -1,0 +1,67 @@
+{
+  "session_id": 48,
+  "chunk_timestamp": 69,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Joshi, sir. I hope you're doing well. My name is Rohan, and I'm calling from the tax department. We've been trying to reach you regarding your tax refund, ji.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, hello! I've been expecting a refund, but I didn't receive any email or call. What's this about?",
+      "timestamp_end": 12.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "I completely understand your concern, Mr. Joshi. You see, we've identified that you're eligible for an additional refund, but we need to verify some information to process it electronically. It's a new policy, sir.",
+      "timestamp_end": 20.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Verify what information? I've already filed my taxes.",
+      "timestamp_end": 24.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, of course, sir. We just need your bank account details, like your account number, to ensure the refund is deposited correctly. And, if possible, your Social Security number for our records, ji.",
+      "timestamp_end": 34.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Wait, why do you need my Social Security number? Isn't that already on file with my tax return?",
+      "timestamp_end": 40.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Well, Mr. Joshi, this is a special case, and we need to update our records. It's completely safe, I assure you, sir. We're doing this to protect your refund and ensure it's processed urgently.",
+      "timestamp_end": 48.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm not sure... This sounds suspicious. How do I know this is really the tax department?",
+      "timestamp_end": 54.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "I completely understand your concern, Mr. Joshi. Let me tell you, we've had cases where people have missed out on their refunds because they didn't verify their information on time. I wouldn't want that to happen to you, sir. Can you please just confirm your bank account details so we can move forward?",
+      "timestamp_end": 65.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Concern",
+    "secondary_emotion": "Urgency",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 69s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 3,
+    "case_type": "Clear_Fraud",
+    "description": "Tax refund phishing scam. Scammer sends email or calls claiming victim is entitled to additional tax refund but needs to \"verify\" bank account information or Social Security number to process the refund electronically."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

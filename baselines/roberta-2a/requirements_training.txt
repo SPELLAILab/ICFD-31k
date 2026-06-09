@@ -1,0 +1,21 @@
+# Training requirements for RoBERTa baseline models
+
+# Core ML/DL frameworks
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.12.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# Progress bars and utilities
+tqdm>=4.65.0
+
+# Evaluation and metrics
+scipy>=1.10.0
+
+# Optional but recommended
+accelerate>=0.20.0
+sentencepiece>=0.1.99

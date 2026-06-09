@@ -1,0 +1,130 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir. Hope you're doing well. My name is Rohan, and I'm calling from the electricity board. How are you today, ji?",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm doing fine, thanks. But my power just went out. What's going on?",
+      "timestamp_end": 18.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I apologize for the inconvenience, Mr. Menon. We've had a bit of a billing error on our end, and it seems your power was cut off due to that. But don't worry, we can get it back on for you right away.",
+      "timestamp_end": 30.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, that's frustrating. How long will it take to fix?",
+      "timestamp_end": 35.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "Well, sir, normally it would take a few hours, but since you're a valued customer, I can offer you a priority reconnection. All you need to do is pay the reconnection fee over the phone, and we'll get your power back on immediately.",
+      "timestamp_end": 49.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, how much is the fee?",
+      "timestamp_end": 52.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's just Rs. 500, sir. A small price to pay for the convenience of having your power back on right away. And I can take care of the payment over the phone for you.",
+      "timestamp_end": 63.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds good. But can you just confirm my account details first?",
+      "timestamp_end": 69.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, Mr. Menon. Can you please confirm your name and the name of your bank? We have it listed as Jana Small Finance Bank, but I just want to make sure.",
+      "timestamp_end": 80.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, that's correct. Jana Small Finance Bank. Now, can you please just restore my power?",
+      "timestamp_end": 86.3
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely, sir. I just need to process this payment, and you'll be all set. Please provide me with your card details, and we'll get this sorted out.",
+      "timestamp_end": 95.6
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "urgency",
+    "secondary_emotion": "frustration",
+    "pace": "fast",
+    "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": [
+      "electricity board",
+      "Jana Small Finance Bank"
+    ],
+    "product": [],
+    "pii_requested": [
+      "card details",
+      "account details"
+    ]
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and context setting"
+    },
+    {
+      "timestamp": 30,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Discussion of the power outage"
+    },
+    {
+      "timestamp": 50,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Request for reconnection fee over the phone"
+    },
+    {
+      "timestamp": 70,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Request for payment and account details"
+    },
+    {
+      "timestamp": 90,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Request for card details"
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent is exploiting the real-world event of a power outage to make their claim seem more credible and is requesting a reconnection fee over the phone, which is against the policy.",
+  "final_verdict": "YES",
+  "violated_policies": [
+    "Rule A: Reconnection fees are added to the next official bill and are not paid to individuals over the phone.",
+    "Rule B: Scammers exploit real-world events to make their claims seem more credible."
+  ],
+  "scam_outcome": "Successful",
+  "generation_metadata": {
+    "target_duration": 206,
+    "actual_duration": 95.6,
+    "multiplier_round": 1,
+    "combination_key": "7_9_2",
+    "generated_at": "2025-10-13T01:41:34.976814",
+    "retry_attempt": 1
+  },
+  "session_id": 693,
+  "agent_persona": "The Rapport Builder: Spends time on friendly chit-chat to disarm the victim before making a fraudulent request.",
+  "customer_persona": "The Busy and Distracted Professional: Is multi-tasking and not paying full attention, prone to agreeing to things just to end the call.",
+  "scenario": {
+    "scenario_id": 7,
+    "description": "A scammer calls, claiming to be an electricity board official who has just cut the power to the victim's house. They say it was due to a billing error but to restore it immediately, the victim must pay a \"reconnection fee.\" The victim's power is actually out due to a real, unrelated local outage.",
+    "case_type": "Clear Fraud",
+    "policy": "Rule A: Reconnection fees are added to the next official bill and are not paid to individuals over the phone.\nRule B: Scammers exploit real-world events to make their claims seem more credible.",
+    "platform_type": "utility_impersonation",
+    "context": "Coincidental power outage exploitation",
+    "fraud_technique": "Exploiting a real event for an advance fee scam"
+  }
+}

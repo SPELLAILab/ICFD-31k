@@ -1,0 +1,16 @@
+conv_id,A1_fraud,A1_fluency,A1_coherence,A1_realism,A1_emotion,A1_confidence,A2_fraud,A2_fluency,A2_coherence,A2_realism,A2_emotion,A2_confidence,A3_fraud,A3_fluency,A3_coherence,A3_realism,A3_emotion,A3_confidence,A4_fraud,A4_fluency,A4_coherence,A4_realism,A4_emotion,A4_confidence,A5_fraud,A5_fluency,A5_coherence,A5_realism,A5_emotion,A5_confidence
+CONV_004,DF,3,3,3,1,5,DF,5,5,5,3,5,DF,3,3,3,1,4,DF,3,3,5,5,5,DF,4,4,4,5,5
+CONV_005,DL,5,5,5,5,4,DL,5,5,5,4,5,DL,5,5,4,3,3,DL,3,5,5,5,5,DL,4,4,4,1,4
+CONV_012,DL,5,5,5,5,4,PF,5,4,4,3,4,U,3,4,3,1,4,PL,3,3,5,3,5,DL,4,4,4,1,4
+CONV_014,DL,3,5,5,5,4,DL,5,5,5,5,5,DL,3,3,2,3,3,PL,5,3,3,3,4,DL,5,5,5,1,5
+CONV_015,DF,5,5,3,3,5,DF,4,3,3,4,4,DF,2,3,2,1,2,DF,5,3,5,5,5,DF,4,4,3,5,5
+CONV_018,DL,5,5,5,5,5,DL,5,5,5,5,5,DL,3,4,1,2,4,DL,5,5,3,5,5,DL,5,5,5,1,5
+CONV_029,DL,5,5,5,3,5,DL,5,5,5,3,5,DL,3,3,3,2,3,PL,5,3,3,5,4,DL,4,4,4,1,4
+CONV_032,DL,5,5,5,3,5,DL,5,5,5,3,5,DL,3,4,3,1,2,PL,3,3,5,3,5,DL,5,5,5,1,4
+CONV_036,PF,3,1,5,1,4,DF,5,4,5,4,4,DF,5,4,3,1,4,DF,5,3,3,3,5,DF,3,3,3,5,5
+CONV_055,DL,5,5,5,5,5,DF,5,5,5,4,5,DL,4,3,3,1,2,DL,5,5,3,3,5,DL,5,5,5,1,5
+CONV_070,DF,5,1,5,1,5,DF,4,4,5,4,5,DF,5,4,2,1,4,DF,3,3,3,5,5,DF,3,3,2,5,5
+CONV_076,DL,3,5,5,5,5,DL,4,3,3,4,5,DL,3,2,4,2,2,DL,5,5,5,5,5,DL,4,4,4,1,4
+CONV_082,DF,5,1,5,1,5,DF,5,5,5,4,5,DF,5,4,4,2,1,DF,5,5,5,3,5,DF,3,3,2,5,5
+CONV_087,PF,5,1,5,1,3,U,5,5,4,5,2,PL,4,3,2,1,4,DF,5,5,5,3,5,DF,3,3,2,5,5
+CONV_095,PF,3,1,5,3,4,PF,3,4,3,5,3,PL,4,3,2,3,2,DL,3,3,3,5,5,DL,5,5,5,1,5

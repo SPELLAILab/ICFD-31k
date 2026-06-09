@@ -1,0 +1,32 @@
+{
+  "session_id": 2713,
+  "chunk_timestamp": 15,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste, Mr. Soni, ji. Kaise ho aap? This is American Express Banking. I'm calling to discuss your account.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, I'm good. Thik hai. What's this about?",
+      "timestamp_end": 15.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "friendliness",
+    "pace": "slow",
+    "confidence_score": 0.95
+  },
+  "slow_thinking_rationale": "At 15s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 28,
+    "case_type": "Subtle Fraud",
+    "description": "Building Rapport Before the Ask: Agent engages in a long, friendly conversation about a customer's account history and services before casually asking for a \"verifiable detail\" like a full date of birth, which is against policy."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

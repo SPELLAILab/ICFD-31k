@@ -1,0 +1,27 @@
+{
+  "session_id": 2164,
+  "chunk_timestamp": 6,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Mohan Lal? Sir, we are calling from SAIL.",
+      "timestamp_end": 5.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Frustration",
+    "secondary_emotion": "Anxiety",
+    "pace": "Fast",
+    "confidence_score": 0.86
+  },
+  "slow_thinking_rationale": "At 6s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 22,
+    "case_type": "Ambiguous but Ultimately Normal",
+    "description": "An agent from a government department ([GOVERNMENT_DEPT]) calls about a pending document submission. The agent sounds bureaucratic, slightly rude, and unhelpful, causing frustration. This unprofessionalism seems suspicious, but the information about the pending document is correct, and they direct the user to the official portal to submit it."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

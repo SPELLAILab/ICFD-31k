@@ -1,0 +1,102 @@
+{
+  "session_id": 2943,
+  "chunk_timestamp": 159,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello Kamala Devi, ji! Congratulations, you've been selected for a fantastic freelance writing opportunity with our company, ContentWriters Inc.!",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, thank you... I'm a bit busy right now, can we make this quick, sir?",
+      "timestamp_end": 17.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, Kamala Devi! This is a great chance for you to work with some amazing clients and build your portfolio. We'll be sending over a contract for you to review.",
+      "timestamp_end": 28.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, that sounds good. What kind of writing will I be doing?",
+      "timestamp_end": 35.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "You'll be working on a variety of projects, from blog posts to website content. We'll provide all the details in the contract. I'll send it over to you via email right away.",
+      "timestamp_end": 45.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, got it. How long do I have to review it?",
+      "timestamp_end": 51.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take your time, Kamala Devi. Just let us know when you're ready to proceed. We're excited to have you on board!",
+      "timestamp_end": 59.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Kamala Devi, I hope you've had a chance to review the contract I sent over. I just need to walk you through a few things.",
+      "timestamp_end": 74.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, I glanced at it. It looks fine, I guess. What did you want to discuss?",
+      "timestamp_end": 81.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great! If you could please go to page 5, clause 8b. We just need to take care of a small payment for notary and legal verification of the contract before we can onboard you.",
+      "timestamp_end": 95.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Uh, okay... How much is the payment and what's it for again?",
+      "timestamp_end": 103.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's just a small fee, Kamala Devi. The payment is 500 rupees, and it's for the notary and legal verification of the contract. This is just a standard procedure to ensure everything is in order.",
+      "timestamp_end": 116.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I see. And how do I make this payment? Do I need to go to the bank, like my DCB Bank branch?",
+      "timestamp_end": 125.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "No need to go to the bank, Kamala Devi. You can just make an online transfer. I'll send you the details via email.",
+      "timestamp_end": 134.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds easy enough. But can I ask, is this payment really necessary?",
+      "timestamp_end": 143.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, it's a necessary step, Kamala Devi. But don't worry, it's just a one-time payment. After this, you'll be all set to start working with us.",
+      "timestamp_end": 153.4
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 159s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 30,
+    "case_type": "Subtle Fraud",
+    "description": "A caller offers a freelance writing position. After the candidate agrees, the agent sends a complex \"contract\" via email. They then call and say, \"Please go to page 5, clause 8b. You need to make a small payment for 'notary and legal verification' of this contract before we can onboard you.\""
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

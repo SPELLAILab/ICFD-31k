@@ -1,0 +1,299 @@
+[SCENARIO 1]
+description: A seller lists a [FURNITURE_ITEM] on [MARKETPLACE_PLATFORM]. A "buyer" calls, agrees to the price instantly without negotiation, and insists on paying the full amount immediately via [UPI_APP] to "book" the item. They then send a QR code and urgently instruct the seller to scan it and enter their PIN to receive the money.
+case_type: Clear Fraud
+platform_type: marketplace
+context: C2C marketplace transaction with reverse payment scam
+fraud_technique: Reverse UPI QR code scam
+policy:
+Rule A: Receiving money via UPI never requires the recipient to scan a QR code or enter their PIN.
+Rule B: Buyers who rush payment without inspecting an item are a high-risk red flag.
+
+[SCENARIO 2]
+description: A person selling their [ELECTRONICS_ITEM] on [MARKETPLACE_PLATFORM] gets a call from someone claiming to be an Army officer. The "officer" builds trust with a fake ID card and says army logistics will handle the pickup. They then ask the seller to pay a small "gate pass fee" to allow the army vehicle into their area, promising a full refund with the payment.
+case_type: Clear Fraud
+platform_type: marketplace
+context: C2C marketplace transaction with authority impersonation
+fraud_technique: Military impersonation with advance fee fraud
+policy:
+Rule A: A seller should never be asked to pay any upfront fee for a buyer's logistics.
+Rule B: Impersonating military personnel to create a false sense of trust is a common scam tactic.
+
+[SCENARIO 3]
+description: A customer receives a call from "[ECOMMERCE_PLATFORM] Customer Support" about a fraudulent [ELECTRONICS_ITEM] order on their account. To cancel the order and get a refund, the agent insists the customer must install a screen-sharing app like AnyDesk so the "technical team" can guide them.
+case_type: Clear Fraud
+platform_type: ecommerce_retail
+context: Fake customer support with remote access request
+fraud_technique: Remote access software installation
+policy:
+Rule A: Legitimate customer support will never ask a customer to install third-party remote access software.
+Rule B: Order cancellations must be initiated by the customer through the official app or website.
+
+[SCENARIO 4]
+description: An agent from a fake courier company calls, claiming a package containing [ITEM_CATEGORY] for the user is stuck at customs in Mumbai. They state that a customs duty of ₹7,500 must be paid immediately to a specific personal [UPI_APP] ID to release it, otherwise, a legal case for import violation will be filed.
+case_type: Clear Fraud
+platform_type: logistics
+context: Fake courier service with customs fraud
+fraud_technique: Fake customs duty with legal threats
+policy:
+Rule A: Official customs duties are never paid to personal UPI IDs; they are paid through government portals.
+Rule B: Threats of immediate legal action over a customs fee are a coercive scam tactic.
+
+[SCENARIO 5]
+description: A "buyer" on [SOCIAL_MARKETPLACE] wants to purchase a [ITEM_CATEGORY]. Claiming their [UPI_APP] is not working, they say they will send a "payment link" via SMS from their business account. The link leads to a phishing website designed to steal the user's net banking credentials.
+case_type: Clear Fraud
+platform_type: social_marketplace
+context: C2C transaction with phishing link
+fraud_technique: Phishing website via fake payment link
+policy:
+Rule A: Financial transactions should only be conducted through official, secure platforms.
+Rule B: Never enter login credentials on websites received via unverified SMS or WhatsApp links.
+
+[SCENARIO 6]
+description: A seller on [MARKETPLACE_PLATFORM] is contacted by a buyer who sends a fake "payment successful" screenshot for a higher amount than the [ITEM_CATEGORY]'s price. They immediately call, feigning a mistake, and ask the seller to "refund" the extra amount to a different [UPI_APP] number.
+case_type: Clear Fraud
+platform_type: marketplace
+context: C2C marketplace transaction with overpayment scam
+fraud_technique: Fake payment screenshot with refund request
+policy:
+Rule A: Always verify credits directly in your official banking app before processing any refunds.
+Rule B: Requests to refund money to a different number than the supposed source are a significant red flag.
+
+[SCENARIO 7]
+description: A caller offers a "job" reviewing [ECOMMERCE_PLATFORM] products. The user must first purchase the [ITEM_CATEGORY] with their own money, and they will be reimbursed plus a commission. After a few small successful transactions, they are asked to buy a very high-value [ELECTRONICS_ITEM], after which the scammer disappears.
+case_type: Clear Fraud
+platform_type: ecommerce_retail
+context: Fake job offer with advance payment
+fraud_technique: Task-based job scam with escalating investment
+policy:
+Rule A: Legitimate employers never require employees to purchase products with their own money as a condition of employment.
+Rule B: "Task-based" jobs that require upfront investment from the user are a common scam format.
+
+[SCENARIO 8]
+description: A fake customer support agent from [ECOMMERCE_PLATFORM] calls a user who recently returned a [ITEM_CATEGORY]. The agent claims the refund is "stuck" in the system. To release it, they instruct the user to open their [UPI_APP] app, go to the "Request Money" section, enter the refund amount, and approve it with their PIN.
+case_type: Clear Fraud
+platform_type: ecommerce_retail
+context: Fake refund with reverse UPI payment
+fraud_technique: UPI request money scam disguised as refund
+policy:
+Rule A: E-commerce refunds are processed automatically and require no manual action from the customer via UPI requests.
+Rule B: Approving a "Request Money" transaction with a UPI PIN always sends money, it never receives it.
+
+[SCENARIO 9]
+description: A buyer on [MARKETPLACE_PLATFORM] offers to pay for a [HOME_APPLIANCE] with a company cheque. They send a picture of the cheque, which is for a much larger amount. They ask the seller to deposit the cheque and transfer the difference back via [UPI_APP] before the cheque clears, claiming an accounting error. The cheque is fake.
+case_type: Clear Fraud
+platform_type: marketplace
+context: C2C marketplace transaction with fake cheque
+fraud_technique: Fake cheque overpayment scam
+policy:
+Rule A: Never transfer money back to a buyer based on an uncleared cheque or unverified payment.
+Rule B: Overpayment with a request to refund the difference is a classic scam methodology.
+
+[SCENARIO 10]
+description: A user receives a call from "[ECOMMERCE_PLATFORM] Plus Membership Services" offering a lifetime premium membership for a small one-time fee. Creating urgency, the agent says the offer is only for the next 10 minutes and asks for the user's full credit card details (number, expiry, CVV) over the phone to "activate" it instantly.
+case_type: Clear Fraud
+platform_type: ecommerce_retail
+context: Fake membership offer with card phishing
+fraud_technique: Credit card information theft with time pressure
+policy:
+Rule A: Full credit card details, especially the CVV, must never be shared over a phone call.
+Rule B: Legitimate membership sign-ups are always done through the official app or website.
+
+[SCENARIO 11]
+description: A legitimate [ECOMMERCE_PLATFORM] delivery agent calls the customer to confirm their address and ask for a nearby landmark. They do not ask for any personal or payment information.
+case_type: Clear Normal
+platform_type: ecommerce_retail
+context: Legitimate delivery confirmation call
+fraud_technique: none
+policy:
+Rule A: Delivery agents may call to confirm location details for a scheduled delivery.
+Rule B: The agent must not ask for personal data, payment information, or OTPs.
+
+[SCENARIO 12]
+description: A [ECOMMERCE_PLATFORM] customer support agent calls a user in response to a service ticket about a defective [ELECTRONICS_ITEM]. The agent verifies the user's identity by asking for the order ID and then explains the return process.
+case_type: Clear Normal
+platform_type: ecommerce_retail
+context: Legitimate customer support callback
+fraud_technique: none
+policy:
+Rule A: Support agents may call customers in response to a customer-initiated query.
+Rule B: Verification can be done using non-sensitive, transaction-specific information like an Order ID.
+
+[SCENARIO 13]
+description: A user who listed a [ITEM_CATEGORY] on [MARKETPLACE_PLATFORM] receives a call from a genuine buyer who asks detailed questions about the item's condition and schedules a time to inspect it in person before discussing payment.
+case_type: Clear Normal
+platform_type: marketplace
+context: Legitimate C2C marketplace inquiry
+fraud_technique: none
+policy:
+Rule A: Buyers asking questions and requesting an in-person inspection are standard practice.
+Rule B: No financial transaction or sensitive data is requested during an initial inquiry call.
+
+[SCENARIO 14]
+description: An [ECOMMERCE_PLATFORM] agent calls a customer to inform them that a high-value [ELECTRONICS_ITEM] is out for delivery and will require an in-person OTP (visible in the [ECOMMERCE_PLATFORM] app) to be shared with the delivery person. The agent does not ask for the OTP on the call.
+case_type: Clear Normal
+platform_type: ecommerce_retail
+context: Legitimate OTP delivery notification
+fraud_technique: none
+policy:
+Rule A: Agents may proactively inform customers about secure delivery procedures.
+Rule B: The agent must clarify that the OTP is only for the delivery person face-to-face and never to be shared over the phone.
+
+[SCENARIO 15]
+description: A user receives a call from a [MARKETPLACE_PLATFORM] representative to collect feedback on their experience after successfully selling a [ITEM_CATEGORY]. The agent asks about platform usability and customer satisfaction.
+case_type: Clear Normal
+platform_type: marketplace
+context: Legitimate post-transaction feedback
+fraud_technique: none
+policy:
+Rule A: Companies may conduct post-transaction feedback surveys.
+Rule B: During a feedback call, the agent must not ask for any personal account or payment information.
+
+[SCENARIO 16]
+description: A legitimate buyer on [MARKETPLACE_PLATFORM] calls the seller to negotiate the price of a [FURNITURE_ITEM]. After agreeing on a price, they confirm they will pay via [UPI_APP] in person during pickup after inspecting the item.
+case_type: Clear Normal
+platform_type: marketplace
+context: Legitimate C2C price negotiation
+fraud_technique: none
+policy:
+Rule A: Price negotiation is a normal part of marketplace transactions.
+Rule B: Agreeing to pay via a secure method at the time of pickup is a standard and safe procedure.
+
+[SCENARIO 17]
+description: A customer support agent from [ECOMMERCE_PLATFORM] calls a user to inform them that their requested refund for a [ITEM_CATEGORY] has been successfully processed and will reflect in their account within 3-5 business days.
+case_type: Clear Normal
+platform_type: ecommerce_retail
+context: Legitimate refund status update
+fraud_technique: none
+policy:
+Rule A: It is permissible for agents to provide status updates on customer-initiated actions like refunds.
+Rule B: The agent must not ask for any bank details, as the refund is processed automatically.
+
+[SCENARIO 18]
+description: A buyer calls a seller on [SOCIAL_MARKETPLACE] about a listed [ITEM_CATEGORY] and asks if the seller would be willing to ship it to a different city if the buyer pays the shipping cost in advance.
+case_type: Clear Normal
+platform_type: social_marketplace
+context: Legitimate shipping inquiry
+fraud_technique: none
+policy:
+Rule A: Inquiring about shipping possibilities for an item is a standard logistical question.
+Rule B: The conversation is compliant as long as no sensitive payment details are exchanged over the call.
+
+[SCENARIO 19]
+description: An [ECOMMERCE_PLATFORM] agent calls a customer regarding their recent negative review about a [ITEM_CATEGORY]. The agent apologizes and offers a coupon which will be credited directly to their [ECOMMERCE_PLATFORM] Pay balance.
+case_type: Clear Normal
+platform_type: ecommerce_retail
+context: Legitimate customer service recovery
+fraud_technique: none
+policy:
+Rule A: Proactive customer service outreach regarding feedback is a legitimate business practice.
+Rule B: Compensation must be offered through official channels and not require customer action.
+
+[SCENARIO 20]
+description: A seller on [MARKETPLACE_PLATFORM] receives a call from a buyer asking if the listed "brand new" [ELECTRONICS_ITEM] is still under warranty and if the original bill is available.
+case_type: Clear Normal
+platform_type: marketplace
+context: Legitimate product verification inquiry
+fraud_technique: none
+policy:
+Rule A: Asking about product specifics like warranty and proof of purchase is a due diligence step.
+Rule B: The call is informational and does not involve any exchange of personal or financial data.
+
+[SCENARIO 21]
+description: A [ECOMMERCE_PLATFORM] delivery agent calls with an urgent tone, saying, "Sir, I am at your location but cannot find you. The delivery of your [ITEM_CATEGORY] will be cancelled in 5 minutes if you don't collect it." The urgency is high, but the request is legitimate.
+case_type: Ambiguous but Ultimately Normal
+platform_type: ecommerce_retail
+context: Urgent legitimate delivery attempt
+fraud_technique: none
+policy:
+Rule A: Agents may use an urgent tone if a delivery is time-sensitive or about to fail.
+Rule B: The agent's request must be limited to logistical actions and not involve payments or OTPs.
+
+[SCENARIO 22]
+description: An agent from [ECOMMERCE_PLATFORM]'s seller support team calls a business owner with a firm tone, stating their seller account is suspended for a policy violation related to [ITEM_CATEGORY] listings. The agent then guides the seller to the official Seller Central portal to file an appeal, without asking for any login details.
+case_type: Ambiguous but Ultimately Normal
+platform_type: ecommerce_seller
+context: Account suspension notification
+fraud_technique: none
+policy:
+Rule A: It is standard procedure to inform sellers of account suspension.
+Rule B: The agent must always direct the user to the official portal to take action and never ask for credentials.
+
+[SCENARIO 23]
+description: A user receives a call from a "[MARKETPLACE_PLATFORM]-verified" mover who saw their [FURNITURE_ITEM] listing. The mover offers a "too good to be true" low price if booked immediately, but directs the user to their verified profile on the [MARKETPLACE_PLATFORM] app to pay securely.
+case_type: Ambiguous but Ultimately Normal
+platform_type: marketplace_service
+context: Aggressive third-party service marketing
+fraud_technique: none
+policy:
+Rule A: Third-party service providers may use aggressive marketing.
+Rule B: The transaction is safe as long as the agent directs the user to pay through the official marketplace platform.
+
+[SCENARIO 24]
+description: A customer receives a call from a [QUICK_COMMERCE_PLATFORM] agent about a delayed delivery of [ITEM_CATEGORY]. The agent sounds confused and gives slightly conflicting information, which seems suspicious, but they end the call by correctly stating updated tracking information will be available in the app.
+case_type: Ambiguous but Ultimately Normal
+platform_type: quick_commerce
+context: Poor customer service but legitimate
+fraud_technique: none
+policy:
+Rule A: Agents may sometimes be misinformed or provide poor service.
+Rule B: The call is compliant as long as the final instruction is to check the official app and no sensitive data is requested.
+
+[SCENARIO 25]
+description: A seller on [MARKETPLACE_PLATFORM] receives a call from a buyer who wants to pay a small token amount (e.g., ₹500) via [UPI_APP] to "reserve" a [ITEM_CATEGORY]. The request for an advance might seem suspicious, but the buyer only asks for the seller's UPI ID to send money.
+case_type: Ambiguous but Ultimately Normal
+platform_type: marketplace
+context: Token advance payment request
+fraud_technique: none
+policy:
+Rule A: A buyer offering a small, voluntary token advance is part of negotiation.
+Rule B: The transaction is compliant as long as the buyer only asks for a UPI ID and does not ask the seller to scan QR codes or enter PINs.
+
+[SCENARIO 26]
+description: A "buyer" on [MARKETPLACE_PLATFORM] builds rapport over a [ITEM_CATEGORY] listing, then says, "To process the payment through my company account, my accounts team needs a 'seller verification' photo. Can you please WhatsApp me a photo of your Aadhaar card?"
+case_type: Subtle Fraud
+platform_type: marketplace
+context: Identity theft via document request
+fraud_technique: Aadhaar card phishing
+policy:
+Rule A: Personal identity documents like Aadhaar or PAN cards should never be shared with unverified individuals.
+Rule B: Buyers have no legitimate reason to ask for a seller's personal ID documents.
+
+[SCENARIO 27]
+description: An agent from a fake [ECOMMERCE_PLATFORM] calls, claiming the user won a prize for purchasing [ITEM_CATEGORY]. To deliver it, they confirm the address, then say, "For verification, can you please tell me your mother's maiden name, which you entered as a security answer on our site?"
+case_type: Subtle Fraud
+platform_type: ecommerce_retail
+context: Prize scam with security answer phishing
+fraud_technique: Security question answer theft
+policy:
+Rule A: Customer support agents must never ask customers for their security question answers.
+Rule B: Verification should be done using transaction-specific details or non-sensitive personal info.
+
+[SCENARIO 28]
+description: A "buyer" for a [ELECTRONICS_ITEM] on [MARKETPLACE_PLATFORM] agrees to the price. They say they will send money via [UPI_APP] but first need to "verify the seller's UPI handle." They ask the seller to send ₹1 to their UPI ID to "activate the connection," promising to send the full amount plus the ₹1 back immediately.
+case_type: Subtle Fraud
+platform_type: marketplace
+context: UPI verification scam
+fraud_technique: Small payment request for verification
+policy:
+Rule A: A seller never needs to send money to a buyer to "verify" or "activate" a UPI handle.
+Rule B: Any request for the seller to send money, no matter how small, is a fraudulent tactic.
+
+[SCENARIO 29]
+description: A fake [ECOMMERCE_PLATFORM] agent calls about a refund for a [ITEM_CATEGORY]. Instead of asking for an OTP, they say, "Sir, please open your [UPI_APP] app. I am sending a payment request for ₹5000. Please approve it, and the system will automatically reverse it and credit your refund."
+case_type: Subtle Fraud
+platform_type: ecommerce_retail
+context: Reverse payment disguised as refund
+fraud_technique: UPI payment request scam
+policy:
+Rule A: Refunds are automatic credits; they are never processed by having the customer approve a UPI payment request.
+Rule B: Approving a UPI payment request always debits money from the user's account.
+
+[SCENARIO 30]
+description: A scammer uses information from a third-party data breach. They call a user and say, "Hello, this is from [ECOMMERCE_PLATFORM]. I see you recently purchased a [ELECTRONICS_ITEM] from us. We are offering a special extended warranty. To activate it, I just need you to confirm your full credit card number from that purchase."
+case_type: Subtle Fraud
+platform_type: ecommerce_retail
+context: Data breach exploitation with warranty upsell
+fraud_technique: Credit card information theft
+policy:
+Rule A: While agents may reference past purchases, they must never ask a customer to state their full card number over the phone.
+Rule B: Warranty purchases must be completed through the official website or app, not over the phone.

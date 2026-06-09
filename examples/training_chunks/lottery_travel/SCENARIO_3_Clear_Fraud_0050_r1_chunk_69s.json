@@ -1,0 +1,47 @@
+{
+  "session_id": 50,
+  "chunk_timestamp": 69,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Debjani Majumdar? Sir, this is Robert from the IRS. We've reviewed your tax return and you're eligible for an additional refund.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, yes, this is Debjani. What's the process for receiving this refund? I'm a bit busy, ji.",
+      "timestamp_end": 18.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "We need to verify your bank account information to process the refund electronically. It's a new security protocol, ma'am. For your HSBC account, we require the account number and routing number.",
+      "timestamp_end": 31.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, let me check. But can't I just verify this through my IRS online account? I'm not sure I'm comfortable sharing this information over the phone.",
+      "timestamp_end": 43.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "I understand your concern, Debjani, but this is an urgent matter. Our system won't allow us to process the refund without this verification. And, unfortunately, our online system is currently down for maintenance.",
+      "timestamp_end": 57.4
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Trust",
+    "secondary_emotion": "Urgency",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 69s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 3,
+    "case_type": "Clear_Fraud",
+    "description": "Tax refund phishing scam. Scammer sends email or calls claiming victim is entitled to additional tax refund but needs to \"verify\" bank account information or Social Security number to process the refund electronically."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

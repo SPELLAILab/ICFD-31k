@@ -1,0 +1,32 @@
+{
+  "overall_metrics": {
+    "accuracy": 0.2894,
+    "precision": 0.9358490566037736,
+    "recall": 0.22157694884967613,
+    "f1": 0.3583167780386491,
+    "total_samples": 5000,
+    "total_errors": 0,
+    "error_rate": 0.0,
+    "confusion_matrix": [
+      [
+        455,
+        68
+      ],
+      [
+        3485,
+        992
+      ]
+    ]
+  },
+  "class_specific": {
+    "fraud_samples": 4477,
+    "fraud_accuracy": 0.22157694884967613,
+    "legit_samples": 523,
+    "legit_accuracy": 0.869980879541109
+  },
+  "performance": {
+    "avg_confidence": 0.7999999999999999,
+    "avg_processing_time": 2.9159017922878268,
+    "total_processing_time": 14579.508961439133
+  }
+}

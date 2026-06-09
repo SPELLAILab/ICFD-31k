@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use ICFD-31k, please cite this work."
+title: "ICFD-31k: A Large-Scale Dataset and Benchmark for Real-Time Conversational Fraud Detection"
+authors:
+  - family-names: Ahuja
+    given-names: Rishi
+    affiliation: "Department of Information Technology, Dr. B.R. Ambedkar National Institute of Technology Jalandhar, Punjab, India"
+  - family-names: Prateek
+    given-names: Kumar
+    affiliation: "Department of Information Technology, Dr. B.R. Ambedkar National Institute of Technology Jalandhar, Punjab, India"
+  - family-names: Singh
+    given-names: Simranjit
+    affiliation: "Department of Information Technology, Dr. B.R. Ambedkar National Institute of Technology Jalandhar, Punjab, India"
+year: 2026
+repository-code: "https://github.com/SPELLAILab/ICFD-31k"
+url: "https://huggingface.co/datasets/rishia2220/icfd-31k"
+preferred-citation:
+  type: conference-paper
+  title: "ICFD-31k: A Large-Scale Dataset and Benchmark for Real-Time Conversational Fraud Detection"
+  authors:
+    - family-names: Ahuja
+      given-names: Rishi
+    - family-names: Prateek
+      given-names: Kumar
+    - family-names: Singh
+      given-names: Simranjit
+  collection-title: "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence (IJCAI-ECAI)"
+  year: 2026

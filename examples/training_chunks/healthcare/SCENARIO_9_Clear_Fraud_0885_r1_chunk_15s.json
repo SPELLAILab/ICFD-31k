@@ -1,0 +1,37 @@
+{
+  "session_id": 885,
+  "chunk_timestamp": 15,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste Kali Devi ji, main Indian Overseas Bank se bol raha hoon.",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Kaun? Kya chahiye? Thik hai, jaldi bolo.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Aapko ek investment scheme ke bare mein bata raha hoon. Guaranteed high returns hain.",
+      "timestamp_end": 15.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "suspicion",
+    "secondary_emotion": "anger",
+    "pace": "fast",
+    "confidence_score": 0.95
+  },
+  "slow_thinking_rationale": "At 15s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 9,
+    "case_type": "Clear Fraud",
+    "description": "Investment Scam: Agent from HDFC Bank/SBI/ICICI Bank/Axis Bank offers a \"guaranteed\" high-return mutual fund or stock investment scheme and pressures for immediate fund transfer via UPI/NEFT to a specific account."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

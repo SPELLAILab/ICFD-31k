@@ -1,0 +1,27 @@
+{
+  "session_id": 1102,
+  "chunk_timestamp": 15,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Madam, this is Officer Kumar from the local police station. I'm calling regarding the incident you reported a few days ago. Sir, we need you to come down to the station to provide a witness statement.",
+      "timestamp_end": 10.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Cooperative",
+    "pace": "Moderate",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 15s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 12,
+    "case_type": "Clear Normal",
+    "description": "A police officer calls a person to ask them to come to the police station as a witness for an incident they reported a few days ago. The officer is professional and provides a case reference number."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

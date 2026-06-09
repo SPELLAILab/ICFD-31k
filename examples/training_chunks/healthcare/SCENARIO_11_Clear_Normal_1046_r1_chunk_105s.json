@@ -1,0 +1,62 @@
+{
+  "session_id": 1046,
+  "chunk_timestamp": 105,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir! My name is Rohan, and I'm a census enumerator from the National Census Department. I hope you're doing well today, ji!",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Hello. I'm Subham Mazumdar. What is this about?",
+      "timestamp_end": 18.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Namaste, Mr. Mazumdar! We're conducting the National Census, and I'm here to schedule a convenient time for an in-person visit to collect some data. This will help us better understand our community and plan for the future, sir.",
+      "timestamp_end": 35.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, that sounds important. What kind of data do you need to collect?",
+      "timestamp_end": 43.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "We'll be collecting information about your household, such as the number of family members, age, and occupation. Don't worry, all the information will be kept confidential, haan?",
+      "timestamp_end": 58.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, I understand. When were you thinking of visiting?",
+      "timestamp_end": 65.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "How about tomorrow or the day after, sir? We can work around your schedule to find a time that suits you best, ji.",
+      "timestamp_end": 80.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Let me check my schedule. Ah, yes, tomorrow afternoon would work for me.",
+      "timestamp_end": 94.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Positive",
+    "pace": "Moderate",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 105s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 11,
+    "case_type": "Clear Normal",
+    "description": "A legitimate census worker calls a household to schedule a convenient time for an in-person visit to collect data for the National Census. They introduce themselves, state their purpose, and do not ask for any financial or sensitive information."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

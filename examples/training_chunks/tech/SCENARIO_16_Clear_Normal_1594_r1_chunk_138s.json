@@ -1,0 +1,177 @@
+{
+  "session_id": 1594,
+  "chunk_timestamp": 138,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Hello, ji. I'm calling about the center table you've listed on Shopo.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Ah, yes! The center table. Beautiful piece of furniture, sir. What can I do for you?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "I like it, but the price is a bit high. Can we discuss it?",
+      "timestamp_end": 14.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, madam. Let's see what we can do. What price were you thinking of?",
+      "timestamp_end": 18.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Well, I was thinking maybe we could do 8000 instead of 9000?",
+      "timestamp_end": 22.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, let me see what I can do. (pause) Yes, 8500 is the best I can do.",
+      "timestamp_end": 27.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, that sounds good. How will I pay you?",
+      "timestamp_end": 31.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "You can pay me via Goibibo GoCash when you come to pick up the table. You can inspect it first, and if everything is okay, we can complete the transaction.",
+      "timestamp_end": 36.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, that sounds like a good plan. I'll come by tomorrow to pick it up.",
+      "timestamp_end": 40.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, I mean, madam, you're welcome to come by anytime tomorrow. I'll make sure the table is ready for you.",
+      "timestamp_end": 45.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thank you, ji. I'm looking forward to it.",
+      "timestamp_end": 49.4
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, madam. Have a great day, and I'll see you tomorrow.",
+      "timestamp_end": 53.7
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir. Bye.",
+      "timestamp_end": 57.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, madam.",
+      "timestamp_end": 60.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, and one more thing. Can I get a receipt for the payment?",
+      "timestamp_end": 65.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, madam. I'll make sure to give you a receipt when you pay.",
+      "timestamp_end": 70.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, great. Thanks again.",
+      "timestamp_end": 75.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, madam. See you tomorrow.",
+      "timestamp_end": 79.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 83.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, madam.",
+      "timestamp_end": 88.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm looking forward to getting the table.",
+      "timestamp_end": 92.4
+    },
+    {
+      "speaker": "Agent",
+      "text": "Me too, madam. It was a pleasure doing business with you.",
+      "timestamp_end": 96.7
+    },
+    {
+      "speaker": "Customer",
+      "text": "Same to you, sir. Thanks again.",
+      "timestamp_end": 101.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, madam. Have a great day.",
+      "timestamp_end": 105.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir. Bye.",
+      "timestamp_end": 109.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, madam.",
+      "timestamp_end": 113.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "I hope the table is in good condition.",
+      "timestamp_end": 118.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Don't worry, madam. The table is in excellent condition. You'll love it.",
+      "timestamp_end": 122.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, great. I'm looking forward to seeing it tomorrow.",
+      "timestamp_end": 126.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Me too, madam. See you tomorrow.",
+      "timestamp_end": 131.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 135.4
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Friendly",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 138s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A legitimate buyer on [MARKETPLACE_PLATFORM] calls the seller to negotiate the price of a [FURNITURE_ITEM]. After agreeing on a price, they confirm they will pay via [UPI_APP] in person during pickup after inspecting the item."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

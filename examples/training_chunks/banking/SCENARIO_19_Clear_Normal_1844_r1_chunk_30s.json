@@ -1,0 +1,42 @@
+{
+  "session_id": 1844,
+  "chunk_timestamp": 30,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Namaste Kishori ji! This is Rohan from Meru Cabs. How are you today, sir?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm good, thank you. You called about my complaint, right?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, sir. We take all safety concerns very seriously. Can you please tell me more about what happened with your last ride, ji?",
+      "timestamp_end": 17.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "The driver was not following the GPS and took a longer route. I felt very uncomfortable, sir.",
+      "timestamp_end": 24.8
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Relief",
+    "secondary_emotion": "Apprehension",
+    "pace": "Moderate",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 30s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 19,
+    "case_type": "Clear Normal",
+    "description": "A support agent from a ride-hailing app ([RIDE_HAILING_APP]) calls a user in response to a safety complaint they filed against a driver. The agent gathers more details about the incident for their investigation."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

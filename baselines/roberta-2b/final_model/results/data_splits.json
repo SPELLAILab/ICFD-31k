@@ -1,0 +1,9 @@
+{
+  "train_sessions": 22145,
+  "train_chunks": 604752,
+  "val_sessions": 4745,
+  "val_chunks": 130951,
+  "test_sessions": 4746,
+  "test_chunks": 129116,
+  "split_timestamp": "2025-10-14T05:11:25.724017"
+}

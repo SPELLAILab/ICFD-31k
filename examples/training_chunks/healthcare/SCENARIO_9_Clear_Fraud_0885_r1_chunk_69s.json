@@ -1,0 +1,57 @@
+{
+  "session_id": 885,
+  "chunk_timestamp": 69,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Pandey. This is GTPL Broadband. We have a report that your router has been compromised and is spreading viruses on our network.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "What? Who is this? How did you get my number, sir?",
+      "timestamp_end": 18.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm calling from GTPL Broadband, your Wi-Fi provider. We need to reconfigure your router to stop the malware spread.",
+      "timestamp_end": 25.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "I didn't ask for any help. What proof do you have that my router is hacked, ji?",
+      "timestamp_end": 33.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "We've detected unusual activity from your IP. Please visit our website, and enter your router's admin username and password so we can fix this remotely.",
+      "timestamp_end": 43.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm not giving you any passwords. This sounds like a scam. How do I know you're really from GTPL?",
+      "timestamp_end": 51.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "You can trust me, I'm from GTPL. Just go to the website, it's the only way to secure your router.",
+      "timestamp_end": 59.4
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Frustration",
+    "secondary_emotion": "Anger",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 69s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 9,
+    "case_type": "Clear Fraud",
+    "description": "An agent calls claiming to be from the user's Wi-Fi provider ([INTERNET_PROVIDER]). They state the user's router has been \"hacked\" and is spreading viruses on the network. They direct the user to a website to enter their router's admin username and password to allow the agent to \"reconfigure it remotely.\" The website is a phishing portal."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

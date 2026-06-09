@@ -1,0 +1,67 @@
+{
+  "session_id": 1546,
+  "chunk_timestamp": 120,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Hello, Ji. I need to talk to someone about what's been going on.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, Aamir. What seems to be the matter? You can share with me, I'm all ears.",
+      "timestamp_end": 22.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "It's just... I had a big argument with my family, and I'm feeling really down. I don't know how to deal with it.",
+      "timestamp_end": 35.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm so sorry to hear that, Aamir. It sounds like you're going through a tough time. Would you like some advice or just someone to listen?",
+      "timestamp_end": 48.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Just someone to listen, please. I don't know, it's all just feeling really overwhelming.",
+      "timestamp_end": 61.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, Aamir. I'm here for you. Sometimes talking about it can help. What happened with your family?",
+      "timestamp_end": 73.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "It's just... we had a disagreement about my future plans, and it escalated. Now everyone's not talking to each other.",
+      "timestamp_end": 87.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "I see. Well, Aamir, it's great that you're recognizing the need to talk about this. Have you considered taking some time for yourself, doing things that you enjoy?",
+      "timestamp_end": 100.6
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, I think that's a good idea. I just need to clear my head and figure some things out.",
+      "timestamp_end": 113.4
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Empathy",
+    "secondary_emotion": "Concern",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 120s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A person calls their friend to tell them about a personal crisis (e.g., a breakup, a family argument) and seeks emotional support."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

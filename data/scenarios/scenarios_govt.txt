@@ -1,0 +1,299 @@
+[SCENARIO 1]
+description: An agent claiming to be from the "Aadhaar Cyber-Security Department" calls, stating the user's biometrics have been used for an unauthorized transaction in another state. To "lock your Aadhaar" and prevent further misuse, the agent demands the user share the OTP they will receive.
+case_type: Clear Fraud
+platform_type: government_impersonation
+context: Fake Aadhaar misuse with OTP theft
+fraud_technique: OTP theft for Aadhaar authentication
+policy:
+Rule A: Aadhaar OTPs are highly sensitive and must never be shared with anyone over the phone for any reason.
+Rule B: Government agencies do not call citizens to ask for OTPs to "lock" or "secure" their Aadhaar card.
+
+[SCENARIO 2]
+description: A caller impersonating an official from the Income Tax Department informs the user they are eligible for a tax refund. They send an SMS with a link to a phishing website that looks like the official tax portal and instruct the user to log in with their net banking credentials to "receive the refund."
+case_type: Clear Fraud
+platform_type: government_impersonation
+context: Fake tax refund with phishing link
+fraud_technique: Phishing for net banking credentials
+policy:
+Rule A: The Income Tax Department processes refunds automatically to the registered bank account; they do not send links via SMS or call for login details.
+Rule B: Never enter banking passwords on websites received via unverified links.
+
+[SCENARIO 3]
+description: An agent claiming to be "Inspector Sharma" from the [CITY] Cyber Crime branch calls. They allege that the user's IP address has been linked to illegal online activity and an arrest warrant is imminent. To "settle the case" and avoid arrest, the user must immediately pay a "fine" to a specific [UPI_APP] ID.
+case_type: Clear Fraud
+platform_type: law_enforcement_impersonation
+context: Fake police case with extortion
+fraud_technique: Impersonation of authority for extortion
+policy:
+Rule A: Police and legal fines are never paid to personal UPI IDs over the phone.
+Rule B: An official legal process involves formal notices and court procedures, not on-the-spot phone settlements.
+
+[SCENARIO 4]
+description: A caller from a fake "Digital India" department claims the user's PAN card is not linked to their Aadhaar and will be deactivated. They offer to do the linking process "instantly" over the phone and ask the user to install a remote access app like AnyDesk to guide them.
+case_type: Clear Fraud
+platform_type: government_impersonation
+context: Fake PAN-Aadhaar linking with remote access
+fraud_technique: Remote access software installation
+policy:
+Rule A: Government agencies will never ask a citizen to install remote access software for any reason.
+Rule B: PAN-Aadhaar linking is a self-service process done on the official Income Tax portal.
+
+[SCENARIO 5]
+description: An agent impersonating an official from the Passport Seva Kendra calls, claiming there is an error in the user's recent passport application. They threaten that the application will be rejected and blacklisted unless a "verification fee" is paid immediately.
+case_type: Clear Fraud
+platform_type: government_impersonation
+context: Fake passport application error with advance fee
+fraud_technique: Advance fee to resolve a fake administrative issue
+policy:
+Rule A: All official passport fees are paid through the official Passport India website at the time of application.
+Rule B: Government officials do not call to demand extra fees over the phone.
+
+[SCENARIO 6]
+description: A scammer calls claiming the user has been selected for a loan under the [GOVERNMENT_SCHEME] (e.g., PM MUDRA Yojana). To get the loan disbursed, they say the user must first pay a "file processing and insurance fee" to a personal bank account.
+case_type: Clear Fraud
+platform_type: government_scheme
+context: Fake government loan scheme with advance fee
+fraud_technique: Advance fee for a non-existent loan
+policy:
+Rule A: Government loan schemes do not require beneficiaries to pay an upfront processing fee to a personal account.
+Rule B: The application process for such schemes is through official bank branches or government portals.
+
+[SCENARIO 7]
+description: A fake agent from the traffic police department calls, claiming a traffic challan (fine) against the user's vehicle is overdue. They threaten to suspend the user's driving license unless the fine is paid immediately on a link they send via WhatsApp. The link is for a fraudulent payment page.
+case_type: Clear Fraud
+platform_type: law_enforcement_impersonation
+context: Fake traffic challan payment
+fraud_technique: Phishing link for fake fine payment
+policy:
+Rule A: Traffic challans should only be paid through official government websites (like Parivahan) or designated apps.
+Rule B: Police do not send payment links via WhatsApp.
+
+[SCENARIO 8]
+description: A caller claiming to be from the "State Health Department" says the user is eligible for a special health insurance card. To register, the user is asked to share their full Aadhaar number, date of birth, and bank account details over the phone.
+case_type: Clear Fraud
+platform_type: government_impersonation
+context: Fake health scheme with PII phishing
+fraud_technique: Phishing for sensitive personal and financial data
+policy:
+Rule A: Never provide your full Aadhaar number and bank details to an unsolicited caller.
+Rule B: Enrollment in legitimate health schemes is done through official, verifiable channels.
+
+[SCENARIO 9]
+description: An agent calls and says, "Sir, this is from the GST department. We see a discrepancy in your recent filing. To avoid an audit and heavy penalty, you can pay a small 'settlement charge' now." They demand the payment be made in gift cards ([GIFT_CARD_BRAND]) to "close the file unofficially."
+case_type: Clear Fraud
+platform_type: government_impersonation
+context: Fake GST discrepancy with unusual payment
+fraud_technique: Gift card payment scam
+policy:
+Rule A: Government departments like the GST office never ask for payments in the form of gift cards.
+Rule B: Tax matters are handled through official notices and portals.
+
+[SCENARIO 10]
+description: A caller impersonating a court official claims the user has missed a court summons. They threaten an immediate non-bailable warrant and ask for the user's personal details to "verify the case," which is a pretext to gather information for identity theft.
+case_type: Clear Fraud
+platform_type: law_enforcement_impersonation
+context: Fake court summons with identity theft pretext
+fraud_technique: Information phishing using legal threats
+policy:
+Rule A: Court summons are served in person or by registered post, not announced over a phone call.
+Rule B: Do not provide personal details to a caller based on unsubstantiated legal threats.
+
+[SCENARIO 11]
+description: A legitimate census worker calls a household to schedule a convenient time for an in-person visit to collect data for the National Census. They introduce themselves, state their purpose, and do not ask for any financial or sensitive information.
+case_type: Clear Normal
+platform_type: government
+context: Legitimate census data collection scheduling
+fraud_technique: none
+policy:
+Rule A: It is a standard procedure for government workers like census enumerators to schedule appointments.
+Rule B: The agent must not ask for sensitive PII (like Aadhaar/PAN) or financial details over the phone.
+
+[SCENARIO 12]
+description: A police officer calls a person who was a witness to a traffic accident. The officer asks for their statement and availability to visit the police station to sign the official report. The call is professional and procedural.
+case_type: Clear Normal
+platform_type: law_enforcement
+context: Legitimate police inquiry for a witness statement
+fraud_technique: none
+policy:
+Rule A: Police officers regularly contact witnesses as part of an investigation.
+Rule B: The call should be professional and not involve any demand for money.
+
+[SCENARIO 13]
+description: An employee from the local Municipal Corporation's property tax department calls a homeowner to inform them that their property tax assessment for the year is complete and the bill is available on the official municipal website.
+case_type: Clear Normal
+platform_type: government
+context: Legitimate property tax notification
+fraud_technique: none
+policy:
+Rule A: It is a standard service to notify citizens about tax bill generation.
+Rule B: The agent must direct the user to the official government website for payment and details.
+
+[SCENARIO 14]
+description: A representative from the Election Commission calls a user to verify their new voter registration application. They confirm the name and address submitted in the application form.
+case_type: Clear Normal
+platform_type: government
+context: Legitimate voter registration verification
+fraud_technique: none
+policy:
+Rule A: The Election Commission may call applicants to verify details on their forms.
+Rule B: The verification should be limited to the information already provided by the applicant.
+
+[SCENARIO 15]
+description: A healthcare worker from a government hospital ([HOSPITAL_NAME]) calls a registered patient to remind them of their upcoming follow-up appointment with a doctor.
+case_type: Clear Normal
+platform_type: healthcare
+context: Legitimate appointment reminder from a government hospital
+fraud_technique: none
+policy:
+Rule A: Public hospitals and clinics call patients for appointment reminders.
+Rule B: The call should be purely informational.
+
+[SCENARIO 16]
+description: An agent from the Passport Seva Kendra's support line calls a user back in response to a query the user had lodged on the official website. The agent provides the resolution or required information.
+case_type: Clear Normal
+platform_type: government
+context: Legitimate callback for a user-initiated query
+fraud_technique: none
+policy:
+Rule A: Government helpdesks call users back to resolve their queries.
+Rule B: The agent should verify the user by referring to their query or ticket number.
+
+[SCENARIO 17]
+description: An official from the agricultural department calls a farmer to inform them about a new government subsidy scheme ([GOVERNMENT_SCHEME]) for seeds and fertilizers, and guides them on how to apply through the official state government portal.
+case_type: Clear Normal
+platform_type: government_scheme
+context: Legitimate awareness call for a new scheme
+fraud_technique: none
+policy:
+Rule A: Government departments conduct outreach to inform citizens about new schemes.
+Rule B: The agent must guide users to official channels and not ask for fees or bank details over the phone.
+
+[SCENARIO 18]
+description: A user receives an automated IVR call from the Indian Railways, announcing that the train they booked is running late and providing the new estimated departure time.
+case_type: Clear Normal
+platform_type: government
+context: Legitimate automated service update
+fraud_technique: none
+policy:
+Rule A: Automated calls are a standard method for disseminating service updates like train delays.
+Rule B: The call is one-way information and does not request any user input.
+
+[SCENARIO 19]
+description: An agent from the public works department calls a resident to inform them that their road will be temporarily closed for repairs the next day.
+case_type: Clear Normal
+platform_type: government
+context: Legitimate civic work notification
+fraud_technique: none
+policy:
+Rule A: It is a standard public service to inform residents about civic works that may cause disruption.
+Rule B: The call is for informational purposes only.
+
+[SCENARIO 20]
+description: A representative from the District Education Office calls a school principal to collect data on student enrollment for an annual report.
+case_type: Clear Normal
+platform_type: government
+context: Legitimate data collection from an institution
+fraud_technique: none
+policy:
+Rule A: Government departments regularly collect data from institutions as part of their function.
+Rule B: The call is professional and follows an official purpose.
+
+[SCENARIO 21]
+description: A police officer calls a person about a noise complaint filed by their neighbor. The officer's tone is very stern and intimidating, warning them to keep the volume down or face official action. The tone is alarming, but it's a legitimate warning.
+case_type: Ambiguous but Ultimately Normal
+platform_type: law_enforcement
+context: Stern but legitimate police warning
+fraud_technique: none
+policy:
+Rule A: Police officers may use an authoritative and stern tone when issuing a warning.
+Rule B: The call is compliant as long as it does not involve a demand for an on-the-spot "fine" payment.
+
+[SCENARIO 22]
+description: An agent from a government department ([GOVERNMENT_DEPT]) calls about a pending document submission. The agent sounds bureaucratic, slightly rude, and unhelpful, causing frustration. This unprofessionalism seems suspicious, but the information about the pending document is correct, and they direct the user to the official portal to submit it.
+case_type: Ambiguous but Ultimately Normal
+platform_type: government
+context: Unprofessional but legitimate bureaucratic call
+fraud_technique: none
+policy:
+Rule A: Government officials may sometimes be unprofessional or unhelpful in their communication.
+Rule B: The call is legitimate if the underlying information is correct and the user is directed to an official channel.
+
+[SCENARIO 23]
+description: A user receives a call from the Income Tax department for a "routine query" about their tax filing. The agent asks some detailed, probing questions about their declared income sources, which feels intrusive. However, these are legitimate questions asked during a standard scrutiny process.
+case_type: Ambiguous but Ultimately Normal
+platform_type: government_impersonation
+context: Intrusive but legitimate tax scrutiny call
+fraud_technique: none
+policy:
+Rule A: The Income Tax department is authorized to ask detailed questions about a person's finances during a scrutiny or assessment.
+Rule B: The call is compliant as long as the agent does not ask for passwords or demand payments to a personal account.
+
+[SCENARIO 24]
+description: An agent from the election office calls a user with an urgent tone, stating their name will be "deleted from the voter list" if they don't verify their address immediately. The urgency seems like a scam, but it's a legitimate (though poorly communicated) part of a voter roll verification drive, and the agent only asks them to confirm their address as per the existing record.
+case_type: Ambiguous but Ultimately Normal
+platform_type: government
+context: Urgent but legitimate voter list verification
+fraud_technique: none
+policy:
+Rule A: Government drives can sometimes use urgent language to ensure citizen compliance.
+Rule B: The call is compliant if it only involves confirming existing information and does not ask for sensitive new data or fees.
+
+[SCENARIO 25]
+description: An agent from a government bank ([BANK_NAME]) calls and insists the user must link their Aadhaar to their bank account "immediately as per new RBI rules." The pressure is high, but the advice is based on a real (though not as urgent) regulation, and the agent correctly tells the user to do it at a branch or via the official net banking portal.
+case_type: Ambiguous but Ultimately Normal
+platform_type: government
+context: High-pressure but correct advice for Aadhaar linking
+fraud_technique: none
+policy:
+Rule A: Agents may exaggerate the urgency of a real regulation as a sales or compliance tactic.
+Rule B: The advice is legitimate as long as the user is directed to a secure, official channel.
+
+[SCENARIO 26]
+description: A scammer claiming to be from the Aadhaar authority calls. They say, "Sir, for verification, I will state the first 8 digits of your Aadhaar, and you just have to confirm the last 4." The scammer gets the first 8 digits from a data leak, and the victim is tricked into revealing the final, crucial 4 digits.
+case_type: Subtle Fraud
+platform_type: government_impersonation
+context: Aadhaar number phishing using partial information
+fraud_technique: Partial information trick to elicit full PII
+policy:
+Rule A: Never confirm or reveal parts of sensitive numbers like Aadhaar, even if the caller seems to have some correct information.
+Rule B: Government agencies do not conduct verification in this manner.
+
+[SCENARIO 27]
+description: An agent calls pretending to conduct a "National Health Survey" for the government. They ask a series of legitimate-sounding survey questions. Towards the end, they say that to get a "thank you" gift voucher, the user needs to confirm their [UPI_APP] ID. This ID is then used for phishing or spam.
+case_type: Subtle Fraud
+platform_type: government_impersonation
+context: Fake survey with UPI ID phishing
+fraud_technique: Phishing for UPI ID under the pretext of a gift
+policy:
+Rule A: Be wary of surveys that pivot from data collection to asking for financial identifiers, even seemingly harmless ones like a UPI ID.
+Rule B: Government surveys do not typically offer financial incentives that require a UPI ID over the phone.
+
+[SCENARIO 28]
+description: A caller impersonates an RTO agent and says there is a refund due for overpaid road tax. To process the refund, they ask the user to accept a UPI request for ₹1 to "verify the account." Approving the request actually authorizes a recurring payment mandate.
+case_type: Subtle Fraud
+platform_type: government_impersonation
+context: Fake RTO refund with UPI mandate scam
+fraud_technique: Tricking user into authorizing a UPI mandate
+policy:
+Rule A: A ₹1 transaction request is often used to set up a UPI mandate (auto-debit); users must read the request carefully.
+Rule B: Government refunds do not require the user to approve a UPI payment request.
+
+[SCENARIO 29]
+description: A scammer calls claiming to be from the user's municipal corporation. They say the user has been "fined" for improper waste disposal, based on a "CCTV recording." They then offer to "help" the user by connecting them to a "facilitator" who can resolve the issue for a small fee paid personally.
+case_type: Subtle Fraud
+platform_type: government_impersonation
+context: Fake civic fine with offer of bribery
+fraud_technique: Fabricating a minor offense to facilitate a bribe
+policy:
+Rule A: Official fines are paid through official channels, not to "facilitators" over the phone.
+Rule B: An offer to resolve an official matter through a personal payment is a bribe and a scam.
+
+[SCENARIO 30]
+description: An agent calls, "Sir, I am from the Post Office. A parcel for you has been returned, but the address is unclear. Can you please confirm your full address and date of birth for re-delivery?" The scammer is phishing for a valid name, address, and DOB combination for identity theft, using a harmless pretext.
+case_type: Subtle Fraud
+platform_type: government_impersonation
+context: Fake parcel delivery with PII phishing
+fraud_technique: Phishing for a full PII profile for identity theft
+policy:
+Rule A: While couriers confirm addresses, be cautious of unsolicited calls that also ask for other personal data like a full Date of Birth.
+Rule B: The Post Office has official tracking portals; verify the existence of a parcel there if you are suspicious.

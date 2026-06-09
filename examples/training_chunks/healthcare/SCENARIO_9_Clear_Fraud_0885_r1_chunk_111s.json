@@ -1,0 +1,77 @@
+{
+  "session_id": 885,
+  "chunk_timestamp": 111,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Sir. I am calling from Airtel 5G. Your mobile number has won a tower installation lottery.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "What? What lottery? I didn't participate in any lottery. Who is this?",
+      "timestamp_end": 20.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, Sir, this is a lucky draw. You will get monthly rent for installing our tower on your property.",
+      "timestamp_end": 30.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, how much rent? And what's the process?",
+      "timestamp_end": 39.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "The rent will be 50,000 rupees per month. But first, you need to pay a legal documentation and survey fee of 10,000 rupees.",
+      "timestamp_end": 50.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, that sounds too good to be true. I'm not paying any fee. You should be paying me, not the other way around.",
+      "timestamp_end": 61.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, this is a one-time fee. You will get the benefit for lifetime.",
+      "timestamp_end": 71.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "I don't think so. This sounds like a scam. I'm going to report this to DBS Bank and get your number blocked.",
+      "timestamp_end": 80.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, please don't hang up. I will give you the account details to pay the fee.",
+      "timestamp_end": 90.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, I'm not interested. And I think you're violating some rule by asking me to pay a fee.",
+      "timestamp_end": 100.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "No, Sir, this is a standard procedure.",
+      "timestamp_end": 109.8
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "anger",
+    "secondary_emotion": "frustration",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 111s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 9,
+    "case_type": "Clear Fraud",
+    "description": "A scammer calls, claiming the user's mobile number has won a \"tower installation lottery\" where a telecom company ([MOBILE_CARRIER]) will pay them monthly rent for installing a tower on their property. To finalize the \"agreement,\" the user must pay a \"legal documentation and survey fee.\""
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

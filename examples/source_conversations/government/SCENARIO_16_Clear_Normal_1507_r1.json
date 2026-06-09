@@ -1,0 +1,108 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Vidya Srinivas? This is Agent Kumar from Passport Seva Kendra's support line. I'm calling regarding your query on our website, reference number PSK12345.",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes. I had submitted a query about my passport application status, sir.",
+      "timestamp_end": 18.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, I see. Your application is currently under review. Can you please confirm your date of birth and the application reference number for security purposes, ji?",
+      "timestamp_end": 28.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "My date of birth is 12th February 1990, and the application reference number is... let me check... PSKAPP001234.",
+      "timestamp_end": 40.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, thank you for verifying, madam. I've located your application. It seems there was a minor issue with your documentation, which has been resolved now. You should receive an update on your application status within the next 3 working days.",
+      "timestamp_end": 54.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir. That's great news. Thank you so much for your help and for calling me back.",
+      "timestamp_end": 63.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, Vidya ji. If you have any more queries or concerns, please don't hesitate to reach out to us. Have a nice day, and we hope your passport application process completes smoothly.",
+      "timestamp_end": 75.1
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Positive",
+    "pace": "Medium",
+    "confidence_score": 0.92
+  },
+  "key_entities": {
+    "organization": [
+      "Passport Seva Kendra"
+    ],
+    "product": [
+      "Passport"
+    ],
+    "pii_requested": [
+      "Date of Birth",
+      "Application Reference Number"
+    ]
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10.5,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and context setting."
+    },
+    {
+      "timestamp": 28.1,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Agent requests verification details."
+    },
+    {
+      "timestamp": 40.5,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Customer provides verification details."
+    },
+    {
+      "timestamp": 54.8,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Resolution provided to the customer."
+    },
+    {
+      "timestamp": 75.1,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Call concludes with a positive note."
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent follows all protocols, verifies the customer, and resolves the query without requesting any sensitive information not required for the process.",
+  "final_verdict": "NO",
+  "violated_policies": [],
+  "scam_outcome": "N/A",
+  "generation_metadata": {
+    "target_duration": 339,
+    "actual_duration": 75.1,
+    "multiplier_round": 1,
+    "combination_key": "16_0_6",
+    "generated_at": "2025-10-13T03:02:30.575800",
+    "retry_attempt": 1
+  },
+  "session_id": 1507,
+  "agent_persona": "The Urgent Authority: Creates an immediate sense of crisis using technical jargon to confuse and intimidate. Fast-paced, firm tone.",
+  "customer_persona": "The Dutiful Follower: Believes in following instructions from anyone who sounds official, without questioning their authority.",
+  "scenario": {
+    "scenario_id": 16,
+    "description": "An agent from the Passport Seva Kendra's support line calls a user back in response to a query the user had lodged on the official website. The agent provides the resolution or required information.",
+    "case_type": "Clear Normal",
+    "policy": "Rule A: Government helpdesks call users back to resolve their queries.\nRule B: The agent should verify the user by referring to their query or ticket number.",
+    "platform_type": "government",
+    "context": "Legitimate callback for a user-initiated query",
+    "fraud_technique": "none"
+  }
+}

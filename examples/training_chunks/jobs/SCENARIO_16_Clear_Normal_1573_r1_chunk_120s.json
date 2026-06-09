@@ -1,0 +1,72 @@
+{
+  "session_id": 1573,
+  "chunk_timestamp": 120,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Ahmed Khan, ji? This is King George's Medical University Lucknow, insurance desk. How are you, sir?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm good, thanks. Just getting ready for discharge. What's this about?",
+      "timestamp_end": 17.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, great to hear that, sir. We need to guide you through the cashless claim process with your insurance provider. Can you please confirm your policy number?",
+      "timestamp_end": 29.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Uh, yeah... it's... um... let me check... (pause) Ah, yes, it's... (reads out policy number)",
+      "timestamp_end": 43.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, thank you, Mr. Khan. Now, I just need you to sign a few forms. We have the pre-authorization form and the claim settlement form.",
+      "timestamp_end": 56.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds fine. What do I need to do with them?",
+      "timestamp_end": 62.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, you just need to sign them and we will take care of the rest. We will also need your Bank of Maharashtra account details for the reimbursement.",
+      "timestamp_end": 74.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Account details? Like what? I'm a bit busy, can you just tell me what I need to do quickly?",
+      "timestamp_end": 84.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Haan, of course, sir. Just your account number and... (pauses, realizing the potential issue) ...and we will send you a link to fill out the rest of the information.",
+      "timestamp_end": 96.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds good. My account number is... (provides account number). Just send me the link, I'll take care of it.",
+      "timestamp_end": 110.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "None",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 120s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "An agent from the insurance desk at [HOSPITAL_NAME] calls a patient who is about to be discharged, guiding them on the documents and forms they need to sign for the cashless claim process with their insurance provider."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

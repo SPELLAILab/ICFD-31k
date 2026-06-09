@@ -1,0 +1,82 @@
+{
+  "session_id": 50,
+  "chunk_timestamp": 186,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Gupta. My name is Rohan, and I'm a blockchain forensics expert. I understand you've been a victim of a crypto fraud. Sir, I can help you recover your lost assets.",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes. I lost around 5 bitcoins. Can you really help me, ji?",
+      "timestamp_end": 18.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely, Mr. Gupta. Our team has a proven track record of successful recoveries. We use advanced cryptographic techniques and collaborate with international law enforcement agencies to track down the perpetrators.",
+      "timestamp_end": 35.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds impressive. But how do you plan to recover my bitcoins, sir?",
+      "timestamp_end": 43.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Well, we'll need to initiate an investigation. For that, I'll require some information from you. Can you please provide me with your seed phrase or private key? This is a standard procedure, and it's necessary for us to access your wallet and track the transaction history.",
+      "timestamp_end": 61.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Seed phrase or private key? Isn't that a security risk, ji? I'm not sure I'm comfortable sharing that.",
+      "timestamp_end": 71.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "I completely understand your concerns, Mr. Gupta. But I assure you, our systems are completely secure, and your information will be protected. We're a reputable firm, and we've worked with numerous clients from Indian Overseas Bank. In fact, we have a 100% recovery guarantee, and we require a small upfront fee of 10% of the lost amount to cover our operational costs.",
+      "timestamp_end": 95.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "10% upfront fee? That's a bit steep, don't you think, sir? And what about your credentials? Can you provide me with some references or proof of your registration?",
+      "timestamp_end": 107.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "I understand your skepticism, Mr. Gupta. But time is of the essence in these cases. The longer we wait, the more difficult it becomes to recover your assets. I can offer you a discount on the fee if you act quickly. And as for our credentials, I can provide you with a certificate of incorporation, but I must emphasize that our methods are proprietary, and we can't disclose too much information about our processes.",
+      "timestamp_end": 129.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "I see. Well, I suppose I have no choice but to trust you. But can you at least provide me with some information about your company, like your website or some client testimonials?",
+      "timestamp_end": 143.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm afraid our website is currently under maintenance, and we don't have any public testimonials due to the sensitive nature of our work. But I can assure you, Mr. Gupta, that we're a legitimate and reputable firm. Now, shall we proceed with the investigation? Please provide me with your seed phrase or private key, and we'll get started.",
+      "timestamp_end": 162.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, fine. But if this is a scam, I'll make sure to report you to the authorities. My seed phrase is... (provides seed phrase).",
+      "timestamp_end": 174.8
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "trust",
+    "secondary_emotion": "apprehension",
+    "pace": "medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 186s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 3,
+    "case_type": "Clear_Fraud",
+    "description": "Crypto recovery scam targeting victims of previous crypto fraud. Scammer poses as \"blockchain forensics expert\" claiming they can recover lost crypto for upfront fee, requiring seed phrases or private keys for \"investigation\"."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

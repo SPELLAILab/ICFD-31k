@@ -1,0 +1,59 @@
+{
+  "overall_metrics": {
+    "accuracy": 0.9540645620991977,
+    "precision": 0.9550346344798882,
+    "recall": 0.9567269749087931,
+    "f1": 0.9558800556427557,
+    "total_samples": 129116,
+    "confusion_matrix": [
+      [
+        58936,
+        3025
+      ],
+      [
+        2906,
+        64249
+      ]
+    ]
+  },
+  "performance_by_timestamp": {
+    "0-30s (Early)": {
+      "accuracy": 0.9880837494230689,
+      "precision": 0.9549896357713947,
+      "recall": 0.9606791778373548,
+      "f1": 0.9578259578259578,
+      "sample_count": 23833
+    },
+    "30-60s (Mid)": {
+      "accuracy": 0.9633993182225944,
+      "precision": 0.9734611131588647,
+      "recall": 0.9385883858127799,
+      "f1": 0.9557067380762828,
+      "sample_count": 33442
+    },
+    "60-120s (Late)": {
+      "accuracy": 0.9298129484113427,
+      "precision": 0.9417140602912654,
+      "recall": 0.9498010610079576,
+      "f1": 0.9457402730319088,
+      "sample_count": 46832
+    },
+    "120s+ (Very Late)": {
+      "accuracy": 0.9545763525130952,
+      "precision": 0.9628383468086175,
+      "recall": 0.9797639123102867,
+      "f1": 0.9712273947621701,
+      "sample_count": 25009
+    }
+  },
+  "early_detection": {
+    "total_fraud_sessions": 1655,
+    "detected_fraud_sessions": 1652,
+    "detection_rate": 0.9981873111782478,
+    "avg_detection_time": 32.2318401937046,
+    "median_detection_time": 30.0,
+    "min_detection_time": 6.0,
+    "max_detection_time": 147.0
+  },
+  "per_conversation_accuracy": 0.9574378423935946
+}

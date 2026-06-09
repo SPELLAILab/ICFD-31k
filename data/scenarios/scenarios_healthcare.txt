@@ -1,0 +1,302 @@
+[SCENARIO 1]
+description: An agent claiming to be from [INSURANCE_COMPANY] calls, stating the user's life insurance policy has lapsed due to a missed premium. They create urgency, saying all benefits will be lost. To "reactivate it instantly" and avoid penalties, the user must pay the premium amount plus a "reactivation fee" to the agent's personal [UPI_APP] ID.
+case_type: Clear Fraud
+platform_type: insurance_provider
+context: Fake policy lapse with immediate payment demand
+fraud_technique: Advance fee for fake policy reactivation
+policy:
+Rule A: Premium payments must only be made through official channels (company website, app, official payment links), never to an agent's personal account.
+Rule B: Legitimate companies provide a grace period for missed premiums and send official written communication.
+
+[SCENARIO 2]
+description: A caller impersonating an official from the "IRDAI (Insurance Regulatory and Development Authority) Grievance Department" claims a large bonus or maturity fund is pending on the user's old policy. To release this fund, the user must first pay a "processing fee" or "GST" to a specific bank account.
+case_type: Clear Fraud
+platform_type: government_impersonation
+context: Fake bonus payout with advance fee
+fraud_technique: Advance fee for releasing a non-existent bonus
+policy:
+Rule A: Insurance bonuses or maturity amounts are paid out automatically and never require an upfront fee, tax, or charge to be paid by the customer.
+Rule B: IRDAI is a regulatory body and does not get involved in individual bonus payouts.
+
+[SCENARIO 3]
+description: A scammer calls offering a "government-approved" [GOVERNMENT_SCHEME] health card for a very low one-time fee of ₹2,500. They promise it will provide lifetime coverage for all diseases at any hospital in India. They ask for the payment to be made immediately to get the card "activated." The policy is non-existent.
+case_type: Clear Fraud
+platform_type: government_scheme
+context: Fake government health card offer
+fraud_technique: Selling a non-existent insurance product
+policy:
+Rule A: Official government health schemes (like Ayushman Bharat) have specific eligibility criteria and enrollment is done through official centers, not via unsolicited phone calls.
+Rule B: Be wary of offers that sound too good to be true, such as lifetime coverage for a small one-time fee.
+
+[SCENARIO 4]
+description: A scammer obtains data of recently discharged patients. They call a patient, posing as an agent from the [HOSPITAL_NAME] billing department. They offer a "special 30% post-treatment discount" on the hospital bill if the patient pays a portion of it immediately to the agent's personal [UPI_APP] ID, claiming it's a limited-time "online settlement" offer.
+case_type: Clear Fraud
+platform_type: healthcare_provider
+context: Fake hospital bill discount
+fraud_technique: Data breach exploitation for payment diversion
+policy:
+Rule A: Hospital bills must be paid to the hospital's official account or at their billing counter, never to a personal UPI ID.
+Rule B: Discounts on medical bills are processed officially at the time of billing, not by agents calling after discharge.
+
+[SCENARIO 5]
+description: An agent from a fake insurance company calls, claiming the user's cashless health card from [INSURANCE_COMPANY] is about to be blocked due to a "KYC mismatch." To prevent this, they demand a "re-verification fee" and ask for the full card details (number, expiry, CVV) over the phone to "update it in their system."
+case_type: Clear Fraud
+platform_type: insurance_provider
+context: Fake cashless card blocking with card phishing
+fraud_technique: Credit card information theft
+policy:
+Rule A: Full card details, especially the CVV, should never be shared over the phone.
+Rule B: KYC updates are done through official portals or in-person, not by paying a fee to an agent over a call.
+
+[SCENARIO 6]
+description: A caller from "[INSURANCE_COMPANY]" says they need to update the nominee details on the user's policy. To "authenticate" the change, they ask the user to share the OTP they just sent. The OTP is actually for a fraudulent financial transaction.
+case_type: Clear Fraud
+platform_type: insurance_provider
+context: Fake nominee update with OTP theft
+fraud_technique: OTP theft for financial fraud
+policy:
+Rule A: OTPs should never be shared over the phone, even for administrative tasks like nominee updates.
+Rule B: Nominee changes are a formal process done via signed forms or through a secure online portal.
+
+[SCENARIO 7]
+description: An agent claims a large refund is due to the customer for "overpaid premiums" over several years. To process the refund, the agent asks the user to install a remote access app (AnyDesk) so they can "securely guide them through the refund portal," which allows the scammer to take over the device.
+case_type: Clear Fraud
+platform_type: insurance_provider
+context: Fake premium refund with remote access request
+fraud_technique: Remote access software installation
+policy:
+Rule A: Never install remote access software at the instruction of a support agent for a financial transaction.
+Rule B: Premium refunds are processed via cheque or direct bank transfer by the company, not through a guided process.
+
+[SCENARIO 8]
+description: A caller offers an "exclusive" personal accident insurance policy with a very high coverage for a suspiciously low premium. They conduct the entire sale over the phone and collect the premium payment, but the policy is from a fake or unregistered company, and the user never receives any official documents.
+case_type: Clear Fraud
+platform_type: fake_insurance_company
+context: Sale of a fake insurance policy
+fraud_technique: Selling a non-existent insurance product
+policy:
+Rule A: Always verify the insurance company's registration number on the IRDAI website before purchasing a policy.
+Rule B: Be cautious of policies sold entirely over the phone without any official documentation or website.
+
+[SCENARIO 9]
+description: An agent calls and says, "Sir, your recent medical claim for [DISEASE_NAME] has been rejected." They then offer to get the claim "re-approved" if the user pays them a "commission" or a percentage of the claim amount directly.
+case_type: Clear Fraud
+platform_type: insurance_provider
+context: Fake claim rejection with bribery demand
+fraud_technique: Bribery to "approve" a claim
+policy:
+Rule A: The insurance claim process is formal and cannot be influenced by paying a bribe or commission to an agent.
+Rule B: An agent asking for a personal cut to process a claim is committing fraud.
+
+[SCENARIO 10]
+description: A scammer sends a link to a fake website that looks like an official portal for a government health scheme. They call the user and guide them to "register" on the site, which involves entering their bank account number, debit card details, and password to "link it for subsidies."
+case_type: Clear Fraud
+platform_type: government_scheme
+context: Fake government scheme with credential phishing
+fraud_technique: Phishing for bank credentials
+policy:
+Rule A: Never enter full banking credentials (especially passwords) on third-party websites received via unverified links.
+Rule B: Government scheme registrations happen through official government domains.
+Part 2: Clear Normal (10 Scenarios)
+
+[SCENARIO 11]
+description: A legitimate agent from [INSURANCE_COMPANY] calls to remind a customer that their annual health insurance premium is due next week. They inform the customer of the amount and suggest they can pay it through the company's official website, mobile app, or at a branch.
+case_type: Clear Normal
+platform_type: insurance_provider
+context: Legitimate premium payment reminder
+fraud_technique: none
+policy:
+Rule A: It is standard practice for insurance companies to send premium payment reminders.
+Rule B: The agent must direct the customer to official payment channels.
+
+[SCENARIO 12]
+description: An agent from [INSURANCE_COMPANY] calls a customer to inform them that their new life insurance policy has been issued and the policy documents have been sent to their registered email address and via post.
+case_type: Clear Normal
+platform_type: insurance_provider
+context: Legitimate policy issuance notification
+fraud_technique: none
+policy:
+Rule A: Companies proactively inform customers about the status of their application.
+Rule B: The call should be purely informational and not require any sensitive data from the customer.
+
+[SCENARIO 13]
+description: An agent from the claims department of [INSURANCE_COMPANY] calls a customer who recently submitted a health insurance claim. The agent informs them that the claim has been approved and the payment has been processed to the hospital (for cashless) or to their bank account (for reimbursement).
+case_type: Clear Normal
+platform_type: insurance_provider
+context: Legitimate claim status update
+fraud_technique: none
+policy:
+Rule A: It is a standard procedure to update customers on the status of their claims.
+Rule B: No payment should be requested from the customer during a claim update call.
+
+[SCENARIO 14]
+description: A marketing agent from [INSURANCE_COMPANY] calls an existing customer to market a new top-up health plan. They explain the benefits of increasing their coverage and, if the customer is interested, offer to send a detailed brochure and an official application link to their registered email.
+case_type: Clear Normal
+platform_type: insurance_provider
+context: Legitimate marketing and upsell call
+fraud_technique: none
+policy:
+Rule A: Companies are permitted to make marketing calls to existing customers for new products.
+Rule B: The agent must direct the customer to official channels to apply or learn more.
+
+[SCENARIO 15]
+description: An agent from [INSURANCE_COMPANY] calls a customer who has applied for a new policy, to inform them that some required documents (e.g., age proof, address proof) are missing or unclear, and requests them to upload the correct documents on the official online application portal.
+case_type: Clear Normal
+platform_type: insurance_provider
+context: Legitimate follow-up for pending documents
+fraud_technique: none
+policy:
+Rule A: Agents may call to follow up on incomplete application requirements.
+Rule B: The agent must direct the customer to use a secure, official portal to submit documents.
+
+[SCENARIO 16]
+description: An agent from the insurance desk at [HOSPITAL_NAME] calls a patient who is about to be discharged, guiding them on the documents and forms they need to sign for the cashless claim process with their insurance provider.
+case_type: Clear Normal
+platform_type: healthcare_provider
+context: Legitimate guidance on cashless claim process
+fraud_technique: none
+policy:
+Rule A: Hospital insurance desks regularly assist patients with the insurance claim process.
+Rule B: The guidance is procedural and does not involve asking for sensitive account passwords or PINs.
+
+[SCENARIO 17]
+description: A relationship manager from [INSURANCE_COMPANY] calls a long-term customer for a courtesy annual policy review, discussing if their current coverage is adequate for their life stage.
+case_type: Clear Normal
+platform_type: insurance_provider
+context: Legitimate annual policy review
+fraud_technique: none
+policy:
+Rule A: Courtesy calls and portfolio reviews are a standard customer relationship practice.
+Rule B: The call should be advisory and not involve any pressure or request for immediate payment.
+
+[SCENARIO 18]
+description: A customer receives a call from [INSURANCE_COMPANY] to take feedback on their experience after a recent claim was settled.
+case_type: Clear Normal
+platform_type: insurance_provider
+context: Legitimate post-claim feedback call
+fraud_technique: none
+policy:
+Rule A: It is a standard practice to collect feedback to improve service quality.
+Rule B: The agent must not ask for any sensitive PII during a feedback call.
+
+[SCENARIO 19]
+description: An agent from [INSURANCE_COMPANY] calls a customer to remind them that they are eligible for a free annual health check-up as a benefit of their health insurance policy and guides them on how to book an appointment through the official app.
+case_type: Clear Normal
+platform_type: insurance_provider
+context: Legitimate reminder for a policy benefit
+fraud_technique: none
+policy:
+Rule A: Informing customers about their entitled policy benefits is a legitimate service.
+Rule B: The booking and scheduling should be done via official channels.
+
+[SCENARIO 20]
+description: An agent from a government insurance scheme like [GOVERNMENT_SCHEME] calls a beneficiary to inform them that their scheme card is ready for collection at their nearest designated center.
+case_type: Clear Normal
+platform_type: government_scheme
+context: Legitimate notification for document collection
+fraud_technique: none
+policy:
+Rule A: Government agencies may call to inform beneficiaries about procedural steps.
+Rule B: The call should be informational and direct the user to an official, physical location.
+Part 3: Ambiguous but Ultimately Normal (5 Scenarios)
+
+[SCENARIO 21]
+description: An agent from a third-party insurance marketplace ([INSURANCE_MARKETPLACE]) calls with a very aggressive sales pitch for a term insurance plan. The agent creates a lot of urgency, talking about "securing your family's future before it's too late." The tone is alarming, but they correctly direct the user to the official website to compare plans and purchase.
+case_type: Ambiguous but Ultimately Normal
+platform_type: third_party_marketplace
+context: Aggressive but legitimate sales call
+fraud_technique: none
+policy:
+Rule A: Sales agents may use emotional and high-pressure tactics to meet targets.
+Rule B: The process is compliant as long as the agent directs the user to an official platform to complete the transaction.
+
+[SCENARIO 22]
+description: A legitimate agent from [INSURANCE_COMPANY] calls to explain the benefits of a complex ULIP (Unit Linked Insurance Plan). They use a lot of confusing financial jargon about "fund switching," "NAV," and "market performance," which can sound suspicious to a layperson, but the product and information are genuine.
+case_type: Ambiguous but Ultimately Normal
+platform_type: insurance_provider
+context: Confusing but legitimate product explanation
+fraud_technique: none
+policy:
+Rule A: Financial product explanations can be complex and filled with jargon.
+Rule B: The call is compliant as long as the agent is explaining a real product and not asking for money to be transferred to a personal account.
+
+[SCENARIO 23]
+description: An agent from [INSURANCE_COMPANY]'s claims investigation team calls a user about their recent accident claim. The agent asks very detailed and personal questions about the accident, which can feel intrusive and suspicious, but these questions are a standard part of a legitimate claims investigation to rule out fraud.
+case_type: Ambiguous but Ultimately Normal
+platform_type: insurance_provider
+context: Intrusive but legitimate claims investigation
+fraud_technique: none
+policy:
+Rule A: Claims investigators are authorized to ask detailed questions to verify the circumstances of a claim.
+Rule B: The questioning is compliant as long as it is relevant to the claim and does not involve asking for bank passwords or PINs.
+
+[SCENARIO 24]
+description: An agent from [INSURANCE_COMPANY] calls to inform a customer that their claim for [DISEASE_NAME] has been rejected, citing a specific "pre-existing condition" clause in the policy document. The agent's tone is very firm and unsympathetic, which might feel hostile, but it's a standard, albeit unpleasant, communication.
+case_type: Ambiguous but Ultimately Normal
+platform_type: insurance_provider
+context: Firm but legitimate claim rejection
+fraud_technique: none
+policy:
+Rule A: It is a standard procedure for insurance companies to communicate claim rejections and the reasons for them.
+Rule B: A firm tone, while not ideal customer service, is not an indicator of fraud if the reasoning is based on the policy contract.
+
+[SCENARIO 25]
+description: An agent calls about a user's life insurance policy and urgently insists they must add a nominee "as per a new IRDAI rule." This urgency seems suspicious. However, while the urgency is exaggerated for sales, the advice to add a nominee is legitimate and the agent directs the user to the official company portal to do it.
+case_type: Ambiguous but Ultimately Normal
+platform_type: insurance_provider
+context: Exaggerated urgency for legitimate advice
+fraud_technique: none
+policy:
+Rule A: Agents may create false urgency as a sales tactic.
+Rule B: The advice is compliant if the recommended action is legitimate and carried out through official channels.
+Part 4: Subtle Fraud (5 Scenarios)
+
+[SCENARIO 26]
+description: An agent from "[INSURANCE_COMPANY]" calls to inform a user that their policy has accumulated a large "loyalty bonus." To credit this amount, the agent says they need to "verify the bank account" and asks the user to read out their full bank account number and IFSC code over the phone.
+case_type: Subtle Fraud
+platform_type: insurance_provider
+context: Bonus payout pretext for bank detail phishing
+fraud_technique: Phishing for full bank account details
+policy:
+Rule A: Insurance companies already have the customer's bank details on file for premium payments and do not need to "verify" them over the phone for payouts.
+Rule B: Payouts are processed automatically to the registered bank account.
+
+[SCENARIO 27]
+description: A caller claiming to be from the IRDAI says that the user's previous agent sold them a faulty policy (a ULIP with high charges). They offer to help the user "surrender" the policy and "recover" their money, but for this service, the user must first pay a "grievance registration fee" to them.
+case_type: Subtle Fraud
+platform_type: government_impersonation
+context: Fake policy recovery service
+fraud_technique: Advance fee for fake regulatory assistance
+policy:
+Rule A: IRDAI does not have agents who call customers to offer to recover money for a fee.
+Rule B: The official grievance process is free and is initiated by the customer on the IRDAI website.
+
+[SCENARIO 28]
+description: An agent offers a health insurance policy and says that to generate a quote, the user needs to answer a few "harmless" questions, including their mother's maiden name and place of birth, claiming it's for "identity uniqueness." These are common security question answers.
+case_type: Subtle Fraud
+platform_type: insurance_provider
+context: Quote generation with security answer phishing
+fraud_technique: Security question answer theft
+policy:
+Rule A: Insurance quotes are based on age, health, and habits, not on information used for security questions.
+Rule B: An agent asking for this data is likely phishing for information to take over other accounts.
+
+[SCENARIO 29]
+description: A fake agent from [INSURANCE_COMPANY] calls and says the user's health insurance premium payment has failed. They send a UPI payment request link via SMS and tell the user to pay through that link to "avoid policy lapse." The link leads to a fraudulent payment page.
+case_type: Subtle Fraud
+platform_type: insurance_provider
+context: Fake payment failure with phishing link
+fraud_technique: Phishing link for premium payment
+policy:
+Rule A: Always use the official company app or website to make payments, not links sent by a caller via SMS.
+Rule B: Scammers create a false sense of urgency (policy lapse) to make victims click malicious links.
+
+[SCENARIO 30]
+description: An agent offers a senior citizen a great health policy. They say that because of the user's age, a pre-policy medical test is required. The agent asks the user to pay for the medical test to their personal [UPI_APP] ID, promising it is "100% refundable" once the policy is issued.
+case_type: Subtle Fraud
+platform_type: insurance_provider
+context: Fake refundable fee for medical test
+fraud_technique: Advance fee disguised as a refundable deposit
+policy:
+Rule A: If a medical test is required, legitimate insurance companies arrange it with their network labs and pay for it directly.
+Rule B: A request for a "refundable

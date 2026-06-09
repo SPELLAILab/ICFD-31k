@@ -1,0 +1,72 @@
+{
+  "session_id": 2713,
+  "chunk_timestamp": 102,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Imran Ali? Sir, I'm calling from Twitch support. We've got some exciting news for you.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes, that's me. What's this about?",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, great! You've been selected for a verified blue tick badge on your Twitch account, ji. Isn't that wonderful?",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, that sounds cool, I guess. What do I need to do?",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, all you need to do is temporarily link your account to our verification server, sir. It's completely secure, don't worry.",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay... how do I do that?",
+      "timestamp_end": 45.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You should have just received an OTP on your registered phone number. Can you please share that with me so we can complete the verification process?",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Let me check... (pause) Yes, I have it. But is this really necessary?",
+      "timestamp_end": 75.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely, sir. This is a one-time process, and it's for your account's security. We just need that OTP to confirm it's really you.",
+      "timestamp_end": 90.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, fine... it's 4821.",
+      "timestamp_end": 100.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 102s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 28,
+    "case_type": "Subtle Fraud",
+    "description": "A scammer calls claiming to be from [SOCIAL_MEDIA_APP] support. They say the user has won a \"verified blue tick\" badge. To claim it, the agent says they need to \"temporarily link\" the user's account to their \"verification server\" and asks the user to share the OTP they just received."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

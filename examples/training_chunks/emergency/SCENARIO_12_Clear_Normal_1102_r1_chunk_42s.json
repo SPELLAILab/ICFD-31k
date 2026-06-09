@@ -1,0 +1,37 @@
+{
+  "session_id": 1102,
+  "chunk_timestamp": 42,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Kajal Modi? Sir, this is MTNL customer support. We have received your complaint regarding poor network coverage.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Who is this? How did you get my number? I didn't expect a call from MTNL.",
+      "timestamp_end": 23.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Ma'am, I apologize for the confusion. We are calling in reference to your complaint filed on our website. Your ticket number is MTNL12345.",
+      "timestamp_end": 36.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "slightly_suspicious",
+    "pace": "medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 42s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 12,
+    "case_type": "Clear Normal",
+    "description": "A customer support agent from [MOBILE_CARRIER] calls a user in response to a complaint they filed about poor network coverage. The agent acknowledges the complaint, provides a ticket number, and informs them that a technical team will investigate the issue within 48 hours."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

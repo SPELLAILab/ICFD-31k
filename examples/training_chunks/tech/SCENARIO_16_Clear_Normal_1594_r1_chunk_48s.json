@@ -1,0 +1,57 @@
+{
+  "session_id": 1594,
+  "chunk_timestamp": 48,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Patel. How are you today? Sir, I hope you're doing well.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm doing fine, thank you. Who's calling, please?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "My name is Rohan, and I'm calling from Air France Miles, our loyalty program. We've noticed you've been a frequent flyer with us, and we appreciate your loyalty, ji.",
+      "timestamp_end": 18.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, great. Yes, I do fly with Air France quite often. What's this about?",
+      "timestamp_end": 22.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Well, Mr. Patel, we've reviewed your account, and you've accumulated enough points for a free flight upgrade on your next trip. Congratulations, sir!",
+      "timestamp_end": 30.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds amazing, thank you! How do I go about claiming this upgrade?",
+      "timestamp_end": 35.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's quite simple, Mr. Patel. You can claim your upgrade through our official Air France app. Just log in, go to the 'My Account' section, and follow the prompts, thik hai?",
+      "timestamp_end": 44.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Friendly",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 48s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "An agent from an airline's loyalty program ([AIRLINE_COMPANY] Miles) calls a frequent flyer to inform them that they have accumulated enough points for a free flight upgrade on their next trip and explains how to claim it through the official app."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

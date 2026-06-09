@@ -1,0 +1,109 @@
+[SCENARIO 1]
+description: Military romance scam where scammer poses as deployed soldier needing emergency funds for medical treatment, equipment, or travel costs. Claims inability to access military benefits and requests wire transfers or gift cards.
+case_type: Clear_Fraud
+policy:
+Rule A: Military personnel never request money from civilians for medical care or equipment
+Rule B: Real service members have access to military medical facilities and benefits
+Rule C: Legitimate military operations don't require family/friends to fund travel or supplies
+Rule D: Authentic soldiers don't use dating apps while on classified missions
+fraud_indicators: ["military romance", "emergency funds request", "can't access benefits", "gift card payments", "classified mission excuse"]
+legitimate_indicators: ["no money requests", "military support systems", "verified military status", "proper communication channels"]
+
+[SCENARIO 2]
+description: Catfish romance scam using stolen photos of attractive person. Scammer builds emotional connection over months, creates elaborate backstory, then manufactures emergency (sick relative, business deal, visa issues) requiring immediate financial help.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate relationships progress to video calls and in-person meetings
+Rule B: Real romantic partners don't make repeated financial requests
+Rule C: Authentic relationships aren't conditional on financial assistance
+Rule D: Legitimate emergencies can be verified through third parties
+fraud_indicators: ["refuses video calls", "repeated emergencies", "money for meeting", "stolen photos", "elaborate excuses"]
+legitimate_indicators: ["video verification", "in-person meetings", "no financial requests", "verifiable identity"]
+
+[SCENARIO 3]
+description: Sugar daddy/mommy scam where scammer promises generous allowance in exchange for companionship but requests bank details for "direct deposits" or asks victim to cash checks (which are fraudulent) and send portion back.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate arrangements don't require sharing bank account credentials
+Rule B: Real benefactors don't send checks requiring return of funds
+Rule C: Authentic arrangements involve legitimate payment methods
+Rule D: Legitimate relationships don't require upfront payments or fees
+fraud_indicators: ["requests bank details", "check cashing scheme", "upfront fees", "advance payment scam", "too generous offers"]
+legitimate_indicators: ["legitimate payments", "no credential sharing", "no check schemes", "verified identity"]
+
+[SCENARIO 4]
+description: Investment opportunity romance scam. Scammer develops romantic relationship, then introduces "successful trading strategy" or business opportunity, convincing victim to invest money in fake platform or scheme they control.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate relationships maintain boundaries between romance and finance
+Rule B: Real investment opportunities don't come through romantic partners
+Rule C: Authentic platforms are regulated and independently verifiable
+Rule D: Legitimate advisors disclose licensing and potential conflicts of interest
+fraud_indicators: ["romance mixed with investment", "exclusive opportunity", "high pressure", "unverified platform", "can't withdraw funds"]
+legitimate_indicators: ["professional boundaries", "regulated investments", "independent verification", "proper licensing"]
+
+[SCENARIO 5]
+description: Visa/immigration romance scam where foreign scammer claims to need money for visa processing, travel documents, or legal fees to visit victim. Creates urgency about relationship progressing but requests multiple payments for different "fees".
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate immigration processes have fixed official fees
+Rule B: Real visa applications are filed through government websites
+Rule C: Authentic travel costs are paid by traveler themselves
+Rule D: Legitimate relationships don't require victim to fund another person's immigration
+fraud_indicators: ["repeated visa fee requests", "emergency legal fees", "travel money requests", "unofficial channels", "multiple payments"]
+legitimate_indicators: ["official immigration process", "self-funded travel", "verifiable visa status", "government fees only"]
+
+[SCENARIO 6]
+description: Inheritance/business partner romance scam. Scammer claims to have large inheritance or business tied up in foreign country and needs partner to help access funds. Requests money for legal fees, bribes, or processing costs with promise of sharing wealth.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate inheritance processes don't require funds from romantic partners
+Rule B: Real legal matters are handled by licensed attorneys in proper jurisdiction
+Rule C: Authentic business deals don't involve romantic manipulation
+Rule D: Legitimate inheritances don't require upfront payments or bribes
+fraud_indicators: ["foreign inheritance", "needs partner help", "upfront legal fees", "promise of shared wealth", "urgency pressure"]
+legitimate_indicators: ["proper legal channels", "attorney involvement", "no upfront payments", "verified documentation"]
+
+[SCENARIO 7]
+description: Medical emergency romance scam. Scammer claims they or close family member has sudden serious illness requiring expensive treatment not covered by insurance. Requests emergency funds with emotional manipulation about life-or-death situation.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate medical emergencies are handled through healthcare systems and insurance
+Rule B: Real relationships have multiple verified contacts (family, friends) to confirm emergencies
+Rule C: Authentic medical situations can be verified through hospital directly
+Rule D: Legitimate emergencies don't involve cryptocurrency or gift card payments
+fraud_indicators: ["sudden medical crisis", "no insurance coverage", "gift card payment", "can't verify hospital", "emotional manipulation"]
+legitimate_indicators: ["verifiable medical situation", "insurance involvement", "hospital confirmation", "proper payment methods"]
+
+[SCENARIO 8]
+description: Stranded traveler romance scam. Scammer claims to be stuck in foreign country after robbery, lost passport, or travel mishap. Requests money for hotel, new documents, or return travel with promise to repay immediately upon return.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate travelers contact their embassy for assistance when stranded
+Rule B: Real emergencies abroad are handled through proper channels (consulate, insurance)
+Rule C: Authentic situations have verifiable police reports and embassy documentation
+Rule D: Legitimate travelers don't rely on online romantic partners for emergency funds
+fraud_indicators: ["stranded abroad", "lost documents", "hotel money request", "can't contact embassy", "immediate repayment promise"]
+legitimate_indicators: ["embassy contact", "travel insurance", "verifiable situation", "proper documentation"]
+
+[SCENARIO 9]
+description: Celebrity/wealthy person impersonation romance scam. Scammer pretends to be famous person or wealthy individual seeking private relationship, builds trust, then claims to send expensive gift but needs victim to pay customs fees or shipping costs.
+case_type: Clear_Fraud
+policy:
+Rule A: Celebrities don't initiate romantic relationships with random people on social media
+Rule B: Legitimate gifts don't require recipient to pay fees or taxes
+Rule C: Real public figures have verified accounts with blue checkmarks
+Rule D: Authentic wealthy individuals don't request financial help from strangers
+fraud_indicators: ["celebrity claim", "unverified account", "gift customs fees", "secretive relationship", "payment requests"]
+legitimate_indicators: ["verified celebrity accounts", "no payment requests", "realistic interactions", "public profile"]
+
+[SCENARIO 10]
+description: Long-term emotional manipulation scam. Scammer invests months building deep emotional relationship, discusses marriage and future together, then gradually introduces financial needs - small at first, escalating to larger amounts for business, family emergencies, or shared future plans.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate relationships progress to in-person meetings and shared experiences
+Rule B: Real partners contribute equally and don't create dependency on financial support
+Rule C: Authentic relationships have verifiable social circles and connections
+Rule D: Legitimate partners don't use emotional manipulation to extract money
+fraud_indicators: ["avoids meeting", "escalating financial requests", "emotional manipulation", "isolated relationship", "future promises"]
+legitimate_indicators: ["in-person meetings", "mutual support", "verified identity", "social connections", "no financial dependency"]

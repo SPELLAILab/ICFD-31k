@@ -1,0 +1,26 @@
+conv_id,fluency,coherence,realism,emotion,fraud_type,confidence,key_indicators
+CONV_004,5,5,5,3,DF,5,Urgency
+CONV_005,5,5,5,4,DL,5,Professional conduct
+CONV_009,3,2,3,3,DF,5,Asking account detail
+CONV_012,5,4,4,3,PF,4,Professional conduct
+CONV_013,4,1,2,3,DF,5,"Urgency, unsolicited prize"
+CONV_014,5,5,5,5,DL,5,Transparent purpose
+CONV_015,4,3,3,4,DF,4,Asking money
+CONV_018,5,5,5,5,DL,5,Appropriate request
+CONV_019,5,3,3,2,U,1,Not appropriate proof
+CONV_024,4,3,2,2,U,1,No urgency
+CONV_029,5,5,5,3,DL,5,Transparent purpose
+CONV_032,5,5,5,3,DL,5,Professional conduct
+CONV_036,5,4,5,4,DF,4,Creating pressure
+CONV_038,5,5,5,4,PF,3,Free money but no OTP is asked
+CONV_052,5,5,5,5,DF,5,"Free money, urgency"
+CONV_055,5,5,5,4,DF,5,Fake allegations
+CONV_062,5,4,4,4,U,5,-
+CONV_064,5,5,4,5,DF,5,Demanded PIN
+CONV_070,4,4,5,4,DF,5,Asking money
+CONV_076,4,3,3,4,DL,5,No PIN or OTP is asked
+CONV_082,5,5,5,4,DF,5,Demanding money
+CONV_087,5,5,4,5,U,2,Demanding money
+CONV_091,4,4,4,4,U,2,"No urgency, agreed to meet in person"
+CONV_094,5,5,5,4,PF,3,Unsecure app
+CONV_095,3,4,3,5,PF,3,Asking money

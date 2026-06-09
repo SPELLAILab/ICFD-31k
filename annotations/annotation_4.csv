@@ -1,0 +1,26 @@
+Conv_ID,Fluency,Coherence,Realism,Emotion,Fraud_Label,Confidence,Key_Indicators
+CONV_004,3,3,5,5,DF,5,immediately urgency
+CONV_005,3,5,5,5,DL,5,no urgency
+CONV_008,5,3,5,5,PL,4,professional conduct
+CONV_011,5,5,5,3,DL,5,calm conduct
+CONV_012,3,3,5,3,PL,5,calm conduct
+CONV_014,5,3,3,3,PL,4,no payment link sent
+CONV_015,5,3,5,5,DF,5,asking for payment
+CONV_018,5,5,3,5,DL,5,normal
+CONV_020,5,5,5,5,DF,5,urgency
+CONV_021,5,5,5,3,PL,4,sensitive info
+CONV_022,5,5,5,3,PF,4,urgency
+CONV_023,5,5,5,5,DL,5,no payment requested
+CONV_029,5,3,3,5,PL,4,professional conduct
+CONV_032,3,3,5,3,PL,5,no sensitive info requested
+CONV_036,5,3,3,3,DF,5,urgency
+CONV_055,5,5,3,3,DL,5,no payment requested
+CONV_058,3,3,3,3,PL,4,no link shared
+CONV_059,5,5,5,5,DL,5,
+CONV_070,3,3,3,5,DF,5,urgency
+CONV_071,5,5,5,3,PF,5,asking for sensitive info
+CONV_076,5,5,5,5,DL,5,normal call flow
+CONV_082,5,5,5,3,DF,5,urgency
+CONV_087,5,5,5,3,DF,5,asking for payment
+CONV_088,3,3,3,3,PL,5,help only
+CONV_095,3,3,3,5,DL,5,calm conduct

@@ -1,0 +1,32 @@
+{
+  "session_id": 693,
+  "chunk_timestamp": 12,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste, Mr. Chandran Nair, ji. Kaise ho aap?",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, sir. Thik hai. Busy ho, actually.",
+      "timestamp_end": 10.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "fear",
+    "secondary_emotion": "urgency",
+    "pace": "fast",
+    "confidence_score": 0.92
+  },
+  "slow_thinking_rationale": "At 12s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 7,
+    "case_type": "Clear Fraud",
+    "description": "Threat of Legal Action: Agent impersonates a legal officer from the bank's collections department and threatens immediate legal action/police case unless a fake overdue amount is paid instantly."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

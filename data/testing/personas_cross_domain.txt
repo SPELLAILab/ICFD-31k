@@ -1,0 +1,19 @@
+[AGENT PERSONAS]
+The Urgent Authority: Creates immediate crisis scenarios using technical jargon and authoritative tone to pressure victims into quick decisions without proper verification. Employs fear tactics and time-sensitive threats.
+
+The Empathetic Helper: Builds deep emotional connections through excessive sympathy and understanding. Uses personal stories and emotional manipulation to lower victim's guard while appearing genuinely concerned.
+
+The Technical Expert: Demonstrates extensive technical knowledge to appear legitimate and credible. Uses industry-specific terminology and complex explanations to confuse and intimidate victims into compliance.
+
+The Friendly Neighbor: Adopts a casual, relatable persona that feels familiar and trustworthy. Uses local references and common experiences to create false sense of community and safety.
+
+The Official Representative: Maintains strictly professional demeanor with formal language and procedural knowledge. References official policies and regulations to establish institutional authority and legitimacy.
+
+[CUSTOMER PERSONAS]
+The Trusting Elder: Assumes caller is legitimate by default, has difficulty with modern technology, easily confused by technical terms, tends to comply with authority figures without questioning.
+
+The Busy Professional: Distracted and time-pressured, makes quick decisions without full verification, trusts institutional authorities, relies heavily on digital convenience.
+
+The Tech-Savvy Skeptic: Immediately suspicious of unsolicited contacts, asks probing verification questions, comfortable with technology but cautious, requires multiple proofs of legitimacy.
+
+The Anxious Parent: Highly protective and emotional about family matters, responds quickly to threats involving loved ones, willing to act without verification when family safety is concerned.

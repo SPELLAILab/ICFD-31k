@@ -1,0 +1,42 @@
+{
+  "session_id": 1994,
+  "chunk_timestamp": 51,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir. Hope you're doing well. My name is Rohan, and I'm calling from the District Education Office. How are you today, sir?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm doing well, thank you. Subramanian Kumar, principal of St. Mary's School. What can I do for you, ji?",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Nice to speak with you, Mr. Kumar. We're collecting data for our annual report on student enrollment. Could you please provide me with the total number of students enrolled in your school this year?",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, let me check that for you. We have around 1200 students this year.",
+      "timestamp_end": 45.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "None",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 51s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "A representative from the District Education Office calls a school principal to collect data on student enrollment for an annual report."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

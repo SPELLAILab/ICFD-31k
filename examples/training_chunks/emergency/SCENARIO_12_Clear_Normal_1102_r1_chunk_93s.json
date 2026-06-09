@@ -1,0 +1,52 @@
+{
+  "session_id": 1102,
+  "chunk_timestamp": 93,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Jaspreet ji, this is Rohan from Excel Consulting. We came across your profile on LinkedIn and were impressed with your experience in IT.",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Ah, Hello Rohan. Which area of my profile were you looking at? I get many calls like this, sir.",
+      "timestamp_end": 23.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "We're looking for candidates with your skill set for one of our clients. They're a leading firm in the industry and we think you'd be a great fit. Can I discuss the role with you, Jaspreet?",
+      "timestamp_end": 37.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, please go ahead. But before that, can you tell me more about your company and how you found me?",
+      "timestamp_end": 50.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Certainly, sir. Excel Consulting is a reputable firm with over a decade of experience in recruitment. We found your profile through a LinkedIn search, focusing on IT professionals with experience in project management.",
+      "timestamp_end": 64.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, that sounds good. Now, tell me about this role. What's the client like and what are they looking for?",
+      "timestamp_end": 79.4
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Professional",
+    "secondary_emotion": "Curiosity",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 93s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 12,
+    "case_type": "Clear Normal",
+    "description": "A recruiter from a legitimate consulting firm calls a candidate whose profile they found on LinkedIn. They discuss the candidate's experience and interest in a specific role with one of their clients."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

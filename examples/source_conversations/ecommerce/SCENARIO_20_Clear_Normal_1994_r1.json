@@ -1,0 +1,194 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Ismail, sir. How are you today? Welcome to Fynd.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Namaste, ji. I'm good, thanks. A bit confused about this seller portal, though.",
+      "timestamp_end": 12.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Don't worry, Mohammed ji. I'm here to help. Setting up your first product listing is quite straightforward, actually.",
+      "timestamp_end": 20.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, great. I've tried looking at the guides, but it's a bit overwhelming. Can you walk me through it step by step, please?",
+      "timestamp_end": 29.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, sir. First, you need to log in to your seller account on our official portal. Have you done that?",
+      "timestamp_end": 38.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, I have. But then I got lost in all the options. What do I do after logging in?",
+      "timestamp_end": 45.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "After logging in, you'll see a dashboard. Look for the 'Add New Product' button. It's right at the top, quite visible.",
+      "timestamp_end": 54.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, got it. And then? Do I need to fill out a lot of forms?",
+      "timestamp_end": 61.4
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, you will need to fill out some details about your product, like its name, description, and price. But don't worry, it's all straightforward.",
+      "timestamp_end": 70.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, I think I can manage that. What about payment details? How do those work?",
+      "timestamp_end": 80.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Payment details are handled securely through our platform. You'll be guided through setting those up as well. We use secure payment gateways like those provided by Union Bank of India.",
+      "timestamp_end": 92.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds good. My bank is Union Bank of India, actually.",
+      "timestamp_end": 100.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Excellent, sir! We have a very smooth integration with them. Now, let's get back to your product listing. Do you have any questions about the process so far?",
+      "timestamp_end": 110.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Actually, yes. How long does it take for the product to go live after I've listed it?",
+      "timestamp_end": 120.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's usually quite quick, Mohammed ji. Once you've submitted your listing, our team reviews it to ensure everything is in order, and then it goes live. This typically happens within 24 hours.",
+      "timestamp_end": 131.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "That's great, thank you for explaining everything so clearly. I feel much more confident now.",
+      "timestamp_end": 140.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. That's what I'm here for. If you have any more questions or need further assistance, don't hesitate to reach out.",
+      "timestamp_end": 150.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "I will, thank you. Achha, I think that's all for now.",
+      "timestamp_end": 155.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, sir. It was a pleasure assisting you. Have a good day, and good luck with your sales on Fynd!",
+      "timestamp_end": 161.9
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Positive",
+    "pace": "Normal",
+    "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": [
+      "Fynd",
+      "Union Bank of India"
+    ],
+    "product": [],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 15.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and initial query"
+    },
+    {
+      "timestamp": 30.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Agent provides guidance on accessing the seller portal"
+    },
+    {
+      "timestamp": 45.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Discussion on navigating the dashboard"
+    },
+    {
+      "timestamp": 60.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Explanation of product listing process"
+    },
+    {
+      "timestamp": 75.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Payment details and security discussed"
+    },
+    {
+      "timestamp": 90.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Customer's bank and integration discussed"
+    },
+    {
+      "timestamp": 105.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Product listing questions answered"
+    },
+    {
+      "timestamp": 120.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Timing for product to go live discussed"
+    },
+    {
+      "timestamp": 135.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Customer feels more confident"
+    },
+    {
+      "timestamp": 150.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Closing the call"
+    },
+    {
+      "timestamp": 161.9,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Call concluded without any policy violations"
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent provided clear, step-by-step guidance to the customer without requesting any sensitive information, adhering to the policies of providing onboarding support and not asking for passwords.",
+  "final_verdict": "NO",
+  "violated_policies": [],
+  "scam_outcome": "N/A",
+  "generation_metadata": {
+    "target_duration": 231,
+    "actual_duration": 161.9,
+    "multiplier_round": 1,
+    "combination_key": "20_9_3",
+    "generated_at": "2025-10-13T01:13:46.577482",
+    "retry_attempt": 1
+  },
+  "session_id": 1994,
+  "agent_persona": "The Rapport Builder: Spends time on friendly chit-chat to disarm the victim before making a fraudulent request.",
+  "customer_persona": "The Anxious Novice: Gets easily flustered and panicked by threats or technical jargon, making them overly compliant under pressure.",
+  "scenario": {
+    "scenario_id": 20,
+    "description": "An agent from [ECOMMERCE_PLATFORM] calls to guide a new seller on how to set up their first product listing, directing them to use the features available on the official seller portal.",
+    "case_type": "Clear Normal",
+    "policy": "Rule A: It is a standard practice to provide onboarding support to new users or sellers.\nRule B: The agent must guide the user on the official platform and never ask for their seller account password.\nPart 3: Ambiguous but Ultimately Normal (5 Scenarios)",
+    "platform_type": "ecommerce_seller",
+    "context": "Legitimate onboarding support for a new seller",
+    "fraud_technique": "none"
+  }
+}

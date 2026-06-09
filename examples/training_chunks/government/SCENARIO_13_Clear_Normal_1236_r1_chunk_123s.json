@@ -1,0 +1,72 @@
+{
+  "session_id": 1236,
+  "chunk_timestamp": 123,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Hello, ji. I need help. My husband has lost his wallet and he's stranded. Can you help us?",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Oh no, sir! Sorry to hear that. Can you please confirm your husband's account number with us so I can assist you better?",
+      "timestamp_end": 23.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, I'd rather not share that over the phone. Can't you see his details on your system? He's a Bank of Baroda customer.",
+      "timestamp_end": 35.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm new here, ma'am, and I need to verify. Can you at least tell me his date of birth or something?",
+      "timestamp_end": 46.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm not comfortable sharing personal info like that. Can you help my husband another way? Maybe a small loan or...?",
+      "timestamp_end": 59.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Okay, okay. Let me see what I can do. Can you please hold for just a minute, ji?",
+      "timestamp_end": 70.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, I'll wait. But please, make it quick. My husband is really worried.",
+      "timestamp_end": 80.4
+    },
+    {
+      "speaker": "Agent",
+      "text": "I've checked, and we can offer a small amount via RBL MyCard for a taxi. But I just need to confirm his name and...?",
+      "timestamp_end": 92.6
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, his name is Rohan Bansal. And that's all I can give you over the phone. You should have his details.",
+      "timestamp_end": 104.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Alright, ma'am. I think I can assist you now without needing more information.",
+      "timestamp_end": 114.3
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Relief",
+    "secondary_emotion": "Concern",
+    "pace": "Moderate",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 123s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "A person receives a frantic call from a [FAMILY_MEMBER] who has genuinely lost their wallet and is stranded. The family member asks if they can be picked up or if they can borrow a small amount of money via [UPI_APP] for a taxi home. The call is from the family member's actual number."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

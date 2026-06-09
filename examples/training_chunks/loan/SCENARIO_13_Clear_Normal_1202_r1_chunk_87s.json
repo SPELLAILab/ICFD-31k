@@ -1,0 +1,87 @@
+{
+  "session_id": 1202,
+  "chunk_timestamp": 87,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Hello, ji?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Aslam Khan, this is an urgent call from South Indian Bank. We have a situation that requires your immediate attention, sir.",
+      "timestamp_end": 12.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "What's going on? Who is this? How did you get my number?",
+      "timestamp_end": 18.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm calling from the bank's security department. We've had a report of a lost wallet and we need to verify some information.",
+      "timestamp_end": 25.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Lost wallet? That's my daughter-in-law, she just called me. She's stranded and needs some help getting home.",
+      "timestamp_end": 33.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "I see. Can you confirm your daughter-in-law's name and her relationship to you, sir?",
+      "timestamp_end": 40.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Her name is Nazia, and she's my daughter-in-law. What's this about?",
+      "timestamp_end": 46.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "We just need to verify some information, sir. Can you please confirm your account number with us?",
+      "timestamp_end": 53.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, no, I don't think that's necessary. Nazia just needs some help getting home. Can I just send her some money via Kotak 811 for a taxi?",
+      "timestamp_end": 61.4
+    },
+    {
+      "speaker": "Agent",
+      "text": "I understand, sir. But we need to make sure everything is secure. Can you please hold for just a moment?",
+      "timestamp_end": 67.6
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, fine. But please hurry, Nazia is waiting.",
+      "timestamp_end": 73.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you, sir. I've just checked and everything seems to be in order. You can go ahead and send the money to your daughter-in-law.",
+      "timestamp_end": 80.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Great, thank you. I'll send it right away. And can you also send a car to pick her up?",
+      "timestamp_end": 86.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "concern",
+    "secondary_emotion": "relief",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 87s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "A person receives a frantic call from a [FAMILY_MEMBER] who has genuinely lost their wallet and is stranded. The family member asks if they can be picked up or if they can borrow a small amount of money via [UPI_APP] for a taxi home. The call is from the family member's actual number."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

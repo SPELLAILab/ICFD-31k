@@ -1,0 +1,37 @@
+{
+  "session_id": 1507,
+  "chunk_timestamp": 33,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Vidya Srinivas? This is Agent Kumar from Passport Seva Kendra's support line. I'm calling regarding your query on our website, reference number PSK12345.",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes. I had submitted a query about my passport application status, sir.",
+      "timestamp_end": 18.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, I see. Your application is currently under review. Can you please confirm your date of birth and the application reference number for security purposes, ji?",
+      "timestamp_end": 28.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Positive",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 33s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "An agent from the Passport Seva Kendra's support line calls a user back in response to a query the user had lodged on the official website. The agent provides the resolution or required information."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

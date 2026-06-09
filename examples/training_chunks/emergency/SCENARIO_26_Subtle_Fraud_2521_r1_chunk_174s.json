@@ -1,0 +1,92 @@
+{
+  "session_id": 2521,
+  "chunk_timestamp": 174,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Ravi Shankar. This is Agent Kumar from Indian Overseas Bank. Sir, I am calling regarding your loan account.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes. What about my loan? I have been trying to pay the EMI, but I had some issues this month, ji.",
+      "timestamp_end": 22.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "I understand, sir. That's why I am calling. We have noticed that you have a late payment fee due to the delay. However, I can offer to waive that fee for you as a one-time courtesy.",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Really? Thank you, sir. That's very kind of you. I would appreciate it.",
+      "timestamp_end": 43.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, Mr. Shankar. All you need to do is pay the EMI amount, and there will be a small processing charge of ₹100 for the waiver.",
+      "timestamp_end": 55.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds okay, I suppose. But how do I pay this processing charge? Should I add it to my EMI payment?",
+      "timestamp_end": 67.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Actually, sir, for the processing charge, I can give you my PayZapp number. You can send the ₹100 directly to me, and I will take care of the rest. It's a personal favor, sir.",
+      "timestamp_end": 80.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, okay. That's very kind of you, sir. But are you sure this is the right way? I don't want any issues with my loan.",
+      "timestamp_end": 92.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely, Mr. Shankar. This is a one-time exception. Just send the ₹100 to my PayZapp number, and consider the late fee waived. You won't have to pay it again.",
+      "timestamp_end": 104.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, sir. I will send it. But can you confirm your PayZapp number again?",
+      "timestamp_end": 115.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, of course, sir. My PayZapp number is 9123456789. Please send the ₹100, and we will consider the matter closed.",
+      "timestamp_end": 127.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir. I have sent the money. Thank you for your help, ji.",
+      "timestamp_end": 139.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, Mr. Shankar. Your late fee has been waived. Please ensure your future payments are on time to avoid any further issues.",
+      "timestamp_end": 151.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I will, sir. Thank you again for your help. Haan, I appreciate it.",
+      "timestamp_end": 163.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 174s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 26,
+    "case_type": "Subtle Fraud",
+    "description": "An agent from a loan app calls and offers to \"waive\" the late payment fee if the borrower pays the EMI amount plus a small \"processing charge\" of ₹100 directly to the agent's personal [UPI_APP] number. They frame it as a personal favor to help the customer."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

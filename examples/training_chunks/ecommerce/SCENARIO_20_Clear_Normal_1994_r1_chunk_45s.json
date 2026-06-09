@@ -1,0 +1,57 @@
+{
+  "session_id": 1994,
+  "chunk_timestamp": 45,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Namaste Bimla Devi ji. How are you today?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, I'm fine, thank you. Who is this?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "My name is Rohan, and I'm calling from the Chief Minister's Comprehensive Health Insurance Scheme. We've been trying to reach you regarding your scheme card.",
+      "timestamp_end": 17.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, okay. What about my card?",
+      "timestamp_end": 20.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's ready for collection, Bimla Devi ji. You can pick it up from your nearest designated center. Would you like me to give you the address?",
+      "timestamp_end": 27.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, please. I've been waiting for this card.",
+      "timestamp_end": 32.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, ji. The address is... (provides address). You can collect it anytime between 10 am and 5 pm.",
+      "timestamp_end": 42.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Relief",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 45s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "An agent from a government insurance scheme like [GOVERNMENT_SCHEME] calls a beneficiary to inform them that their scheme card is ready for collection at their nearest designated center."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

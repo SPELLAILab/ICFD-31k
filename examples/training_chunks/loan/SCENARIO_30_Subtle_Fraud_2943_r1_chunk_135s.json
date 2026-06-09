@@ -1,0 +1,87 @@
+{
+  "session_id": 2943,
+  "chunk_timestamp": 135,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Thomas! Congratulations, you've been selected for a fantastic offer! Sir, you're going to love this!",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, hi! What's this about? I'm a bit busy, ji.",
+      "timestamp_end": 17.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I completely understand, Mr. Thomas! You're a busy person, and I respect that. That's why I'm excited to offer you a free resort stay voucher, courtesy of our partners! You can relax and unwind at one of our beautiful resorts, absolutely free!",
+      "timestamp_end": 32.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Free resort stay? That sounds great, haan! What's the catch?",
+      "timestamp_end": 38.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "No catch at all, Mr. Thomas! This is a genuine offer. However, to activate your voucher, you'll need to subscribe to our premium travel magazine. It's just a small annual fee of ₹2,500, and you'll get access to exclusive travel content, sir.",
+      "timestamp_end": 53.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds reasonable, I guess. What's the magazine called?",
+      "timestamp_end": 59.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's called Travel Delights, Mr. Thomas! You'll love it, I promise. And don't worry, the voucher is real, and you can use it anytime within the next year. You just need to pay the subscription fee, and it's all yours, thik hai?",
+      "timestamp_end": 71.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, fine. How do I pay for the subscription?",
+      "timestamp_end": 76.3
+    },
+    {
+      "speaker": "Agent",
+      "text": "You can pay using your credit or debit card, Mr. Thomas. We accept all major banks, including Bank of Baroda. Shall I guide you through the payment process, sir?",
+      "timestamp_end": 85.6
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, please go ahead. I'm listening, achha.",
+      "timestamp_end": 91.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great! To complete the payment, I'll need your card details. Please confirm your card number, expiry date, and CVV, Mr. Thomas.",
+      "timestamp_end": 101.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, let me check... (pause) Alright, my card number is 4321 0987 6543 2109, expiry date is 02/25, and CVV is 123.",
+      "timestamp_end": 119.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you, Mr. Thomas! Your payment has been successfully processed. You'll receive an email with your voucher details and subscription confirmation. Enjoy your resort stay, sir!",
+      "timestamp_end": 131.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Excitement",
+    "secondary_emotion": "Neutral",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 135s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 30,
+    "case_type": "Subtle Fraud",
+    "description": "A caller offers a user a \"free\" resort stay voucher. After the user accepts, the agent says that to activate the voucher, they must first subscribe to a premium travel magazine for a small annual fee. The voucher is real but has impossible-to-use conditions, making the magazine subscription the actual scam."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

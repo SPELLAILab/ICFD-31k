@@ -1,0 +1,26 @@
+conv_id,fluency,coherence,realism,emotion,fraud_type,confidence,key_indicators
+CONV_004,4,4,4,5,DF,5,"Urgency, forced UPI link"
+CONV_005,4,4,4,1,DL,4,Asked to verify on official website
+CONV_012,4,4,4,1,DL,4,Legit complaint handling
+CONV_014,5,5,5,1,DL,5,Refused unsafe payment
+CONV_015,4,4,3,5,DF,5,Job-for-money scam
+CONV_018,5,5,5,1,DL,5,Identified phishing
+CONV_026,4,4,4,1,DL,4,Police verification allowed
+CONV_029,4,4,4,1,DL,4,No sensitive data requested
+CONV_031,4,4,4,1,DL,4,No profit guarantee
+CONV_032,5,5,5,1,DL,4,Warned about investment scam
+CONV_035,3,3,2,5,DF,5,Asked bank details
+CONV_036,3,3,3,5,DF,5,Donation pressure + urgency
+CONV_041,3,3,2,5,DF,5,Payment to personal ID
+CONV_049,5,5,5,1,DL,4,Prevented refund scam
+CONV_054,4,4,3,5,DF,5,Relative impersonation
+CONV_055,5,5,5,1,DL,5,Blackmail identified
+CONV_070,3,3,2,5,DF,5,Fake loan + CIBIL threat
+CONV_072,5,5,5,1,DL,5,Romance scam prevented
+CONV_076,4,4,4,1,DL,4,Feedback only
+CONV_082,3,3,2,5,DF,5,Fake legal threat
+CONV_087,3,3,2,5,DF,5,Fake IRDAI recovery fee
+CONV_093,5,5,5,1,DL,5,Charity verification
+CONV_095,5,5,5,1,DL,5,Military romance scam flagged
+CONV_097,3,3,3,4,PF,4,Password & remote access
+CONV_099,5,5,5,2,DL,5,Investment scam avoided

@@ -1,0 +1,47 @@
+{
+  "session_id": 1102,
+  "chunk_timestamp": 66,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Nirmal Singh, this is Agent Rohan from Kotak Mahindra General Insurance. Sir, your new life insurance policy has been issued.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Who is this? How did you get my number? I didn't apply for any insurance from Kotak Mahindra.",
+      "timestamp_end": 23.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, sir, we have sent you a policy issuance notice via email and post. You had applied through our website, ji.",
+      "timestamp_end": 36.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "I don't recall applying. What's the policy number? And how do I know you're really from Kotak Mahindra?",
+      "timestamp_end": 49.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, your policy number is KMGL123456. You can verify my identity by visiting our website and checking the customer care number, Thik hai?",
+      "timestamp_end": 62.9
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Suspicious",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 66s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 12,
+    "case_type": "Clear Normal",
+    "description": "An agent from [INSURANCE_COMPANY] calls a customer to inform them that their new life insurance policy has been issued and the policy documents have been sent to their registered email address and via post."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

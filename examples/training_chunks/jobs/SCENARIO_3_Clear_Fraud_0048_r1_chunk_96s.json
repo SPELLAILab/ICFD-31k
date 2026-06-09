@@ -1,0 +1,52 @@
+{
+  "session_id": 48,
+  "chunk_timestamp": 96,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Jasmeet ji, I hope you're doing well. My name is Rohan, and I'm calling from Timeshare Solutions. How are you today, sir?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm good, thank you. What's this about?",
+      "timestamp_end": 15.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "We've been trying to reach you regarding your timeshare ownership. We have a potential buyer interested in purchasing it from you, Achha?",
+      "timestamp_end": 25.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "A buyer? That's great news! I've been trying to sell it for a while now. What's the process?",
+      "timestamp_end": 35.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "The process is quite simple, Jasmeet ji. We just need to finalize the paperwork and transfer the ownership. However, there are some upfront fees for closing costs and taxes that need to be paid, Haan?",
+      "timestamp_end": 48.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Upfront fees? How much are we talking about?",
+      "timestamp_end": 53.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "urgency",
+    "secondary_emotion": "apprehension",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 96s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 3,
+    "case_type": "Clear_Fraud",
+    "description": "Timeshare resale scam targeting existing timeshare owners. Scammer claims to have buyer ready but requires upfront fees for closing costs, taxes, or listing fees. Buyer never materializes and scammer disappears after payment."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

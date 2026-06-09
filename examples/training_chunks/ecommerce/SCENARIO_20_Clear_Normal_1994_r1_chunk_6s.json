@@ -1,0 +1,27 @@
+{
+  "session_id": 1994,
+  "chunk_timestamp": 6,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Ms. Teresa Almeida? Sir, I hope you're doing well today.",
+      "timestamp_end": 5.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "friendly",
+    "pace": "normal",
+    "confidence_score": 0.91
+  },
+  "slow_thinking_rationale": "At 6s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "A vet's office calls a pet owner to remind them that their pet's annual vaccinations are due."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

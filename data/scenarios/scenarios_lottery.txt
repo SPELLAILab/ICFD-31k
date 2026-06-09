@@ -1,0 +1,299 @@
+[SCENARIO 1]
+description: An agent from a fake travel company ([TRAVEL_COMPANY]) calls, congratulating the user for winning a "free" 3-night holiday package to Goa. To claim the prize, the user is told they must pay a mandatory "GST and processing charge" of ₹5,000 immediately via [UPI_APP].
+case_type: Clear Fraud
+platform_type: travel_agency
+context: Fake holiday package with advance fee
+fraud_technique: Advance fee for a non-existent prize
+policy:
+Rule A: Legitimate prizes or winnings do not require the winner to pay an advance fee, tax, or processing charge.
+Rule B: Unsolicited calls announcing a "free" prize are a major red flag for a scam.
+
+[SCENARIO 2]
+description: A scammer calls, claiming to be from the famous TV show [LOTTERY_NAME] (e.g., Kaun Banega Crorepati). They announce that the user's mobile number was selected in a lucky draw and they have won ₹25 lakhs. To transfer the prize money, they ask for the user's bank account details and instruct them to first pay a "tax deduction fee" to a personal account.
+case_type: Clear Fraud
+platform_type: lottery_scam
+context: Fake KBC lottery win
+fraud_technique: Advance fee fraud with impersonation of a popular brand
+policy:
+Rule A: Official lotteries deduct taxes from the prize money before awarding it; they do not ask the winner to pay the tax upfront.
+Rule B: Never share full bank account details with an unsolicited caller.
+
+[SCENARIO 3]
+description: A caller impersonating a representative from a car company ([CAR_BRAND]) informs the user they have won a new car in a promotional lucky draw. To get the car delivered, the user is told they must first pay for the "road tax and registration fees" via a bank transfer.
+case_type: Clear Fraud
+platform_type: prize_scam
+context: Fake car prize with advance fee
+fraud_technique: Advance fee for fake vehicle registration
+policy:
+Rule A: In a legitimate vehicle prize, all associated costs like tax and registration are either covered by the company or handled through official dealership channels, not via direct bank transfer to an agent.
+Rule B: Any prize that requires a significant upfront payment from the winner is a scam.
+
+[SCENARIO 4]
+description: An agent from a fake travel club offers an exclusive, heavily discounted international holiday package. To secure the "limited-time" deal, the user is pressured to share their full credit card details (number, expiry date, and CVV) over the phone for an "instant booking."
+case_type: Clear Fraud
+platform_type: travel_agency
+context: Fake travel deal with card phishing
+fraud_technique: Credit card information theft with time pressure
+policy:
+Rule A: Full credit card details, especially the CVV, must never be shared over a phone call.
+Rule B: Legitimate bookings are made through secure websites or official payment links, not by reading out card details to an agent.
+
+[SCENARIO 5]
+description: A scammer calls, claiming the user has won a scratch card lottery from their [UPI_APP] provider. To receive the winnings, the user is instructed to open their UPI app, scan a QR code sent by the scammer, and enter their PIN, which actually authorizes a payment from the user's account.
+case_type: Clear Fraud
+platform_type: prize_scam
+context: Fake UPI scratch card win
+fraud_technique: Reverse UPI QR code scam
+policy:
+Rule A: Receiving money via UPI never requires scanning a QR code or entering a PIN.
+Rule B: Legitimate UPI cashback or rewards are credited automatically and do not require user action of this kind.
+
+[SCENARIO 6]
+description: A caller from a fake "Government Tourism Scheme" claims the user is eligible for a subsidized family vacation. To register, they direct the user to a phishing website that looks like an official government portal and asks for personal details, including Aadhaar and bank account numbers.
+case_type: Clear Fraud
+platform_type: government_impersonation
+context: Fake government travel subsidy
+fraud_technique: Phishing for PII and bank details
+policy:
+Rule A: Be wary of unsolicited calls about government schemes and always verify them on the official government website.
+Rule B: Never enter sensitive personal and financial data on a website received via an unverified link.
+
+[SCENARIO 7]
+description: An agent from a fake airline ([AIRLINE_COMPANY]) calls and says the user has been "randomly selected" to receive a 100% refund on their last flight ticket. To process this, they ask the user to install a remote access app so they can "guide them through the refund portal," which gives the scammer control of their device.
+case_type: Clear Fraud
+platform_type: airline_impersonation
+context: Fake flight refund with remote access request
+fraud_technique: Remote access software installation
+policy:
+Rule A: Airlines do not offer random 100% refunds on past tickets.
+Rule B: Never install remote access software at the instruction of a caller for a financial transaction.
+
+[SCENARIO 8]
+description: A user receives a call about winning a new [ELECTRONICS_ITEM] from a lucky draw they never entered. The agent asks for the user's home address for delivery. A few hours later, another agent calls, claiming to be from the courier company, and demands a "delivery insurance fee" be paid before the item can be dispatched.
+case_type: Clear Fraud
+platform_type: prize_scam
+context: Fake prize with subsequent fake delivery fee
+fraud_technique: Two-stage advance fee scam
+policy:
+Rule A: Legitimate prizes do not require the winner to pay for insurance or delivery fees.
+Rule B: This two-step approach is designed to make the second call for payment seem more legitimate.
+
+[SCENARIO 9]
+description: A scammer calls, claiming the user's mobile number has won a "tower installation lottery" where a telecom company ([MOBILE_CARRIER]) will pay them monthly rent for installing a tower on their property. To finalize the "agreement," the user must pay a "legal documentation and survey fee."
+case_type: Clear Fraud
+platform_type: lottery_scam
+context: Fake mobile tower installation lottery
+fraud_technique: Advance fee for a fake contract
+policy:
+Rule A: Telecom companies have dedicated departments for site acquisition and do not select sites via a "lottery."
+Rule B: Individuals are never asked to pay a fee to have a tower installed on their property; the company bears all costs.
+
+[SCENARIO 10]
+description: A fake travel agent offers an incredibly cheap pilgrimage tour package (e.g., to [PILGRIMAGE_SITE]). They create urgency by saying only two spots are left. They ask for the full payment to be made to a personal bank account to secure the booking, promising to send tickets and hotel vouchers later.
+case_type: Clear Fraud
+platform_type: travel_agency
+context: "Too good to be true" tour package
+fraud_technique: Selling a non-existent travel package
+policy:
+Rule A: Tour package payments should be made to a company's official business account, not a personal one.
+Rule B: Always verify the legitimacy of a travel company through reviews and registration details before making a large payment.
+
+[SCENARIO 11]
+description: A legitimate travel agent from [TRAVEL_COMPANY] calls a customer to confirm the details of a holiday package to Goa that the customer had booked online a day earlier. The agent verifies the flight timings and hotel name.
+case_type: Clear Normal
+platform_type: travel_agency
+context: Legitimate booking confirmation
+fraud_technique: none
+policy:
+Rule A: It is standard practice for travel agents to call customers to confirm details of a booking they have made.
+Rule B: The agent should verify details from the existing booking and not ask for new payment information.
+
+[SCENARIO 12]
+description: An agent from an airline ([AIRLINE_COMPANY]) calls a passenger to inform them that their upcoming flight has been rescheduled by 30 minutes. The call is informational and provides the new departure time.
+case_type: Clear Normal
+platform_type: airline
+context: Legitimate flight schedule change notification
+fraud_technique: none
+policy:
+Rule A: Airlines are required to inform passengers of any changes to their flight schedule.
+Rule B: A legitimate notification call will not involve any request for payment or sensitive information.
+
+[SCENARIO 13]
+description: A hotel ([HOTEL_NAME]) receptionist calls a guest to confirm their reservation for the upcoming weekend, a booking the guest made through a travel website.
+case_type: Clear Normal
+platform_type: hospitality
+context: Legitimate hotel reservation confirmation
+fraud_technique: none
+policy:
+Rule A: Hotels often call guests to confirm their arrival time for a pending reservation.
+Rule B: The call should be for confirmation purposes only.
+
+[SCENARIO 14]
+description: A marketing agent from a credit card company ([BANK_NAME]) calls a cardholder to explain the new travel benefits and loyalty points system associated with their card.
+case_type: Clear Normal
+platform_type: loyalty_program
+context: Legitimate explanation of card benefits
+fraud_technique: none
+policy:
+Rule A: Companies may call to educate customers about the features and benefits of their products.
+Rule B: The call should be informational and not require the user to share any sensitive account details.
+
+[SCENARIO 15]
+description: A representative from a travel agency ([TRAVEL_COMPANY]) calls a user in response to an online inquiry they had submitted for a holiday package. The agent provides the requested quote and itinerary.
+case_type: Clear Normal
+platform_type: travel_agency
+context: Legitimate response to a user-initiated inquiry
+fraud_technique: none
+policy:
+Rule A: It is standard practice to call a user back in response to a lead or inquiry they submitted.
+Rule B: The agent provides information and guides the user to official channels for booking.
+
+[SCENARIO 16]
+description: An agent from an airline's loyalty program ([AIRLINE_COMPANY] Miles) calls a frequent flyer to inform them that they have accumulated enough points for a free flight upgrade on their next trip and explains how to claim it through the official app.
+case_type: Clear Normal
+platform_type: loyalty_program
+context: Legitimate notification of loyalty benefits
+fraud_technique: none
+policy:
+Rule A: Loyalty programs regularly communicate with members about their earned benefits.
+Rule B: The agent must direct the user to the official app or website to redeem rewards.
+
+[SCENARIO 17]
+description: A travel agent calls a customer a few days before their international trip to remind them to check their visa and passport validity and to offer to sell them travel insurance.
+case_type: Clear Normal
+platform_type: travel_agency
+context: Legitimate pre-trip reminder and insurance upsell
+fraud_technique: none
+policy:
+Rule A: Pre-trip courtesy calls and upselling relevant products like travel insurance are standard practices.
+Rule B: The purchase should be directed through official and secure payment methods.
+
+[SCENARIO 18]
+description: A user receives a call from a cruise line ([CRUISE_LINE]) to collect feedback on a trip they recently completed.
+case_type: Clear Normal
+platform_type: travel_company
+context: Legitimate post-trip feedback survey
+fraud_technique: none
+policy:
+Rule A: Companies often conduct surveys to gauge customer satisfaction.
+Rule B: No sensitive personal or financial data should be requested during a feedback call.
+
+[SCENARIO 19]
+description: An agent from [AIRLINE_COMPANY] calls a passenger regarding their lost baggage claim. The agent provides an update on the search and informs them of the next steps in the process.
+case_type: Clear Normal
+platform_type: airline
+context: Legitimate update on a lost baggage claim
+fraud_technique: none
+policy:
+Rule A: Airlines are responsible for providing updates on customer service issues like lost baggage.
+Rule B: The call is informational and part of an ongoing service request.
+
+[SCENARIO 20]
+description: A marketing agent from a hotel chain ([HOTEL_NAME]) calls a previous guest to inform them about a new property opening and offers a legitimate "early bird" discount for booking.
+case_type: Clear Normal
+platform_type: hospitality
+context: Legitimate marketing call to a past customer
+fraud_technique: none
+policy:
+Rule A: Companies may market new products or offers to their existing customer base.
+Rule B: Bookings must be directed through the company's official website or reservation line.
+
+[SCENARIO 21]
+description: An agent from a timeshare holiday company calls with an extremely enthusiastic and high-pressure sales pitch. They offer a "nearly free" stay at a luxury resort, which sounds like a scam. However, the condition is that the user must attend a 90-minute sales presentation. The offer is real, albeit part of an aggressive marketing strategy.
+case_type: Ambiguous but Ultimately Normal
+platform_type: travel_company
+context: Aggressive but legitimate timeshare sales pitch
+fraud_technique: none
+policy:
+Rule A: High-pressure sales tactics and "too good to be true" offers are common in timeshare marketing.
+Rule B: The offer is compliant as long as the conditions (like attending a presentation) are clearly stated and no deceptive fees are charged.
+
+[SCENARIO 22]
+description: A travel agent calls a customer about their booking and uses a very urgent tone, saying, "Sir, the flight prices for your package are about to increase in the next hour. You must book immediately to lock in this price." This pressure seems suspicious, but it's based on the real, dynamic pricing of airlines.
+case_type: Ambiguous but Ultimately Normal
+platform_type: travel_agency
+context: Urgent but legitimate call based on dynamic pricing
+fraud_technique: none
+policy:
+Rule A: Travel agents often use real price volatility to create urgency for booking.
+Rule B: The call is compliant as long as the payment is processed through secure, official channels.
+
+[SCENARIO 23]
+description: An agent from a credit card company ([BANK_NAME]) calls to inform the user they have won a small number of bonus reward points as part of a monthly draw. The prize is small and seems almost random, which can be suspicious, but it's a legitimate part of the card's loyalty program. The points are credited automatically.
+case_type: Ambiguous but Ultimately Normal
+platform_type: loyalty_program
+context: Small, legitimate prize from a loyalty program
+fraud_technique: none
+policy:
+Rule A: Loyalty programs often run small promotional draws and contests for their members.
+Rule B: A legitimate prize will be credited automatically and will not require any fee or action from the user.
+
+[SCENARIO 24]
+description: A hotel receptionist calls a guest on the day of their arrival and says, "Sir, the room category you booked is overbooked due to a system error. We can't give you that room." This sounds alarming, but they then offer a free upgrade to a suite as an apology. The initial bad news is suspicious.
+case_type: Ambiguous but Ultimately Normal
+platform_type: hospitality
+context: Legitimate operational issue with a positive resolution
+fraud_technique: none
+policy:
+Rule A: Operational issues like overbooking can happen.
+Rule B: A legitimate hotel will resolve the issue by offering an alternative or an upgrade, not by demanding extra payment.
+
+[SCENARIO 25]
+description: A user receives a call from a third-party visa processing service they used. The agent's tone is very formal and intimidating, stating that the user's visa application is "on hold" due to a missing document. The tone is alarming, but the request to upload the document on the official embassy portal is legitimate.
+case_type: Ambiguous but Ultimately Normal
+platform_type: third_party_service
+context: Formal and intimidating but legitimate visa process call
+fraud_technique: none
+policy:
+Rule A: Third-party visa services may use formal and serious language due to the nature of their work.
+Rule B: The process is compliant as long as the user is directed to an official government or embassy portal for action.
+
+[SCENARIO 26]
+description: A scammer calls claiming to be from [AIRLINE_COMPANY] and says the user is eligible for a refund on a recently cancelled flight. They then say, "To verify your identity, can you please tell me your mother's maiden name, which is a security answer on your profile?"
+case_type: Subtle Fraud
+platform_type: airline_impersonation
+context: Fake refund with security answer phishing
+fraud_technique: Security question answer theft
+policy:
+Rule A: An airline will never ask for a security question answer over the phone for verification.
+Rule B: Verification is typically done using a booking reference number (PNR) or flight details.
+
+[SCENARIO 27]
+description: A caller from a fake "Travel Rewards" program says the user has won points from multiple airlines and can consolidate them. They direct the user to a phishing website to "log in" with their frequent flyer credentials for each airline, thereby stealing their login details and points.
+case_type: Subtle Fraud
+platform_type: loyalty_program
+context: Loyalty point consolidation scam
+fraud_technique: Phishing for multiple frequent flyer accounts
+policy:
+Rule A: Never enter login credentials for multiple services on a single, unverified third-party website.
+Rule B: Loyalty point consolidation is not a service offered via unsolicited phone calls.
+
+[SCENARIO 28]
+description: An agent from a fake travel agency confirms a booking the user never made. When the user says it's a mistake, the agent says a "cancellation fee" must be paid to avoid being blacklisted by all airlines. The amount is small (e.g., ₹500), making the user more likely to pay to avoid the hassle.
+case_type: Subtle Fraud
+platform_type: travel_agency
+context: Fake booking with cancellation fee
+fraud_technique: Small, coercive fee to resolve a fake problem
+policy:
+Rule A: A user is not liable to pay a cancellation fee for a booking they did not authorize.
+Rule B: Threats of being "blacklisted" are a baseless coercive tactic.
+
+[SCENARIO 29]
+description: A scammer calls and says, "Congratulations! As a loyal customer of [BANK_NAME], you have won a free holiday. To confirm, please read the 6-digit 'claim code' we just sent you via SMS." The "claim code" is actually an OTP for a large debit transaction.
+case_type: Subtle Fraud
+platform_type: prize_scam
+context: Fake prize with OTP theft
+fraud_technique: OTP theft by disguising it as a "claim code"
+policy:
+Rule A: An OTP (One-Time Password) should never be shared, regardless of what a caller names it ("claim code," "verification number," etc.).
+Rule B: Legitimate prizes are not claimed by sharing an OTP over the phone.
+
+[SCENARIO 30]
+description: A caller offers a user a "free" resort stay voucher. After the user accepts, the agent says that to activate the voucher, they must first subscribe to a premium travel magazine for a small annual fee. The voucher is real but has impossible-to-use conditions, making the magazine subscription the actual scam.
+case_type: Subtle Fraud
+platform_type: travel_company
+context: "Free" prize tied to a mandatory purchase
+fraud_technique: Hidden cost and bait-and-switch
+policy:
+Rule A: A prize is not "free" if it requires a mandatory purchase.
+Rule B: Be wary of offers where the prize has extremely restrictive terms and conditions that make it practically unusable.

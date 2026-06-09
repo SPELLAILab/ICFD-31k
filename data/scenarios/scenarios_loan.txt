@@ -1,0 +1,299 @@
+[SCENARIO 1]
+description: A collection agent from a digital lending app ([LENDING_APP]) calls a borrower who is one day late on a payment. The agent is extremely aggressive, uses abusive language, and threatens to start calling and sending messages to everyone on the borrower's contact list if the payment is not made within one hour.
+case_type: Clear Fraud
+platform_type: digital_lending_app
+context: Loan collection with harassment and doxxing threats
+fraud_technique: Threat to contact list
+policy:
+Rule A: Collection agents are prohibited from using abusive language or threatening to contact a borrower's friends and family.
+Rule B: The use of intimidation and harassment is illegal as per RBI guidelines.
+
+[SCENARIO 2]
+description: An agent from a predatory loan app calls and threatens to morph the borrower's photos (which they accessed from the phone's gallery) and send them to their family members. They demand immediate payment of an inflated amount to stop them from sharing the morphed images.
+case_type: Clear Fraud
+platform_type: digital_lending_app
+context: Extortion with photo blackmail
+fraud_technique: Blackmail using morphed photos
+policy:
+Rule A: Accessing a user's personal photo gallery for collection purposes is illegal.
+Rule B: Blackmail and extortion are criminal offenses.
+
+[SCENARIO 3]
+description: A caller impersonating a lawyer from a "digital loan tribunal" threatens a borrower with immediate arrest and a police case over a small, overdue amount from [LENDING_APP]. They demand the user pay a "settlement fee" to a personal [UPI_APP] ID to close the fake legal case.
+case_type: Clear Fraud
+platform_type: digital_lending_app
+context: Loan collection with fake legal impersonation
+fraud_technique: Impersonation of legal authority with threat of arrest
+policy:
+Rule A: Collection agents cannot impersonate lawyers or police officers.
+Rule B: The legal process for loan defaults follows a civil procedure and does not involve immediate arrest for small amounts.
+
+[SCENARIO 4]
+description: An agent calls a user, claiming a loan was taken out in their name from [LENDING_APP], even though the user never applied. The agent threatens a bad CIBIL score and legal action unless the user "settles" this fake loan by paying a portion of the amount.
+case_type: Clear Fraud
+platform_type: digital_lending_app
+context: Extortion for a loan never taken
+fraud_technique: Phantom loan scam
+policy:
+Rule A: A user is not liable for a loan they did not apply for or authorize.
+Rule B: Demanding payment for a fraudulent or phantom loan is extortion.
+
+[SCENARIO 5]
+description: A collection agent calls a borrower and offers to "close the loan with a discount." To avail this, they ask the borrower to share the OTP they will receive to "process the settlement." The OTP is actually for authorizing a new, larger loan in the victim's name.
+case_type: Clear Fraud
+platform_type: digital_lending_app
+context: Loan settlement pretext for OTP theft
+fraud_technique: OTP theft to authorize a new fraudulent loan
+policy:
+Rule A: OTPs should never be shared over the phone for any reason, including loan settlements.
+Rule B: Loan settlements are processed via official payment channels, not OTP verification.
+
+[SCENARIO 6]
+description: A recovery agent from [LENDING_APP] is unable to reach the borrower, so they start calling numbers from the borrower's contact list, harassing their family members and colleagues and revealing the borrower's loan details to them.
+case_type: Clear Fraud
+platform_type: digital_lending_app
+context: Harassment of third parties
+fraud_technique: Contact list harassment
+policy:
+Rule A: As per RBI guidelines, collection agents are strictly forbidden from contacting third parties (like friends and family) about a borrower's debt.
+Rule B: Disclosing a borrower's financial details to others is a breach of privacy.
+
+[SCENARIO 7]
+description: A borrower who has already repaid their loan receives a call from an agent of [LENDING_APP] claiming the payment was not received due to a "server error." They demand the borrower pay again immediately, threatening to charge heavy penalties.
+case_type: Clear Fraud
+platform_type: digital_lending_app
+context: Fake payment failure with double payment demand
+fraud_technique: Double payment scam
+policy:
+Rule A: Borrowers should verify payment status on the official app and not make a second payment based on a phone call.
+Rule B: Coercing a user to pay again for a settled loan is fraud.
+
+[SCENARIO 8]
+description: An agent from a predatory loan app forces a borrower who is unable to pay their current EMI to take out another, higher-interest loan from a "partner app" to pay off the first one. This is a tactic to trap the borrower in a cycle of debt.
+case_type: Clear Fraud
+platform_type: digital_lending_app
+context: Debt trap with forced loan stacking
+fraud_technique: Loan stacking
+policy:
+Rule A: Forcing a borrower to take a new loan to cover an existing one is an unethical and predatory practice.
+Rule B: Agents should discuss legitimate repayment options like restructuring, not push new loans.
+
+[SCENARIO 9]
+description: A collection agent from [LENDING_APP] calls and starts shouting and using extremely foul and abusive language, threatening physical harm if the loan is not repaid within the hour.
+case_type: Clear Fraud
+platform_type: digital_lending_app
+context: Loan collection with extreme verbal abuse
+fraud_technique: Intimidation and threat of physical violence
+policy:
+Rule A: The use of abusive language, insults, or threats of violence by a recovery agent is strictly illegal.
+Rule B: Agents must maintain a civil and professional tone at all times.
+
+[SCENARIO 10]
+description: An agent calls to offer a pre-approved loan from [LENDING_APP]. To disburse the amount, they ask the user to install their "secure app" from a link sent on WhatsApp. The app is malware that steals the user's contacts, photos, and banking information.
+case_type: Clear Fraud
+platform_type: digital_lending_app
+context: Loan offer with malware installation
+fraud_technique: Malware app installation
+policy:
+Rule A: Never install applications from unverified links sent via WhatsApp or SMS.
+Rule B: Official lending apps must be downloaded from the Google Play Store or Apple App Store.
+
+[SCENARIO 11]
+description: A polite agent from a legitimate bank ([BANK_NAME]) calls a customer as a reminder that their personal loan EMI is due in three days. They mention the amount and due date and suggest paying via the official bank app.
+case_type: Clear Normal
+platform_type: legitimate_bank
+context: Legitimate EMI payment reminder
+fraud_technique: none
+policy:
+Rule A: It is standard practice for banks to send payment reminders for loans.
+Rule B: The agent must direct the customer to official payment channels and not ask for payment to a personal account.
+
+[SCENARIO 12]
+description: A customer who has missed an EMI payment receives a call from their bank's loan department. The agent calmly explains the consequences of non-payment (e.g., late fees, CIBIL score impact) and asks if the customer is facing difficulties, offering to discuss potential restructuring options.
+case_type: Clear Normal
+platform_type: legitimate_bank
+context: Legitimate discussion of a missed payment
+fraud_technique: none
+policy:
+Rule A: Agents should inform customers about the factual consequences of default in a professional manner.
+Rule B: Offering legitimate solutions like EMI restructuring is a standard and helpful practice.
+
+[SCENARIO 13]
+description: An agent from a bank ([BANK_NAME]) calls a customer to verify an online application for a personal loan that the customer recently submitted. The agent confirms the application details (like loan amount and tenure) and informs the customer about the next steps.
+case_type: Clear Normal
+platform_type: legitimate_bank
+context: Legitimate loan application verification
+fraud_technique: none
+policy:
+Rule A: Banks call customers to verify the authenticity of a loan application submitted in their name.
+Rule B: Verification should be based on the application details, not by asking for sensitive passwords or PINs.
+
+[SCENARIO 14]
+description: A marketing agent from a bank calls an existing customer to inform them about a pre-approved top-up loan offer on their existing home loan. They explain the features and interest rate and guide the customer to the bank's official website for more details.
+case_type: Clear Normal
+platform_type: legitimate_bank
+context: Legitimate marketing of a loan product
+fraud_technique: none
+policy:
+Rule A: Banks are permitted to make marketing calls to customers for pre-approved loan offers.
+Rule B: The agent must direct the customer to official channels to apply or learn more.
+
+[SCENARIO 15]
+description: An agent calls a customer to confirm the successful receipt of their final loan EMI payment and informs them that the loan account is now closed. They explain that the No Objection Certificate (NOC) will be mailed to their registered address.
+case_type: Clear Normal
+platform_type: legitimate_bank
+context: Legitimate loan closure confirmation
+fraud_technique: none
+policy:
+Rule A: It is a good practice for lenders to confirm loan closure with the borrower.
+Rule B: The agent should only provide information and not ask for any PII.
+
+[SCENARIO 16]
+description: A bank agent calls a customer who applied for a car loan to inform them that their loan has been approved and to coordinate the disbursement process with the car dealership.
+case_type: Clear Normal
+platform_type: legitimate_bank
+context: Legitimate loan approval and disbursement coordination
+fraud_technique: none
+policy:
+Rule A: Agents regularly coordinate with customers and third parties (like dealerships) during the loan disbursement process.
+Rule B: The call should focus on logistical arrangements.
+
+[SCENARIO 17]
+description: A customer receives a call from their bank's loan department asking for feedback on their recent experience of applying for a credit card.
+case_type: Clear Normal
+platform_type: legitimate_bank
+context: Legitimate customer feedback survey
+fraud_technique: none
+policy:
+Rule A: Banks may conduct surveys to improve their service quality.
+Rule B: No sensitive personal or financial information should be asked during a feedback call.
+
+[SCENARIO 18]
+description: An agent calls a customer to guide them on how to download their loan account statement from the bank's official mobile app.
+case_type: Clear Normal
+platform_type: legitimate_bank
+context: Legitimate procedural guidance for app usage
+fraud_technique: none
+policy:
+Rule A: Agents can provide procedural support to customers for using official apps and websites.
+Rule B: The agent must not ask for the customer's login credentials.
+
+[SCENARIO 19]
+description: A customer receives a call from their bank's loan agent regarding their application, asking for a co-applicant's details as the customer's income does not meet the criteria for the requested loan amount.
+case_type: Clear Normal
+platform_type: legitimate_bank
+context: Legitimate discussion of loan application requirements
+fraud_technique: none
+policy:
+Rule A: It is a standard procedure to discuss application shortcomings and suggest alternatives like adding a co-applicant.
+Rule B: The agent should explain the reasons clearly and professionally.
+
+[SCENARIO 20]
+description: An agent from a bank ([BANK_NAME]) calls to inform a customer that the interest rate on their floating-rate home loan has been revised as per the RBI's new repo rate.
+case_type: Clear Normal
+platform_type: legitimate_bank
+context: Legitimate notification of interest rate change
+fraud_technique: none
+policy:
+Rule A: Banks are required to inform customers about changes in floating interest rates.
+Rule B: The call should be purely informational.
+
+[SCENARIO 21]
+description: A collection agent from a legitimate bank calls about a missed credit card payment. The agent is very firm and direct, saying, "Sir, your payment is overdue. You must clear the dues today to avoid further late fees and a negative report to CIBIL." The tone is intimidating, but the information is factually correct and they direct the user to pay via the official app.
+case_type: Ambiguous but Ultimately Normal
+platform_type: legitimate_bank
+context: Firm but compliant collection call
+fraud_technique: none
+policy:
+Rule A: Collection agents can be firm and state the factual consequences of non-payment.
+Rule B: The call is compliant as long as no abusive language is used and the payment method is official.
+
+[SCENARIO 22]
+description: A call from a third-party collection agency hired by a bank. The agent says, "We are calling on behalf of [BANK_NAME] regarding your personal loan." The fact that it's not the bank directly might seem suspicious, but this is a standard industry practice. The agent follows all rules.
+case_type: Ambiguous but Ultimately Normal
+platform_type: third_party_agency
+context: Legitimate third-party collection agency call
+fraud_technique: none
+policy:
+Rule A: Banks are legally allowed to hire third-party agencies for collections.
+Rule B: The third-party agent must still adhere to all regulatory guidelines, including no harassment.
+
+[SCENARIO 23]
+description: A bank agent calls a customer about a missed EMI, and when the customer says they can't pay, the agent suggests, "You could consider taking a small loan from a reputable source to clear this due and protect your credit score." This advice could be misinterpreted, but it's a financial suggestion, not a fraudulent act.
+case_type: Ambiguous but Ultimately Normal
+platform_type: legitimate_bank
+context: Unsolicited but non-fraudulent financial advice
+fraud_technique: none
+policy:
+Rule A: Agents may provide generic financial suggestions.
+Rule B: The call is compliant as long as the agent does not force the user to take a specific predatory loan.
+
+[SCENARIO 24]
+description: An agent from a bank's loan department calls a customer repeatedly within a short period. This frequent calling seems like harassment, but it's because the customer is non-responsive and their loan is severely delinquent. The agent remains professional in all calls.
+case_type: Ambiguous but Ultimately Normal
+platform_type: legitimate_bank
+context: Frequent but non-abusive collection calls
+fraud_technique: none
+policy:
+Rule A: Collection agencies have guidelines on call frequency, but multiple calls for a severely overdue account can be considered a standard practice.
+Rule B: The calls are compliant as long as the content of the conversation remains professional.
+
+[SCENARIO 25]
+description: A bank agent informs a customer that as part of their loan recovery process, a "field agent" will visit their home address to discuss the overdue amount. The mention of a physical visit can sound threatening, but it is a legitimate step in the formal collections process for some loans.
+case_type: Ambiguous but Ultimately Normal
+platform_type: legitimate_bank
+context: Notification of a legitimate field visit
+fraud_technique: none
+policy:
+Rule A: Informing a customer about a scheduled and official field visit is a standard part of the collections process.
+Rule B: This is not a threat as long as the agent is not implying any physical harm.
+
+[SCENARIO 26]
+description: An agent from a loan app calls and offers to "waive" the late payment fee if the borrower pays the EMI amount plus a small "processing charge" of ₹100 directly to the agent's personal [UPI_APP] number. They frame it as a personal favor to help the customer.
+case_type: Subtle Fraud
+platform_type: digital_lending_app
+context: Fake fee waiver with personal payment
+fraud_technique: Bypassing official channels for personal gain
+policy:
+Rule A: All payments, including fees and EMIs, must be made to the company's official account.
+Rule B: Agents are never authorized to collect payments to their personal UPI IDs.
+
+[SCENARIO 27]
+description: An agent offers a loan and says that to check the user's "loan eligibility score," the user must install a specific app from a link they send. The app looks like a CIBIL score checker but is malware designed to steal data.
+case_type: Subtle Fraud
+platform_type: digital_lending_app
+context: Malware installation disguised as credit score check
+fraud_technique: Malware app installation
+policy:
+Rule A: Never install apps from unverified links to check credit scores.
+Rule B: Legitimate lenders use official credit bureaus for scoring and do not require separate app installations.
+
+[SCENARIO 28]
+description: A caller offers an "interest-free" loan from [LENDING_APP]. After the user agrees, the agent says that to "activate the account," the user must first send a "security deposit" of ₹1,000 to their account, promising it will be refunded with the loan amount.
+case_type: Subtle Fraud
+platform_type: digital_lending_app
+context: Fake interest-free loan with security deposit
+fraud_technique: Advance fee disguised as a refundable security deposit
+policy:
+Rule A: Legitimate lenders never ask for a security deposit to be paid before disbursing a loan.
+Rule B: Fees and charges are typically deducted from the loan amount, not paid in advance.
+
+[SCENARIO 29]
+description: A collection agent calls a borrower and claims their last EMI payment failed due to a "technical glitch." They create a sense of panic that a late fee will be applied and convince the user to pay the EMI a second time, promising the first payment will be "auto-refunded" within 24 hours.
+case_type: Subtle Fraud
+platform_type: digital_lending_app
+context: Fake payment failure with double payment demand
+fraud_technique: Double payment scam with a refund promise
+policy:
+Rule A: Users should always verify their payment status in the app before believing claims of payment failure over a call.
+Rule B: Scammers often use the promise of a "refund" to justify a fraudulent transaction.
+
+[SCENARIO 30]
+description: An agent offering a loan says that before disbursing the amount, they need to "verify the user's UPI handle." They ask the user to accept a UPI request for ₹1. While this seems harmless, accepting the request grants the app permission for future auto-debits (mandate).
+case_type: Subtle Fraud
+platform_type: digital_lending_app
+context: UPI mandate scam disguised as verification
+fraud_technique: Tricking user into authorizing a UPI mandate
+policy:
+Rule A: A ₹1 transaction is often used to set up a UPI mandate (auto-debit); users should carefully read the request before approving.
+Rule B: Loan disbursement does not require the user to approve a payment request.

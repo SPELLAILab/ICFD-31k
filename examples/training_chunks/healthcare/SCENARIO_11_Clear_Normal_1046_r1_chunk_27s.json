@@ -1,0 +1,42 @@
+{
+  "session_id": 1046,
+  "chunk_timestamp": 27,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, namaste Savitri ji, this is Rohan from SBI Life Insurance. How are you today?",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm doing well, thank you. What's this call about, sir?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, we just wanted to remind you that your annual health insurance premium is due next week, Savitri ji. The amount is Rs. 25,000.",
+      "timestamp_end": 18.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, I see. Can you please tell me how I can make this payment, Rohan?",
+      "timestamp_end": 22.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Polite",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 27s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 11,
+    "case_type": "Clear Normal",
+    "description": "A legitimate agent from [INSURANCE_COMPANY] calls to remind a customer that their annual health insurance premium is due next week. They inform the customer of the amount and suggest they can pay it through the company's official website, mobile app, or at a branch."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

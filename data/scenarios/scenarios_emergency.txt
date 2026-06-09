@@ -1,0 +1,302 @@
+[SCENARIO 1]
+description: A scammer calls a parent, playing a pre-recorded audio of a child crying in the background. The caller claims to have kidnapped their [FAMILY_MEMBER] and demands an immediate ransom payment of ₹50,000 via [UPI_APP] to a specific number, threatening harm if they disconnect the call or contact the police.
+case_type: Clear Fraud
+platform_type: personal_call
+context: Fake kidnapping with ransom demand
+fraud_technique: Ransom demand with audio deepfake/recording
+policy:
+Rule A: In a real kidnapping situation, law enforcement should be contacted immediately.
+Rule B: Demands for immediate payment to a personal account under threat are a hallmark of extortion scams.
+
+[SCENARIO 2]
+description: A caller claiming to be a doctor from a [HOSPITAL_NAME] emergency room says the user's [FAMILY_MEMBER] has been in a serious road accident and requires immediate, life-saving surgery. They demand an advance deposit for the surgery to be transferred to a personal [UPI_APP] ID, stating there is no time for official hospital billing.
+case_type: Clear Fraud
+platform_type: impersonation
+context: Fake family member accident with medical fees
+fraud_technique: Medical emergency pretext for advance fee
+policy:
+Rule A: Legitimate hospitals have official billing departments and do not demand urgent payments to personal UPI IDs for emergency surgery.
+Rule B: A hospital would stabilize a critical patient first, with payment formalities following a standard procedure.
+
+[SCENARIO 3]
+description: A scammer calls and claims to have an intimate or morphed video of the victim. They threaten to send this video to the victim's entire contact list, which they claim to have accessed, unless a payment is made to a specified account within 30 minutes. This is a classic sextortion attempt.
+case_type: Clear Fraud
+platform_type: personal_call
+context: Blackmail with threat of exposing private media
+fraud_technique: Sextortion
+policy:
+Rule A: Paying blackmailers does not guarantee they will delete the content; it often leads to further demands.
+Rule B: Such criminal acts of extortion should be reported to the cybercrime police.
+
+[SCENARIO 4]
+description: A caller impersonates a police inspector from the [CITY] Cyber Crime branch. They claim the victim's IP address was used for illegal online activities and an arrest warrant has been issued. To "settle the case outside of court," they demand a "penalty" be paid immediately.
+case_type: Clear Fraud
+platform_type: law_enforcement_impersonation
+context: Fake police case with penalty demand
+fraud_technique: Impersonation of authority for extortion
+policy:
+Rule A: Police and legal matters are not settled via instant payments to personal accounts over a phone call.
+Rule B: An official legal process involves summons and court proceedings, not phone-based fines.
+
+[SCENARIO 5]
+description: A scammer calls and says, "I have your wallet. It has your ID and credit cards." They then threaten to use the credit cards for fraudulent transactions unless the victim pays a "finder's fee" that is significantly higher than the cash in the wallet.
+case_type: Clear Fraud
+platform_type: personal_call
+context: Lost item extortion
+fraud_technique: Extortion using the pretext of a found item
+policy:
+Rule A: Demanding a coercive "fee" under the threat of misusing personal property is extortion.
+Rule B: The correct action is to block all cards immediately and report the loss to the bank and police.
+
+[SCENARIO 6]
+description: A caller pretends to be a customs officer at an airport. They claim a [FAMILY_MEMBER] arriving from an international flight has been detained for carrying excess luggage or gold. They demand an immediate payment to avoid the family member's arrest.
+case_type: Clear Fraud
+platform_type: impersonation
+context: Fake airport customs detention
+fraud_technique: Impersonation of authority with legal threats
+policy:
+Rule A: Official customs fines are paid through designated counters at the airport or official government websites, not personal UPI IDs.
+Rule B: Scammers often use the victim's inability to contact the family member as a pressure tactic.
+
+[SCENARIO 7]
+description: A scammer calls, claiming to be an electricity board official who has just cut the power to the victim's house. They say it was due to a billing error but to restore it immediately, the victim must pay a "reconnection fee." The victim's power is actually out due to a real, unrelated local outage.
+case_type: Clear Fraud
+platform_type: utility_impersonation
+context: Coincidental power outage exploitation
+fraud_technique: Exploiting a real event for an advance fee scam
+policy:
+Rule A: Reconnection fees are added to the next official bill and are not paid to individuals over the phone.
+Rule B: Scammers exploit real-world events to make their claims seem more credible.
+
+[SCENARIO 8]
+description: A caller impersonates a loan recovery agent for a non-existent loan. They use an extremely aggressive and abusive tone, threatening to send "recovery agents" to the victim's home to cause physical harm and public humiliation unless a payment is made.
+case_type: Clear Fraud
+platform_type: impersonation
+context: Phantom loan recovery with physical threats
+fraud_technique: Extortion with threats of violence
+policy:
+Rule A: Threatening physical harm is a criminal offense.
+Rule B: A person is not liable for a loan they never took.
+
+[SCENARIO 9]
+description: A scammer calls claiming to have damaging information about the victim's "illegal business dealings" (which are entirely fabricated). They threaten to report this information to the Income Tax Department unless the victim pays them to stay silent.
+case_type: Clear Fraud
+platform_type: personal_call
+context: Blackmail with false accusations
+fraud_technique: Extortion based on fabricated evidence
+policy:
+Rule A: Paying someone to conceal a fabricated crime is a form of blackmail.
+Rule B: The victim should not engage and should report the extortion attempt.
+
+[SCENARIO 10]
+description: A caller pretends to have hit the victim's car in a parking lot. They create a scene over the phone, claiming major damage, and demand immediate payment for repairs to avoid getting insurance and the police involved, which they claim will be "more expensive" for the victim.
+case_type: Clear Fraud
+platform_type: personal_call
+context: Fake accident with on-the-spot settlement demand
+fraud_technique: Fabricated event to extort money
+policy:
+Rule A: Vehicle accidents should be handled through official channels like insurance and, if necessary, the police.
+Rule B: Never pay for alleged damages over the phone without verifying the incident.
+Part 2: Clear Normal (10 Scenarios)
+
+[SCENARIO 11]
+description: A hospital receptionist calls a person on a patient's contact list to inform them that their [FAMILY_MEMBER] has been admitted to the hospital. The call is purely informational, providing the room number and visiting hours, and does not ask for any payment.
+case_type: Clear Normal
+platform_type: healthcare
+context: Legitimate hospital admission notification
+fraud_technique: none
+policy:
+Rule A: It is standard procedure for hospitals to notify the next of kin about a patient's admission.
+Rule B: A legitimate notification call will not include a demand for immediate, unofficial payment.
+
+[SCENARIO 12]
+description: A police officer calls a person to ask them to come to the police station as a witness for an incident they reported a few days ago. The officer is professional and provides a case reference number.
+case_type: Clear Normal
+platform_type: law_enforcement
+context: Legitimate request to be a witness
+fraud_technique: none
+policy:
+Rule A: Police may call citizens to request their presence at the station for official matters like witness statements.
+Rule B: The call must be professional and should not involve any demand for money.
+
+[SCENARIO 13]
+description: A person receives a frantic call from a [FAMILY_MEMBER] who has genuinely lost their wallet and is stranded. The family member asks if they can be picked up or if they can borrow a small amount of money via [UPI_APP] for a taxi home. The call is from the family member's actual number.
+case_type: Clear Normal
+platform_type: personal_call
+context: Genuine request for help from a family member
+fraud_technique: none
+policy:
+Rule A: A genuine request for help from a known person on their registered number is not a scam.
+Rule B: It is normal to verify the identity by asking a personal question if in doubt.
+
+[SCENARIO 14]
+description: A school teacher calls a parent to inform them that their child has fallen ill and needs to be picked up from school.
+case_type: Clear Normal
+platform_type: educational_institution
+context: Legitimate call from a school about a child's health
+fraud_technique: none
+policy:
+Rule A: Schools routinely call parents in case of a child's illness or emergency.
+Rule B: The purpose of the call is to have the child picked up, not to ask for money for treatment.
+
+[SCENARIO 15]
+description: A blood bank calls a registered donor, stating there is an urgent need for their blood type for a patient undergoing surgery.
+case_type: Clear Normal
+platform_type: healthcare
+context: Legitimate urgent request for blood donation
+fraud_technique: none
+policy:
+Rule A: Blood banks maintain lists of donors and call them during emergencies.
+Rule B: The call is a request for a donation of blood, not money.
+
+[SCENARIO 16]
+description: A person calls their friend to tell them about a personal crisis (e.g., a breakup, a family argument) and seeks emotional support.
+case_type: Clear Normal
+platform_type: personal_call
+context: Genuine personal call seeking emotional support
+fraud_technique: none
+policy:
+Rule A: Personal conversations about emotional distress are not fraudulent.
+Rule B: There is no financial transaction or deception involved.
+
+[SCENARIO 17]
+description: A fire department official calls a business owner to schedule a mandatory fire safety inspection of their premises.
+case_type: Clear Normal
+platform_type: government
+context: Legitimate scheduling of a safety inspection
+fraud_technique: none
+policy:
+Rule A: Government departments often call to schedule mandatory inspections.
+Rule B: The call is for logistical arrangement and does not involve on-the-spot payments.
+
+[SCENARIO 18]
+description: A neighbor calls to inform the person that a water pipe seems to be leaking from their apartment.
+case_type: Clear Normal
+platform_type: personal_call
+context: Genuine alert from a neighbor about a home issue
+fraud_technique: none
+policy:
+Rule A: A helpful call from a neighbor about a potential emergency is not a scam.
+Rule B: The call is purely informational.
+
+[SCENARIO 19]
+description: A call from a legitimate courier service informs the user that they missed a delivery and can reschedule it through the official app.
+case_type: Clear Normal
+platform_type: logistics
+context: Legitimate missed delivery notification
+fraud_technique: none
+policy:
+Rule A: Courier companies provide notifications for missed deliveries.
+Rule B: The agent must direct the user to the official app or website to take action.
+
+[SCENARIO 20]
+description: A vet's office calls a pet owner to remind them that their pet's annual vaccinations are due.
+case_type: Clear Normal
+platform_type: healthcare
+context: Legitimate appointment reminder
+fraud_technique: none
+policy:
+Rule A: Service providers, including medical offices, send appointment reminders.
+Rule B: The call is informational and does not involve urgent demands.
+Part 3: Ambiguous but Ultimately Normal (5 Scenarios)
+
+[SCENARIO 21]
+description: A parent receives a call from their child's school principal. The principal uses a very stern and urgent tone, stating the child has been involved in a serious disciplinary issue (e.g., a fight) and the parent must come to the school immediately. The tone is alarming, but the request is legitimate.
+case_type: Ambiguous but Ultimately Normal
+platform_type: educational_institution
+context: Urgent but legitimate call from a school
+fraud_technique: none
+policy:
+Rule A: School authorities may use a stern and urgent tone when dealing with serious disciplinary matters.
+Rule B: The call is compliant as long as the request is for the parent's presence and does not involve any "fine" payments over the phone.
+
+[SCENARIO 22]
+description: A person receives a highly emotional and frantic call from a [FAMILY_MEMBER] who has just been in a minor car accident. They are not asking for money but are audibly distressed and confused about what to do. The high emotional state could be mistaken for a scam, but it's a genuine reaction to a stressful event.
+case_type: Ambiguous but Ultimately Normal
+platform_type: personal_call
+context: Genuine but frantic call after a minor accident
+fraud_technique: none
+policy:
+Rule A: People can be genuinely panicked and incoherent during a real emergency.
+Rule B: The call is not a scam if there is no deceptive request for money.
+
+[SCENARIO 23]
+description: A hospital's billing department calls a person about a genuinely overdue bill for a past procedure. The agent is firm, mentions that the account will be sent to a collection agency if not paid, and provides the official hospital portal and patient ID to make the payment. The mention of a "collection agency" can sound threatening.
+case_type: Ambiguous but Ultimately Normal
+platform_type: healthcare
+context: Firm but legitimate medical bill collection
+fraud_technique: none
+policy:
+Rule A: It is standard procedure to warn about sending an overdue account to a collection agency.
+Rule B: The call is compliant as long as the payment is directed through official, verifiable channels.
+
+[SCENARIO 24]
+description: A police officer calls someone whose car was towed. The officer has a very formal and intimidating tone, stating the location of the impound lot and the fines that must be paid at the official municipal office to release the vehicle. The authoritative tone might seem suspicious.
+case_type: Ambiguous but Ultimately Normal
+platform_type: law_enforcement
+context: Intimidating but legitimate police notification
+fraud_technique: none
+policy:
+Rule A: Police officers often use a formal and authoritative tone as part of their job.
+Rule B: The process is compliant as the payment is directed to an official government office, not a personal account.
+
+[SCENARIO 25]
+description: A person receives a call from an unknown number. The caller sounds distressed and says, "Mom? I'm in trouble, I need help," then the call cuts. It's a genuine wrong number from someone in distress who thinks they called their mother. The situation is alarming but not a scam attempt directed at the recipient.
+case_type: Ambiguous but Ultimately Normal
+platform_type: personal_call
+context: Genuine wrong number in an emergency
+fraud_technique: none
+policy:
+Rule A: Wrong numbers can happen, sometimes in alarming contexts.
+Rule B: It is not a scam if the caller did not intentionally target the recipient with a fraudulent request.
+Part 4: Subtle Fraud (5 Scenarios)
+
+[SCENARIO 26]
+description: A scammer calls and pretends it's a wrong number. They strike up a friendly conversation, build rapport over a few minutes, and then end the call. They call back a day later, continuing the "friendship," and then mention a sudden, small financial emergency, asking for a "small loan" of ₹2,000.
+case_type: Subtle Fraud
+platform_type: personal_call
+context: Wrong number scam evolving into a friendship scam
+fraud_technique: Long-term rapport building for a small loan
+policy:
+Rule A: Be wary of unsolicited "friendships" from wrong numbers that eventually lead to a request for money.
+Rule B: Scammers often start with small requests to test the victim's willingness to pay.
+
+[SCENARIO 27]
+description: A person receives a call from someone claiming to be their [FAMILY_MEMBER] (e.g., a nephew) calling from a new, unknown number because they "lost their phone." After a brief, normal conversation, they ask for an urgent [UPI_APP] transfer to pay a bill, promising to return the money "as soon as they get their new SIM."
+case_type: Subtle Fraud
+platform_type: personal_call
+context: Family member impersonation from a new number
+fraud_technique: Impersonation with a "lost phone" pretext
+policy:
+Rule A: Always verify the identity of a family member calling from a new number by asking a personal question or calling their old number back.
+Rule B: Do not transfer money based solely on a request from an unverified new number.
+
+[SCENARIO 28]
+description: A scammer calls, pretending to be a charity worker for a well-known NGO ([NGO_NAME]). They tell a convincing and emotional story about a specific child needing emergency surgery and ask for a donation. While the NGO is real, the caller is not, and they provide a personal UPI ID for the "donation."
+case_type: Subtle Fraud
+platform_type: impersonation
+context: Fake charity donation request
+fraud_technique: Impersonation of a legitimate charity
+policy:
+Rule A: Legitimate charities collect donations through official websites, payment gateways, or designated bank accounts, not personal UPI IDs.
+Rule B: Always verify a charity's credentials on their official website before donating.
+
+[SCENARIO 29]
+description: A scammer calls and says, "I just sent you ₹5,000 on [UPI_APP] by mistake, I was sending it to my mother who is in the hospital. Can you please send it back to this other number urgently?" They send a fake "payment successful" SMS to create pressure. No money was actually sent.
+case_type: Subtle Fraud
+platform_type: personal_call
+context: Fake mistaken UPI transfer
+fraud_technique: Fake payment proof with urgent refund request
+policy:
+Rule A: Never refund money without first checking your official bank account or UPI app to confirm you actually received it.
+Rule B: Fake payment confirmation messages are a common tool used by scammers.
+
+[SCENARIO 30]
+description: A scammer calls a victim and correctly states their name and a recent place they visited (e.g., a specific mall), information obtained from a minor data leak. They then claim to have seen the victim commit a minor, embarrassing act and threaten to report it to their family or workplace unless they are paid to stay quiet.
+case_type: Subtle Fraud
+platform_type: personal_call
+context: Blackmail using publicly available or breached data
+fraud_technique: Low-level extortion based on minor data points
+policy:
+Rule A: Scammers use small, publicly available data points to make their threats seem more credible.
+Rule B: Do not give in to blackmail based on fabricated or trivial information.

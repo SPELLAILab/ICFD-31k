@@ -1,0 +1,62 @@
+{
+  "session_id": 1929,
+  "chunk_timestamp": 78,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Gurdeep Kaur Dhillon? Sir, this is Utkarsh Small Finance Bank. I am calling regarding your upcoming joining on next week.",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes. I'm Gurdeep. Achha, what's this about?",
+      "timestamp_end": 18.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "We are excited to have you on board. I am calling to guide you through our onboarding process and the necessary documents you need to bring on your first day.",
+      "timestamp_end": 30.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, that sounds good. What documents do I need to bring?",
+      "timestamp_end": 37.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "You will need to bring your identification proof, address proof, and your qualification certificates. Also, please ensure you have a copy of your offer letter.",
+      "timestamp_end": 49.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, got it. And what's the process like on the first day?",
+      "timestamp_end": 56.3
+    },
+    {
+      "speaker": "Agent",
+      "text": "On your first day, you will be meeting with our HR team, and we will be providing you with all the necessary information about the company policies and your role.",
+      "timestamp_end": 67.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds good. Is there anything else I need to do before joining?",
+      "timestamp_end": 74.6
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "None",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 78s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "An HR representative calls a new hire a week before their joining date to provide information about the onboarding process and the documents they need to bring on their first day."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

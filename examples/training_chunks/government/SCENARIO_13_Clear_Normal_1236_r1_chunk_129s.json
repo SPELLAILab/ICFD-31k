@@ -1,0 +1,77 @@
+{
+  "session_id": 1236,
+  "chunk_timestamp": 129,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Divya Iyer? Sir, I'm calling from Bank of Maharashtra.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Divya. Who's calling, please?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm, uh, Agent Rohan, ji. I'm calling regarding your recent online application for a personal loan. Can you please confirm if you applied for a loan of 5 lakhs for 5 years, sir?",
+      "timestamp_end": 20.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, yes. That's correct. But how did you get my number? And can you tell me your employee ID, please?",
+      "timestamp_end": 30.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Uh, my ID, let me see... I'm new here, so... Ah, yes, it's... Rohan123. And, uh, we got your number from your application, ma'am.",
+      "timestamp_end": 42.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, Rohan. I've noted that. Now, what's the next step for my loan application?",
+      "timestamp_end": 50.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Right, so... we just need to verify some details. Can you please tell me your, uh, net banking password, ji, just for verification purposes?",
+      "timestamp_end": 62.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm sorry, Rohan, but I don't think that's necessary. I've already filled out the application with all the required information. And I don't share passwords over the phone, Thik hai?",
+      "timestamp_end": 75.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "But, ma'am, this is just a routine security check. It will just take a minute, sir. We need it to, uh, proceed with your application.",
+      "timestamp_end": 90.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "I understand that, Rohan, but my policy is clear: I don't give out sensitive information like passwords or PINs over the phone. Can we proceed without that?",
+      "timestamp_end": 105.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Let me check, ma'am... (pause) Yes, we can proceed without it. I apologize for the inconvenience. We'll send you an email with the next steps.",
+      "timestamp_end": 120.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Cautious",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 129s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "An agent from a bank ([BANK_NAME]) calls a customer to verify an online application for a personal loan that the customer recently submitted. The agent confirms the application details (like loan amount and tenure) and informs the customer about the next steps."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

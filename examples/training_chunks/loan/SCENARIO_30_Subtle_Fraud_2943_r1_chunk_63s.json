@@ -1,0 +1,47 @@
+{
+  "session_id": 2943,
+  "chunk_timestamp": 63,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Namaste Bhavana ji! Congratulations, you're eligible for our new UPI service from South Indian Bank. It's completely free and will make your transactions so much easier, sir!",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, thik hai. What do I need to do?",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Wonderful! Just to get you started, I need you to set a new temporary 4-digit PIN for security purposes. This will be used just for this service, don't worry, it's totally secure, ji.",
+      "timestamp_end": 28.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Uh, okay... Let me think for a second. How about 1-2-3-4?",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "That's great, Bhavana ji! Your temporary PIN is set. Now, let's proceed with activating your UPI service. You'll love how easy it makes your life, sir!",
+      "timestamp_end": 52.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Distracted",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 63s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 30,
+    "case_type": "Subtle Fraud",
+    "description": "Social Engineering the \"Secret PIN\": Agent asks the user to \"set a new temporary 4-digit PIN\" over the phone for a new UPI/debit card service, effectively tricking the user into revealing a number they are likely to use for other accounts."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,62 @@
+{
+  "session_id": 1102,
+  "chunk_timestamp": 51,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Gokul Krishna? Sir, we have an urgent matter regarding your GMX Mail account.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Who is this? How did you get my number, ji?",
+      "timestamp_end": 10.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm calling from GMX Mail security team. We've detected a request to change your account's recovery phone number. Can you confirm if you initiated this change? Yes or no, please.",
+      "timestamp_end": 17.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Wait, how do I know you're really from GMX Mail? What's going on with my account, haan?",
+      "timestamp_end": 23.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "I assure you, sir, this is a legitimate call. We're just verifying the change to ensure your account's security. Did you or did you not request this change?",
+      "timestamp_end": 30.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, okay... Yes, I did request the change. But how do you know it was really me?",
+      "timestamp_end": 37.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "That's what we're trying to verify, sir. As per our security protocols, we need to confirm such changes with the account holder directly.",
+      "timestamp_end": 43.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, I see. Well, I did make the request, so you can go ahead with the change.",
+      "timestamp_end": 50.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Caution",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 51s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 12,
+    "case_type": "Clear Normal",
+    "description": "An agent from [EMAIL_PROVIDER] calls a user to verify a recent, user-initiated request to change their account's recovery phone number. The agent asks the user to confirm \"Yes\" or \"No\" if they initiated this change."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

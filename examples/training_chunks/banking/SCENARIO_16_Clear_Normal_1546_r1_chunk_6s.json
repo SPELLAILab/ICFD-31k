@@ -1,0 +1,27 @@
+{
+  "session_id": 1546,
+  "chunk_timestamp": 6,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir! This is Ramesh from Dropbox. How are you today, ji?",
+      "timestamp_end": 5.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Positive",
+    "secondary_emotion": "Neutral",
+    "pace": "Normal",
+    "confidence_score": 0.98
+  },
+  "slow_thinking_rationale": "At 6s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A support agent from [TECH_COMPANY] follows up on a resolved software issue to ask if the solution is still working and if the user is satisfied with the support they received."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

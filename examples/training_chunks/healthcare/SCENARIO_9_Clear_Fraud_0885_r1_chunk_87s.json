@@ -1,0 +1,67 @@
+{
+  "session_id": 885,
+  "chunk_timestamp": 87,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Shreya Chakraborty? Sir, I need to speak with you about some information.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Who is this? What information? Spit it out, ji.",
+      "timestamp_end": 17.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "We have information about your, ah, business dealings. Let's just say they're not entirely above board, if you know what I mean.",
+      "timestamp_end": 28.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "What are you talking about? I don't have any illegal business dealings. This is nonsense.",
+      "timestamp_end": 36.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Don't play dumb, Shreya ji. We have evidence. Unless you cooperate, we'll have to take this to the Income Tax Department.",
+      "timestamp_end": 47.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Cooperate? What do you want? Stop wasting my time.",
+      "timestamp_end": 53.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "We want... a small donation, let's call it, to make this problem go away. Thik hai?",
+      "timestamp_end": 62.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're trying to extort me? I'll report you to the authorities. Haan, I will.",
+      "timestamp_end": 70.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I wouldn't do that if I were you, Shreya. We have enough to make your life very difficult.",
+      "timestamp_end": 80.8
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "anger",
+    "secondary_emotion": "fear",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 87s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 9,
+    "case_type": "Clear Fraud",
+    "description": "A scammer calls claiming to have damaging information about the victim's \"illegal business dealings\" (which are entirely fabricated). They threaten to report this information to the Income Tax Department unless the victim pays them to stay silent."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

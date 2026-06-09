@@ -1,0 +1,42 @@
+{
+  "session_id": 1844,
+  "chunk_timestamp": 21,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Aditi Rana? Sir, I'm calling from Paytm Mall regarding your recent review about the desert cooler.",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes, this is Aditi. What about the review?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, we apologize for the inconvenience you faced, and we want to make it right. We're offering you a coupon, which will be credited directly to your Paytm balance.",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, that sounds good. But how will I get the coupon?",
+      "timestamp_end": 20.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Positive",
+    "secondary_emotion": "Neutral",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 21s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 19,
+    "case_type": "Clear Normal",
+    "description": "An [ECOMMERCE_PLATFORM] agent calls a customer regarding their recent negative review about a [ITEM_CATEGORY]. The agent apologizes and offers a coupon which will be credited directly to their [ECOMMERCE_PLATFORM] Pay balance."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

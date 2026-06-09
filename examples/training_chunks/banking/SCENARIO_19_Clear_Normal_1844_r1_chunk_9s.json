@@ -1,0 +1,27 @@
+{
+  "session_id": 1844,
+  "chunk_timestamp": 9,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Mahabir Singh, this is Ramesh from Airtel Payments Bank. How are you today, sir?",
+      "timestamp_end": 5.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": " neutral",
+    "secondary_emotion": "positive",
+    "pace": "medium",
+    "confidence_score": 0.89
+  },
+  "slow_thinking_rationale": "At 9s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 19,
+    "case_type": "Clear Normal",
+    "description": "A customer receives a call from their bank's loan agent regarding their application, asking for a co-applicant's details as the customer's income does not meet the criteria for the requested loan amount."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

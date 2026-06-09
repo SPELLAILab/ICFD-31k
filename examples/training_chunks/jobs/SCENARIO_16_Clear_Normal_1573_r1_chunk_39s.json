@@ -1,0 +1,52 @@
+{
+  "session_id": 1573,
+  "chunk_timestamp": 39,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Mr. Hemant Shah?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes, this is Hemant. What's this about, sir?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Good morning, Mr. Shah. My name is Rohan and I'm calling from Vistara Miles, the loyalty program of Vistara Airlines. How are you today, ji?",
+      "timestamp_end": 17.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm good, thanks. Busy with some work. What's this about my loyalty program?",
+      "timestamp_end": 22.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, sir. We've noticed that you've accumulated enough points for a free flight upgrade on your next trip. Congratulations, sir!",
+      "timestamp_end": 30.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, great. That sounds good. How do I claim this upgrade, ji?",
+      "timestamp_end": 35.6
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "slightly positive",
+    "pace": "medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 39s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "An agent from an airline's loyalty program ([AIRLINE_COMPANY] Miles) calls a frequent flyer to inform them that they have accumulated enough points for a free flight upgrade on their next trip and explains how to claim it through the official app."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

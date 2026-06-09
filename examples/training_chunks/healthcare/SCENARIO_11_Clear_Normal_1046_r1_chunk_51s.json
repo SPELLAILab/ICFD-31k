@@ -1,0 +1,62 @@
+{
+  "session_id": 1046,
+  "chunk_timestamp": 51,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Sangeetha Murthy? Sir, I'm calling from KPMG India.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Sangeetha. Who's calling, please?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "My name is Rohan, and I'm an HR representative from KPMG India. We received your application for the software engineer position on our career portal, ji.",
+      "timestamp_end": 17.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, yes. I applied for that role. What's the next step?",
+      "timestamp_end": 22.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "We'd like to schedule a first-round technical interview. Can you please confirm your availability for this week or the next, Thik hai?",
+      "timestamp_end": 30.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm available this week. What's the best day and time for you?",
+      "timestamp_end": 36.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "How about Wednesday at 2 PM? And just to confirm, what's your email address so we can send over the meeting link, please?",
+      "timestamp_end": 43.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "My email is sangeetha.murthy@email.com. You can send it there.",
+      "timestamp_end": 49.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Positive",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 51s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 11,
+    "case_type": "Clear Normal",
+    "description": "A legitimate HR representative from [MNC_COMPANY] calls a candidate to schedule a first-round technical interview for a position they applied for on the company's official career portal. They confirm the candidate's availability and email address to send the meeting link."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,52 @@
+{
+  "session_id": 885,
+  "chunk_timestamp": 45,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Sir, this is from the GST department. We see a discrepancy in your recent filing.",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "What discrepancy? I filed everything correctly, ji.",
+      "timestamp_end": 12.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "To avoid an audit and heavy penalty, you can pay a small 'settlement charge' now.",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "What? How much and how do I pay it? This sounds strange.",
+      "timestamp_end": 28.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "The amount is 10,000 rupees. You can pay using a Target Gift Card.",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Target Gift Card? Are you kidding me? That's not how you pay taxes, sir.",
+      "timestamp_end": 43.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "anger",
+    "secondary_emotion": "frustration",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 45s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 9,
+    "case_type": "Clear Fraud",
+    "description": "An agent calls and says, \"Sir, this is from the GST department. We see a discrepancy in your recent filing. To avoid an audit and heavy penalty, you can pay a small 'settlement charge' now.\" They demand the payment be made in gift cards ([GIFT_CARD_BRAND]) to \"close the file unofficially.\""
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

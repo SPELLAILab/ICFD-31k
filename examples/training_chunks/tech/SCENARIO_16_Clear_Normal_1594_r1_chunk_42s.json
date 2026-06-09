@@ -1,0 +1,42 @@
+{
+  "session_id": 1594,
+  "chunk_timestamp": 42,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Pillai, sir. This is Ramesh from Mozilla Firefox support. How are you today, ji?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm good, thank you. Just a bit busy, haan.",
+      "timestamp_end": 17.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "No problem, Anil ji. I'll keep it brief. I'm calling to follow up on the issue we resolved last week with your Firefox browser.",
+      "timestamp_end": 28.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, yes! The browser was freezing. You guys fixed it, and it's working fine now. Thanks!",
+      "timestamp_end": 39.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Satisfaction",
+    "pace": "Moderate",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 42s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A support agent from [TECH_COMPANY] follows up on a resolved software issue to ask if the solution is still working and if the user is satisfied with the support they received."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

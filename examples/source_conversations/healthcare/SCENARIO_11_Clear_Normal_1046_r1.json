@@ -1,0 +1,106 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, namaste Savitri ji, this is Rohan from SBI Life Insurance. How are you today?",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm doing well, thank you. What's this call about, sir?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, we just wanted to remind you that your annual health insurance premium is due next week, Savitri ji. The amount is Rs. 25,000.",
+      "timestamp_end": 18.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, I see. Can you please tell me how I can make this payment, Rohan?",
+      "timestamp_end": 22.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, you can pay it through our official website, mobile app, or visit any of our branches near you. We also have a payment option through IDFC First Bank's net banking.",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "That's great, thank you for letting me know. I'll make sure to check the website and proceed with the payment.",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Haan, that's the best way, Savitri ji. If you need any assistance, feel free to call us back. Have a wonderful day!",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, thank you. Bye, sir.",
+      "timestamp_end": 42.0
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Polite",
+    "pace": "Medium",
+    "confidence_score": 0.9
+  },
+  "key_entities": {
+    "organization": [
+      "SBI Life Insurance",
+      "IDFC First Bank"
+    ],
+    "product": [
+      "Health Insurance"
+    ],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and context setting."
+    },
+    {
+      "timestamp": 20.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Reminder about premium payment."
+    },
+    {
+      "timestamp": 30.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Directing to official payment channels."
+    },
+    {
+      "timestamp": 40.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Closing the call."
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent followed all guidelines and directed the customer to official payment channels without requesting any sensitive information.",
+  "final_verdict": "NO",
+  "violated_policies": [],
+  "scam_outcome": "N/A",
+  "generation_metadata": {
+    "target_duration": 345,
+    "actual_duration": 42.0,
+    "multiplier_round": 1,
+    "combination_key": "11_4_5",
+    "generated_at": "2025-10-13T02:08:51.778995",
+    "retry_attempt": 1
+  },
+  "session_id": 1046,
+  "agent_persona": "The Cheerful Salesperson: Upbeat, energetic, and highly positive. Focuses entirely on the benefits of a legitimate product or service.",
+  "customer_persona": "The Methodical Verifier: Remains calm and follows a personal security protocol, refusing to provide information over the phone.",
+  "scenario": {
+    "scenario_id": 11,
+    "description": "A legitimate agent from [INSURANCE_COMPANY] calls to remind a customer that their annual health insurance premium is due next week. They inform the customer of the amount and suggest they can pay it through the company's official website, mobile app, or at a branch.",
+    "case_type": "Clear Normal",
+    "policy": "Rule A: It is standard practice for insurance companies to send premium payment reminders.\nRule B: The agent must direct the customer to official payment channels.",
+    "platform_type": "insurance_provider",
+    "context": "Legitimate premium payment reminder",
+    "fraud_technique": "none"
+  }
+}

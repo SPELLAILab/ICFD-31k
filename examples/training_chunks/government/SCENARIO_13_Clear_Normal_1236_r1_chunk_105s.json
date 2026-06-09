@@ -1,0 +1,127 @@
+{
+  "session_id": 1236,
+  "chunk_timestamp": 105,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Hello, I'm calling about the study table you've listed on Oodle India.",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, yes, the study table. It's a very good condition, sir.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Can you tell me more about it? What's the material, and are there any scratches?",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's made of wood, and there's a small scratch on the corner, but it's hardly noticeable, ji.",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds good. I'd like to schedule a time to see it in person before we discuss payment.",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, that's perfectly fine, sir. When were you thinking of coming over?",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "How about tomorrow afternoon? And just to confirm, you won't need any payment information from me during the inspection, right?",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Haan, no payment information will be needed tomorrow. We'll just discuss the details in person, sir.",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Great, I'll see you tomorrow then. What's the address again?",
+      "timestamp_end": 45.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's 123, Main Street. You can't miss it, sir.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, got it. See you tomorrow, and thank you for your time.",
+      "timestamp_end": 55.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. Have a good day, and we'll talk tomorrow.",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, bye.",
+      "timestamp_end": 65.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, sir.",
+      "timestamp_end": 70.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, and one more thing. I'll be paying from my HSBC account.",
+      "timestamp_end": 75.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "That's okay, sir. We'll discuss all the payment details tomorrow.",
+      "timestamp_end": 80.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Good, I just wanted to confirm. Thanks again.",
+      "timestamp_end": 85.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. We'll talk tomorrow.",
+      "timestamp_end": 90.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Take care, bye.",
+      "timestamp_end": 95.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, sir.",
+      "timestamp_end": 100.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sir, I'm looking forward to seeing the table tomorrow.",
+      "timestamp_end": 105.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Friendly",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 105s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "A user who listed a [ITEM_CATEGORY] on [MARKETPLACE_PLATFORM] receives a call from a genuine buyer who asks detailed questions about the item's condition and schedules a time to inspect it in person before discussing payment."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

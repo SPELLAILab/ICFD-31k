@@ -1,0 +1,52 @@
+{
+  "session_id": 1546,
+  "chunk_timestamp": 39,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir! This is Rohan from Nextra Broadband. How are you today, ji?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm good, thanks. Who's calling and what's this about?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "We have a scheduled appointment for a new broadband installation at your address, sir. I just wanted to confirm the details with you. Can you please confirm your address, Achha?",
+      "timestamp_end": 17.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, it's 14, Lake View Apartments. What time was the appointment for?",
+      "timestamp_end": 22.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, that's correct, sir! The appointment is scheduled for 3 PM today. Will that time work for you, Thik hai?",
+      "timestamp_end": 29.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, that's fine. I'll be available at 3 PM. Haan, that's all, right?",
+      "timestamp_end": 34.9
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "None",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 39s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A technician from [INTERNET_PROVIDER] calls a customer to confirm a scheduled appointment for a new installation. They confirm the address and the agreed-upon time slot."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

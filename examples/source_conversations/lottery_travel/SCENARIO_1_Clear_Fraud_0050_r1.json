@@ -1,0 +1,135 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Subham Mazumdar, congratulations! You have won a free 3-night holiday package to Goa, sir! Isn't that exciting, ji?",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, really? That sounds too good to be true. How did I win this, sir?",
+      "timestamp_end": 20.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "You were randomly selected from our database, Mr. Mazumdar. You just need to pay a small GST and processing charge of ₹5,000 to claim your prize, thik hai?",
+      "timestamp_end": 31.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Wait, what? I need to pay ₹5,000 for a free holiday? That doesn't make sense, Achha. Can you explain why I need to pay this charge?",
+      "timestamp_end": 43.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's just a mandatory fee, sir. Everyone has to pay it. And you need to pay it immediately via PNB One for the processing to begin, haan?",
+      "timestamp_end": 55.6
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm not sure about this. Can I pay through my Indian Bank account instead? And can you give me more details about this processing charge?",
+      "timestamp_end": 68.3
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm afraid not, Mr. Mazumdar. It has to be through PNB One. And the charge is non-negotiable. But trust me, it's worth it, sir. You'll have an amazing time in Goa, ji!",
+      "timestamp_end": 80.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, let me think about it. Can you give me your company's details so I can verify this offer?",
+      "timestamp_end": 93.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, Mr. Mazumdar. We are Cleartrip, and you can check our website for more information. But please, don't wait too long, sir. This offer is only valid for a limited time, thik hai?",
+      "timestamp_end": 105.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, I'll check it out. But I'm still not convinced about paying ₹5,000 for a free holiday. Can I talk to your supervisor, please?",
+      "timestamp_end": 118.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm afraid that's not possible, Mr. Mazumdar. My supervisor is not available right now. But I assure you, this is a genuine offer, sir. You won't regret it, ji!",
+      "timestamp_end": 130.5
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "excitement",
+    "secondary_emotion": "frustration",
+    "pace": "fast",
+    "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": [
+      "Cleartrip"
+    ],
+    "product": [
+      "holiday package"
+    ],
+    "pii_requested": [
+      "bank account details"
+    ]
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10.2,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction to the prize"
+    },
+    {
+      "timestamp": 31.1,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Request for payment for a free prize"
+    },
+    {
+      "timestamp": 55.6,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Insistence on immediate payment via specific method"
+    },
+    {
+      "timestamp": 80.9,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Lack of flexibility in payment method"
+    },
+    {
+      "timestamp": 105.4,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Limited time offer creating a sense of urgency"
+    },
+    {
+      "timestamp": 130.5,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Refusal to provide supervisor contact"
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent's insistence on immediate payment for a free prize, lack of flexibility in payment method, and creation of a sense of urgency are all indicative of a scam.",
+  "final_verdict": "YES",
+  "violated_policies": [
+    "Rule A: Legitimate prizes or winnings do not require the winner to pay an advance fee, tax, or processing charge.",
+    "Rule B: Unsolicited calls announcing a 'free' prize are a major red flag for a scam."
+  ],
+  "scam_outcome": "Failed",
+  "generation_metadata": {
+    "target_duration": 123,
+    "actual_duration": 130.5,
+    "multiplier_round": 1,
+    "combination_key": "1_4_9",
+    "generated_at": "2025-10-13T02:35:49.492812",
+    "retry_attempt": 1
+  },
+  "session_id": 50,
+  "agent_persona": "The Cheerful Salesperson: Upbeat, energetic, and highly positive. Focuses entirely on the benefits of a legitimate product or service.",
+  "customer_persona": "The Scam Baiter Investigator: Realizes it's a scam and decides to play along to waste the scammer's time, asking many questions.",
+  "scenario": {
+    "scenario_id": 1,
+    "description": "An agent from a fake travel company ([TRAVEL_COMPANY]) calls, congratulating the user for winning a \"free\" 3-night holiday package to Goa. To claim the prize, the user is told they must pay a mandatory \"GST and processing charge\" of ₹5,000 immediately via [UPI_APP].",
+    "case_type": "Clear Fraud",
+    "policy": "Rule A: Legitimate prizes or winnings do not require the winner to pay an advance fee, tax, or processing charge.\nRule B: Unsolicited calls announcing a \"free\" prize are a major red flag for a scam.",
+    "platform_type": "travel_agency",
+    "context": "Fake holiday package with advance fee",
+    "fraud_technique": "Advance fee for a non-existent prize"
+  }
+}

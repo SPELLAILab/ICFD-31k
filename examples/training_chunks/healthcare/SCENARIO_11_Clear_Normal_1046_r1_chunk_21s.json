@@ -1,0 +1,37 @@
+{
+  "session_id": 1046,
+  "chunk_timestamp": 21,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Namaste! This is Rohan from DCB Bank, sir. How are you today?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, I'm fine, thank you. What's this about?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Ma'am Kulwinder Kaur Virk, we have a reminder for your personal loan EMI. It's due in three days, on the 15th of this month. The amount is Rs. 25,000.",
+      "timestamp_end": 18.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "trust",
+    "pace": "medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 21s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 11,
+    "case_type": "Clear Normal",
+    "description": "A polite agent from a legitimate bank ([BANK_NAME]) calls a customer as a reminder that their personal loan EMI is due in three days. They mention the amount and due date and suggest paying via the official bank app."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

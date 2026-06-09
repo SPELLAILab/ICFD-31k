@@ -1,0 +1,127 @@
+{
+  "session_id": 2713,
+  "chunk_timestamp": 129,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Hi, I'm Sourav Das. I saw your ad for the TV on Adpost. Is it still available, sir?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, yes, it's available. You're interested in buying it, ji?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes. How much were you thinking of selling it for?",
+      "timestamp_end": 14.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "I was thinking of ₹25,000. It's a good price, considering the condition and all.",
+      "timestamp_end": 19.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, that sounds fine. I'll pay you via BSNL Wallet. But first, can you verify your UPI handle?",
+      "timestamp_end": 24.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "Verify? What do you mean, sir? You want to send money, right?",
+      "timestamp_end": 30.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, but to activate the connection, you need to send ₹1 to my UPI ID. Then I'll send the full amount plus the ₹1 back, okay?",
+      "timestamp_end": 37.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, I'm not sure that's necessary. Why do I need to send you ₹1?",
+      "timestamp_end": 42.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "It's just a formality, sir. To confirm the UPI handle. Don't worry, you'll get your ₹1 back.",
+      "timestamp_end": 48.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I see. But I'm using Canara Bank, and I'm not sure about these procedures.",
+      "timestamp_end": 53.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Canara Bank is fine, sir. Just send the ₹1, and we'll be done with the formalities.",
+      "timestamp_end": 60.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Okay, sir... I'll do it. But you'll send the full amount immediately, right?",
+      "timestamp_end": 67.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Immediately, sir. You'll get your money, don't worry.",
+      "timestamp_end": 72.4
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, okay. I'll send the ₹1 now.",
+      "timestamp_end": 78.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Great, sir. I'll wait for the transfer. Then I'll send the full amount.",
+      "timestamp_end": 85.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, can you please confirm your UPI ID again?",
+      "timestamp_end": 91.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "It's... uh... sourav123@upi. Yes, that's it.",
+      "timestamp_end": 98.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Okay, sir. I've sent the ₹1. Please send the full amount now.",
+      "timestamp_end": 105.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Right away, sir. I'll just... uh... check something.",
+      "timestamp_end": 112.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, are you still there? Please send the money.",
+      "timestamp_end": 120.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, sir... I'm just... uh... verifying some details.",
+      "timestamp_end": 127.4
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "trust",
+    "secondary_emotion": "urgency",
+    "pace": "medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 129s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 28,
+    "case_type": "Subtle Fraud",
+    "description": "A \"buyer\" for a [ELECTRONICS_ITEM] on [MARKETPLACE_PLATFORM] agrees to the price. They say they will send money via [UPI_APP] but first need to \"verify the seller's UPI handle.\" They ask the seller to send ₹1 to their UPI ID to \"activate the connection,\" promising to send the full amount plus the ₹1 back immediately."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

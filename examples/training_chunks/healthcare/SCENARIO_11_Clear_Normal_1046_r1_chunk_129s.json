@@ -1,0 +1,147 @@
+{
+  "session_id": 1046,
+  "chunk_timestamp": 129,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir! This is a call from Shoppers Stop. I hope you're doing great today, ji!",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Ah, yes. I'm Biswajit Nath. How can I help you?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Wonderful to speak with you, Mr. Nath! We have a delivery scheduled for you today. Could you please confirm your address for me, sir?",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "It's B-101, Greenwood Apartments, near the park. You can't miss it, haan.",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, great! That helps a lot. Is there a nearby landmark we could use to ensure our delivery person finds you easily, thik hai?",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, there's a DCB Bank branch just opposite our apartment complex.",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Excellent, sir! That's really helpful. We'll make sure to deliver your package right to your doorstep. You'll receive a call once it's on its way, okay?",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds good. Thank you for confirming.",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, Mr. Nath. Have a fantastic day, and we look forward to serving you soon, sir!",
+      "timestamp_end": 45.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, thank you.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "We're about to wrap up here. Just to confirm, we've noted your address and the landmark. All set for delivery now!",
+      "timestamp_end": 55.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, all set.",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "If you have any questions or need any assistance, please don't hesitate to reach out to us. We're always here to help, ji.",
+      "timestamp_end": 65.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thank you, I will. Bye for now.",
+      "timestamp_end": 70.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, Mr. Nath. Have a great day and we'll talk to you soon. Bye, sir!",
+      "timestamp_end": 75.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye.",
+      "timestamp_end": 80.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take care, and we appreciate your business with Shoppers Stop!",
+      "timestamp_end": 85.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome. Appreciate it.",
+      "timestamp_end": 90.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great doing business with you, Mr. Nath. Looking forward to serving you again.",
+      "timestamp_end": 95.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Likewise, thank you.",
+      "timestamp_end": 100.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. All the best!",
+      "timestamp_end": 105.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, bye.",
+      "timestamp_end": 110.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, Mr. Nath. Have a wonderful day!",
+      "timestamp_end": 115.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too.",
+      "timestamp_end": 120.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "It was great speaking with you. We'll be in touch soon.",
+      "timestamp_end": 125.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Positive",
+    "secondary_emotion": "Neutral",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 129s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 11,
+    "case_type": "Clear Normal",
+    "description": "A legitimate [ECOMMERCE_PLATFORM] delivery agent calls the customer to confirm their address and ask for a nearby landmark. They do not ask for any personal or payment information."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

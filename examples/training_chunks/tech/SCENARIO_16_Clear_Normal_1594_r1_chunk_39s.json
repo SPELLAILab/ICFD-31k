@@ -1,0 +1,42 @@
+{
+  "session_id": 1594,
+  "chunk_timestamp": 39,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Vaishali Naik? Sir, I hope you're doing well today.",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes, this is Vaishali. I'm doing well, thank you. Achha, what's this call about?",
+      "timestamp_end": 12.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great to hear that, Vaishali! My name is Rohan, and I'm calling from Bank of America. We came across your profile, and we're interested in discussing a potential job opportunity with you.",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, that sounds interesting. What kind of role is it, ji?",
+      "timestamp_end": 31.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Friendly",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 39s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A recruiter calls a candidate to discuss their salary expectations and notice period for a potential job opportunity."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

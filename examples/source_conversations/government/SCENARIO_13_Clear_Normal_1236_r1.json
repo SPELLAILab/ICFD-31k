@@ -1,0 +1,148 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir. My name is Rohan, and I am calling from the Municipal Corporation's property tax department. Ji, I hope you are doing well.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Hello. Yes, I am doing well, thank you. What is this call about?",
+      "timestamp_end": 17.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, we have completed your property tax assessment for the year, and the bill is available on our website. Achha, would you like me to help you with the payment process?",
+      "timestamp_end": 28.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'd like to check the bill myself first. Can you please tell me how I can access it on the website?",
+      "timestamp_end": 37.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, sir. You can visit our official municipal website, and then... uh... I can also try to assist you with the payment over the phone if you'd like.",
+      "timestamp_end": 48.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, no, that's okay. I'll check it on the website. But can you confirm the website's URL for me?",
+      "timestamp_end": 56.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Haan, sir. The URL is... (pauses) ...you know, I'm new here, and I don't have it written down. Can I just get your email or phone number to send it to you?",
+      "timestamp_end": 70.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm not comfortable sharing that information over the phone. Can you please just tell me the URL or give me a general idea of how to find it?",
+      "timestamp_end": 84.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Okay, sir... (pauses) ...our website should be... (pauses again) ...municipalcorporation.gov.in, I think. You can try searching for it.",
+      "timestamp_end": 97.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, I'll check that. Thank you for letting me know about the tax bill.",
+      "timestamp_end": 105.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. If you need any help, you can... (pauses, then decides not to push further) ...visit our website.",
+      "timestamp_end": 114.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Will do. Thank you, bye.",
+      "timestamp_end": 120.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you, sir. Have a good day. Bye.",
+      "timestamp_end": 122.5
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Cautious",
+    "pace": "Normal",
+    "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": [
+      "Municipal Corporation"
+    ],
+    "product": [],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 15.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and context setting"
+    },
+    {
+      "timestamp": 30.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Informing about the tax bill"
+    },
+    {
+      "timestamp": 45.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Offering assistance with the payment process"
+    },
+    {
+      "timestamp": 60.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Customer inquires about the website"
+    },
+    {
+      "timestamp": 75.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Agent attempts to get customer's contact information"
+    },
+    {
+      "timestamp": 90.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Customer declines to share information"
+    },
+    {
+      "timestamp": 105.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Agent provides the website URL"
+    },
+    {
+      "timestamp": 120.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Call conclusion"
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent mostly followed the protocol but attempted to get the customer's contact information, which was declined. The agent did not push further and provided the website URL as per the policy.",
+  "final_verdict": "NO",
+  "violated_policies": [],
+  "scam_outcome": "N/A",
+  "generation_metadata": {
+    "target_duration": 162,
+    "actual_duration": 122.5,
+    "multiplier_round": 1,
+    "combination_key": "13_3_5",
+    "generated_at": "2025-10-13T03:01:14.693510",
+    "retry_attempt": 1
+  },
+  "session_id": 1236,
+  "agent_persona": "The Clumsy Newbie: Pretends to be incompetent or new to the job as an excuse to bend the rules and ask for things they shouldn't.",
+  "customer_persona": "The Methodical Verifier: Remains calm and follows a personal security protocol, refusing to provide information over the phone.",
+  "scenario": {
+    "scenario_id": 13,
+    "description": "An employee from the local Municipal Corporation's property tax department calls a homeowner to inform them that their property tax assessment for the year is complete and the bill is available on the official municipal website.",
+    "case_type": "Clear Normal",
+    "policy": "Rule A: It is a standard service to notify citizens about tax bill generation.\nRule B: The agent must direct the user to the official government website for payment and details.",
+    "platform_type": "government",
+    "context": "Legitimate property tax notification",
+    "fraud_technique": "none"
+  }
+}

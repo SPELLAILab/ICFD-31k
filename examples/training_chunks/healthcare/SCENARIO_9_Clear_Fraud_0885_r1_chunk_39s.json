@@ -1,0 +1,57 @@
+{
+  "session_id": 885,
+  "chunk_timestamp": 39,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste Kali Devi ji, main Indian Overseas Bank se bol raha hoon.",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Kaun? Kya chahiye? Thik hai, jaldi bolo.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Aapko ek investment scheme ke bare mein bata raha hoon. Guaranteed high returns hain.",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Guaranteed? Kya hai yeh? Bank walon ka kaam hai kya yeh?",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Haan, sir. Yeh humare bank ka ek scheme hai. Aapko UPI se paise transfer karne honge.",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "UPI? Kya pagal ho gaye ho? Main kabhi bhi aisa nahi karungi.",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, sir. Toh main aapko account number do deta hoon. Aap NEFT se bhi paise transfer kar sakti hain.",
+      "timestamp_end": 35.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "suspicion",
+    "secondary_emotion": "anger",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 39s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 9,
+    "case_type": "Clear Fraud",
+    "description": "Investment Scam: Agent from HDFC Bank/SBI/ICICI Bank/Axis Bank offers a \"guaranteed\" high-return mutual fund or stock investment scheme and pressures for immediate fund transfer via UPI/NEFT to a specific account."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

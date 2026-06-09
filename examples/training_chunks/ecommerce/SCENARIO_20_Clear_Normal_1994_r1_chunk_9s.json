@@ -1,0 +1,27 @@
+{
+  "session_id": 1994,
+  "chunk_timestamp": 9,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Ismail, sir. How are you today? Welcome to Fynd.",
+      "timestamp_end": 5.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Positive",
+    "pace": "Normal",
+    "confidence_score": 0.89
+  },
+  "slow_thinking_rationale": "At 9s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "An agent from [ECOMMERCE_PLATFORM] calls to guide a new seller on how to set up their first product listing, directing them to use the features available on the official seller portal."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

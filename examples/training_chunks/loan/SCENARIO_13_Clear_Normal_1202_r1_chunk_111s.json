@@ -1,0 +1,72 @@
+{
+  "session_id": 1202,
+  "chunk_timestamp": 111,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Mitali Sengupta? Sir, I'm calling from Taj Hotels regarding your reservation for this weekend.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Who is this? How did you get my number, ji?",
+      "timestamp_end": 18.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Ma'am, I'm calling to confirm your arrival time for your booking through a travel website. We need to ensure we have the correct details.",
+      "timestamp_end": 28.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I didn't give my number to any hotel. How do I know you're really from Taj Hotels? Can you give me your employee ID, please?",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, I understand your concern, ma'am. My employee ID is not something I can share over the phone due to security reasons. But I can confirm your booking details if you provide me with your booking reference number.",
+      "timestamp_end": 52.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'd rather call the hotel directly and confirm. What's the hotel's phone number, please?",
+      "timestamp_end": 62.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ma'am. You can find our contact number on our official website. But please, for your convenience, let me just confirm your arrival time so we can prepare for your stay.",
+      "timestamp_end": 72.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I've already provided all necessary information when I booked. I don't see why you need to call me now. Can you just email me the confirmation?",
+      "timestamp_end": 84.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Haan, ma'am, I can do that. But just to reconfirm, your booking is under the name Mitali Sengupta, and you've booked a room for two nights starting this Friday, correct?",
+      "timestamp_end": 96.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, that's correct. But like I said, I've already confirmed everything online. You can just send me a confirmation email.",
+      "timestamp_end": 106.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Suspicious",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 111s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "A hotel ([HOTEL_NAME]) receptionist calls a guest to confirm their reservation for the upcoming weekend, a booking the guest made through a travel website."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

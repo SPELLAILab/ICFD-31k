@@ -1,0 +1,52 @@
+{
+  "session_id": 1573,
+  "chunk_timestamp": 78,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Hello, hi. Nandini Reddy here. I need to talk to someone about...personal stuff, sir.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, okay. I'm here to listen, ma'am. What's going on?",
+      "timestamp_end": 17.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "It's just...I had a huge fight with my sister, and I'm really upset. I don't know what to do, ji.",
+      "timestamp_end": 28.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm so sorry to hear that, Nandini. Family arguments can be really tough. Have you tried talking to your sister about how you feel?",
+      "timestamp_end": 41.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yeah, we tried, but...it didn't go well. I just feel really alone right now, Thik hai, I guess I just need someone to talk to.",
+      "timestamp_end": 54.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're not alone, Nandini. I'm here to listen, and I care about what you're going through. Would you like some advice or just someone to vent to?",
+      "timestamp_end": 67.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Sadness",
+    "secondary_emotion": "Frustration",
+    "pace": "Slow",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 78s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A person calls their friend to tell them about a personal crisis (e.g., a breakup, a family argument) and seeks emotional support."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

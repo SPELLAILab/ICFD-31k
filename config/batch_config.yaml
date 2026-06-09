@@ -1,0 +1,118 @@
+# Batch Configuration File
+# Edit this file before each dataset generation run
+
+# Batch Metadata
+batch:
+  name: "Bank Fraud Scenarios - October 2025"
+  description: "30 bank fraud scenarios covering phishing, OTP theft, KYC scams, and more"
+  scenario_type: "bank_fraud"  # Used for organization and folder naming
+  
+# Entity Configuration (Flexible per batch type)
+# These entities will be randomly selected and used in conversations
+entities:
+  organizations:
+    - "HDFC Bank"
+    - "State Bank of India"
+    - "ICICI Bank"
+    - "Axis Bank"
+  
+  # Additional context (optional)
+  telecom_providers:
+    - "Jio"
+    - "Airtel"
+    - "VI"
+  
+  payment_platforms:
+    - "PayTM"
+    - "PhonePe"
+    - "Google Pay"
+    - "BHIM UPI"
+
+# Generation Parameters
+generation:
+  multiplier: 1  # Generate N variations of each combination
+  
+  # Performance settings
+  max_workers: 50  # Number of concurrent API workers (10-100)
+  rate_limit_per_minute: 500  # API rate limiting
+  enable_adaptive_scaling: true  # Dynamically adjust workers based on API performance
+
+# Recovery Settings
+recovery:
+  enabled: true  # Enable checkpoint and recovery system
+  checkpoint_interval: 50  # Save progress every N conversations
+  auto_resume: true  # Automatically resume from last checkpoint if found
+  retry_failed_sessions: true  # Retry failed sessions at the end
+  max_retries: 3  # Maximum retry attempts per failed session
+
+# Output Settings
+output:
+  create_batch_folder: true  # Create timestamped batch folders
+  save_batch_metadata: true  # Save batch configuration and statistics
+  compress_old_batches: false  # Compress batches older than 30 days (future feature)
+
+# -------------------------------------------------------------------
+# EXAMPLE CONFIGURATIONS FOR DIFFERENT SCENARIO TYPES
+# -------------------------------------------------------------------
+
+# Example 1: UPI Scam Scenarios
+# batch:
+#   name: "UPI Scam Scenarios - October 2025"
+#   description: "30 UPI-specific fraud scenarios targeting digital payment platforms"
+#   scenario_type: "upi_fraud"
+# 
+# entities:
+#   organizations:
+#     - "PayTM"
+#     - "PhonePe"
+#     - "Google Pay"
+#     - "BHIM UPI"
+#     - "Amazon Pay"
+
+# Example 2: Electricity Bill Scams
+# batch:
+#   name: "Electricity Bill Scams - October 2025"
+#   description: "30 electricity disconnection threat scam scenarios"
+#   scenario_type: "electricity_scam"
+# 
+# entities:
+#   organizations:
+#     - "MSEB"
+#     - "BSES"
+#     - "Adani Electricity"
+#     - "TATA Power"
+#     - "CESC"
+
+# Example 3: Government Services Scam
+# batch:
+#   name: "Government Services Scams - October 2025"
+#   description: "30 scam scenarios impersonating government officials"
+#   scenario_type: "government_scam"
+# 
+# entities:
+#   organizations:
+#     - "Income Tax Department"
+#     - "UIDAI (Aadhaar)"
+#     - "Passport Seva"
+#     - "Ministry of External Affairs"
+#     - "EPFO"
+
+# Example 4: E-commerce Delivery Scams
+# batch:
+#   name: "E-commerce Delivery Scams - October 2025"
+#   description: "30 fake delivery and refund scam scenarios"
+#   scenario_type: "ecommerce_scam"
+# 
+# entities:
+#   organizations:
+#     - "Amazon"
+#     - "Flipkart"
+#     - "Myntra"
+#     - "Swiggy"
+#     - "Zomato"
+#   
+#   delivery_services:
+#     - "Blue Dart"
+#     - "Delhivery"
+#     - "DTDC"
+#     - "India Post"

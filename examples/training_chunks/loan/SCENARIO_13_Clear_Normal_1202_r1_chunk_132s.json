@@ -1,0 +1,72 @@
+{
+  "session_id": 1202,
+  "chunk_timestamp": 132,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Madam, this is Officer Sharma from the Municipal Corporation's property tax department, sir. Your property tax assessment for the year is now complete.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Who is this? How did you get my number, ji?",
+      "timestamp_end": 22.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "We have your details on record, ma'am. Now, regarding your property tax, you can view and pay your bill on our official website.",
+      "timestamp_end": 34.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, but how do I know this is not a scam? What is the website, exactly?",
+      "timestamp_end": 46.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "The website is mc.gov.in, ma'am. You can also visit our office if you prefer, but the website is the quickest way, thik hai?",
+      "timestamp_end": 59.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, I will check. But can you give me my property tax number so I can verify?",
+      "timestamp_end": 71.4
+    },
+    {
+      "speaker": "Agent",
+      "text": "Your property tax number is PT0012345, ma'am. You can use this to log in and view your bill on the website.",
+      "timestamp_end": 83.7
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, I have found it. The amount seems correct. How do I pay online?",
+      "timestamp_end": 95.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "You can pay through net banking or credit/debit card on the website, ma'am. We accept payments from all major banks, including Jana Small Finance Bank.",
+      "timestamp_end": 108.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, I will pay online now. Thank you for informing me, sir.",
+      "timestamp_end": 120.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "suspicion",
+    "pace": "medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 132s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "An employee from the local Municipal Corporation's property tax department calls a homeowner to inform them that their property tax assessment for the year is complete and the bill is available on the official municipal website."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

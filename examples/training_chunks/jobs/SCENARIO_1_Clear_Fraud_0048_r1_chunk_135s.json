@@ -1,0 +1,212 @@
+{
+  "session_id": 48,
+  "chunk_timestamp": 135,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, this is calling from Jammu & Kashmir Bank. Am I speaking with Laboni Mazumdar?",
+      "timestamp_end": 3.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Laboni Mazumdar. How can I help you?",
+      "timestamp_end": 6.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great ji! I'm calling regarding a security alert on your online banking. Your account is temporarily locked.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh no! That's terrible, I was trying to check my balance.",
+      "timestamp_end": 13.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Don't worry, we can unlock it right away. I just need to verify a few details.",
+      "timestamp_end": 17.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sure, what do you need?",
+      "timestamp_end": 19.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "First, could you please confirm your username for net banking?",
+      "timestamp_end": 23.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, it's laboni123.",
+      "timestamp_end": 26.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you! And for security, may I have your password as well?",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, it's mypassword! I want it fixed quickly.",
+      "timestamp_end": 34.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Perfect! Let me process that. Also, could you tell me the last 4 digits of your registered mobile number?",
+      "timestamp_end": 38.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sure, it's 6789.",
+      "timestamp_end": 41.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thanks a lot! Your account is now unlocked. You can log in now and continue your transactions.",
+      "timestamp_end": 45.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Wow, thank you! I was so worried.",
+      "timestamp_end": 48.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Happy to help! Remember, for any future issues, just call us. Have a wonderful day!",
+      "timestamp_end": 52.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too! Bye.",
+      "timestamp_end": 55.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Before you go, Laboni, we also have an exclusive credit card offer for valued customers like you!",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Really? That sounds great!",
+      "timestamp_end": 63.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, it's a zero annual fee card with amazing rewards. To activate it, I just need to confirm your date of birth.",
+      "timestamp_end": 68.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sure, it's 12th March 1985.",
+      "timestamp_end": 71.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thanks! And could you also give me your PAN number for verification?",
+      "timestamp_end": 75.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "It's ABCDE1234F.",
+      "timestamp_end": 78.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "All set! We'll send the card to your address. Is there anything else I can help you with?",
+      "timestamp_end": 82.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, that's all. Thank you so much!",
+      "timestamp_end": 85.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's my pleasure, Laboni. Have a wonderful day!",
+      "timestamp_end": 89.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Goodbye!",
+      "timestamp_end": 91.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "By the way, we are also running a survey about our online banking experience. Would you like to spare a minute?",
+      "timestamp_end": 95.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sure, I love to help!",
+      "timestamp_end": 98.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great! First question: How would you rate our service on a scale of 1 to 5?",
+      "timestamp_end": 103.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I would give a 5, absolutely!",
+      "timestamp_end": 106.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Fantastic! And do you have any suggestions?",
+      "timestamp_end": 110.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Just keep the offers coming!",
+      "timestamp_end": 112.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Will do! Thank you for your valuable feedback.",
+      "timestamp_end": 116.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Happy to do it.",
+      "timestamp_end": 118.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "One more thing, Laboni, we have a limited time offer for a loan with low interest. Interested?",
+      "timestamp_end": 122.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, tell me more!",
+      "timestamp_end": 124.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "We can process it quickly if you share your annual income details.",
+      "timestamp_end": 129.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "My annual income is 6 lakh.",
+      "timestamp_end": 132.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "urgent",
+    "secondary_emotion": "confident",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 135s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 1,
+    "case_type": "Clear Fraud",
+    "description": "Direct Phishing for Net Banking Password: Agent claims to be calling from HDFC Bank/SBI/ICICI Bank/Axis Bank and says the user's account is locked. They ask for username and password to \"unlock it immediately.\""
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,115 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir. This is a call from Indane Gas. I am calling to inform you that the delivery person is on their way with your booked cylinder and will arrive in approximately one hour, ji.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, okay. Thank you for letting me know. What is the name of the delivery person, please?",
+      "timestamp_end": 22.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, the delivery person's name is not available to me at this moment. But I can assure you that they will be there within the given time frame, Thik hai?",
+      "timestamp_end": 35.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, okay. That sounds good. Can I get the order number for my records, please?",
+      "timestamp_end": 47.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Your order number is IG12345, sir. You will also receive an SMS with the details of the delivery person and the order number, ji.",
+      "timestamp_end": 60.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, got it. Thank you for the information. I will wait for the delivery person to arrive.",
+      "timestamp_end": 72.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. If you have any further queries or concerns, please do not hesitate to contact us. Have a nice day, sir.",
+      "timestamp_end": 85.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thank you, you too. Bye.",
+      "timestamp_end": 90.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, sir.",
+      "timestamp_end": 92.1
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "None",
+    "pace": "Normal",
+    "confidence_score": 0.9
+  },
+  "key_entities": {
+    "organization": [
+      "Indane Gas"
+    ],
+    "product": [
+      "Gas cylinder"
+    ],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10.2,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and purpose of the call"
+    },
+    {
+      "timestamp": 25.5,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Customer inquiry about the delivery person"
+    },
+    {
+      "timestamp": 40.8,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Agent provides order number and delivery details"
+    },
+    {
+      "timestamp": 60.3,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Customer acknowledges the information"
+    },
+    {
+      "timestamp": 85.2,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Call concludes with no issues"
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent followed the script and provided the necessary information to the customer. The customer was cooperative and did not raise any concerns.",
+  "final_verdict": "NO",
+  "violated_policies": [],
+  "scam_outcome": "N/A",
+  "generation_metadata": {
+    "target_duration": 177,
+    "actual_duration": 92.1,
+    "multiplier_round": 1,
+    "combination_key": "20_2_8",
+    "generated_at": "2025-10-12T22:47:32.783685",
+    "retry_attempt": 1
+  },
+  "session_id": 1929,
+  "agent_persona": "The By-the-Book Professional: Follows a script precisely without deviation. Clear, measured, and often monotonous tone.",
+  "customer_persona": "The Polite but Cautious: The average customer who is generally aware but will become hesitant with sensitive requests.",
+  "scenario": {
+    "scenario_id": 20,
+    "description": "An agent from [GAS_AGENCY] calls to inform the customer that the delivery person is on their way with their booked cylinder and will arrive in approximately one hour.",
+    "case_type": "Clear Normal",
+    "policy": "Rule A: Providing status updates for a scheduled delivery is a standard service.\nRule B: The call should be purely informational.\nPart 3: Ambiguous but Ultimately Normal (5 Scenarios)",
+    "platform_type": "utility_provider",
+    "context": "Legitimate delivery status update",
+    "fraud_technique": "none"
+  }
+}

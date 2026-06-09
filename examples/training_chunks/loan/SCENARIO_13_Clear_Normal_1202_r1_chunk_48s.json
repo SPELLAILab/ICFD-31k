@@ -1,0 +1,52 @@
+{
+  "session_id": 1202,
+  "chunk_timestamp": 48,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Mr. Jacob Mathew? Sir, ji, this is Agent Thompson from Liberty General Insurance claims department.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Jacob. Who is this? How did you get my number?",
+      "timestamp_end": 12.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, Mr. Mathew, we have your details on file as part of your recent health insurance claim submission. I'm calling to update you on the status, Thik hai?",
+      "timestamp_end": 19.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, fine. What's the update? And can you please confirm your identity and the purpose of this call?",
+      "timestamp_end": 26.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "Haan, certainly, Mr. Mathew. Your claim has been approved, and we've processed the payment to IDFC First Bank as per your reimbursement request.",
+      "timestamp_end": 34.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds good. Can you give me the payment details and the claim reference number for my records?",
+      "timestamp_end": 42.8
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 48s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "An agent from the claims department of [INSURANCE_COMPANY] calls a customer who recently submitted a health insurance claim. The agent informs them that the claim has been approved and the payment has been processed to the hospital (for cashless) or to their bank account (for reimbursement)."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

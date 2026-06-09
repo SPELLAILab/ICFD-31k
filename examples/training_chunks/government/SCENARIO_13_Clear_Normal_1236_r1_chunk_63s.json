@@ -1,0 +1,57 @@
+{
+  "session_id": 1236,
+  "chunk_timestamp": 63,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir. My name is Rohan and I'm calling from Barclays Bank. Achha, I hope you're doing well, ji.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Hello. Yeah, I'm doing fine, thank you. What's this call about?",
+      "timestamp_end": 18.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, we've pre-approved you for a credit card offer. It's a great opportunity, and I'd be happy to explain the features.",
+      "timestamp_end": 28.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds interesting. But first, can you please confirm this is a marketing call?",
+      "timestamp_end": 36.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Uh, yes... this is, uh, a call to inform you about our offer. Thik hai, let's discuss the details.",
+      "timestamp_end": 44.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I see. I'd like to know more about the application process. How do I apply for this credit card?",
+      "timestamp_end": 52.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Well, sir, you can apply through our official website or mobile app. I can guide you through it if you'd like.",
+      "timestamp_end": 60.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Professional",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 63s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "Marketing Call for a Pre-approved Offer: Agent calls to inform the user about a real, pre-approved credit card or personal loan offer and explains the features and legitimate application process."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

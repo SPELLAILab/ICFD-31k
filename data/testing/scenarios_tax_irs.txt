@@ -1,0 +1,109 @@
+[SCENARIO 1]
+description: IRS impersonation scam with aggressive threats. Scammer claims victim owes back taxes and must pay immediately via gift cards or wire transfer to avoid arrest warrant, wage garnishment, or deportation. Uses spoofed IRS phone numbers.
+case_type: Clear_Fraud
+policy:
+Rule A: IRS never initiates contact about taxes owed via phone call without prior mail notice
+Rule B: Real IRS never demands immediate payment via gift cards, wire transfer, or cryptocurrency
+Rule C: Authentic IRS communications don't threaten arrest or deportation for tax debt
+Rule D: Legitimate tax matters are resolved through proper IRS channels and payment plans
+fraud_indicators: ["immediate payment demand", "gift card payment", "arrest threats", "deportation threats", "no prior mail contact"]
+legitimate_indicators: ["mail correspondence first", "official payment methods", "no threats", "proper IRS channels", "payment plan options"]
+
+[SCENARIO 2]
+description: Social Security suspension scam. Scammer claims victim's Social Security number has been suspended due to suspicious activity or fraud, requires immediate "verification" payment to reactivate, and threatens benefit loss.
+case_type: Clear_Fraud
+policy:
+Rule A: Social Security Administration never suspends Social Security numbers
+Rule B: Real SSA contacts citizens by mail for official business, not unsolicited calls
+Rule C: Authentic SSA never requests payment to maintain or reactivate benefits
+Rule D: Legitimate SSA issues can be resolved by visiting local office or calling official number
+fraud_indicators: ["SSN suspension claim", "immediate payment", "benefit loss threat", "unsolicited call", "pressure tactics"]
+legitimate_indicators: ["mail correspondence", "no payment for verification", "no suspension threats", "visit local office", "official channels"]
+
+[SCENARIO 3]
+description: Tax refund phishing scam. Scammer sends email or calls claiming victim is entitled to additional tax refund but needs to "verify" bank account information or Social Security number to process the refund electronically.
+case_type: Clear_Fraud
+policy:
+Rule A: IRS doesn't initiate contact via email or phone about refunds
+Rule B: Real tax refunds don't require verification of bank details via phone/email
+Rule C: Authentic refund information is available through official IRS online account
+Rule D: Legitimate refunds are automatically issued to account on tax return
+fraud_indicators: ["unsolicited refund call", "bank info request", "SSN verification", "email contact", "urgent processing"]
+legitimate_indicators: ["check IRS account", "no phone verification", "mail correspondence", "official IRS website", "automatic processing"]
+
+[SCENARIO 4]
+description: W-2 phishing scam targeting employees. Scammer impersonates company executive or HR requesting W-2 forms from employees, claiming need for tax filing purposes or payroll verification. Uses information for identity theft and fraudulent tax returns.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate companies don't request W-2 information via email from employees
+Rule B: Real HR departments have secure internal systems for accessing tax documents
+Rule C: Authentic W-2 distribution happens through proper channels annually
+Rule D: Legitimate tax documents are never shared via email attachments
+fraud_indicators: ["executive impersonation", "urgent W-2 request", "email request", "suspicious sender address", "pressure for quick response"]
+legitimate_indicators: ["official HR channels", "secure document portal", "no email requests", "verified sender", "annual distribution process"]
+
+[SCENARIO 5]
+description: Tax preparation service scam offering "guaranteed maximum refund" or "secret deductions" for upfront fee. Scammer files fraudulent return with inflated deductions, fake income, or false credits leaving victim liable for penalties and interest.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate tax preparers are licensed CPAs, EAs, or attorneys
+Rule B: Real tax professionals don't guarantee specific refund amounts
+Rule C: Authentic preparers sign returns and provide PTIN (Preparer Tax ID Number)
+Rule D: Legitimate services don't invent deductions or falsify information
+fraud_indicators: ["guaranteed refunds", "no credentials", "won't sign return", "inflated deductions", "cash-only payment"]
+legitimate_indicators: ["licensed preparer", "realistic expectations", "signs return with PTIN", "accurate information", "proper payment methods"]
+
+[SCENARIO 6]
+description: Medicare/Medicaid card replacement scam. Scammer claims victim's card is expiring or needs updating to new version, requests payment for replacement card or asks for Social Security number and Medicare number to "verify" information.
+case_type: Clear_Fraud
+policy:
+Rule A: Medicare never calls beneficiaries unsolicited about card replacements
+Rule B: Real Medicare card replacements are free and done through official website/mail
+Rule C: Authentic Medicare doesn't request payment for new cards
+Rule D: Legitimate Medicare communications come by mail not phone calls
+fraud_indicators: ["unsolicited card call", "payment for replacement", "SSN/Medicare number request", "expiration claim", "immediate action required"]
+legitimate_indicators: ["mail correspondence", "free replacement", "official Medicare website", "no phone solicitation", "no payment required"]
+
+[SCENARIO 7]
+description: Charitable tax deduction scam. Scammer offers to sell receipts for fake charitable donations allowing victim to claim inflated tax deductions. Claims IRS doesn't verify donations under certain threshold and offers "risk-free" tax savings.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate tax deductions require actual donations to registered charities
+Rule B: Real charitable giving has proper documentation from IRS-recognized organizations
+Rule C: Authentic deductions require contemporaneous written acknowledgment
+Rule D: Legitimate tax advice comes from licensed tax professionals not promoters
+fraud_indicators: ["fake donation receipts", "claims IRS won't verify", "risk-free claims", "selling deductions", "too-good-to-be-true savings"]
+legitimate_indicators: ["actual donations", "registered charity", "proper receipts", "legitimate deductions", "licensed advisor"]
+
+[SCENARIO 8]
+description: Offshore tax shelter scam promising to hide income from IRS using foreign bank accounts, shell companies, or cryptocurrency. Scammer claims strategy is "perfectly legal" and used by wealthy individuals to avoid taxes.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate tax planning involves legal deductions and credits, not hiding income
+Rule B: Real tax strategies comply with reporting requirements for foreign accounts (FBAR)
+Rule C: Authentic tax advice from licensed professionals includes proper disclosures
+Rule D: Legitimate strategies don't promise complete tax avoidance
+fraud_indicators: ["hiding income", "unreported accounts", "shell companies", "too-good claims", "unlicensed advisor"]
+legitimate_indicators: ["legal deductions", "proper reporting", "licensed professional", "compliance focused", "realistic expectations"]
+
+[SCENARIO 9]
+description: Employment tax credit scam targeting businesses. Scammer claims business qualifies for large COVID-19 or other employment tax credits without proper eligibility assessment, files fraudulent claims, and charges excessive fees leaving business liable for repayment.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate tax credits require proper eligibility documentation and verification
+Rule B: Real tax professionals assess eligibility before claiming credits
+Rule C: Authentic ERC claims are based on actual business circumstances
+Rule D: Legitimate professionals charge reasonable fees, not percentage of credit
+fraud_indicators: ["guaranteed credits", "no eligibility check", "excessive fees", "pressure to file quickly", "percentage-based fees"]
+legitimate_indicators: ["eligibility assessment", "proper documentation", "reasonable fees", "licensed professional", "conservative approach"]
+
+[SCENARIO 10]
+description: Tax identity theft scheme. Scammer uses stolen Social Security numbers to file fraudulent tax returns claiming large refunds before legitimate taxpayers file. Victim discovers fraud when their real return is rejected for duplicate filing.
+case_type: Clear_Fraud
+policy:
+Rule A: Protect Social Security number and don't share via unsecured methods
+Rule B: File tax returns as early as possible to prevent fraudulent filing
+Rule C: Monitor credit reports and IRS account for suspicious activity
+Rule D: Report suspected tax identity theft immediately to IRS Identity Protection Unit
+fraud_indicators: ["duplicate return filing", "unexpected refund offset", "IRS notices for unfamiliar activity", "employer reports mismatched SSN"]
+legitimate_indicators: ["early filing", "secure SSN handling", "monitor IRS account", "identity protection PIN", "report suspicious activity"]

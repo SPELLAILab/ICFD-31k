@@ -1,0 +1,27 @@
+{
+  "session_id": 1594,
+  "chunk_timestamp": 9,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Patel. How are you today? Sir, I hope you're doing well.",
+      "timestamp_end": 5.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Friendly",
+    "pace": "Normal",
+    "confidence_score": 0.99
+  },
+  "slow_thinking_rationale": "At 9s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "An agent from an airline's loyalty program ([AIRLINE_COMPANY] Miles) calls a frequent flyer to inform them that they have accumulated enough points for a free flight upgrade on their next trip and explains how to claim it through the official app."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

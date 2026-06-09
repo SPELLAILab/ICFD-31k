@@ -1,0 +1,52 @@
+{
+  "session_id": 1546,
+  "chunk_timestamp": 87,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Firdaus Shroff? Sir, I'm calling from Barclays Bank, and I'm super excited to discuss a fantastic job opportunity with you.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Firdaus. Achha, what's the role about, ji?",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "We're looking for a talented individual like yourself to join our team as a financial analyst. The role comes with great benefits and a competitive salary package.",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds interesting. What are the salary expectations for this role, and what's the notice period like?",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "We're looking at a salary range of 15 to 20 lakhs per annum, and the notice period is three months. Thik hai, we believe this is a great opportunity for you to grow.",
+      "timestamp_end": 65.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, that's good to know. I'll need some time to think about it and discuss with my family. Can I get back to you tomorrow?",
+      "timestamp_end": 80.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 87s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A recruiter calls a candidate to discuss their salary expectations and notice period for a potential job opportunity."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

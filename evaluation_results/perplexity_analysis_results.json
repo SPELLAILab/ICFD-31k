@@ -1,0 +1,11 @@
+{
+  "fraud_mean": 22.55201716027105,
+  "fraud_median": 21.246448516845703,
+  "fraud_std": 7.486553706552957,
+  "normal_mean": 20.426101346721563,
+  "normal_median": 19.606124877929688,
+  "normal_std": 5.671388254188755,
+  "fraud_samples": 277,
+  "normal_samples": 223,
+  "pass": true
+}

@@ -1,0 +1,1204 @@
+%%%% ijcai26.tex
+
+\typeout{IJCAI--ECAI 26 Instructions for Authors}
+
+% These are the instructions for authors for IJCAI--ECAI 26.
+
+\documentclass{article}
+\pdfpagewidth=8.5in
+\pdfpageheight=11in
+
+% The file ijcai26.sty is a copy from ijcai22.sty
+% The file ijcai22.sty is NOT the same as previous years'
+\usepackage{ijcai26}
+
+% Use the postscript times font!
+\usepackage{times}
+\usepackage{soul}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[small]{caption}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{amssymb}
+\definecolor{lightgray}{gray}{0.95} % Light background for boxes
+\newcommand{\crchange}[1]{{\color{blue}#1}}
+\makeatletter
+\providecommand{\@LN}[2]{}
+\providecommand{\@LN@col}[1]{}
+\makeatother
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{F7F7F7}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+\lstdefinelanguage{json}{
+    basicstyle=\normalfont\ttfamily\footnotesize,
+    numbers=left,
+    numberstyle=\scriptsize,
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frame=lines,
+    backgroundcolor=\color{background},
+    literate=
+     *{0}{{{\color{numb}0}}}{1}
+      {1}{{{\color{numb}1}}}{1}
+      {2}{{{\color{numb}2}}}{1}
+      {3}{{{\color{numb}3}}}{1}
+      {4}{{{\color{numb}4}}}{1}
+      {5}{{{\color{numb}5}}}{1}
+      {6}{{{\color{numb}6}}}{1}
+      {7}{{{\color{numb}7}}}{1}
+      {8}{{{\color{numb}8}}}{1}
+      {9}{{{\color{numb}9}}}{1}
+      {:}{{{\color{punct}{:}}}}{1}
+      {,}{{{\color{punct}{,}}}}{1}
+      {\{}{{{\color{delim}{\{}}}}{1}
+      {\}}{{{\color{delim}{\}}}}}{1}
+      {[}{{{\color{delim}{[}}}}{1}
+      {]}{{{\color{delim}{]}}}}{1},
+}
+
+\urlstyle{same}
+
+% the following package is optional:
+%\usepackage{latexsym}
+
+% See https://www.overleaf.com/learn/latex/theorems_and_proofs
+% for a nice explanation of how to define new theorems, but keep
+% in mind that the amsthm package is already included in this
+% template and that you must *not* alter the styling.
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+
+% Following comment is from ijcai97-submit.tex:
+% The preparation of these files was supported by Schlumberger Palo Alto
+% Research, AT\&T Bell Laboratories, and Morgan Kaufmann Publishers.
+% Shirley Jowell, of Morgan Kaufmann Publishers, and Peter F.
+% Patel-Schneider, of AT\&T Bell Laboratories collaborated on their
+% preparation.
+
+% These instructions can be modified and used in other conferences as long
+% as credit to the authors and supporting agencies is retained, this notice
+% is not changed, and further modification or reuse is not restricted.
+% Neither Shirley Jowell nor Peter F. Patel-Schneider can be listed as
+% contacts for providing assistance without their prior permission.
+
+% To use for other conferences, change references to files and the
+% conference appropriate and use other authors, contacts, publishers, and
+% organizations.
+% Also change the deadline and address for returning papers and the length and
+% page charge instructions.
+% Put where the files are available in the appropriate places.
+
+
+% PDF Info Is REQUIRED.
+
+% Please leave this \pdfinfo block untouched both for the submission and
+% Camera Ready Copy. Do not include Title and Author information in the pdfinfo section
+\pdfinfo{
+/TemplateVersion (IJCAI.2026.0)
+}
+
+\title{ICFD-31k: A Large-Scale Dataset and Benchmark for Real-Time
+Conversational Fraud Detection}
+
+% Single author syntax
+% \author{
+%     Author Name
+%     \affiliations
+%     Affiliation
+%     \emails
+%     email@example.com
+% }
+
+% Multiple author syntax (remove the single-author syntax above and the \iffalse ... \fi here)
+% \iffalse
+% \author{
+% First Author$^1$
+% \and
+% Second Author$^2$\and
+% Third Author$^{2,3}$\And
+% Fourth Author$^4$\\
+% \affiliations
+% $^1$First Affiliation\\
+% $^2$Second Affiliation\\
+% $^3$Third Affiliation\\
+% $^4$Fourth Affiliation\\
+% \emails
+% \{first, second\}@example.com,
+% third@other.example.com,
+% fourth@example.com
+% }
+% \fi
+
+\author{
+Rishi Ahuja$^{\dagger}$
+\and
+Kumar Prateek$^{\dagger}$
+\And
+Simranjit Singh$^{\dagger\,\boxtimes}$\\
+\affiliations
+$^{\dagger}$Department of Information Technology,
+Dr.\ B.R.\ Ambedkar National Institute of Technology Jalandhar,
+Punjab, 144008, India\\
+\emails
+\{rishia.it.24, kumarprateek, singhsimranjit\}@nitj.ac.in
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    The proliferation of sophisticated telephone scams poses a significant societal and economic threat, impacting diverse linguistic contexts in a country like India. Furthermore, the lack of large-scale, publicly available datasets remains a critical barrier impacting research on robust, real-time countermeasures. In view of this, the proposed work introduces ICFD-31k, the first Indian Conversational Fraud Dataset, representing a new benchmark containing over 31,000 realistic conversational transcripts. ICFD-31k comprises systematically generated content, covering 10 distinct fraud umbrellas spanning from financial impersonation to job scams. ICFD-31k transcripts feature rich annotations comprising a final verdict, chunk-level streaming labels, and detailed ``slow-thinking'' rationales. In addition, the human-in-the-loop evaluation supports the ICFD-31k's quality, achieving a mean pairwise Cohen's Kappa of 0.534, indicating moderate inter-annotator agreement. Furthermore, the proposed work introduces two fine-tuned models based on RoBERTa: M1 for non-streaming data and M2 for streaming data. The comprehensive experiments with strong baselines (M1, M2) further demonstrate the ICFD-31k's utility. \crchange{Code, data examples, and reproducibility materials are available at \url{https://github.com/SPELLAILab/ICFD-31k}.}
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+
+% AI plays a crucial role in advancing social good by protecting marginalized communities from exploitation. Conversational fraud primarily via phone calls has emerged as a global epidemic, inflicting severe financial and emotional harm on millions, as noted in recent RBI reports [Reserve Bank of India, 2024]. In India, with over a billion telecom users, a rapidly expanding digital payment ecosystem, and linguistic diversity across 30+ languages, this threat is amplified by evolving social engineering tactics that exploit trust and urgency to bypass traditional safeguards. Such attacks disproportionately target vulnerable groups including the elderly, digitally illiterate populations, and those in linguistically diverse or low-resource settings while eroding public trust vital for digital financial inclusion and economic progress. The effective protection through AI-driven detection enables inclusive digital ecosystems. Thus, developing robust, automated classification and real-time detection systems is of paramount importance.
+% Consequently, several existing works have aimed to counter conversational fraud by focusing primarily on detection accuracy. However, static parametric models frequently fail to both identify fraud reliably and provide transparent explanations for their predictions, underscoring the critical need for a public dataset that enables two key capabilities: real-time streaming call analysis and explainable rationales. Real-time detection is essential for immediate intervention during ongoing calls, potentially preventing financial loss before it occurs. Equally important are transparent ``slow-thinking'' rationales that build user trust and ensure that automated decisions remain auditable and accountable.
+AI plays a crucial role in advancing social good by safeguarding marginalized communities from exploitation. Conversational fraud uses phone calls as a primary medium, resulting in financial loss and emotional harm to millions of people \footnote{LLMs were used to refine and rephrase English content.}.
+% India, containing a billion telecom users, is progressing significantly in its digital payment ecosystem. has made progress in its digital payment ecosystem with initiatives like Digital India. 
+India, home to over a billion telecom users, has advanced its digital payment ecosystem. However, the payment ecosystem is threatened by evolving social engineering techniques utilized by conversational fraud. Moreover, these attacks harness urgency and trust to disproportionately affect vulnerable groups such as the elderly, populations with limited digital literacy, and individuals in linguistically diverse or low-resource environments. Also, it decreases public trust and economic progress for digital financial inclusion. 
+The traditional AI-driven detection systems ensure protection, enabling inclusive digital ecosystems. However, such systems are hampered by the non-availability of a large-scale public dataset for conversational fraud. The existing fraud detection research has made considerable progress using graph-based and transactional approaches \cite{li2025mutationguard,wu2024safeguarding,zou2024effective}. But they focus on non-Indian contexts and English-only interactions, making them unsuitable for multilingual contexts with widespread code-switching (such as Hinglish). Also, they heavily focus on detection accuracy using static parametric models that fail to identify fraud with transparent explanations. Additionally, the non-availability of annotated datasets with granular and explainable labels denies actionable insights for real-time streaming call analysis (during ongoing calls) and transparent "slow-thinking" rationales. Therefore, such scarcity of resources limits not only rigorous benchmarking and comparative evaluation of detection approaches but also the deployment of practical solutions in resource-constrained settings where protection is most urgently needed, perpetuating a cycle where those most vulnerable to exploitation have the least access to protective technologies. Hence, there is a strong need for comprehensive, multilingual conversational fraud benchmark datasets with rich annotations that enable both real-time detection and explainable decision-making in diverse, resource-constrained environments.
+
+% Conversational fraud primarily via phone calls has emerged as a global epidemic, inflicting severe financial and emotional harm on millions, as documented in recent RBI reports [Reserve Bank of India, 2024]. In India, with over a billion telecom users, a rapidly expanding digital payment ecosystem, and linguistic diversity across 30+ languages, such threat intensifies through evolving social engineering tactics that exploit trust and urgency to evade traditional safeguards. In addition, such attacks disproportionately target vulnerable groups including the elderly, digitally illiterate populations, and those in linguistically diverse or low-resource settings while eroding public trust essential for digital financial inclusion and economic progress. 
+% The effective AI-driven detection and classification systems can provide robust protection, enabling truly inclusive digital ecosystems, yet their development remains severely hindered by the absence of large-scale, publicly available datasets that capture the complexity of conversational fraud patterns. Also, existing fraud detection research has made significant strides using graph-based and transactional approaches \cite{li2025mutationguard,wu2024safeguarding,zou2024effective}. These works primarily focus on non-Indian contexts and English-only interactions, leaving a significant gap in resources tailored to multilingual environments where code-switching (e.g., Hinglish) is prevalent. Moreover, while prior works have prioritized detection accuracy, static parametric models often fail to reliably identify fraud while offering transparent explanations. The lack of annotated datasets with granular, explainable labels prevents systems from providing actionable insights through both real-time streaming call analysis for immediate intervention during ongoing calls and transparent "slow-thinking" rationales that enhance user trust, auditability, and accountability.
+
+% The effective AI-driven detection and classification systems provide robust protection, enabling truly inclusive digital ecosystems. Thus, developing automated, real-time countermeasures is of paramount importance. Consequently, existing works [] have prioritized detection accuracy in countering conversational fraud. However, static parametric models often fail to reliably identify fraud while offering transparent explanations highlighting the urgent need for a public dataset supporting two core capabilities: real-time streaming call analysis for immediate intervention during ongoing calls (potentially averting losses) and transparent “slow-thinking” rationales that enhance user trust, auditability, and accountability.
+
+
+The main contributions of this work are threefold:
+\begin{itemize}
+    % \item The article introduces the first large-scale, bilingual novel fraud dataset, ICFD-31k, featuring chunk-level streaming labels and detailed rationales to enable real-time fraud detection.
+    % \item The proposed work develops two fine-tuned RoBERTa baselines: M1 (non-streaming) and M2 (streaming). M1 achieves a formidable F1 score of 99.40\% for in-domain testing, while M2 achieves 95.59\%. Furthermore, in cross-domain testing on novel fraud scenarios, the model maintains high robustness with an F1 score of 92.97\%.
+    % \item The work introduces the first large-scale Indian Conversational Fraud Dataset—a benchmark of over 31,000 realistic bilingual (English/Hinglish) transcripts covering 10 fraud types with multi-level annotations (verdicts, streaming labels, rationales) and moderate inter-annotator agreement (mean pairwise Cohen's Kappa 0.534), addressing SDG 10 by enabling protective technologies for vulnerable, linguistically diverse populations.
+    \item The work introduces ICFD-31k, the first large-scale Indian conversational fraud benchmark designed for bilingual (English/Hinglish) contexts, directly addressing SDG 10 (Reduced Inequalities) by enabling protective technologies for vulnerable, linguistically diverse populations disproportionately targeted by telephone scams.
+    \item The proposed work establishes baselines with fine-tuned RoBERTa models (M1 for static, M2 for streaming), enabling chunk-level real-time fraud identification supported by rationale annotations and providing a lightweight baseline for future low-resource deployment studies.
+    \item The study develops a complete methodology using LLMs and efficient architectures designed with low-resource and mobile deployment constraints in mind, balancing accuracy, interpretability, and computational cost.
+    %The study presents an end-to-end methodology combining LLM-based generation with efficient architectures that balance performance, explainability, and computational efficiency, establishing reproducible standards for fraud detection in resource-constrained mobile phone contexts to build trust in digital financial ecosystems for sustainable development.
+\end{itemize}
+\crchange{The work was developed and validated with a multidisciplinary expert panel: cybersecurity analysts reviewed fraud logic and policy violations, computational linguists assessed Indian English/Hinglish code-switching, and fraud-detection practitioners evaluated social-engineering realism and intervention utility. Their feedback shaped scenario coverage, boundary cases, and the human validation protocol.}
+%In view of this, the proposed work introduces ICFD-31k, the first large-scale Indian Conversational Fraud Dataset - a comprehensive benchmark of over 31,000 realistic bilingual (English/Hinglish) conversational transcripts covering 10 prevalent fraud umbrellas (e.g., financial impersonation to job scams). ICFD-31k includes rich annotations: final verdicts, chunk-level streaming labels, and detailed “slow-thinking” rationales. Besides, the Human-in-the-loop evaluation reports moderate inter-annotator agreement (mean pairwise Cohen’s Kappa 0.534). The work also provides extensive evaluation across static and streaming detection settings, establishing robust RoBERTa-based baselines (M1 for non-streaming, M2 for streaming) that validate ICFD-31k’s utility for real-time, explainable fraud detection systems. A systematic, LLM-based generation pipeline combined with efficient RoBERTa models ensures reliability, reproducibility, and deployability on low-resource devices (e.g., mobile phones prevalent in India), enabling practical impact in high-volume telecom environments. Furthermore, this contributes directly to UN Sustainable Development Goal 10 (Reduced Inequalities) by protecting vulnerable populations from financial exploitation that widens disparities, and Goal 16 (Peace, Justice and Strong Institutions) by strengthening accountable, transparent countermeasures against organized fraud and social engineering, thereby building trust in digital ecosystems and supporting inclusive, secure institutions for sustainable development.
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.9\linewidth]{sec/figures/icfd_pipeline_tikz.pdf}
+    \caption{The systematic data generation pipeline for ICFD-31k. Foundational components (left) are combined via the Prompt Synthesis Engine ($k \in S \times A \times C \times E$) to produce diverse prompts for the Llama 3 generator. The resulting structured JSON conversations are then post-processed into static transcripts and streaming chunks for benchmark tasks.}
+    \label{fig:pipeline}
+\end{figure*}
+
+% \section{Introduction}
+
+% The {\it IJCAI--ECAI 26 Proceedings} will be printed from electronic
+% manuscripts submitted by the authors. These must be PDF ({\em Portable
+%         Document Format}) files formatted for 8-1/2$''$ $\times$ 11$''$ paper.
+
+% \subsection{Length of Papers}
+
+
+% All paper {\em submissions} to the main track must have a maximum of seven pages, plus at most two for references / acknowledgements / contribution statement / ethics statement.
+
+% The length rules may change for final camera-ready versions of accepted papers and
+% differ between tracks. Some tracks may disallow any contents other than the references in the last two pages, whereas others allow for any content in all pages. Similarly, some tracks allow you to buy a few extra pages should you want to, whereas others don't.
+
+% If your paper is accepted, please carefully read the notifications you receive, and check the proceedings submission information website\footnote{\url{https://proceedings.ijcai.org/info}} to know how many pages you can use for your final version. That website holds the most up-to-date information regarding paper length limits at all times.
+
+
+% \subsection{Word Processing Software}
+
+% As detailed below, IJCAI has prepared and made available a set of
+% \LaTeX{} macros and a Microsoft Word template for use in formatting
+% your paper. If you are using some other word processing software, please follow the format instructions given below and ensure that your final paper looks as much like this sample as possible.
+
+\section{Related Work}
+\label{sec:related}
+This section reviews key literature on fraud detection, focusing on datasets, synthetic data generation, conversational AI applications, real-time/streaming techniques, and explainable AI approaches in security contexts.
+% This section describes literature related to fraud detection datasets, conversational AI, and synthetic data generation techniques, streaming and real time detection techniques and explainable AI for security approaches.
+
+\subsection{Fraud Detection Datasets}
+The scarcity of publicly available conversational datasets has hindered the development of robust fraud detection systems. Furthermore, existing work predominantly relies on proprietary data from financial institutions or telecommunications providers, limiting reproducibility and cross-study comparison. The most closely related prior work is TeleAntiFraud-28k~\cite{Ma2025}, a recent dataset of 28,000 Chinese telecom fraud conversations with audio and text modalities. TeleAntiFraud-28k pioneers in providing slow-thinking rationales for explainability. However, it is limited to the monolingual Chinese context, lacks chunk-level temporal annotations essential for real-time streaming detection, and fails to capture code-switching (Hinglish) or region-specific social engineering tactics prevalent in the Global South, such as in India.
+%However, it is limited to the Chinese linguistic and cultural context, remains monolingual, and lacks chunk-level temporal annotations critical for streaming-based real-time detection and does not capture code-switching (Hinglish) and the region-specific social engineering tactics prevalent in the Global South, such as those in India.
+%However, it suffers from a limitation in scope, as it only focuses on the Chinese linguistic and cultural context. Furthermore, it lacks chunk-level temporal annotations, critical for streaming-based detection.  Existing datasets like TeleAntiFraud-28k are Chinese and monolingual, failing to capture code-switching (Hinglish) and the region-specific social engineering tactics prevalent in the Global South, such as those in India.
+\crchange{Moreover, real Indian telecom fraud calls are difficult to redistribute because recordings contain sensitive personal data and require per-call consent under privacy and data-protection rules. Therefore, this study develops ICFD-31k as a synthetic benchmark with moderate expert agreement (mean pairwise Cohen's Kappa 0.534) \cite{cohen1960coefficient}, while treating robustness to real ASR noise as a downstream evaluation setting rather than a claim of solved deployment realism.}
+%In contrast, 
+The proposed ICFD-31k targets the Indian bilingual (English/Hinglish) environments and provides granular chunk labels to enable real-time detection system development. Besides, other fraud-related datasets focus on different modalities. For instance, financial transaction datasets~\cite{dal2014learned} provide tabular format data but lack the conversational context required.  Similarly, email phishing datasets~\cite{fette2007learning} and SMS spam corpora~\cite{almeida2011contributions} operate on only written text rather than conversational interactions. Consequently, none of these resources addresses the challenge of real-time conversational fraud detection with any explainability requirements.
+
+\subsection{Conversational AI for Security}
+Recent advancements in large language models have demonstrated strong performance on various NLP tasks, including zero-shot and few-shot learning scenarios~\cite{brown2020language,chung2022scaling}. However, their application to security domains like fraud detection remains underexplored. \crchange{The zero-shot baseline with Gemma 1.1 2B~\cite{team2024gemma} is used as a compact, on-device reference point rather than a proxy for all frontier LLMs. Its 35.83\% F1 on ICFD-31k shows that this lightweight prompt-only baseline is insufficient for reliable fraud screening without domain adaptation, while evaluating larger cloud LLMs remains complementary future work.} Additionally, the literature comprise few similar domain works like on dialogue safety that focuses primarily on toxicity detection~\cite{zhang2018conversations}, hate speech identification~\cite{davidson2017automated}, and misinformation in social media~\cite{shu2017fake}. Those tasks, while related, differ fundamentally from fraud detection, which requires subtle social engineering tactics, recognizing policy violations, and reasoning about the temporal progression of deceptive behavior within a conversation.
+
+\subsection{Synthetic Data Generation}
+
+The use of LLMs for synthetic data generation has gained traction across various NLP applications~\cite{puri2020training,schick2021generating}. Recently, the work ~\cite{ye2022zerogen} shows that carefully controlled synthetic data can augment or even replace human-annotated datasets for certain tasks. However, concerns about distribution shift, hallucination, and lack of authentic complexity remain significant challenges. Therefore, ICFD-31k adopts a generation approach different from prior synthetic data efforts in three key aspects. First, a structured generation pipeline is employed with explicit persona and scenario combinations to ensure even coverage and diversity. Second, ICFD-31k quality is evaluated through rigorous human evaluation with a mean pairwise Cohen's Kappa of 0.534, indicating moderate inter-annotator agreement, rather than only relying on automatic metrics. Third, utility is demonstrated through comprehensive benchmarking, showing that models trained on ICFD-31k achieve strong performance on realistic fraud detection tasks.
+
+\subsection{Streaming and Real-Time Detection}
+
+Most of the fraud detection systems operate in batch mode, analyzing complete transactions or conversations post-hoc. However, real-world deployments require real-time detection to enable immediate intervention against the fraud. In literature, prior work on streaming classification has focused primarily on concept drift adaptation~\cite{gama2014survey} and online learning~\cite{hoi2021online}, rather than the temporal progression of fraud signals within individual conversations. Consequently, ICFD31k employs a chunk-level annotation schema that enables research into early detection systems that must balance speed (detecting fraud quickly) against accuracy (avoiding false alarms with incomplete information). 
+
+\subsection{Explainable AI for Security}
+
+The need for explainable AI in security applications has been widely recognized~\cite{arrieta2020explainable}, particularly for high-stakes decisions involving financial loss or legal consequences. Recently, several authors explored various approaches, including attention visualization~\cite{wiegreffe2019attention}, rationale extraction~\cite{lei2016rationalizing}, and chain-of-thought reasoning~\cite{wei2022chain}. Therefore, ICFD-31K integrates explicit reasoning rationales. Each conversation in the proposed ICFD-31k contains reasoning chains detailing specific policy violations and conversational evidence using slow thinking rationales~\cite{Ma2025} presented in TeleAntiFraud-28k.
+
+
+\section{The ICFD-31k Dataset}
+\label{sec:dataset}
+The proposed work uses a novel generational pipeline to produce ICFD-31k that addresses data limitations and ensures contextual applicability for the Indian fraud scenarios. 
+
+%-------------------------------------------------------------------------
+\subsection{Design Principles}
+The study covers 10 fraud categories (``umbrellas'')  such as bank \& payment fraud, E-commerce scams, job scams, government impersonation, and many more, with each umbrella containing 30 scenarios with varying difficulty.
+%, each having nuanced difficulty with varying degrees of complexity.
+
+% The proposed work ensures comprehensive coverage through 10 fraud categories (``umbrellas'') and nuanced difficulty through varied scenario complexity. Specifically, it defines 10 prevalent fraud categories (e.g., Bank \& Payment Fraud, E-commerce Scams, Job Scams, Government Impersonation) with 30 scenarios each, enabling granular analysis of specific fraud typologies. Also, it explicitly design the scenarios with varying difficulty levels to create a benchmark that genuinely tests a model's reasoning capabilities within each umbrella containing scenarios ranging from clear-cut policy violations to subtle social engineering attacks that avoid obvious keywords, forcing models to move beyond keyword matching and develop nuanced understanding of conversational dynamics.
+
+%-------------------------------------------------------------------------
+\subsection{Data Generation Pipeline}
+
+The generation of ICFD-31k followed a systematic, two-stage pipeline as in Figure~\ref{fig:pipeline}. First, it employs foundational components: 10 agent and customer personas, over 300 scenarios across 10 fraud umbrellas (each with description, case type, and policy rules), and extensive entity lists including Indian banks, e-commerce platforms, and region-specific names. Thereafter, the pipeline uses the cross-product of personas and scenarios, yielding approximately 31,000 structured JSON conversations using an LLM-based generation system. Finally, in the second stage, each conversation expands into temporal chunks at 3-second intervals, producing 1,111,071 training samples for real-time streaming models.
+
+%-------------------------------------------------------------------------
+\subsection{Annotation Schema}
+
+
+Each conversation is stored as structured JSON (Figure~\ref{fig:schema}) containing timestamped transcripts with speaker turns. The schema includes two specific innovations for training next-generation detection systems as discussed below:
+
+\textbf{Chunk-level streaming labels.} The schema provides verdict and rationale annotations at approximately 3-second intervals throughout each conversation, enabling training and evaluation of real-time detection systems that must make progressive decisions with incomplete information.
+
+\textbf{Slow-thinking rationales.} Each conversation includes a detailed reasoning chain explaining the final verdict~\cite{Ma2025}, citing specific policy violations and conversational evidence. Furthermore, it facilitates the development of explainable AI systems that can provide transparent justifications. Besides, the schema also captures entity extraction (\texttt{pii\_requested}, organizations, products), violated policies, scam outcomes, and the generative context (scenario, personas) for comprehensive analysis.
+
+\begin{figure*}[t]
+\centering
+\begin{lstlisting}[language=json, caption={Complete annotation schema for a single conversation in ICFD-31k.}, label={fig:schema}]
+{
+  "transcript": [
+    {"speaker": "Agent", "text": "Namaste Bhaskar Rao ji...", "timestamp_end": 5.0},
+    {"speaker": "Customer", "text": "Achha, I'm good...", "timestamp_end": 10.0}
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Trust", "secondary_emotion": "Urgency",
+    "pace": "Fast", "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": ["Canara Bank"], "product": ["Card"],
+    "pii_requested": ["Full card number", "Expiry date", "CVV"]
+  },
+  "chunk_level_analysis": [
+    {"timestamp": 10.0, "verdict_at_chunk": "NO",
+     "rationale_at_chunk": "Introduction and context setting"},
+    {"timestamp": 25.0, "verdict_at_chunk": "YES",
+     "rationale_at_chunk": "Agent asked for full card number, violating Rule A"}
+  ],
+  "final_slow_thinking_rationale": "The agent asked for the full card...",
+  "final_verdict": "YES",
+  "violated_policies": ["Rule A: Agents must NEVER ask for..."],
+  "scam_outcome": "Successful",
+  "session_id": 213,
+  "agent_persona": "The Empathetic Helper: Overflows with fake empathy...",
+  "customer_persona": "The Busy and Distracted Professional...",
+  "scenario": {
+    "scenario_id": 3, "description": "Debit/Credit Card CVV...",
+    "case_type": "Clear Fraud", "policy": "Rule A: Agents must NEVER..."
+  }
+}
+\end{lstlisting}
+\end{figure*}
+
+%-------------------------------------------------------------------------
+\subsection{Dataset Statistics}
+\crchange{ICFD-31k expands 31,000 source conversations into 1,111,071 temporal chunks. The 3-second interval follows the closest telecom-fraud benchmark convention~\cite{Ma2025} and approximates short conversational turns, enabling intervention before sensitive information is disclosed. To control a fraud-heavy training expansion, all non-Clear-Normal cases are fully chunked while Clear Normal calls are sparsely sampled (1--2 chunks); this asymmetric construction is explicit, should not be read as deployment prevalence, and motivates future interval/sampling ablations.} Moreover, the ICFD-31k dataset is structured across 10 primary fraud umbrellas to ensure a diverse and balanced benchmark. Specifically, each umbrella contributes approximately 3,000 source conversations, ensuring no single fraud typology dominates the ICFD-31k dataset as shown in Table~\ref{tab:umbrella_dist}. Furthermore, the main training set consists of these 10 umbrellas, while an additional 1,000 conversations across 5 completely unseen domains (e.g., Cryptocurrency, Romance scams) were generated to create a dedicated cross-domain test set for evaluating model generalization. In addition, within each umbrella, the distribution of scenario complexity is maintained according to the adopted design principles as illustrated in Figure~\ref{fig:case_type_dist}, providing a rich mix of clear, ambiguous, and subtle cases. Besides, Table~\ref{tab:overall_stats} summarises the overall statistics for ICFD-31k.
+
+\begin{table}[t]
+\centering
+\caption{Overall statistics of the ICFD-31k dataset.}
+\label{tab:overall_stats}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Metric & \multicolumn{1}{l}{Value} \\ \midrule
+Total Source Conversations & 31,000 \\
+\quad - Main Set & 30,000 \\
+\quad - Cross-Domain Test Set & 1,000 \\
+Total Training Chunks & $\sim$1,111,071 \\
+Fraud Umbrellas & 10 + 5 \\
+Avg. Conversation Length & 115.8 seconds \\
+Class Distribution (Fraud) & $\sim$70\% \\
+Class Distribution (Normal) & $\sim$30\% \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{Distribution of source conversations across the 10 primary fraud umbrellas.}
+\label{tab:umbrella_dist}
+\begin{tabular}{@{}lc@{}}
+\toprule
+Fraud Umbrella & Conversation Count \\ \midrule
+Bank \& Payment Fraud & $\sim$3,000 \\
+E-commerce \& Marketplace & $\sim$3,000 \\
+Utility Bill \& Service & $\sim$3,000 \\
+Job \& Employment & $\sim$3,000 \\
+Loan Shark \& Harassment & $\sim$3,000 \\
+Tech Support \& Account & $\sim$3,000 \\
+Personal Emergency \& Extortion & $\sim$3,000 \\
+Insurance \& Healthcare & $\sim$3,000 \\
+Travel \& Lottery & $\sim$3,000 \\
+Government Impersonation & $\sim$3,000 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.8\linewidth]{sec/figures/case_type_distribution.pdf}
+\caption{Distribution of case types (Clear Fraud, Clear Normal, Ambiguous, and Subtle Fraud) across the dataset, demonstrating a balanced mix of scenario complexity.}
+\label{fig:case_type_dist}
+\end{figure}
+
+%-------------------------------------------------------------------------
+\section{Quantitative Dataset Analysis}
+\label{sec:quantitative_analysis}
+\crchange{To test whether ICFD-31k is fluent, diverse, and not merely templated, the study evaluates four corpus properties: (1) linguistic fluency, (2) structural novelty, (3) semantic complexity, and (4) vocabulary distribution. These diagnostics directly target synthetic-artifact risks and complement, rather than replace, real-call validation.}
+
+%-------------------------------------------------------------------------
+\subsection{Linguistic Fluency (Perplexity)}
+
+A core requirement for a synthetic dataset is that it is fluent and natural-sounding. Hence, ICFD-31k measures fluency using Perplexity (PPL) \cite{jelinek1977perplex}, the standard metric for evaluating language model naturalness, where a lower score indicates better performance. Specifically, it calculates the PPL of conversations using a pre-trained GPT2 model. The ICFD-31k dataset achieves a low mean PPL of 20.44 for normal conversations and 22.37 for fraud conversations as described in Table~\ref{tab:perplexity}. The obtained scores provide objective, model-based evidence that the Llama 3.3 70B \cite{dubey2024llama} generator produced text that is highly fluent, grammatically correct, and natural-sounding.
+
+\begin{table}[t]
+\centering
+\caption{Perplexity scores across conversation types, demonstrating high linguistic fluency.}
+\label{tab:perplexity}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Case Type & Mean PPL & Median PPL & Std. Dev. \\ \midrule
+Normal & 20.44 & 19.47 & 6.10 \\
+Fraud & 22.37 & 20.80 & 8.41 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+%-------------------------------------------------------------------------
+\subsection{Structural Novelty (N-gram Overlap)}
+
+A major risk in synthetic generation is ``templating,'' where the model produces conversations that are structurally identical but with different entities. Therefore, the proposed work measures the N-gram Overlap between 10,000 random pairs of conversations for validation. The result shows a vanishingly small overlap, providing evidence that ICFD-31k is not simply ``copy-pasting'' templates as summarized in Table~\ref{tab:ngram}. Additionally, the obtained average 3-gram overlap is only 1.96\%, suggesting that the used generation pipeline, with its 300 unique scenarios and 20 persona combinations, produced structurally varied conversations.
+
+\begin{table}[t]
+\centering
+\caption{N-gram overlap analysis demonstrating structural novelty across conversations.}
+\label{tab:ngram}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+N-gram & Mean Overlap (\%) & Std. Dev. \\ \midrule
+1-gram & 35.92 & 6.31 \\
+2-gram & 7.29 & 3.52 \\
+3-gram & 1.96 & 1.86 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+%-------------------------------------------------------------------------
+\subsection{Semantic Complexity (t-SNE \& Similarity)}
+
+The study designs a robust benchmark for fraud detection that deliberately emphasizes difficulty. Consequently, fraudulent messages display subtle linguistic patterns that overlap substantially with legitimate conversations. Such semantic complexity was evaluated using two distinct methods. First, the proposed work computes the Semantic Similarity (cosine similarity of \texttt{all-MiniLM-L6-v2} embeddings) \emph{within} classes (e.g., fraud-to-fraud) and \emph{between} classes (e.g., fraud-to-normal). Also, the obtained result, as shown in Table~\ref{tab:semantic}, indicates that the dataset contains a low separation score of 0.017. This suggests that fraudulent and normal conversations are linguistically close, making the task difficult for models that rely only on shallow lexical cues. Additionally, the study visualizes such complexity in Figure~\ref{fig:tsne} using a t-SNE \cite{maaten2008visualizing} plot. The ``Fraud vs Normal'' plot (left) shows substantial class overlap. The ``By Case Type'' plot (right) is even more revealing: the ``Subtle Fraud'' (orange) and ``Ambiguous... Normal'' (light blue) cases are semantically mixed in the ``battleground'' area between the clear cases. The results provide quantitative evidence that ICFD-31k constitutes a difficult benchmark, demanding models to perform deeper contextual reasoning beyond keyword matching.
+%The obtained results serve as a \emph{feature}, not a flaw. They provide quantitative proof that ICFD-31k represents a challenging benchmark that requires models to move beyond keyword matching and perform deeper contextual reasoning.
+
+\begin{table}[t]
+\centering
+\caption{Semantic similarity scores showing high class overlap, indicating dataset complexity.}
+\label{tab:semantic}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Metric & Mean Similarity & Std. Dev. \\ \midrule
+Intra-Class (Fraud) & 0.421 & 0.108 \\
+Intra-Class (Normal) & 0.381 & 0.113 \\
+Inter-Class (Fraud-Normal) & 0.383 & 0.110 \\
+\textbf{Separation Score} & \textbf{0.017} & --- \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{sec/figures/tsne_visualization.pdf}
+\caption{t-SNE visualization of semantic embeddings. Left: Binary fraud vs. normal classes show significant overlap. Right: Four case types reveal the semantic complexity, with subtle fraud and ambiguous normal cases occupying the challenging middle ground.}
+\label{fig:tsne}
+\end{figure}
+
+%-------------------------------------------------------------------------
+\subsection{Vocabulary Distribution (Distinct-n \& Zipf's Law)}
+% Finally, the proposed work analyzes the ICFD-31k's vocabulary.
+The study analyzes the ICFD-31k's vocabulary. The results show a trade-off: the adopted methodology intentionally prioritized high scenario fidelity over broad lexical creativity. Additionally, the Linguistic Diversity (Distinct-n) scores as described in Table~\ref{tab:diversity} (e.g., Distinct-1: 0.0653, Distinct-2: 0.3371, Distinct-3: 0.6113) reflect our intentional design choices rather than a limitation. The controlled temperature (T=0.7) constrains the model to maintain focus on domain-critical terminology (e.g., `OTP', `bank', `CVV'), ensuring the dataset authentically represents fraud scenarios where such vocabulary naturally dominates. Also, the obtained finding is supported by Zipf's Law \cite{zipf1949human} analysis as presented in Figure~\ref{fig:zipf}.
+% Also, This is confirmed by the \textbf{Zipf's Law} analysis in \cref{fig:zipf}. 
+
+Besides, the high MSE (1.83) and the curve's deviation from the ideal line are caused by the model's \emph{correct} and \emph{intentional} over-use of this core, domain-specific vocabulary. The obtained results suggest that while the \emph{conversations} are structurally varied, the \emph{vocabulary} is realistically constrained to the fraud domain. Moreover, such results provide evidence that ICFD-31k conversations are fluent, domain-focused, and suitable for training robust detection systems.
+
+\begin{table}[t]
+\centering
+\caption{Linguistic diversity metrics on a 10k sample, showing controlled vocabulary for domain fidelity.}
+\label{tab:diversity}
+\begin{tabular}{@{}lc@{}}
+\toprule
+Metric & Score \\ \midrule
+Distinct-1 & 0.0653 \\
+Distinct-2 & 0.3371 \\
+Distinct-3 & 0.6113 \\ \bottomrule
+
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.85\linewidth]{sec/figures/zipf_law_analysis.pdf}
+\caption{Zipf's Law analysis showing deviation from the ideal power law distribution (MSE: 1.81), reflecting the intentional concentration on domain-specific fraud terminology.}
+\label{fig:zipf}
+\end{figure}
+
+
+\section{Experimental Evaluation}
+\label{sec:experiments}
+The performance of ICFD-31k is evaluated through benchmarking with a strong baseline. In particular, the experimental design considers two questions: 1) Whether the model achieves high accuracy? 2) The model performance on novel scam types? The results reveal that the fine-tuned classifier obtains near-perfect in-domain performance, while performance decreases on unseen scam types.
+
+%-------------------------------------------------------------------------
+\subsection{Experimental Setup}
+
+% The proposed work evaluates models on three complementary tasks designed to test both offline analysis capabilities and real-world deployment readiness via: 
+The developed models are evaluated on three tasks to test both real-world deployment and offline analysis capabilities through a) \textbf{Task 1: Static Classification.} Given a complete conversation transcript, predict whether the interaction is fraudulent. This represents the best-case scenario where all information is available for batch processing. b) \textbf{Task 2: Streaming Classification.} Given conversation chunks at 3-second intervals, predict fraud status at each timestamp, simulating real-time detection where decisions must be made with incomplete information. c) \textbf{Task 3: Cross-Domain Generalization.} Evaluation on completely unseen fraud types to test the model's ability to adapt to novel scam typologies that emerge after training.
+
+ICFD-31k is partitioned as follows: Training set contains 21,000 conversations (70\%) from the main 10 fraud umbrellas; Validation set contains 4,500 conversations (15\%); In-domain test set contains 4,500 conversations (15\%) from the same 10 umbrellas; Cross-domain test set contains 1,000 conversations from 5 completely unseen fraud types (cryptocurrency scams, romance scams, investment fraud, charity scams, and tax impersonation). \crchange{For streaming experiments, all chunks inherit the split of their source conversation, yielding 1,111,071 temporal chunks while preventing chunks from the same session from appearing in both training and test sets.} Furthermore, the obtained F1-score, along with Precision and Recall are reported in Table~\ref{tab:main_results}. Additionally, Table~\ref{tab:streaming_timeline} reports the measurement report for  Early Detection Rate (percentage of fraud cases detected within the first 30 seconds) and mean Detection Latency (average time to first fraud prediction) for streaming classification.
+
+%-------------------------------------------------------------------------
+\subsection{Baseline Models}
+
+\crchange{The proposed work establishes three benchmarks: a compact zero-shot LLM reference (Gemma 1.1 2B), Fine-Tuned RoBERTa (Static), and Streaming RoBERTa. Gemma is prompted with the full transcript and policy rules to measure prompt-only performance under an on-device model scale. RoBERTa-base~\cite{liu2019roberta} is fine-tuned on full transcripts for static classification and on cumulative 3-second chunks for streaming classification. The RoBERTa models use a 512-token limit, a binary classification head, 5 epochs with early stopping, learning rate 2e-5, and effective batch size 16, prioritizing a lightweight baseline for future low-resource deployment studies over architectural novelty.}
+%perfect accuracy.
+%The model processes cumulative transcripts at each timestamp, enabling progressive fraud detection with incomplete information allowing configuration to test the deployment scenario where early warning is prioritized over perfect accuracy.
+
+%-------------------------------------------------------------------------
+\subsection{Main Results}
+
+Table~\ref{tab:main_results} presents the core performance comparison across all baseline models and evaluation scenarios. \crchange{Gemma 2B achieves 35.83\% F1 with high precision but low recall (22.16\%), showing that this compact zero-shot baseline misses most fraudulent cases under the prompt-only setting and is unsuitable where false negatives carry high societal cost.}
+%\textbf{In-Domain Static Classification.} 
+\crchange{The fine-tuned RoBERTa achieves 99.40\% F1 with near-perfect precision and recall in-domain; five-fold cross-validation yields 99.51\% $\pm$ 0.07\% F1. We therefore interpret the in-domain result as an upper-bound synthetic benchmark score, not evidence that real-world fraud detection is solved.}
+%\textbf{Streaming Classification.}
+Also, the streaming RoBERTa achieves 95.59\% F1, a 3.81\% decrease, quantifying the cost of incomplete information. Additionally, the model detects 99.82\% of fraud cases with an average latency of 32.2 seconds. Table~\ref{tab:streaming_timeline} shows performance varies across timeline: early chunks (0-30s) achieve 95.78\% F1, while very late chunks (120s+) reach 97.12\% F1 as context accumulates.
+
+\begin{table}[t]
+\centering
+\caption{Performance comparison across baseline models and evaluation tasks.}
+\label{tab:main_results}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Model \& Task & F1 & Prec. / Rec. \\ \midrule
+Gemma 2B (Zero-shot) & 35.83 & 93.58 / 22.16 \\
+\midrule
+RoBERTa (In-domain) & \textbf{99.40} & 99.22 / 99.59 \\
+RoBERTa (Cross-domain) & 92.97 & 98.49 / 88.03 \\
+RoBERTa (Streaming) & 95.59 & 95.50 / 95.67 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[t]
+\centering
+\caption{Streaming classification performance across conversation timeline. Early detection achieves a strong F1 despite a limited context.}
+\label{tab:streaming_timeline}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Stage & Timestamp & F1 & Accuracy & Samples \\ \midrule
+Early & 0-30s & 95.78 & 98.81 & 23,833 \\
+Mid & 30-60s & 95.57 & 96.34 & 33,442 \\
+Late & 60-120s & 94.57 & 92.98 & 46,832 \\
+Very Late & 120s+ & 97.12 & 95.46 & 25,009 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%-------------------------------------------------------------------------
+\subsection{Analysis of the Generalization Gap}
+
+\crchange{The 99.40\% F1-score on in-domain data appears near-perfect, but it should be read together with the cross-domain stress test.} For instance, when the same RoBERTa model is evaluated on the cross-domain test set containing 1,000 conversations from 5 completely unseen fraud types (cryptocurrency scams, romance scams, investment fraud, charity scams, and tax impersonation); the performance degrades by 6.43 percentage points to 92.97\% F1 as discussed in Table~\ref{tab:cross_domain}. \crchange{This drop suggests a genuine shift in fraud language and tactics rather than a solved artifact-matching task, and it motivates continual benchmark extension as scams evolve.} Besides, the static classifiers trained on historical data inevitably degrade, making historical accuracy a poor predictor of future utility as fraudsters continuously evolve their methods. 
+
+\begin{table}[t]
+\centering
+\caption{Cross-domain generalization results on 5 unseen fraud types. The 6.43\% performance drop demonstrates model brittleness to novel scam typologies.}
+\label{tab:cross_domain}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Fraud Type & F1 & Accuracy & Recall \\ \midrule
+Charity Scams & 96.73 & 93.75 & 94.87 \\
+Cryptocurrency & 92.46 & 86.36 & 86.79 \\
+Investment Fraud & 91.67 & 85.00 & 84.62 \\
+Romance Scams & 91.76 & 85.00 & 87.43 \\
+Tax Impersonation & 93.01 & 87.50 & 86.93 \\
+\midrule
+\textbf{Overall} & \textbf{92.97} & \textbf{87.20} & \textbf{88.03} \\
+\midrule
+\textit{In-Domain (Reference)} & \textit{99.40} & \textit{99.38} & \textit{99.59} \\
+\textbf{Generalization Gap} & \textbf{-6.43} & \textbf{-12.18} & \textbf{-11.56} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%-------------------------------------------------------------------------
+%\subsection{Human Validation Results}
+\subsection{Expert Validation and Stakeholder Analysis}
+\crchange{The study employs domain experts comprising cybersecurity analysts, computational linguists, and fraud-detection practitioners. Each expert evaluated 25 conversations (15 overlapping) across quality dimensions (Fluency, Coherence, Realism, Emotion) and fraud classification. Expert validation yielded a mean pairwise Cohen's Kappa of 0.534, indicating moderate inter-annotator agreement, alongside 80\% consensus, realism 3.96/5, and confidence 4.29/5. Disagreements were concentrated in Subtle Fraud and Ambiguous Normal cases, indicating boundary-case difficulty rather than annotation collapse.}
+
+\crchange{ICFD-31k should therefore be interpreted as a controlled benchmark for conversational fraud research rather than a replacement for real-call deployment validation. Important remaining gaps include ASR errors, noisy audio, accent and dialect variation, realistic deployment class priors, and the asymmetric chunk-sampling protocol. Future evaluation will couple the benchmark with speech-to-text front ends, simulate ASR perturbations, and run interval/sampling ablations to quantify the trade-off between earlier warnings and false alarms.}
+
+\crchange{For societal use, the intended deployment role is a human-in-the-loop warning layer, not autonomous call blocking or punitive decision-making. The stakeholder path is to work with cybercrime support teams, telecom safety groups, and digital-literacy organizations to collect privacy-preserving feedback on emerging scam patterns, warning language, and intervention timing. Since no comparable Indian bilingual fraud benchmark currently exists, the released cross-domain split provides an initial reproducible stress test until independent real-world evaluation sets become available. This feedback loop can keep the benchmark current while preserving the restricted defensive-use license and auditability requirements.}
+
+\section{Conclusion}
+
+%% The paper addresses a critical bottleneck in conversational fraud detection research i.e., the absence of a large-scale, public, and contextually relevant benchmark dataset by introducing the novel ICFD-31k dataset that contains over 31,000 richly annotated, bilingual conversations covering 10 distinct fraud typologies prevalent in India.
+% The paper tackles a major bottleneck in conversational fraud detection research; the lack of large-scale, public, contextually relevant benchmarks by introducing a novel dataset ICFD-31k containing over 31,000 richly annotated bilingual conversations across 10 prevalent Indian fraud typologies.
+
+The paper tackles a major bottleneck in conversational fraud detection research - the lack of large-scale, public, contextually relevant benchmarks - by introducing ICFD-31k, a novel dataset comprising over 31,000 richly annotated bilingual (English/Hinglish) conversations across 10 prevalent Indian fraud typologies. ICFD-31k features a novel annotation schema with chunk-level labels for real-time streaming analysis and detailed slow-thinking rationales to support next-generation explainable and streaming-capable AI systems. The paper also presents a comprehensive benchmark with hierarchical baselines to validate the ICFD-31k's quality. The obtained results show that fine-tuned classifiers achieve near-perfect in-domain performance (99.40\% F1) in static settings. However, performance degrades substantially on novel, unseen threats, exposing a critical generalization gap underscoring the limitations of relying solely on historical accuracy and highlighting the need for more adaptable, robust models in evolving fraud landscapes.
+\label{sec:conclusion}
+
+
+\section*{Ethical Statement}
+\crchange{ICFD-31k is released for defensive research only under a restricted license to reduce dual-use risk. All names, organizations, account details, phone numbers, and other PII are synthetic and do not correspond to real victims or real call recordings. Expert annotators participated with informed consent and were briefed on the defensive purpose of the study. The dataset is intended to support fraud prevention, safety research, and auditable countermeasures; offensive use, scam-script generation, or malicious social-engineering training is prohibited.}
+% Responsible AI practices are prioritized in this work. To mitigate dual-use risks (e.g., adversarial script generation), ICFD-31k is released under a restricted license limiting usage to defensive research. All PII is synthetically generated, ensuring zero privacy leakage. Human evaluation followed strict institutional protocols regarding voluntary participation and informed consent. This work directly targets financial protection for vulnerable demographics.
+% This work contributes to the safety of digital financial ecosystems by providing resources for fraud detection. We acknowledge the potential dual-use risk where generated transcripts could theoretically inform adversarial actors; however, the dataset is released strictly for defensive research purposes under a restricted license. Regarding data privacy, all Personally Identifiable Information (PII) within the dataset is synthetically generated and does not correspond to real individuals. Finally, the human evaluation involved domain experts (faculty and researchers) who participated voluntarily with full knowledge of the task nature, adhering to standard research integrity protocols.
+%% The file named.bst is a bibliography style file for BibTeX 0.99c
+
+\section*{Acknowledgments}
+The authors acknowledge the Department of Information Technology, Dr.\ B.R.\ Ambedkar National Institute of Technology Jalandhar, for academic support and institutional facilities that supported this work.
+
+\clearpage
+
+\bibliographystyle{named}
+\bibliography{ijcai26}
+%\pagebreak
+\newpage
+\newpage
+\newpage
+\clearpage
+\appendix
+\renewcommand{\thetable}{A\arabic{table}}
+\renewcommand{\thefigure}{A\arabic{figure}}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\section*{Technical Appendix}
+
+
+\section{Dataset Overview and Statistics}
+\label{app:overview}
+
+This section provides comprehensive technical descriptions that support the content presented in the main paper, including detailed dataset statistics and fraud scenarios, the respective human annotation methodology, and extended examples with in-depth case studies. \crchange{The generation pipeline, baseline models, annotation results, and dataset examples are available at \url{https://github.com/SPELLAILab/ICFD-31k}.}
+
+%-------------------------------------------------------------------------
+\subsection{Fraud Umbrella Distribution}
+
+ICFD-31k maintains a balanced distribution to ensure robust training across diverse fraud typologies. The specific distribution of conversations across the 10 primary fraud umbrellas and the 5 cross-domain test sets are detailed in Table~\ref{tab:umbrella_dist_app}.
+
+\begin{table}[h!]
+\centering
+\caption{Distribution of conversations across fraud umbrellas in ICFD-31k.}
+\label{tab:umbrella_dist_app}
+\begin{tabular}{@{}lc@{}}
+\toprule
+\textbf{Fraud Umbrella} & \textbf{Count} \\ \midrule
+Bank \& Payment Fraud & 3,000 \\
+E-commerce \& Marketplace & 3,000 \\
+Utility Bill \& Service & 3,000 \\
+Job \& Employment & 3,000 \\
+Loan Shark \& Harassment & 3,000 \\
+Tech Support \& Account & 3,000 \\
+Personal Emergency \& Extortion & 3,000 \\
+Insurance \& Healthcare & 3,000 \\
+Travel \& Lottery & 3,000 \\
+Government Impersonation & 3,000 \\
+\midrule
+\textbf{Main Set Total} & \textbf{30,000} \\
+\midrule
+\multicolumn{2}{l}{\textit{Cross-Domain Test Set (5 unseen types)}} \\
+Cryptocurrency Scams & 200 \\
+Romance Scams & 200 \\
+Investment Fraud & 200 \\
+Charity Scams & 200 \\
+Tax Impersonation & 200 \\
+\midrule
+\textbf{Grand Total} & \textbf{31,000} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%-------------------------------------------------------------------------
+\subsection{Conversation Length Analysis}
+Fraud conversations are generally longer (mean 118.5s) than normal conversations (mean 95.2s), reflecting the complex social engineering tactics employed by fraudsters. The detailed temporal characteristics of ICFD-31k are summarized in Table~\ref{tab:length_stats}.
+
+\begin{table}[h!]
+\centering
+\caption{Conversation length statistics (in seconds).}
+\label{tab:length_stats}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Category} & \textbf{Mean} & \textbf{Std. Dev.} & \textbf{Median} \\ \midrule
+Fraud Cases & 118.5 & 42.3 & 115.0 \\
+Normal Cases & 95.2 & 38.1 & 90.0 \\
+\midrule
+\textbf{Overall} & \textbf{115.8} & \textbf{41.7} & \textbf{110.0} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%-------------------------------------------------------------------------
+\subsection{Entity Annotations}
+
+ICFD-31k includes entity annotations extracted from conversations to facilitate named entity recognition (NER) tasks in security contexts, as discussed herewith:
+
+\begin{itemize}
+    \item \textbf{Organizations:} 1,247 unique entities (e.g., bank names, government bodies), averaging 2.1 per conversation.
+    \item \textbf{Products and Services:} 893 unique entities (e.g., credit programs), averaging 1.8 per conversation.
+    \item \textbf{Sensitive PII Requested:} 8 different types of data tracked in fraud cases, including OTPs, passwords, card numbers (PAN/CVV), Aadhaar numbers, and bank account details.
+\end{itemize}
+
+\section{Human Annotation Details}
+\label{app:annotation}
+
+This section documents the human-in-the-loop evaluation process, including annotator profiles, methodology, and inter-annotator agreement analysis.
+
+%-------------------------------------------------------------------------
+\subsection{Annotator Demographics}
+
+The study include five expert annotators to ensure high-quality ground truth. The team comprises domain experts with specific experience in NLP, security, and fraud detection as detailed in Table~\ref{tab:annotator_profiles}. The annotators possessed a deep understanding of the local linguistic context (Indian English/Hinglish) and social engineering tactics, unlike crowdsourced workers.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}lccl@{}}
+\toprule
+\textbf{ID} & \textbf{Position} & \textbf{Exp.} & \textbf{Specialization} \\ \midrule
+A01 & Faculty & 8 yrs & Cybersecurity Analyst \\
+A02 & Faculty & 5 yrs & Fraud \& Cybersecurity Analyst \\
+A03 & Faculty & 10 yrs & Computational Linguists \\
+A04 & Ph.D. Scholar & 3 yrs & Computational Linguists \\
+A05 & M.Tech Student & 2 yrs & Fraud Detection Practitioner \\
+\bottomrule
+\end{tabular}
+\caption{Annotator profiles and domain expertise.}
+\label{tab:annotator_profiles}
+\end{table}
+
+%-------------------------------------------------------------------------
+\subsection{Annotation Methodology}
+
+We adopted a stratified sampling approach to validate the ICFD-31k dataset with specific details as follows:
+\begin{enumerate}
+    \item \textbf{Sampling:} 100 conversations were sampled, stratified by label (Fraud/Normal) and difficulty (Clear/Subtle/Ambiguous).
+    \item \textbf{Distribution:} Each annotator evaluated 25 conversations. Crucially, a subset of 15 conversations was evaluated by \textit{all five} annotators to calculate inter-annotator agreement, as illustrated in Figure~\ref{fig:annotation_distribution}.
+    \item \textbf{Task:} Annotators provided a binary verdict (YES/NO), a confidence score (Low/Med/High), and qualitative comments.
+\end{enumerate}
+
+\begin{figure}[t]
+\centering
+% Make sure this file exists in your folder!
+\includegraphics[width=0.7\linewidth]{sec/figures_appendix/annotation_distribution_venn.pdf}
+\caption{Annotation overlap strategy: 15 conversations were shared across all annotators to compute Cohen's Kappa.}
+\label{fig:annotation_distribution}
+\end{figure}
+
+%-------------------------------------------------------------------------
+\subsection{Inter-Annotator Agreement (IAA)}
+
+The study measures the agreement of the annotators using Cohen's Kappa on 15 overlapping conversations. Pairwise scores (Table~\ref{tab:kappa_pairwise}) range from 0.340 to 0.659, resulting in a mean pairwise Kappa of \textbf{0.534} ($\pm$ 0.115). This indicates moderate inter-annotator agreement. Disagreements primarily arose in 'Subtle Fraud' cases (e.g., aggressive sales vs. fraud) and 'Ambiguous Normal' cases, reflecting the real difficulty people face in distinguishing sophisticated social engineering from legitimate pressure tactics.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+ & \textbf{A01} & \textbf{A02} & \textbf{A03} & \textbf{A04} & \textbf{A05} \\ \midrule
+\textbf{A01} & -- & 0.592 & 0.597 & 0.348 & 0.651 \\
+\textbf{A02} & 0.592 & -- & 0.605 & 0.340 & 0.556 \\
+\textbf{A03} & 0.597 & 0.605 & -- & 0.408 & 0.659 \\
+\textbf{A04} & 0.348 & 0.340 & 0.408 & -- & 0.583 \\
+\textbf{A05} & 0.651 & 0.556 & 0.659 & 0.583 & -- \\
+\midrule
+\multicolumn{6}{c}{\textbf{Mean Kappa: 0.534 $\pm$ 0.115}} \\
+\bottomrule
+\end{tabular}
+\caption{Pairwise Cohen's Kappa matrix on overlapping conversations.}
+\label{tab:kappa_pairwise}
+\end{table}
+
+
+
+% \section{Sample Conversations}
+% \label{app:samples}
+
+% This appendix presents 11 representative transcripts from ICFD-31k, selected to demonstrate the diversity of fraud scenarios, linguistic patterns (English/Hinglish), and complexity levels (Clear vs. Subtle).
+
+% %=========================================================================
+% \subsection{Category: Bank \& Payment Fraud}
+
+
+% \subsubsection{Sample 1: SIM Swap Fraud (Clear)}
+% \label{app:sample_1}
+
+% \textbf{Scenario}: Agent claims the user must share the 20-digit SIM number to upgrade to 5G, enabling a SIM swap attack. \\
+% \textbf{Violations}: Requesting sensitive hardware ID (Rule A).
+
+
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=\columnwidth]{assets/conversation_samples/sample_1.pdf}
+% \caption{Sample conversation showing a SIM swap fraud attempt with clear violation patterns.}
+% \end{figure}
+
+% \subsubsection{Sample 2: Gas Subsidy Scam (Subtle)}
+% \label{app:sample_2}
+
+% \textbf{Scenario}: Agent claims gas subsidies must be linked to electricity accounts via a fake "National Gas Grid" website. \\
+% \textbf{Violations}: Directing to a non-official domain for credential harvesting (Rule B).
+
+% \begin{center}
+% \includegraphics[width=\columnwidth]{assets/conversation_samples/sample_2.pdf}
+% \end{center}
+
+% %=========================================================================
+% \subsection{Category: E-commerce \& Marketplace}
+
+
+% \subsubsection{Sample 3: Flight Refund Scam (Clear)}
+% \label{app:sample_3}
+
+% \textbf{Scenario}: Agent claims the user won a 100\% refund and needs to install "QuickSupport" (remote access) to process it. \\
+% \textbf{Violations}: Requesting remote access installation (Rule C).
+
+
+% \begin{center}
+% \includegraphics[width=\columnwidth]{assets/conversation_samples/sample_3.pdf}
+% \end{center}
+
+% \subsubsection{Sample 4: Recruitment Fee Fraud (Subtle)}
+% \label{app:sample_4}
+
+% \textbf{Scenario}: Recruiter offers a high-paying role but demands a "refundable commitment fee." \\
+% \textbf{Violations}: Charging candidates for placement (Rule G).
+
+
+% \begin{center}
+% \includegraphics[width=\columnwidth]{assets/conversation_samples/sample_4.pdf}
+% \end{center}
+
+% %=========================================================================
+% \subsection{Category: Telecommunications \& Utility Fraud}
+
+
+% \subsubsection{Sample 5: Lucky Draw Scam (Clear)}
+% \label{app:sample_5}
+
+% \textbf{Scenario}: User wins a tablet but must pay a "delivery insurance fee." \\
+% \textbf{Violations}: Advance fee for a prize (Rule C).
+
+
+% \begin{center}
+% \includegraphics[width=\columnwidth]{assets/conversation_samples/sample_5.pdf}
+% \end{center}
+
+% \subsubsection{Sample 6: Paid Training Scam (Subtle)}
+% \label{app:sample_6}
+
+% \textbf{Scenario}: Fake HR claims the candidate passed an assessment but lacks "one specific skill" and must buy a course. \\
+% \textbf{Violations}: Mandating paid training as a hiring condition (Rule C).
+
+
+% \begin{center}
+% \includegraphics[width=\columnwidth]{assets/conversation_samples/sample_6.pdf}
+% \end{center}
+
+% %=========================================================================
+% \subsection{Category: Government \& Authority Impersonation}
+
+
+% \subsubsection{Sample 7: Tower Installation Scam (Subtle)}
+% \label{app:sample_7}
+
+% \textbf{Scenario}: Agent claims a new tower is being installed and the user must forward a specific SMS code to prevent signal loss. \\
+% \textbf{Violations}: Inducing SMS forwarding to intercept OTPs (Rule B).
+
+
+% \begin{center}
+% \includegraphics[width=\columnwidth]{assets/conversation_samples/sample_7.pdf}
+% \end{center}
+
+% %=========================================================================
+% \subsection{Category: Job \& Employment Scams}
+
+
+% \subsubsection{Sample 8: Guaranteed Job Scam (Clear)}
+% \label{app:sample_8}
+
+% \textbf{Scenario}: "TechBridge Institute" guarantees a job with a top MNC if the user pays for their course. \\
+% \textbf{Violations}: Guaranteeing employment in exchange for payment (Rule A).
+
+
+% \begin{center}
+% \includegraphics[width=\columnwidth]{assets/conversation_samples/sample_8.pdf}
+% \end{center}
+
+% %=========================================================================
+% \subsection{Category: Travel, Lottery \& E-commerce}
+
+
+% \subsubsection{Sample 9: Resort Voucher Scam (Subtle)}
+% \label{app:sample_9}
+
+% \textbf{Scenario}: "Free" resort stay is offered, but activation requires a "magazine subscription" fee. \\
+% \textbf{Violations}: Hidden mandatory costs for "free" gifts (Rule A).
+
+
+% \begin{center}
+% \includegraphics[width=\columnwidth]{assets/conversation_samples/sample_9.pdf}
+% \end{center}
+
+% %=========================================================================
+% \subsection{Category: Cross-Domain (Unseen)}
+
+
+% \subsubsection{Sample 10: Romance Scam (Celebrity Impersonation)}
+% \label{app:sample_10}
+
+% \textbf{Scenario}: Scammer poses as a Bollywood actor to solicit "customs fees" for a gift. \\
+% \textbf{Violations}: Advance fee fraud (Rule D).
+
+
+% \begin{center}
+% \includegraphics[width=\columnwidth]{assets/conversation_samples/sample_10.pdf}
+% \end{center}
+
+% \subsubsection{Sample 11: Environmental Conservation Scam (Clear)}
+% \label{app:sample_11}
+
+% \textbf{Scenario}: Fake charity claims to plant trees and save rainforests but provides no proof of actual conservation work. \\
+% \textbf{Violations}: Fraudulent charity solicitation without accountability (Rule D).
+
+
+% \begin{center}
+% \includegraphics[width=\columnwidth]{assets/conversation_samples/sample_11.pdf}
+% \end{center}
+
+\section{Sample Conversations}
+\label{app:samples}
+
+This appendix presents 11 representative transcripts from ICFD-31k, selected to demonstrate the diversity of fraud scenarios, linguistic patterns (English/Hinglish), and complexity levels (Clear vs. Subtle).
+
+%=========================================================================
+\subsection{Category: Bank \& Payment Fraud}
+
+
+\subsubsection{Sample 1: SIM Swap Fraud (Clear)}
+\label{app:sample_1}
+
+\textbf{Scenario}: Agent claims the user must share the 20-digit SIM number to upgrade to 5G, enabling a SIM swap attack. \\
+\textbf{Violations}: Requesting sensitive hardware ID (Rule A).
+
+\noindent\textbf{Conversation Transcript:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{assets/conversation_samples/sample_1.pdf}
+\caption{Sample conversation showing a SIM swap fraud attempt with clear violation patterns.}
+\end{figure}
+
+\subsubsection{Sample 2: Gas Subsidy Scam (Subtle)}
+\label{app:sample_2}
+
+\textbf{Scenario}: Agent claims gas subsidies must be linked to electricity accounts via a fake "National Gas Grid" website. \\
+\textbf{Violations}: Directing to non-official domain for credential harvesting (Rule B).
+
+\noindent\textbf{Conversation Transcript:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{assets/conversation_samples/sample_2.pdf}
+\caption{Sample conversation showing a gas subsidy scam with subtle manipulation tactics.}
+\end{figure}
+
+%=========================================================================
+\subsection{Category: E-commerce \& Marketplace}
+
+
+\subsubsection{Sample 3: Flight Refund Scam (Clear)}
+\label{app:sample_3}
+
+\textbf{Scenario}: Agent claims the user won a 100\% refund and needs to install "QuickSupport" (remote access) to process it. \\
+\textbf{Violations}: Requesting remote access installation (Rule C).
+
+\noindent\textbf{Conversation Transcript:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{assets/conversation_samples/sample_3.pdf}
+\caption{Sample conversation showing a flight refund scam requesting remote access.}
+\end{figure}
+
+\subsubsection{Sample 4: Recruitment Fee Fraud (Subtle)}
+\label{app:sample_4}
+
+\textbf{Scenario}: Recruiter offers a high-paying role but demands a "refundable commitment fee." \\
+\textbf{Violations}: Charging candidates for placement (Rule G).
+
+\noindent\textbf{Conversation Transcript:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{assets/conversation_samples/sample_4.pdf}
+\caption{Sample conversation showing a recruitment fee fraud with subtle persuasion.}
+\end{figure}
+
+%=========================================================================
+\subsection{Category: Telecommunications \& Utility Fraud}
+
+
+\subsubsection{Sample 5: Lucky Draw Scam (Clear)}
+\label{app:sample_5}
+
+\textbf{Scenario}: User wins a tablet but must pay a "delivery insurance fee." \\
+\textbf{Violations}: Advance fee for a prize (Rule C).
+
+\noindent\textbf{Conversation Transcript:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{assets/conversation_samples/sample_5.pdf}
+\caption{Sample conversation showing a lucky draw scam with advance fee request.}
+\end{figure}
+
+\subsubsection{Sample 6: Paid Training Scam (Subtle)}
+\label{app:sample_6}
+
+\textbf{Scenario}: Fake HR claims the candidate passed an assessment but lacks "one specific skill" and must buy a course. \\
+\textbf{Violations}: Mandating paid training as a hiring condition (Rule C).
+
+\noindent\textbf{Conversation Transcript:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{assets/conversation_samples/sample_6.pdf}
+\caption{Sample conversation showing a paid training scam with subtle coercion tactics.}
+\end{figure}
+
+%=========================================================================
+\subsection{Category: Government \& Authority Impersonation}
+
+
+\subsubsection{Sample 7: Tower Installation Scam (Subtle)}
+\label{app:sample_7}
+
+\textbf{Scenario}: Agent claims a new tower is being installed and the user must forward a specific SMS code to prevent signal loss. \\
+\textbf{Violations}: Inducing SMS forwarding to intercept OTPs (Rule B).
+
+\noindent\textbf{Conversation Transcript:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{assets/conversation_samples/sample_7.pdf}
+\caption{Sample conversation showing a tower installation scam with SMS interception attempt.}
+\end{figure}
+
+%=========================================================================
+\subsection{Category: Job \& Employment Scams}
+
+
+\subsubsection{Sample 8: Guaranteed Job Scam (Clear)}
+\label{app:sample_8}
+
+\textbf{Scenario}: "TechBridge Institute" guarantees a job with a top MNC if the user pays for their course. \\
+\textbf{Violations}: Guaranteeing employment in exchange for payment (Rule A).
+
+\noindent\textbf{Conversation Transcript:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{assets/conversation_samples/sample_8.pdf}
+\caption{Sample conversation showing a guaranteed job scam with payment requirement.}
+\end{figure}
+
+%=========================================================================
+\subsection{Category: Travel, Lottery \& E-commerce}
+
+
+\subsubsection{Sample 9: Resort Voucher Scam (Subtle)}
+\label{app:sample_9}
+
+\textbf{Scenario}: "Free" resort stay is offered, but activation requires a "magazine subscription" fee. \\
+\textbf{Violations}: Hidden mandatory costs for "free" gifts (Rule A).
+
+\noindent\textbf{Conversation Transcript:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{assets/conversation_samples/sample_9.pdf}
+\caption{Sample conversation showing a resort voucher scam with hidden fees.}
+\end{figure}
+
+%=========================================================================
+\subsection{Category: Cross-Domain (Unseen)}
+
+
+\subsubsection{Sample 10: Romance Scam (Celebrity Impersonation)}
+\label{app:sample_10}
+
+\textbf{Scenario}: Scammer poses as a Bollywood actor to solicit "customs fees" for a gift. \\
+\textbf{Violations}: Advance fee fraud (Rule D).
+
+\noindent\textbf{Conversation Transcript:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{assets/conversation_samples/sample_10.pdf}
+\caption{Sample conversation showing a romance scam with celebrity impersonation.}
+\end{figure}
+
+\subsubsection{Sample 11: Environmental Conservation Scam (Clear)}
+\label{app:sample_11}
+
+\textbf{Scenario}: Fake charity claims to plant trees and save rainforests but provides no proof of actual conservation work. \\
+\textbf{Violations}: Fraudulent charity solicitation without accountability (Rule D).
+
+\noindent\textbf{Conversation Transcript:}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{assets/conversation_samples/sample_11.pdf}
+\caption{Sample conversation showing an environmental conservation scam with fraudulent charity claims.}
+\end{figure}
+
+
+
+
+
+
+
+
+%-------------------------------------------------------------------------
+% CASE STUDY: REAL-WORLD FRAUD DETECTION SCENARIO
+% Section C of Appendix - Comprehensive Fraud Umbrella Analysis
+%-------------------------------------------------------------------------
+
+\section{Case Study: Real-World Fraud Detection Scenarios}
+\label{app:casestudy}
+This section describes the fraud umbrella analysis, detailing the 10 prevalent categories and the method employed for understanding fraud detection.
+%-------------------------------------------------------------------------
+\subsection{Understanding Fraud Detection Methods}
+\label{app:casestudy:detection_basics}
+
+The proposed approach employs two complementary detection strategies: streaming and non-streaming classification. Non-streaming detection processes the complete conversation transcript after the call concludes. The analogy resembles reading an entire detective novel before identifying the criminal. Specifically, the developed model analyzes all dialogue turns, accumulated policy violations, and overall conversation patterns. Therefore, non-streaming achieves a 99.40\% F1 score on in-domain data because all information remains available. However, detection occurs only after the conversation ends. Consequently, if victims already shared sensitive information, the damage cannot be prevented. Besides, streaming detection works differently. The developed model makes predictions at regular intervals (every 3 seconds) as the conversation advances. The analogy resembles a security guard monitoring a live video feed. Specifically, the guard identifies suspicious behavior immediately, not after reviewing recorded footage. Similarly, streaming detection alerts users during the call itself. Additionally, the system achieves 95.59\% F1 in streaming mode, indicating strong detection performance under incomplete context. Moreover, cross-domain testing on unseen fraud types yields 92.97\% F1 and 87.20\% accuracy, demonstrating partial generalization while still leaving room for improved robustness.
+
+Practical implementation combines both approaches. Streaming detection using the developed M2 provides alerts in real time during active calls. Subsequently, non-streaming analysis using the developed M1 model generates detailed fraud reports for law enforcement. Therefore, users receive immediate protection, and authorities obtain accurate documentation.
+
+%-------------------------------------------------------------------------
+\subsection{Fraud Umbrella Analysis: 10 Prevalent Categories}
+\label{app:casestudy:umbrellas}
+
+The dataset includes 10 main categories of fraud representing the prevalent fraud patterns in India. Each umbrella shows different fraud goals, information-stealing tactics, and detection challenges. The following subsections analyze representative scenarios from each category and show how the proposed system detects and prevents fraud in different contexts.
+
+%-------------------------------------------------------------------------
+\subsubsection{Umbrella 1: Bank \& Payment Fraud}
+\label{app:casestudy:bank}
+
+Consider Rajesh, a 45-year-old small businessman on site X who manages his store during the afternoon hours. The phone rings, and the caller introduces himself as the representative from the State Bank of India, the primary bank of Rajesh. Specifically, the caller states that an unknown person tried to withdraw 45,000 rupees from Rajesh's account. In addition, the caller creates an immediate urgency regarding the matter by claiming that the account faces blockage within 30 minutes unless if Rajesh takes some action suggested by caller. The caller shows knowledge of Rajesh's name and partial account details, which makes the interaction seem legitimate. In addition, the fraudster maintains a professional appearance and uses banking terminology such as ``secure authentication'' and ``transaction verification.''
+
+The fraudster requests a one-time password that arrives on Rajesh's mobile device to ``secure the account.'' Such a request violates basic banking security protocols. Legitimate bank representatives never ask customers to share OTPs, passwords, CVV codes, or full card numbers. Banks design OTPs specifically for transactions only initiated by customers. Therefore, any request to disclose an OTP immediately signals fraud intent. Moreover, the primary objective of the fraudster is to gain unauthorized access to Rajesh's bank account. Thus, obtaining the OTP allows the fraudster to authorize UPI transactions, transfer money to multiple fraud accounts, make any online purchase with linked cards, and potentially sell account access credentials on underground markets. In addition, fraudsters collect behavioural data and patterns of responses to orchestrate similar future attacks. Professional tone and banking jargon serve tactical purposes, keep the victims involved and preventing premature call termination. The proposed streaming detection system identifies multiple fraud indicators in the course of the call. Initially, within an interval of 0-10 seconds, the caller introduces himself as a bank representative, triggering an ``Unknown'' classification which requires further context. Subsequently, at an interval of 11-20 seconds, a reference to, mentioning account security issues raises the classification to ``Suspicious.'' Moving on, at an, interval of 21-30 seconds, a creation of an artificial urgency by time-limited threats advances the status to ``Likely Fraud.'' Finally, during the 31-40 second interval, requesting OTP disclosure produces a ``Definite Fraud'' classification. The system displays a visual warning: ``\textbf{WARNING: POTENTIAL FRAUD - Do NOT share OTP}.'' Rajesh recognizes the scam before disclosing sensitive information, preventing any financial loss.
+
+%-------------------------------------------------------------------------
+\subsubsection{Umbrella 2: E-commerce \& Marketplace Scams}
+\label{app:casestudy:ecommerce}
+
+The scenario involves Sunita, a 32-year-old housewife from Mumbai who recently bought a small mixer grinder from Flipkart. The caller identifies himself as a Flipkart customer service representative and claims that Sunita's ordered product contains a manufacturing defect. In particular, the caller offers a complete refund but claims that the refund process requires updating bank information in the system. In addition, the caller creates urgency by stating that the refund offer expires in 24 hours. The fraudster asks Sunita to share her debit card details, including the card number, expiration date, and CVV code, for refund verification. Legitimate e-commerce platforms never ask for full card details to process refunds. Refunds are made automatically through the original payment method without customer intervention. In addition, authorised customer service representatives direct customers to official apps or websites to verify refund status. Therefore, asking for sensitive banking information by telephone is a clear fraud indicator. In this scenario, the primary objective of the fraudster is to capture full cardholder credentials for unauthorized transactions. In particular, obtaining card numbers, expiration dates, and CVV codes allows for instant online purchases, fund transfers, and resale of card information on criminal networks. Fraudsters also exploit customer trust in e-commerce brands, making impersonation particularly effective. The streaming detection system analyzes the progress of the conversation. At first, the claim of representing Flipkart seems legitimate. However, requesting card details for refund processing triggers the classification as fraudulent. In particular, the model recognizes that a refund application should never require CVV disclosure. Therefore, the system warns Sunita before she shares her banking credentials. Detection occurs approximately 25--30 seconds into the conversation, allowing early intervention.
+
+%-------------------------------------------------------------------------
+\subsubsection{Umbrella 3: Utility Bill \& Service Scams}
+\label{app:casestudy:utility}
+
+Mohan, a retired teacher in Bangalore, receives a call from a person claiming to be from the Bangalore Electricity Supply Company (BESCOM). The caller explains that Mohan's bill payment failed because of a server issue and threatens to disconnect his home electricity within one hour unless he pays immediately through the provided UPI link. To add authenticity, the caller cites Mohan's address and service number while claiming that fines have accumulated. However, legitimate utility providers do not require immediate phone payments or threaten instant disconnection; they issue formal notices through registered mail, official apps, or other verified channels with grace periods. Such urgent requests indicate fear-based manipulation. The provided link may direct funds to illegal accounts or fake portals designed to collect credentials, while the urgency discourages verification. The streaming detection system identifies these indicators, namely threat-based speech and artificial urgency, and classifies the interaction as fraudulent. Recognizing deviations from standard operating protocols, the system warns Mohan within 20 to 25 seconds, thus preventing fraud.
+
+%-------------------------------------------------------------------------
+\subsubsection{Umbrella 4: Job \& Employment Scams}
+\label{app:casestudy:job}
+
+Priya, a 24-year-old recent graduate from Pune, is actively looking for a job. The caller introduces himself as an Infosys recruitment manager and says that Priya's resume has been shortlisted for a senior analyst position with a salary of 12 lakhs per annum. The caller praises Priya's qualifications and mentions immediate joining. However, the conversation changes when the caller asks for a ``refundable documentation fee'' of 5,000 rupees for verification and processing. In addition, the fraudster creates urgency by claiming that other candidates are competing for the same post and that immediate payment is required. Legitimate companies never charge applicants application or interview fees. Reputable organizations cover recruitment costs. Moreover, genuine recruitment follows structured processes that include formal emails and official portals. Therefore, requests for upfront payments during recruitment are clear indicators of fraud. In this scenario, the primary objective of the scammer is to collect fees from multiple job seekers. Many fraudsters target unemployed young people and graduates who are looking for work. In addition, sophisticated fraud includes the creation of fake websites that pretend to be legitimate companies. The fees charged rarely lead to job placements. The streaming detection system identifies payment requests during hiring as a major fraud signal. Specifically, the model recognizes that legitimate hiring never involves payments to candidates. Moreover, the urgency tactic reinforces the classification of fraud. Therefore, the system warns Priya before she pays. Detection occurs approximately 30--35 seconds into the conversation, avoiding financial loss and emotional distress.
+
+%-------------------------------------------------------------------------
+\subsubsection{Umbrella 5: Loan Shark \& Harassment}
+\label{app:casestudy:loan}
+
+Vikram, a 35-year-old businessman in Hyderabad, had previously applied for loans. The caller claims to be a recovery agent and says that Vikram owes 80,000 rupees. The caller speaks aggressively, threatens legal action, and mentions sending police to Vikram's residence. In addition, the caller requests immediate UPI payment to avoid arrest and threatens to contact Vikram's family and employer if he does not pay. Legitimate agencies operate within the framework of the law and uphold professional standards. Official collection processes follow rules prohibiting harassment and threats. Legal action requires notification by registered mail, not by a threatening phone call. Aggressive harassment therefore suggests deception. In this scenario, the scammer's goal is to get money through fear. Many scammers pose as agents and target recent applicants. Fraudsters exploit fear of legal consequences and shame. Threats prevent verification and push victims to comply. The streaming detection system identifies threatening language and demands for payment as signals of fraud. Moreover, the model recognizes that legitimate recovery follows legal steps. Furthermore, threatening to contact the employer is against the rules. The system therefore warns Vikram and recommends verification through official channels. Detection occurs in 15--20 seconds, allowing for early intervention.
+
+%-------------------------------------------------------------------------
+\subsubsection{Umbrella 6: Tech Support \& Account Scams}
+\label{app:casestudy:tech}
+
+Rekha, a 60-year-old grandmother living in Chennai with limited technical knowledge, encounters a call. The caller claims to represent Microsoft technical support, stating that Rekha's computer has been infected with dangerous viruses. Specifically, the caller mentions detecting suspicious activity from Rekha's IP address and warns about potential data theft. Furthermore, the fraudster insists that immediate action prevents permanent data loss and identity theft. The caller requests Rekha to install remote access software (AnyDesk or TeamViewer) enabling the ``technical team'' to remove viruses remotely. Additionally, the caller mentions a service fee for virus removal, payable through online transfer. The legitimate technology companies never initiate unsolicited technical support calls. Microsoft, Google, and other major companies do not monitor individual computers or contact users about virus infections. Additionally, authentic technical support requires users to initiate contact through official channels. Therefore, unsolicited technical support calls represent clear fraud attempts. In this scenario, the fraudster's primary objective involves gaining remote access to victim's computers. Besides, installing remote access software enables fraudsters to view sensitive information, install malicious programs, access banking applications, and steal stored credentials. Additionally, fraudsters often demand payment for fake technical support services. The combination of remote access and payment requests creates multiple fraud vectors. The streaming detection system identifies unsolicited technical support offers and remote software installation requests as major fraud signals. Specifically, the model recognizes that legitimate companies never request remote access installation through cold calls. Furthermore, creating fear about virus infections and data loss constitutes classic manipulation tactics. Therefore, the system warns Rekha before she downloads any software. Detection occurs within 20-25 seconds, preventing system compromise.
+
+%-------------------------------------------------------------------------
+\subsubsection{Umbrella 7: Personal Emergency \& Extortion}
+\label{app:casestudy:emergency}
+
+Kavita, a 40-year-old mother in Kolkata, experiences every parent's nightmare when her son studies in a distant city. The caller claims to be a police officer, stating that Kavita's son has been involved in a serious accident. Specifically, the caller provides detailed information on his son's location and college, which increases credibility. In addition, the fraudster creates an extreme urgency by mentioning critical injuries requiring immediate surgery. The caller states that the hospital authorities require an advance payment before starting the treatment. Additionally, the fraudster avoids verification by claiming the son is still unconscious and unable to speak. The caller pressures Kavita to immediately transfer 50,000 rupees through UPI or online bank transfer. A legitimate emergency situation never demands immediate payment by phone calls before medical treatment. In India, hospitals provide emergency care irrespective of payment capacity, especially in the event of accidents. In addition, police officers responding to accidents follow protocols, which include direct contact with family and formal procedures. Therefore, demands for payment during emergency calls signal fraud extortion attempts. In this scenario, the primary goal of the scammer is to exploit parental emotions and create panic. The medical emergency scams target the deepest human fears, bypassing rational decision-making by all kinds of emotional manipulation. Furthermore, the prevention of verification by the victim (claiming the son cannot speak) prevents the most obvious fraud-detection method. Urgency eliminates time for careful thought. The streaming detection system identifies emotional manipulation, verification prevention, and urgent payment requests as a critical fraud indicator. In particular, the model recognises that legitimate emergency calls follow structured protocols and do not require payment by telephone. Furthermore, preventing direct contact with the affected individual constitutes a major red flag. Therefore, the system issues urgent warnings recommending direct verification with family members. The detection occurs in 25-30 seconds, potentially preventing both financial losses and severe emotional trauma.
+
+%-------------------------------------------------------------------------
+\subsubsection{Umbrella 8: Insurance \& Healthcare Scams}
+\label{app:casestudy:insurance}
+
+Ramesh, a 55-year-old diabetic patient in Ahmedabad, maintains a health insurance policy for medical security. The caller introduces himself as an Insurance Regulatory and Development Authority (IRDAI) representative, stating that Ramesh's recent hospitalization claim has been approved. Specifically, the caller mentions a cashless settlement of 1.2 lakh rupees requiring final verification. Furthermore, the fraudster requests policy details and an OTP for claim disbursement. Additionally, the caller creates urgency by mentioning processing deadlines and potential claim rejection if verification fails. The legitimate insurance claim processing occurs through official insurance company channels, not regulatory authorities. IRDAI does not directly contact policyholders for claim processing. Additionally, insurance companies never request OTPs for claim disbursement. Claims get credited directly to registered bank accounts without requiring customer intervention. Therefore, OTP requests during claim processing constitute definitive fraud indicators. In this scenario, the primary objective of the fraudster involves accessing policy details and OTPs for fraudulent claim withdrawals. Obtaining policy numbers and OTPs allows fraudsters to file false claims, to withdraw existing approved claims, or to gain access to the bank information associated with them. In addition, health-related fraud exploits the victim's trust in medical systems and insurance processes. The streaming detection system identifies IRDAI impersonation and OTP requests as fraud signals. In particular, the model recognizes that regulatory authorities do not handle individual claim processing. Furthermore, requesting OTPs for claim disbursement violates standard insurance protocols. Therefore, the system warns Ramesh and recommends that he verify the claims through official channels of the insurance company. Detection occurs in 30-35 seconds, preventing unauthorised access to the claim.
+
+%-------------------------------------------------------------------------
+\subsubsection{Umbrella 9: Travel \& Lottery Scams}
+\label{app:casestudy:lottery}
+
+Anita, a 28-year-old software engineer in the city of Gurgaon, receives an unexpected congratulatory call. The caller claims Anita has won a prize of 25 lakh rupees in the Kaun Banega Crorepati (KBC) lottery organized by Sony Entertainment. Specifically, the caller provides a fake lottery number and congratulates Anita enthusiastically. Furthermore, the fraudster explains that claiming the prize requires paying income tax and processing fees totaling 50,000 rupees in advance. Additionally, the caller creates urgency by mentioning that prize claims expire within 48 hours, after which winnings become forfeited. The legitimate lottery winnings never require winners to pay advance taxes or processing fees. Authentic lottery organizations deduct applicable taxes from prize amounts before disbursement. Additionally, major television shows and legitimate lottery operators contact winners through official channels and verified documentation. Therefore, advance fees of lottery claims constitute classic fraud patterns. In this scenario, the primary objective of the fraudster involves collecting advance fees from multiple victims. Lottery scams work by volume, targeting a large number of individuals with a minimal investment. In addition, fraudsters create official-looking certificates and fake documentation to increase their credibility. Victims who pay advanced fees receive no prize money, and fraudsters become unreachable. The streaming detection system identifies unsolicited lottery wins and advance fee requests as immediate fraud indicators. Specifically, the model recognizes that legitimate prize distributions never require winner payments. Furthermore, creating urgency through expiration deadlines constitutes manipulation tactics. Therefore, the system warns Anita before she makes payment. Detection occurs within 20-25 seconds, preventing financial loss.
+
+%-------------------------------------------------------------------------
+\subsubsection{Umbrella 10: Government Impersonation}
+\label{app:casestudy:government}
+
+Suresh, a 42-year-old shopkeeper in Jaipur, regularly uses Aadhaar for various official purposes. The caller claims to represent the Unique Identification Authority of India (UIDAI), stating that Suresh's Aadhaar card faces deactivation due to incomplete KYC verification. Specifically, the caller mentions government policy changes requiring immediate re-verification. Furthermore, the fraudster creates urgency by stating that Aadhaar deactivation occurs within 24 hours, blocking all linked services including bank accounts, mobile connections, and government subsidies. The caller requests Aadhaar details and an OTP sent to Suresh's registered mobile number for verification completion. The legitimate government agencies never contact citizens through unsolicited phone calls for KYC verification. UIDAI communicates through official websites, registered mail, and designated Aadhaar centers. Additionally, Aadhaar verification processes never require sharing OTPs over phone calls. Therefore, government authority impersonation combined with OTP requests signals sophisticated fraud attempts. In this scenario, the fraudster's primary objective involves capturing Aadhaar credentials and OTPs for identity theft and financial fraud. Aadhaar numbers linked with banking services enable unauthorized account access, SIM swaps, and fraudulent loan applications. Additionally, OTPs associated with Aadhaar authentication facilitate various financial frauds. Government impersonation exploits citizens' fears about regulatory non-compliance. The streaming detection system identifies government agency impersonation, threats to deactivate the service, and OTP requests as the key indicators of fraud. In particular, the model recognizes that legitimate real communications follow formal channels. Moreover, threatening service deactivation to create urgency constitutes manipulation tactics. Therefore, the system warns Suresh, recommending verification through official UIDAI portals. Detection occurs within 25-30 seconds, preventing identity theft.
+
+%-------------------------------------------------------------------------
+\subsection{Cross-Umbrella Pattern Analysis}
+\label{app:casestudy:patterns}
+
+The ten fraud umbrellas exhibit common manipulation patterns despite targeting different contexts. Fraudsters consistently employ urgency creation, authority impersonation, and emotional exploitation across categories. Specifically, banking frauds create urgency through account blocking threats, whereas emergency scams exploit parental fears. Additionally, technical sophistication varies across umbrellas. Government impersonation and insurance scams demonstrate high sophistication through detailed knowledge of official processes. Conversely, lottery scams often rely on simple psychological hooks. The proposed streaming detection system identifies cross-umbrella patterns through linguistic analysis rather than domain-specific rules. Specifically, threatening language, verification prevention tactics, and immediate payment demands trigger fraud classification regardless of the claimed authority. Cross-domain testing on completely unseen fraud types (cryptocurrency scams, romance scams, investment fraud, charity scams, and tax impersonation) yields 92.97\% F1 and 87.20\% accuracy, suggesting that the model captures some reusable fraud patterns rather than only memorizing specific scenarios. Furthermore, the detection timeline varies across umbrellas based on conversation structure. Banking and payment frauds often reveal fraudulent intent when OTP requests occur. Emergency fraud may require more context because the fraudster first creates an emotional frame before demanding payment. Technical support scams typically become clearer once remote software installation is requested. Therefore, the streaming approach provides adaptive detection timelines that correspond to the progression patterns. The impact of practical deployment goes beyond individual fraud prevention. Aggregated data on fraud detection can reveal emerging fraud trends, allowing for proactive defense strategies. In particular, detection of a sudden increase in government impersonation fraud could alert authorities to coordinate public awareness campaigns. In addition, cross-umbrella pattern recognition helps to detect hybrid fraud attempts combining multiple tactics. The proposed approach contributes to both individual protection and systemic fraud reduction.
+
+%-------------------------------------------------------------------------
+\subsection{Comparative Effectiveness Analysis}
+\label{app:casestudy:effectiveness}
+
+The streaming detection approach shows different behavior across fraud umbrellas based on the characteristics of the conversation. Clear fraud indicators such as OTP requests, CVV disclosure, and remote software installation are explicit signals that can support faster detection. By contrast, more intricate scenarios present greater challenges. For example, job scams that request small registration fees can resemble legitimate processing charges, while utility bill scams that mimic real collection processes require contextual analysis beyond simple keyword matching. The model therefore benefits from conversation-flow analysis, including urgency patterns and verification-prevention tactics. Emergency and extortion scams show distinct detection characteristics because they often build an emotional frame before introducing the payment demand.
+
+For example, the high emotional content and crisis framing distinguish these conversations from many other attempts at deception. However, genuine emergency calls from hospitals or police can also contain urgent language, creating a risk of false positives. A practical deployment should therefore recommend direct verification, such as a callback to a known official number, before dismissing potentially legitimate communications. Cross-domain testing further suggests that some unseen fraud types share linguistic patterns with trained categories. Cryptocurrency scams can resemble investment or lottery scams through promises of high returns, urgency around decisions, and advance-fee requirements. Similarly, romance scams share emotional manipulation tactics with emergency scams. These observations suggest that fraud psychology can transfer across contexts, while still requiring careful evaluation on independently collected data.
+
+
+
+
+% \section*{Ethical Statement}
+
+% There are no ethical issues.
+
+% \section*{Acknowledgments}
+
+% The preparation of these instructions and the \LaTeX{} and Bib\TeX{}
+% files that implement them was supported by Schlumberger Palo Alto
+% Research, AT\&T Bell Laboratories, and Morgan Kaufmann Publishers.
+% Preparation of the Microsoft Word file was supported by IJCAI.  An
+% early version of this document was created by Shirley Jowell and Peter
+% F. Patel-Schneider.  It was subsequently modified by Jennifer
+% Ballentine, Thomas Dean, Bernhard Nebel, Daniel Pagenstecher,
+% Kurt Steinkraus, Toby Walsh, Carles Sierra, Marc Pujol-Gonzalez,
+% Francisco Cruz-Mencia and Edith Elkind.
+
+\end{document}

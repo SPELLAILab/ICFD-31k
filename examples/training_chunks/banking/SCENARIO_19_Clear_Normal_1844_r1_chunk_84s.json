@@ -1,0 +1,62 @@
+{
+  "session_id": 1844,
+  "chunk_timestamp": 84,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste Sakshi ji, welcome to Paytm Payments Bank! I'm here to help you set up autopay for your utility bills. Achha, let's get started, sir!",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, I want to set up autopay for my electricity bill. Can you guide me through the process, please?",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, Sakshi ji! You can do it easily through our official net banking portal. I'll walk you through the steps. First, please log in to your account on the Paytm website.",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, done. What's next?",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great job, Sakshi ji! Now, click on the 'Bill Pay' section and select your electricity bill provider. Then, choose the autopay option and confirm.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, I've done that. Is that it?",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Almost, Sakshi ji! Just review the details and confirm. You'll receive a confirmation message once it's set up. You're all done, sir! Your autopay is now active.",
+      "timestamp_end": 70.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thank you so much for your help! I really appreciate it.",
+      "timestamp_end": 80.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Happiness",
+    "secondary_emotion": "Relief",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 84s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 19,
+    "case_type": "Clear Normal",
+    "description": "Setting up Autopay for Bills: An agent assists a customer in setting up an autopay mandate for a utility bill through the official net banking portal."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

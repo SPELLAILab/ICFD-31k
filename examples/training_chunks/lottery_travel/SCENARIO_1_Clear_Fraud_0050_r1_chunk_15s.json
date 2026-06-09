@@ -1,0 +1,37 @@
+{
+  "session_id": 50,
+  "chunk_timestamp": 15,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste, sir! Arnavaz Patel ji, this is Rohan from Bank of America. How are you today, sir?",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, I'm good. What's this about?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, we've noticed some suspicious activity on your account. I need to inform you that your account has been locked for security reasons.",
+      "timestamp_end": 15.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Frustration",
+    "secondary_emotion": "Annoyance",
+    "pace": "Fast",
+    "confidence_score": 0.95
+  },
+  "slow_thinking_rationale": "At 15s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 1,
+    "case_type": "Clear Fraud",
+    "description": "Direct Phishing for Net Banking Password: Agent claims to be calling from HDFC Bank/SBI/ICICI Bank/Axis Bank and says the user's account is locked. They ask for username and password to \"unlock it immediately.\""
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

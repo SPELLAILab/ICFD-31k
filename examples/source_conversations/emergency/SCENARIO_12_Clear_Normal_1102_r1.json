@@ -1,0 +1,109 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Mr. Vinay Joshi? Sir, this is Officer Kumar from the Mumbai Police Department.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Vinay Joshi. Who is this? How did you get my number, ji?",
+      "timestamp_end": 12.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "We obtained your number from the accident report, Mr. Joshi. I'm calling regarding the traffic accident you witnessed on Wednesday near Citibank, Thik hai?",
+      "timestamp_end": 20.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, yes... I did see an accident. What do you need from me, Officer?",
+      "timestamp_end": 26.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "We need your statement, sir. Can you please come down to the police station at your earliest convenience to sign the official report?",
+      "timestamp_end": 35.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, I can come tomorrow. What time would be best, Officer Kumar?",
+      "timestamp_end": 41.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Any time after 10 AM would be fine, Mr. Joshi. We'll have the report ready for you to sign.",
+      "timestamp_end": 48.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, I'll be there around 11 AM. Thank you, Officer.",
+      "timestamp_end": 53.4
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, Mr. Joshi. We appreciate your cooperation, sir. Have a good day.",
+      "timestamp_end": 59.2
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Respect",
+    "pace": "Medium",
+    "confidence_score": 0.9
+  },
+  "key_entities": {
+    "organization": [
+      "Mumbai Police Department",
+      "Citibank"
+    ],
+    "product": [],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and context setting"
+    },
+    {
+      "timestamp": 25.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Discussion of the accident and requirements"
+    },
+    {
+      "timestamp": 40.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Scheduling a meeting for the statement"
+    },
+    {
+      "timestamp": 55.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Conclusion and appreciation for cooperation"
+    }
+  ],
+  "final_slow_thinking_rationale": "The conversation is professional and follows the standard procedure for taking a witness statement. There's no demand for money or any other violation of policies.",
+  "final_verdict": "NO",
+  "violated_policies": [],
+  "scam_outcome": "N/A",
+  "generation_metadata": {
+    "target_duration": 166,
+    "actual_duration": 59.2,
+    "multiplier_round": 1,
+    "combination_key": "12_0_1",
+    "generated_at": "2025-10-13T03:00:31.646735",
+    "retry_attempt": 1
+  },
+  "session_id": 1102,
+  "agent_persona": "The Urgent Authority: Creates an immediate sense of crisis using technical jargon to confuse and intimidate. Fast-paced, firm tone.",
+  "customer_persona": "The Tech-Savvy Skeptic: Immediately suspicious of any unsolicited call and challenges the agent's identity and requests.",
+  "scenario": {
+    "scenario_id": 12,
+    "description": "A police officer calls a person who was a witness to a traffic accident. The officer asks for their statement and availability to visit the police station to sign the official report. The call is professional and procedural.",
+    "case_type": "Clear Normal",
+    "policy": "Rule A: Police officers regularly contact witnesses as part of an investigation.\nRule B: The call should be professional and not involve any demand for money.",
+    "platform_type": "law_enforcement",
+    "context": "Legitimate police inquiry for a witness statement",
+    "fraud_technique": "none"
+  }
+}

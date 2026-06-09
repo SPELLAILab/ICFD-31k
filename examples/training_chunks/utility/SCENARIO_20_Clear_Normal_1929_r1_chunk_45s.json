@@ -1,0 +1,37 @@
+{
+  "session_id": 1929,
+  "chunk_timestamp": 45,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir. This is a call from Indane Gas. I am calling to inform you that the delivery person is on their way with your booked cylinder and will arrive in approximately one hour, ji.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, okay. Thank you for letting me know. What is the name of the delivery person, please?",
+      "timestamp_end": 22.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, the delivery person's name is not available to me at this moment. But I can assure you that they will be there within the given time frame, Thik hai?",
+      "timestamp_end": 35.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "None",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 45s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "An agent from [GAS_AGENCY] calls to inform the customer that the delivery person is on their way with their booked cylinder and will arrive in approximately one hour."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

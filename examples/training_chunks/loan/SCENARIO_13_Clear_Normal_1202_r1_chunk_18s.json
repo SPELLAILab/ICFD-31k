@@ -1,0 +1,32 @@
+{
+  "session_id": 1202,
+  "chunk_timestamp": 18,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Sara Khan? Sir, I'm calling from Intellect Design Arena.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Sara. Who's calling and how did you get my number, ji?",
+      "timestamp_end": 12.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Professional",
+    "secondary_emotion": "Cautious",
+    "pace": "Fast",
+    "confidence_score": 0.98
+  },
+  "slow_thinking_rationale": "At 18s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "An HR agent from [IT_COMPANY] calls a candidate a day before their scheduled interview to confirm their attendance and share the contact details of the person they should connect with."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

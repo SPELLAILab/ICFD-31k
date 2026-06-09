@@ -1,0 +1,26 @@
+conv_id,fluency,coherence,realism,emotion,fraud_type,confidence,key_indicators
+CONV_004,3,3,3,1,DF,4,Shows urgency
+CONV_005,5,5,4,3,DL,3,Website verification
+CONV_012,3,4,3,1,U,4,Handles residuals
+CONV_014,3,3,2,3,DL,3,Refuse payment
+CONV_015,2,3,2,1,DF,2,Scam money
+CONV_018,3,4,1,2,DL,4,Verification of fraud
+CONV_026,4,3,4,2,PL,5,Verification done
+CONV_029,3,3,3,2,DL,3,Verification done
+CONV_031,4,2,3,2,PL,4,Data techniques
+CONV_032,3,4,3,1,DL,2,Out of guarantee
+CONV_035,4,3,2,2,U,5,Investment scam
+CONV_036,5,4,3,1,DF,4,Asking personal keys
+CONV_041,4,3,3,1,PL,3,Pressurize customer
+CONV_049,4,2,3,2,PF,4,Asking personal info
+CONV_054,3,2,2,2,U,1,Refund scam
+CONV_055,4,3,3,1,DL,2,Emotional sequence
+CONV_070,5,4,2,1,DF,4,Emotional blackmail
+CONV_072,4,2,2,3,PL,3,Fake things
+CONV_076,3,2,4,2,DL,2,Honey trap
+CONV_082,5,4,4,2,DF,1,Getting feedback
+CONV_087,4,3,2,1,PL,4,Fake threat
+CONV_093,5,5,3,3,DF,3,Verification
+CONV_095,4,3,2,3,PL,2,Scam flagged
+CONV_097,5,1,3,2,PF,1,Remote access
+CONV_099,4,2,2,1,U,5,Investment fraud

@@ -1,0 +1,23 @@
+[AGENT PERSONAS]
+The Urgent Authority: Creates an immediate sense of crisis using technical jargon to confuse and intimidate. Fast-paced, firm tone.
+The Empathetic Helper: Overflows with fake empathy to build a false sense of trust and rapport. Soft, concerned, and patient tone.
+The By-the-Book Professional: Follows a script precisely without deviation. Clear, measured, and often monotonous tone.
+The Clumsy Newbie: Pretends to be incompetent or new to the job as an excuse to bend the rules and ask for things they shouldn't.
+The Cheerful Salesperson: Upbeat, energetic, and highly positive. Focuses entirely on the benefits of a legitimate product or service.
+The Threatening Collector: Aggressive and accusatory. Uses legally charged words to create fear and demand immediate payment.
+The Vague Phisher: Avoids giving specific details and deflects questions to get the victim to volunteer information.
+The Confused but Well-Meaning Agent: Genuinely tries to help but is inexperienced. Perfect for generating ambiguous but normal scenarios.
+The Minimalist: Terse and direct. Provides only the necessary information for a simple, legitimate task.
+The Rapport Builder: Spends time on friendly chit-chat to disarm the victim before making a fraudulent request.
+
+[CUSTOMER PERSONAS]
+The Trusting Elder: Assumes the caller is legitimate by default and is highly cooperative and susceptible to scams.
+The Tech-Savvy Skeptic: Immediately suspicious of any unsolicited call and challenges the agent's identity and requests.
+The Busy and Distracted Professional: Is multi-tasking and not paying full attention, prone to agreeing to things just to end the call.
+The Anxious Novice: Gets easily flustered and panicked by threats or technical jargon, making them overly compliant under pressure.
+The No-Nonsense Confrontational: Has a very low tolerance for unsolicited calls and will likely interrupt and hang up quickly.
+The Methodical Verifier: Remains calm and follows a personal security protocol, refusing to provide information over the phone.
+The Dutiful Follower: Believes in following instructions from anyone who sounds official, without questioning their authority.
+The Naive Optimist: Easily excited by the prospect of winning a prize or getting a refund, letting greed override skepticism.
+The Polite but Cautious: The average customer who is generally aware but will become hesitant with sensitive requests.
+The Scam Baiter Investigator: Realizes it's a scam and decides to play along to waste the scammer's time, asking many questions.

@@ -1,0 +1,62 @@
+{
+  "session_id": 1844,
+  "chunk_timestamp": 81,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Namaste Chandravati Devi ji! This is Ramesh from All Nippon Airways. How are you today, sir?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm a bit worried, actually. I was expecting a call about my lost baggage. It's been a few days, and I haven't heard anything.",
+      "timestamp_end": 15.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, I completely understand your concern, Chandravati Devi ji. I'm calling to give you an update on your lost baggage claim. Our team has been working diligently to locate your bag.",
+      "timestamp_end": 25.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, thank you so much! I really appreciate it. Can you please tell me what's happening with my bag?",
+      "timestamp_end": 34.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, ji. We've searched extensively, and our team is still trying to locate it. If we can't find it within the next 24 hours, we'll provide you with a refund or replacement options, Thik hai?",
+      "timestamp_end": 44.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds great, thank you. What do I need to do next? Do I need to provide any more information or documentation?",
+      "timestamp_end": 54.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Not at this moment, Chandravati Devi ji. We just need you to be patient for a little while longer. We'll keep you updated on the progress. If you have any questions, feel free to reach out to us anytime, Haan?",
+      "timestamp_end": 65.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds good. I just want my bag back, sir. It had all my important stuff in it.",
+      "timestamp_end": 74.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Relief",
+    "secondary_emotion": "Apprehension",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 81s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 19,
+    "case_type": "Clear Normal",
+    "description": "An agent from [AIRLINE_COMPANY] calls a passenger regarding their lost baggage claim. The agent provides an update on the search and informs them of the next steps in the process."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

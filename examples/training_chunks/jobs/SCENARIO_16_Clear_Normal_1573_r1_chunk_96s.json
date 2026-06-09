@@ -1,0 +1,97 @@
+{
+  "session_id": 1573,
+  "chunk_timestamp": 96,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir. I'm calling about the writing desk you posted on Bikroy.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Ah, haan, yes. The writing desk. What about it?",
+      "timestamp_end": 10.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm interested in buying it, sir. Can we discuss the price?",
+      "timestamp_end": 14.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Price is 8000 rupees. It's a good deal, sir.",
+      "timestamp_end": 19.3
+    },
+    {
+      "speaker": "Agent",
+      "text": "I was thinking more along the lines of 7000 rupees, ji. Can we meet in the middle?",
+      "timestamp_end": 24.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, okay. 7500 rupees. That's the best I can do.",
+      "timestamp_end": 30.4
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, that sounds good. I'll pay via BHIM when I pick it up, sir.",
+      "timestamp_end": 35.6
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, yes, that's fine. Just inspect it and pay when you're satisfied.",
+      "timestamp_end": 40.3
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, can I confirm your name for the pickup?",
+      "timestamp_end": 45.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Roshan Kumar. Just call me when you're on your way, ji.",
+      "timestamp_end": 50.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Will do, sir. We'll finalize the details then.",
+      "timestamp_end": 55.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sounds good. I have to go, sir. Busy with work.",
+      "timestamp_end": 60.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "No problem, sir. Have a good day, Roshan Kumar ji.",
+      "timestamp_end": 65.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir. Bye.",
+      "timestamp_end": 70.4
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, sir.",
+      "timestamp_end": 75.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Polite",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 96s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A legitimate buyer on [MARKETPLACE_PLATFORM] calls the seller to negotiate the price of a [FURNITURE_ITEM]. After agreeing on a price, they confirm they will pay via [UPI_APP] in person during pickup after inspecting the item."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,108 @@
+Evaluation completed in 15591.16 seconds.
+Processed 5000 samples.
+
+============================================================
+EVALUATION RESULTS
+============================================================
+Overall Performance:
+   Accuracy:  28.94%
+   Precision: 93.58%
+   Recall:    22.16%
+   F1-Score:  35.83%
+
+Confusion Matrix:
+   TN:  455  FP:   68
+   FN: 3485  TP:  992
+
+Performance:
+   Avg processing time: 2.92s/sample
+   Avg confidence:     0.800
+   Error rate:         0.00%
+
+Comparison with Trained Models:
+   Gemma Zero-Shot:    F1 = 35.83%
+   RoBERTa 2a (In):    F1 = 98.45%
+   RoBERTa 2b (In):    F1 = 95.59%
+   Performance Gap:    -62.62% vs 2a
+
+Results saved to: results
+  - detailed_results.csv: Per-sample predictions
+  - metrics.json: Complete evaluation metrics
+  - summary.json: High-level summary
+
+============================================================
+GEMMA ZERO-SHOT EVALUATION ANALYSIS
+============================================================
+Total samples: 5000
+
+============================================================
+ERROR ANALYSIS
+============================================================
+Total samples: 5000
+Successful: 5000 (100.00%)
+Errors: 0 (0.00%)
+
+============================================================
+PREDICTION ANALYSIS
+============================================================
+
+Prediction distribution:
+  NO: 3940 (78.80%)
+  YES: 1060 (21.20%)
+
+Confidence statistics:
+  Mean: 0.800
+  Median: 0.800
+  Std: 0.000
+  Min: 0.800
+  Max: 0.800
+  NO confidence: 0.800 +/- 0.000
+  YES confidence: 0.800 +/- 0.000
+
+============================================================
+PERFORMANCE BY TRUE LABEL
+============================================================
+
+True Label: YES
+  Samples: 4477
+  Correct: 992
+  Accuracy: 22.16%
+    Predicted NO: 3485 (77.84%)
+    Predicted YES: 992 (22.16%)
+
+True Label: NO
+  Samples: 523
+  Correct: 455
+  Accuracy: 87.00%
+    Predicted NO: 455 (87.00%)
+    Predicted YES: 68 (13.00%)
+
+============================================================
+TIMING ANALYSIS
+============================================================
+Processing time statistics:
+  Mean: 2.92s
+  Median: 2.88s
+  Std: 0.71s
+  Min: 1.09s
+  Max: 9.99s
+  Total: 14579.51s (243.0m)
+  NO avg time: 2.73s
+  YES avg time: 3.59s
+
+============================================================
+COMPARISON WITH TRAINED MODELS
+============================================================
+Model                          F1-Score   Accuracy   F1 Gap
+-----------------------------------------------------------------
+Gemma Zero-Shot                35.83      28.94      --
+RoBERTa 2a (In-Domain)         98.45      99.63      -62.62
+RoBERTa 2a (Cross-Domain)      92.97      87.20      -57.14
+RoBERTa 2b (In-Domain)         95.59      95.40      -59.76
+RoBERTa 2b (Cross-Domain)      88.56      79.90      -52.73
+
+Key Insights:
+   Weak zero-shot performance. Gap to best trained model: -62.62%
+   Below cross-domain performance. Gap: -57.14%
+
+Analysis complete.

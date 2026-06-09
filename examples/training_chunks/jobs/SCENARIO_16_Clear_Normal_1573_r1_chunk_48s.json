@@ -1,0 +1,47 @@
+{
+  "session_id": 1573,
+  "chunk_timestamp": 48,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Tumpa Das? Sir, I'm calling from Passport Seva Kendra.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes, this is Tumpa. What's this about? I'm a bit busy, ji.",
+      "timestamp_end": 12.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, sorry to disturb you. I'm calling regarding your query on our website. You had submitted a query about the status of your passport application.",
+      "timestamp_end": 23.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, right. Yeah, I did. What's the update? Can you please make it quick, I'm in a meeting.",
+      "timestamp_end": 32.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, sir. Let me just check on that for you. Can you please confirm your ticket number so I can look into this further?",
+      "timestamp_end": 43.9
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slight Impatience",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 48s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "An agent from the Passport Seva Kendra's support line calls a user back in response to a query the user had lodged on the official website. The agent provides the resolution or required information."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,37 @@
+{
+  "session_id": 1046,
+  "chunk_timestamp": 45,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Tanvi Chopra? Sir, I'm calling from Zoom regarding the support ticket you filed, ticket number ZM12345. How are you today, ji?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, that's me. I'm doing well, thank you. What's the status on my issue?",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, great to hear that! I'd be happy to help you with that. Can you please tell me what operating system you're using, and what version of Zoom you have installed? This will help me troubleshoot the issue.",
+      "timestamp_end": 35.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Positive",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 45s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 11,
+    "case_type": "Clear Normal",
+    "description": "A legitimate support agent from [TECH_COMPANY] calls a user in response to a ticket they filed about a software issue. The agent provides a ticket number for reference and begins standard troubleshooting by asking about the user's operating system and software version."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

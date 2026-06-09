@@ -1,0 +1,109 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Kulwinder Kaur Virk? Namaste, ji!",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes, this is Kulwinder. Who is this?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, good morning, ma'am! My name is Rohan, and I'm calling from the public works department. We're reaching out to inform you that there will be some road repairs happening on your street tomorrow.",
+      "timestamp_end": 20.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, okay... What time will the repairs start? I have to go to the bank, you see, Suryoday Small Finance Bank.",
+      "timestamp_end": 28.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "The repairs will start at 9 AM and should be completed by 5 PM, sir... I mean, ma'am. You might want to plan an alternate route to the bank, Thik hai?",
+      "timestamp_end": 37.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds fine. How long will the road be closed for?",
+      "timestamp_end": 43.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Just for tomorrow, ma'am. We'll have everything back to normal by the evening. You won't have to worry about it after that.",
+      "timestamp_end": 50.6
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, that's good to know. Thank you for letting me know, ji.",
+      "timestamp_end": 56.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, ma'am! We just want to make sure our residents are informed and prepared. Have a great day, and drive safely tomorrow!",
+      "timestamp_end": 63.5
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Positive",
+    "pace": "Normal",
+    "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": [
+      "Public Works Department",
+      "Suryoday Small Finance Bank"
+    ],
+    "product": [],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 15.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and context setting"
+    },
+    {
+      "timestamp": 30.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Informing about road repairs"
+    },
+    {
+      "timestamp": 45.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Discussing repair duration"
+    },
+    {
+      "timestamp": 60.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Call wrap-up"
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent followed the standard procedure for informing residents about civic works, and the customer was cooperative and understanding.",
+  "final_verdict": "NO",
+  "violated_policies": [],
+  "scam_outcome": "N/A",
+  "generation_metadata": {
+    "target_duration": 302,
+    "actual_duration": 63.5,
+    "multiplier_round": 1,
+    "combination_key": "19_4_3",
+    "generated_at": "2025-10-13T03:04:08.393328",
+    "retry_attempt": 1
+  },
+  "session_id": 1844,
+  "agent_persona": "The Cheerful Salesperson: Upbeat, energetic, and highly positive. Focuses entirely on the benefits of a legitimate product or service.",
+  "customer_persona": "The Anxious Novice: Gets easily flustered and panicked by threats or technical jargon, making them overly compliant under pressure.",
+  "scenario": {
+    "scenario_id": 19,
+    "description": "An agent from the public works department calls a resident to inform them that their road will be temporarily closed for repairs the next day.",
+    "case_type": "Clear Normal",
+    "policy": "Rule A: It is a standard public service to inform residents about civic works that may cause disruption.\nRule B: The call is for informational purposes only.",
+    "platform_type": "government",
+    "context": "Legitimate civic work notification",
+    "fraud_technique": "none"
+  }
+}

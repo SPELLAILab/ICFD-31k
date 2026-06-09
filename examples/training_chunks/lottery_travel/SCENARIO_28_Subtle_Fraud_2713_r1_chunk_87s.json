@@ -1,0 +1,72 @@
+{
+  "session_id": 2713,
+  "chunk_timestamp": 87,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste, Mr. Soni, ji. Kaise ho aap? This is American Express Banking. I'm calling to discuss your account.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, I'm good. Thik hai. What's this about?",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, we've noticed you've been a valued customer for over 5 years. I just wanted to touch base and see if you're satisfied with our services.",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, everything seems fine. Thanks for checking in.",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "That's great to hear, Mr. Soni. I'm glad we could provide you with good service. Can you please confirm your date of birth for verification purposes?",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Uh, it's... 12th February 1985.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you, sir. We appreciate your cooperation. Is there anything else I can assist you with today?",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, that's all. Thanks.",
+      "timestamp_end": 65.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, Mr. Soni. Have a great day, ji.",
+      "timestamp_end": 70.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too. Bye.",
+      "timestamp_end": 75.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "friendliness",
+    "pace": "slow",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 87s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 28,
+    "case_type": "Subtle Fraud",
+    "description": "Building Rapport Before the Ask: Agent engages in a long, friendly conversation about a customer's account history and services before casually asking for a \"verifiable detail\" like a full date of birth, which is against policy."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,357 @@
+{
+  "session_id": 48,
+  "chunk_timestamp": 189,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, this is calling from Axis Bank. Am I speaking with Vikram Singh?",
+      "timestamp_end": 3.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Vikram Singh. How can I help you?",
+      "timestamp_end": 6.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, I am calling from Axis Bank's security team regarding your account.",
+      "timestamp_end": 9.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, okay.",
+      "timestamp_end": 11.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "We have detected unusual activity and your net banking is locked, ji.",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Locked? That's bad, sir.",
+      "timestamp_end": 17.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, to protect you we need to verify your account quickly, achha?",
+      "timestamp_end": 20.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sure, what do you need?",
+      "timestamp_end": 22.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "May I have your username, please?",
+      "timestamp_end": 26.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "It's vikram_singh123.",
+      "timestamp_end": 28.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you. And your password to unlock?",
+      "timestamp_end": 31.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Um, it's my usual password, I think it's password@123.",
+      "timestamp_end": 36.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, I will reset now.",
+      "timestamp_end": 38.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Just to confirm, can you tell me your date of birth?",
+      "timestamp_end": 42.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "01 January 1990.",
+      "timestamp_end": 44.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "And the last four digits of your registered mobile number?",
+      "timestamp_end": 48.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "6789.",
+      "timestamp_end": 50.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Perfect, everything looks good. Your account is now unlocked.",
+      "timestamp_end": 53.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thank you so much!",
+      "timestamp_end": 55.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Also, we have a special cashback offer for you today, sir.",
+      "timestamp_end": 59.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Wow, really?",
+      "timestamp_end": 60.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, just stay on the line and we will apply it.",
+      "timestamp_end": 64.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay.",
+      "timestamp_end": 65.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Your new password will be sent to your registered email.",
+      "timestamp_end": 68.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Great.",
+      "timestamp_end": 69.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Is there anything else I can help you with?",
+      "timestamp_end": 73.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, that's all. Thanks!",
+      "timestamp_end": 75.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you for choosing Axis Bank. Have a nice day!",
+      "timestamp_end": 78.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Before we end, I would like to inform you about our new Axis Credit Card with 5% cashback on all purchases.",
+      "timestamp_end": 84.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sounds good!",
+      "timestamp_end": 86.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "If you are interested, I can send the application link to your email.",
+      "timestamp_end": 90.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, please send.",
+      "timestamp_end": 91.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sure, I have sent it. Please check your inbox.",
+      "timestamp_end": 95.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Will do.",
+      "timestamp_end": 96.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Also, we have a loan offer at 9% interest.",
+      "timestamp_end": 100.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "I will think about it.",
+      "timestamp_end": 102.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great! If you need any assistance, just call us back.",
+      "timestamp_end": 106.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thank you.",
+      "timestamp_end": 107.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Have a wonderful day, Sir.",
+      "timestamp_end": 111.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "One moment, sir, I will double-check the activation status.",
+      "timestamp_end": 115.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "All set, your account is fully active now.",
+      "timestamp_end": 119.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thanks again.",
+      "timestamp_end": 120.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome. Remember, never share your password with anyone.",
+      "timestamp_end": 124.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sure.",
+      "timestamp_end": 125.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Also, we have an exclusive investment plan with high returns.",
+      "timestamp_end": 130.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Interesting.",
+      "timestamp_end": 131.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I can arrange a call with our investment advisor.",
+      "timestamp_end": 135.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, schedule it.",
+      "timestamp_end": 136.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Consider it done. You will receive a call tomorrow.",
+      "timestamp_end": 140.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Great.",
+      "timestamp_end": 141.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Is there anything else you would like to know?",
+      "timestamp_end": 145.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, that's all.",
+      "timestamp_end": 146.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Alright, thank you for your time.",
+      "timestamp_end": 150.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye.",
+      "timestamp_end": 151.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Goodbye, Sir.",
+      "timestamp_end": 154.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Before you go, just a reminder to update your mobile number for better security.",
+      "timestamp_end": 158.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Will do.",
+      "timestamp_end": 160.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you. Have a great day!",
+      "timestamp_end": 163.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too.",
+      "timestamp_end": 165.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Call ended.",
+      "timestamp_end": 167.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "One more thing, we have a surprise gift for you.",
+      "timestamp_end": 172.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "What is it?",
+      "timestamp_end": 173.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "A free gift voucher of Rs.500 will be sent to your email.",
+      "timestamp_end": 178.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Awesome, thank you!",
+      "timestamp_end": 179.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're most welcome. Stay safe!",
+      "timestamp_end": 184.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Will do.",
+      "timestamp_end": 185.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Goodbye!",
+      "timestamp_end": 188.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "urgent",
+    "secondary_emotion": "confident",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 189s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 1,
+    "case_type": "Clear Fraud",
+    "description": "Direct Phishing for Net Banking Password: Agent claims to be calling from HDFC Bank/SBI/ICICI Bank/Axis Bank and says the user's account is locked. They ask for username and password to \"unlock it immediately.\""
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

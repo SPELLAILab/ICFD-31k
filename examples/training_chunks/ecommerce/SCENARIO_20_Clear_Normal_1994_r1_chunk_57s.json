@@ -1,0 +1,52 @@
+{
+  "session_id": 1994,
+  "chunk_timestamp": 57,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Hello, sir. I'm calling about the Galaxy Watch listed on Cashify Marketplace. Is it still under warranty, ji?",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, Ram Prasad ji, thank you for calling. Yes, the watch is still under warranty. It's a brand new piece, hardly used.",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, that's great. Do you have the original bill for the watch?",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Haan, I do have the original bill. Would you like me to send it to you, sir?",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, no need. I just wanted to confirm. How long has the watch been listed, sir?",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "It's been listed for about a week now. We've had a few inquiries, but no one has made an offer yet.",
+      "timestamp_end": 50.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "friendly",
+    "pace": "normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 57s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "A seller on [MARKETPLACE_PLATFORM] receives a call from a buyer asking if the listed \"brand new\" [ELECTRONICS_ITEM] is still under warranty and if the original bill is available."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

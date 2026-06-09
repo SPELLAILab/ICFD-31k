@@ -1,0 +1,87 @@
+{
+  "session_id": 1202,
+  "chunk_timestamp": 63,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Hello, who's this?",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Hi Abraham, this is Rohan from Shopo, sir. I'm calling about the cycle lock you've listed for sale.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, yes. What about it?",
+      "timestamp_end": 12.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm interested in buying it. Can you tell me about its condition, ji? Is it used or brand new?",
+      "timestamp_end": 18.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "It's used, but in good condition. Why do you want to know?",
+      "timestamp_end": 22.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Just want to make sure it's worth the price, haan. Can I schedule a time to come see it in person?",
+      "timestamp_end": 27.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "That's fine. When were you thinking?",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "How about tomorrow afternoon? I can come by your place around 2 pm, sir.",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, that works. But let's discuss the price and all that when you come, okay?",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sounds good, Abraham. I'll see you tomorrow then. Thanks, sir.",
+      "timestamp_end": 45.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome. See you tomorrow.",
+      "timestamp_end": 47.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, have a good day, ji.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, bye.",
+      "timestamp_end": 52.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 63s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "A user who listed a [ITEM_CATEGORY] on [MARKETPLACE_PLATFORM] receives a call from a genuine buyer who asks detailed questions about the item's condition and schedules a time to inspect it in person before discussing payment."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

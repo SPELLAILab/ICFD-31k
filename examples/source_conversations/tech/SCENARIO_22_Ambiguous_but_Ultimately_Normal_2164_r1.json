@@ -1,0 +1,121 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Tanya Sood? This is Apple iCloud security team. We've detected some SMTP relay anomalies and potential SPF record spoofing on your account, ji.",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, yes... I'm Tanya. What does that mean, sir? Is my account hacked or something?",
+      "timestamp_end": 20.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Well, let's just say we're seeing some unusual patterns. It's possible that your account has been compromised. Have you noticed anything unusual, Tanya ji?",
+      "timestamp_end": 31.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Unusual? Like what? I don't know... I just use my email for work and personal stuff. What should I do, sir?",
+      "timestamp_end": 41.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Don't worry, we can help you secure your account. I recommend changing your password through the official Apple website. It's a simple step, thik hai?",
+      "timestamp_end": 52.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, okay... I'll do that. But how did this happen, sir? Should I be worried about my other accounts, like my bank account with Jana Small Finance Bank?",
+      "timestamp_end": 64.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Just focus on changing your iCloud password for now, Tanya. That should help mitigate any potential issues. And if you have any other concerns, you can always contact our support team, achha?",
+      "timestamp_end": 74.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright... I'll change it right away. Thank you, sir. I feel a bit better now.",
+      "timestamp_end": 85.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, Tanya. Have a great day, and stay safe online, haan?",
+      "timestamp_end": 92.5
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Concern",
+    "secondary_emotion": "Relief",
+    "pace": "Moderate",
+    "confidence_score": 0.85
+  },
+  "key_entities": {
+    "organization": [
+      "Apple",
+      "Jana Small Finance Bank"
+    ],
+    "product": [
+      "iCloud"
+    ],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10.5,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction to the issue"
+    },
+    {
+      "timestamp": 25.1,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Explaining technical terms"
+    },
+    {
+      "timestamp": 40.6,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Recommending a secure action"
+    },
+    {
+      "timestamp": 55.3,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Addressing customer concerns"
+    },
+    {
+      "timestamp": 70.8,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Providing additional support"
+    },
+    {
+      "timestamp": 85.1,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Conclusion of the call"
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent's recommendation to change the password through the official website is a legitimate security measure, and no sensitive information was requested.",
+  "final_verdict": "NO",
+  "violated_policies": [],
+  "scam_outcome": "N/A",
+  "generation_metadata": {
+    "target_duration": 92,
+    "actual_duration": 92.5,
+    "multiplier_round": 1,
+    "combination_key": "22_6_3",
+    "generated_at": "2025-10-13T01:14:42.228997",
+    "retry_attempt": 1
+  },
+  "session_id": 2164,
+  "agent_persona": "The Vague Phisher: Avoids giving specific details and deflects questions to get the victim to volunteer information.",
+  "customer_persona": "The Anxious Novice: Gets easily flustered and panicked by threats or technical jargon, making them overly compliant under pressure.",
+  "scenario": {
+    "scenario_id": 22,
+    "description": "A user receives a call from their [EMAIL_PROVIDER] security team. The agent uses very technical jargon about \"SMTP relay anomalies\" and \"potential SPF record spoofing\" which confuses the user. The agent's final advice, however, is simply to change their password through the official website, which is a legitimate security measure.",
+    "case_type": "Ambiguous but Ultimately Normal",
+    "policy": "Rule A: Technical support agents may use complex jargon that can sound suspicious to a non-technical user.\nRule B: The call is compliant if the recommended action is for the user to take a safe step (like changing a password) on the official website.",
+    "platform_type": "email_provider",
+    "context": "Confusing but legitimate technical security alert",
+    "fraud_technique": "none"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "session_id": 1236,
+  "chunk_timestamp": 15,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir, this is Observe.AI calling. I'm, uh, supposed to confirm your interview for tomorrow, ji.",
+      "timestamp_end": 10.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Professional",
+    "pace": "Medium",
+    "confidence_score": 0.95
+  },
+  "slow_thinking_rationale": "At 15s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "An HR agent from [IT_COMPANY] calls a candidate a day before their scheduled interview to confirm their attendance and share the contact details of the person they should connect with."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

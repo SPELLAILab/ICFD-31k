@@ -1,0 +1,27 @@
+{
+  "session_id": 2521,
+  "chunk_timestamp": 9,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Kamla Negi?",
+      "timestamp_end": 5.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "friendliness",
+    "pace": "medium",
+    "confidence_score": 0.89
+  },
+  "slow_thinking_rationale": "At 9s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 26,
+    "case_type": "Subtle Fraud",
+    "description": "A scammer calls and pretends it's a wrong number. They strike up a friendly conversation, build rapport over a few minutes, and then end the call. They call back a day later, continuing the \"friendship,\" and then mention a sudden, small financial emergency, asking for a \"small loan\" of ₹2,000."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

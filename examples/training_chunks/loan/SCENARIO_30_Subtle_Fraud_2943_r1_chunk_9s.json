@@ -1,0 +1,27 @@
+{
+  "session_id": 2943,
+  "chunk_timestamp": 9,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello Anandi ji, this is Rohan from Hathway Broadband. How are you today, sir?",
+      "timestamp_end": 5.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "trust",
+    "pace": "fast",
+    "confidence_score": 0.89
+  },
+  "slow_thinking_rationale": "At 9s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 30,
+    "case_type": "Subtle Fraud",
+    "description": "A scammer calls and says they are from the user's [INTERNET_PROVIDER]. They claim that to comply with new government regulations, all users must link their Aadhaar to their broadband account. They direct the user to a phishing website to enter their Aadhaar number and the OTP received on their phone."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

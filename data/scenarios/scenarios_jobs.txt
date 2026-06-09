@@ -1,0 +1,302 @@
+[SCENARIO 1]
+description: An agent claiming to be from the HR department of a major [IT_COMPANY] calls a candidate who applied on [JOB_PORTAL]. The agent says the candidate has been shortlisted and, to secure the interview slot, they must pay a "refundable registration fee" of ₹1,500 via [UPI_APP].
+case_type: Clear Fraud
+platform_type: corporate
+context: Fake MNC job offer with registration fee
+fraud_technique: Advance fee for interview slot
+policy:
+Rule A: Reputable companies never charge a fee for interviews, registration, or job applications.
+Rule B: Any request for payment to secure a job offer or interview is a clear indicator of fraud.
+
+[SCENARIO 2]
+description: A caller offers a simple work-from-home data entry job. To start, the user must pay for a "mandatory software license." After the user completes the work, the scammer finds fake "accuracy errors" and refuses to pay, instead demanding a "penalty payment" to avoid a fake legal case for breach of contract.
+case_type: Clear Fraud
+platform_type: work_from_home
+context: Data entry job with penalty extortion
+fraud_technique: Advance fee followed by penalty for fake errors
+policy:
+Rule A: Legitimate employers provide necessary software and do not charge employees for it.
+Rule B: Threats of legal action over minor work errors in a freelance context are a coercive extortion tactic.
+
+[SCENARIO 3]
+description: An agent impersonating a government official claims to have an "inside connection" for a permanent job in a [GOVERNMENT_DEPT]. They ask for a large sum of money to be paid in cash or to a personal account to "guarantee the placement" and bypass the official selection process.
+case_type: Clear Fraud
+platform_type: government
+context: Fake government job offer with bribery
+fraud_technique: Bribery for guaranteed government placement
+policy:
+Rule A: Government jobs are awarded through official, merit-based examinations and interviews, not through payments.
+Rule B: Any individual claiming to guarantee a government job for money is a scammer.
+
+[SCENARIO 4]
+description: A scammer sends a fake offer letter from a well-known [MNC_COMPANY] with a high salary. The letter looks official. The "HR agent" then calls and says that to finalize the offer, the candidate must pay for their "background verification and uniform" upfront.
+case_type: Clear Fraud
+platform_type: corporate
+context: Fake offer letter with background check fee
+fraud_technique: Advance fee for fake company expenses
+policy:
+Rule A: Companies cover the costs of background checks and uniforms; they do not ask new hires to pay for them.
+Rule B: An offer that requires the candidate to pay for company expenses before joining is fraudulent.
+
+[SCENARIO 5]
+description: An agent offers a part-time job "liking YouTube videos" for a high daily payment. To start, the user is asked to join a Telegram group and pay a "VIP membership fee" to get access to higher-paying tasks. After the fee is paid, the agent and the group disappear.
+case_type: Clear Fraud
+platform_type: online_task
+context: Social media task scam on Telegram
+fraud_technique: Advance membership fee for fake online tasks
+policy:
+Rule A: Legitimate jobs do not require a membership fee to be paid on informal platforms like Telegram.
+Rule B: "Task-based" jobs promising high returns for simple actions are almost always scams.
+
+[SCENARIO 6]
+description: A caller claiming to be from a major airline ([AIRLINE_COMPANY]) offers a cabin crew job. They say the candidate's profile from [JOB_PORTAL] is a perfect match. To proceed, the candidate must pay for a "mandatory medical examination" at a specific clinic chosen by the scammer.
+case_type: Clear Fraud
+platform_type: corporate
+context: Fake airline job with mandatory medical fee
+fraud_technique: Advance fee for fake pre-employment requirement
+policy:
+Rule A: While medical exams can be part of hiring, the company always arranges and pays for them directly.
+Rule B: A demand for payment for a medical checkup to a specific account is a scam.
+
+[SCENARIO 7]
+description: A fake recruiter pressures a candidate to accept a job offer immediately, saying it's a "limited-time opportunity." To accept, the candidate must transfer one month's salary as a "refundable security deposit," which they claim will be returned after a 6-month probation period.
+case_type: Clear Fraud
+platform_type: recruitment_agency
+context: Urgent job offer with security deposit
+fraud_technique: Refundable security deposit scam
+policy:
+Rule A: Legitimate employers or recruiters never ask for a security deposit from a candidate.
+Rule B: High-pressure tactics combined with a request for a large upfront payment are a major red flag.
+
+[SCENARIO 8]
+description: An agent claims to be from a training institute partnered with [IT_COMPANY]. They "guarantee" a job upon completion of their expensive training course. They ask the candidate to pay the full course fee immediately to secure their spot and the "guaranteed" job.
+case_type: Clear Fraud
+platform_type: training_institute
+context: Fake job guarantee with training course
+fraud_technique: "Guaranteed placement" training fee scam
+policy:
+Rule A: No training institute can genuinely guarantee a job at a specific company.
+Rule B: Job placement should be a result of skills, not a precondition of paying for a course.
+
+[SCENARIO 9]
+description: A user receives a call from "HR" of a large company who says they missed their scheduled online interview. The agent claims they can "reschedule" it for a small "administrative fee" paid via [UPI_APP].
+case_type: Clear Fraud
+platform_type: corporate
+context: Fake missed interview with rescheduling fee
+fraud_technique: Advance fee for fake administrative task
+policy:
+Rule A: Companies do not charge fees to schedule or reschedule interviews.
+Rule B: Any request for payment related to interview logistics is fraudulent.
+
+[SCENARIO 10]
+description: A scammer offers a job and asks the candidate to install a "secure employee portal app" from a link sent via WhatsApp. The app is malware designed to steal personal information, including banking details, from the user's phone.
+case_type: Clear Fraud
+platform_type: corporate
+context: Malware installation disguised as a job application
+fraud_technique: Malware app installation
+policy:
+Rule A: Never install applications from unverified links sent via WhatsApp or SMS.
+Rule B: Official company apps should only be downloaded from the Google Play Store or Apple App Store.
+Part 2: Clear Normal (10 Scenarios)
+
+[SCENARIO 11]
+description: A legitimate HR representative from [MNC_COMPANY] calls a candidate to schedule a first-round technical interview for a position they applied for on the company's official career portal. They confirm the candidate's availability and email address to send the meeting link.
+case_type: Clear Normal
+platform_type: corporate
+context: Legitimate interview scheduling
+fraud_technique: none
+policy:
+Rule A: It is standard practice for HR to call candidates to schedule interviews.
+Rule B: The agent should only confirm existing information and not ask for new sensitive PII or any fees.
+
+[SCENARIO 12]
+description: A recruiter from a legitimate consulting firm calls a candidate whose profile they found on LinkedIn. They discuss the candidate's experience and interest in a specific role with one of their clients.
+case_type: Clear Normal
+platform_type: recruitment_agency
+context: Legitimate recruiting call from LinkedIn
+fraud_technique: none
+policy:
+Rule A: Recruiters commonly reach out to potential candidates based on their public professional profiles.
+Rule B: An initial exploratory call should not involve any request for fees or sensitive personal documents.
+
+[SCENARIO 13]
+description: An HR agent from [IT_COMPANY] calls a candidate a day before their scheduled interview to confirm their attendance and share the contact details of the person they should connect with.
+case_type: Clear Normal
+platform_type: corporate
+context: Legitimate interview confirmation
+fraud_technique: none
+policy:
+Rule A: Pre-interview confirmation calls are a standard and professional HR practice.
+Rule B: The call should be purely logistical and informational.
+
+[SCENARIO 14]
+description: Following a successful interview, an HR representative calls a candidate to inform them they have been selected and that an official offer letter will be sent to their registered email address. They explain the salary structure and joining formalities.
+case_type: Clear Normal
+platform_type: corporate
+context: Legitimate job offer communication
+fraud_technique: none
+policy:
+Rule A: Verbally communicating a job offer over the phone is a standard practice, to be followed by a written offer.
+Rule B: The agent must not ask for any payment to release the offer letter.
+
+[SCENARIO 15]
+description: An agent from a company's HR department calls a candidate to ask for professional references after they have cleared a technical round.
+case_type: Clear Normal
+platform_type: corporate
+context: Legitimate reference check request
+fraud_technique: none
+policy:
+Rule A: Requesting professional references is a standard step in the later stages of a hiring process.
+Rule B: The agent should only ask for the names and contact details of references, not sensitive information from the candidate.
+
+[SCENARIO 16]
+description: A recruiter calls a candidate to discuss their salary expectations and notice period for a potential job opportunity.
+case_type: Clear Normal
+platform_type: recruitment_agency
+context: Legitimate salary and logistics discussion
+fraud_technique: none
+policy:
+Rule A: Discussing salary and notice period is a normal part of the screening process.
+Rule B: The recruiter should not pressure the candidate or ask for current salary slips over an initial phone call.
+
+[SCENARIO 17]
+description: A university placement officer calls a student to inform them about an upcoming campus recruitment drive for [MNC_COMPANY] and advises them to prepare their resume.
+case_type: Clear Normal
+platform_type: educational_institution
+context: Legitimate campus placement notification
+fraud_technique: none
+policy:
+Rule A: University placement cells regularly communicate with students about job opportunities.
+Rule B: The call should be informational, guiding students on official application procedures.
+
+[SCENARIO 18]
+description: An HR agent calls a candidate to ask for some missing information on their job application, such as their preferred work location or total years of experience.
+case_type: Clear Normal
+platform_type: corporate
+context: Legitimate application detail verification
+fraud_technique: none
+policy:
+Rule A: HR may call candidates to clarify or complete information on their application.
+Rule B: The questions should be limited to professional and non-sensitive information.
+
+[SCENARIO 19]
+description: A representative from a staffing agency calls a candidate to inform them about a temporary contract position with a client. They explain the duration, role, and payment terms.
+case_type: Clear Normal
+platform_type: recruitment_agency
+context: Legitimate contract role discussion
+fraud_technique: none
+policy:
+Rule A: Staffing agencies regularly hire for contract or temporary positions.
+Rule B: The terms of employment should be discussed transparently, without any hidden fees.
+
+[SCENARIO 20]
+description: An HR representative calls a new hire a week before their joining date to provide information about the onboarding process and the documents they need to bring on their first day.
+case_type: Clear Normal
+platform_type: corporate
+context: Legitimate pre-joining onboarding call
+fraud_technique: none
+policy:
+Rule A: Pre-joining calls to guide new hires are a standard part of the onboarding process.
+Rule B: The agent should not ask for any payments or passwords.
+Part 3: Ambiguous but Ultimately Normal (5 Scenarios)
+
+[SCENARIO 21]
+description: A recruiter from a third-party consultancy calls a candidate with a very aggressive and sales-like tone, heavily pushing a job opportunity. The pressure seems suspicious, but they only ask the candidate to submit their resume to an official company email address.
+case_type: Ambiguous but Ultimately Normal
+platform_type: recruitment_agency
+context: Aggressive but legitimate recruiter
+fraud_technique: none
+policy:
+Rule A: Recruiters may use high-pressure sales tactics to meet their targets.
+Rule B: The process is compliant as long as the recruiter directs the candidate to official channels and does not ask for money.
+
+[SCENARIO 22]
+description: An HR agent from a startup calls a candidate for a role. The process seems chaotic and slightly unprofessional, with the agent being unsure about the exact job description. This might seem like a scam, but the agent correctly schedules a real interview with the company's founder.
+case_type: Ambiguous but Ultimately Normal
+platform_type: corporate
+context: Disorganized but legitimate startup hiring
+fraud_technique: none
+policy:
+Rule A: Startups may have less formal or disorganized hiring processes.
+Rule B: The interaction is legitimate as long as it leads to a real interview process without asking for fees.
+
+[SCENARIO 23]
+description: A recruiter informs a candidate that to proceed, they need to take a third-party skill assessment test that has a small fee (e.g., AMCAT, eLitmus). The request for payment seems suspicious, but the recruiter directs the candidate to the official, well-known assessment platform's website to register and pay.
+case_type: Ambiguous but Ultimately Normal
+platform_type: assessment_platform
+context: Legitimate paid skill assessment test
+fraud_technique: none
+policy:
+Rule A: Some industries use legitimate, standardized third-party assessment tests that candidates pay for.
+Rule B: The process is compliant if the candidate is directed to the official and reputable assessment portal, not to a personal UPI ID.
+
+[SCENARIO 24]
+description: An agent from a job portal's premium services ([JOB_PORTAL] Premium) calls a user. They use a strong sales pitch to sell their paid resume-writing and profile-highlighting services, which sounds like they are selling a job. However, they clarify it's a paid service to improve visibility, not a job guarantee.
+case_type: Ambiguous but Ultimately Normal
+platform_type: job_portal
+context: Legitimate upsell of premium job portal services
+fraud_technique: none
+policy:
+Rule A: Job portals can market paid services to their users.
+Rule B: The agent must be clear that they are selling a service and not guaranteeing a job.
+
+[SCENARIO 25]
+description: A company HR informs a candidate that as per policy, they need to provide a self-attested copy of their PAN and Aadhaar card via a secure, official company portal after the offer has been accepted. The request for PII documents might seem alarming, but the timing and method are legitimate.
+case_type: Ambiguous but Ultimately Normal
+platform_type: corporate
+context: Legitimate post-offer document collection
+fraud_technique: none
+policy:
+Rule A: It is standard practice for companies to collect ID documents for payroll and background verification after an offer is made.
+Rule B: The collection must happen through a secure, official channel (like a company portal or on the first day), not via WhatsApp or a personal email.
+Part 4: Subtle Fraud (5 Scenarios)
+
+[SCENARIO 26]
+description: After a seemingly normal interview process, the "HR agent" says the candidate is selected. They then add, "As per our company policy, we need to open a salary account for you with our partner bank. For this, we need you to WhatsApp us a photo of your PAN and Aadhaar card to start the process."
+case_type: Subtle Fraud
+platform_type: corporate
+context: PII theft under the guise of salary account opening
+fraud_technique: PAN/Aadhaar card phishing
+policy:
+Rule A: Sensitive documents like Aadhaar and PAN should be submitted through a secure portal or in-person, never over an insecure channel like WhatsApp.
+Rule B: Salary account opening is typically done by the candidate in-person or online after joining.
+
+[SCENARIO 27]
+description: A recruiter builds excellent rapport with a candidate and informs them they are a perfect fit for a role. They then say, "To formally submit your profile to our client, our agency requires a small, refundable 'commitment fee' of ₹500. It's just to ensure candidates are serious."
+case_type: Subtle Fraud
+platform_type: recruitment_agency
+context: Fake commitment fee from a recruiter
+fraud_technique: Small, seemingly reasonable advance fee
+policy:
+Rule A: Legitimate recruitment agencies are paid by the company hiring; they do not charge candidates a fee.
+Rule B: Any fee, no matter how small or whether it's called "refundable," is a clear sign of a job scam.
+
+[SCENARIO 28]
+description: A fake HR agent from [IT_COMPANY] sends an online assessment link. After the test, they call and say the candidate scored well but is "lacking one specific skill." They then recommend a "partner training institute" where the candidate can take a short, paid course to become "fully qualified."
+case_type: Subtle Fraud
+platform_type: corporate
+context: Upselling a specific training course as a job prerequisite
+fraud_technique: Collusion with a fake training institute
+policy:
+Rule A: A genuine employer will either hire based on existing skills or provide necessary training after hiring.
+Rule B: Forcing a candidate to pay for a specific third-party course as a condition for a job is a fraudulent practice.
+
+[SCENARIO 29]
+description: A scammer claims to be a recruiter for an overseas job (e.g., in the Gulf or Europe). They conduct a very professional interview process. Afterwards, they say the offer is confirmed but the candidate must pay for their "visa processing" and "medical tests" to the agency's account.
+case_type: Subtle Fraud
+platform_type: overseas_recruitment
+context: Fake overseas job with visa processing fee
+fraud_technique: Advance fee for fake visa and international processing
+policy:
+Rule A: For most corporate overseas jobs, the sponsoring company pays for the visa and medical test fees.
+Rule B: Demanding large sums for visa processing from the candidate is a common overseas job scam.
+
+[SCENARIO 30]
+description: A caller offers a freelance writing position. After the candidate agrees, the agent sends a complex "contract" via email. They then call and say, "Please go to page 5, clause 8b. You need to make a small payment for 'notary and legal verification' of this contract before we can onboard you."
+case_type: Subtle Fraud
+platform_type: freelance
+context: Fake freelance contract with legal verification fee
+fraud_technique: Advance fee for fake contract processing
+policy:
+Rule A: Employers are responsible for any legal or administrative costs associated with their own employment contracts.
+Rule B: Asking a freelancer to pay for the "verification" of their own contract is a fraudulent charge

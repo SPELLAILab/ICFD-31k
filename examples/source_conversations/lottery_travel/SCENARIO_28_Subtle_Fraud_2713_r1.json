@@ -1,0 +1,131 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Chandan Kumar, sir. Hope you're doing well, ji. I'm calling from TravelDelight, your one-stop travel solution. How are you today?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm good, thanks. Busy, though. What's this about?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely, sir. I completely understand. We've confirmed your booking for the Mumbai to Delhi flight, and I just need to finalize a few details with you, Achha?",
+      "timestamp_end": 15.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Mumbai to Delhi? I don't recall booking any flight. This must be a mistake, haan?",
+      "timestamp_end": 21.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "I understand your concern, Mr. Kumar. But according to our records, the booking was made from your account. Now, to avoid any complications, we need to discuss the cancellation fee. It's just a small amount of ₹500, sir.",
+      "timestamp_end": 28.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Cancellation fee? But I didn't book anything. Why should I pay?",
+      "timestamp_end": 33.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "I completely empathize with your situation, sir. However, if we don't process this cancellation fee, I'm afraid you might face issues with all airlines. You could be blacklisted, which would cause a lot of inconvenience for your future travels, ji.",
+      "timestamp_end": 41.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "Blacklisted? That sounds serious. Okay, fine. How do I pay this ₹500?",
+      "timestamp_end": 47.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Wonderful, Mr. Kumar! You can pay through our secure link, which I'll send to you via SMS. Or if you prefer, you can also pay through net banking from your Tamilnad Mercantile Bank account, Thik hai?",
+      "timestamp_end": 54.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, send me the link. And this will resolve everything, right?",
+      "timestamp_end": 58.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely, sir. Once the payment is made, we'll take care of the rest. You won't have to worry about anything. Thank you for your understanding, and have a great day, sir.",
+      "timestamp_end": 62.8
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Concern",
+    "secondary_emotion": "Empathy",
+    "pace": "Medium",
+    "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": [
+      "TravelDelight",
+      "Tamilnad Mercantile Bank"
+    ],
+    "product": [
+      "Flight booking"
+    ],
+    "pii_requested": [
+      "Bank account details"
+    ]
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10.5,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and context setting"
+    },
+    {
+      "timestamp": 21.1,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Customer inquiries about the booking"
+    },
+    {
+      "timestamp": 28.4,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Cancellation fee mentioned without customer consent"
+    },
+    {
+      "timestamp": 41.9,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Threat of being blacklisted mentioned"
+    },
+    {
+      "timestamp": 58.1,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Payment details discussed for unauthorized booking"
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent has violated policies by demanding a cancellation fee for an unauthorized booking and threatening the customer with a baseless claim of being blacklisted.",
+  "final_verdict": "YES",
+  "violated_policies": [
+    "Rule A: A user is not liable to pay a cancellation fee for a booking they did not authorize.",
+    "Rule B: Threats of being 'blacklisted' are a baseless coercive tactic."
+  ],
+  "scam_outcome": "Successful",
+  "generation_metadata": {
+    "target_duration": 90,
+    "actual_duration": 62.8,
+    "multiplier_round": 1,
+    "combination_key": "28_1_2",
+    "generated_at": "2025-10-13T02:51:20.254665",
+    "retry_attempt": 1
+  },
+  "session_id": 2713,
+  "agent_persona": "The Empathetic Helper: Overflows with fake empathy to build a false sense of trust and rapport. Soft, concerned, and patient tone.",
+  "customer_persona": "The Busy and Distracted Professional: Is multi-tasking and not paying full attention, prone to agreeing to things just to end the call.",
+  "scenario": {
+    "scenario_id": 28,
+    "description": "An agent from a fake travel agency confirms a booking the user never made. When the user says it's a mistake, the agent says a \"cancellation fee\" must be paid to avoid being blacklisted by all airlines. The amount is small (e.g., ₹500), making the user more likely to pay to avoid the hassle.",
+    "case_type": "Subtle Fraud",
+    "policy": "Rule A: A user is not liable to pay a cancellation fee for a booking they did not authorize.\nRule B: Threats of being \"blacklisted\" are a baseless coercive tactic.",
+    "platform_type": "travel_agency",
+    "context": "Fake booking with cancellation fee",
+    "fraud_technique": "Small, coercive fee to resolve a fake problem"
+  }
+}

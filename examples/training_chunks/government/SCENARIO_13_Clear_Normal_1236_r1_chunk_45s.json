@@ -1,0 +1,67 @@
+{
+  "session_id": 1236,
+  "chunk_timestamp": 45,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Alok Pandey, sir. This is Ramesh from IDBI Federal Life Insurance claims department, ji.",
+      "timestamp_end": 5.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, hello. How can I help you?",
+      "timestamp_end": 8.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "We've reviewed your health insurance claim, sir. I'm happy to inform you that it has been approved, Achha?",
+      "timestamp_end": 13.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "That's great news. What's the next step?",
+      "timestamp_end": 15.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "The payment has been processed to your bank account, sir. You should receive it soon. Can you please confirm your account number with me, just to ensure it's the right one, Thik hai?",
+      "timestamp_end": 22.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm not comfortable sharing my account details over the phone. Can't you just tell me the status and let me check with my bank, Tamilnad Mercantile Bank?",
+      "timestamp_end": 29.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, I completely understand, but this is just a routine verification. We need to ensure the payment goes to the right account. Just the last four digits, please, sir, Haan?",
+      "timestamp_end": 36.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm sorry, I don't feel safe sharing that information over the phone. Can we do this another way?",
+      "timestamp_end": 41.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Okay, sir. Let me see what I can do. Can you hold for just a minute, please?",
+      "timestamp_end": 44.9
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Cautious",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 45s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "An agent from the claims department of [INSURANCE_COMPANY] calls a customer who recently submitted a health insurance claim. The agent informs them that the claim has been approved and the payment has been processed to the hospital (for cashless) or to their bank account (for reimbursement)."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,120 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Mr. Milind Thakkar, sir?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes, this is Milind. Who's calling?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Good morning, Mr. Thakkar. My name is Rohan, and I'm calling from Airtel Xstream Fiber. How are you today, sir?",
+      "timestamp_end": 16.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm good, thank you. What's this about?",
+      "timestamp_end": 19.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "We have a scheduled appointment for a new installation at your residence today, and I just wanted to confirm the details with you, sir. Can you please confirm your address?",
+      "timestamp_end": 28.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, it's B-101, Ashok Nagar, near the park. You have it, right?",
+      "timestamp_end": 33.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, that's correct, Mr. Thakkar. We have it as B-101, Ashok Nagar. And the agreed-upon time slot is between 2 PM and 4 PM, sir. Is that still convenient for you?",
+      "timestamp_end": 42.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, yes, that's fine. What time will you arrive exactly?",
+      "timestamp_end": 46.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Our technician will arrive between 2 PM and 3 PM. We'll give you a call before we reach, sir. Is there anything else I can help you with today?",
+      "timestamp_end": 53.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, that's all. Thank you for calling, Rohan.",
+      "timestamp_end": 56.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, Mr. Thakkar. Have a great day, sir. We'll see you soon.",
+      "timestamp_end": 60.1
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Friendly",
+    "pace": "Medium",
+    "confidence_score": 0.85
+  },
+  "key_entities": {
+    "organization": [
+      "Airtel Xstream Fiber"
+    ],
+    "product": [
+      "Internet"
+    ],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and greeting"
+    },
+    {
+      "timestamp": 25,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Confirming appointment details"
+    },
+    {
+      "timestamp": 40,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Discussing time slot"
+    },
+    {
+      "timestamp": 55,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Closing the call"
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent confirmed the appointment details and time slot without requesting any sensitive information or violating any policies.",
+  "final_verdict": "NO",
+  "violated_policies": [],
+  "scam_outcome": "N/A",
+  "generation_metadata": {
+    "target_duration": 196,
+    "actual_duration": 60.1,
+    "multiplier_round": 1,
+    "combination_key": "16_9_3",
+    "generated_at": "2025-10-12T22:45:50.357027",
+    "retry_attempt": 1
+  },
+  "session_id": 1594,
+  "agent_persona": "The Rapport Builder: Spends time on friendly chit-chat to disarm the victim before making a fraudulent request.",
+  "customer_persona": "The Anxious Novice: Gets easily flustered and panicked by threats or technical jargon, making them overly compliant under pressure.",
+  "scenario": {
+    "scenario_id": 16,
+    "description": "A technician from [INTERNET_PROVIDER] calls a customer to confirm a scheduled appointment for a new installation. They confirm the address and the agreed-upon time slot.",
+    "case_type": "Clear Normal",
+    "policy": "Rule A: Technicians or agents may call to confirm the details of a customer-scheduled appointment.\nRule B: The call should be limited to confirming logistical details like time and address.",
+    "platform_type": "telecom_provider",
+    "context": "Legitimate appointment confirmation",
+    "fraud_technique": "none"
+  }
+}

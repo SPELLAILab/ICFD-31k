@@ -1,0 +1,37 @@
+{
+  "session_id": 1507,
+  "chunk_timestamp": 45,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Savitha ji, this is Ramesh from Standard Chartered Bank. Your car loan application has been approved, sir.",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, thank you so much, Ramesh ji. I'm really happy to hear that. What's the next step, please?",
+      "timestamp_end": 22.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "We need to coordinate with the car dealership to disburse the loan amount. Can you please confirm the dealership's name and your contact person there, Savitha ji?",
+      "timestamp_end": 35.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Satisfaction",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 45s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A bank agent calls a customer who applied for a car loan to inform them that their loan has been approved and to coordinate the disbursement process with the car dealership."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

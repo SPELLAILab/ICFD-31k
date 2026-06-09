@@ -1,0 +1,26 @@
+{
+  "model": "google/gemma-1.1-2b-it",
+  "evaluation_type": "zero_shot",
+  "timestamp": "2025-10-15T20:32:21.401338",
+  "total_samples": 5000,
+  "successful_predictions": 5000,
+  "key_metrics": {
+    "accuracy": 0.2894,
+    "precision": 0.9358490566037736,
+    "recall": 0.22157694884967613,
+    "f1": 0.3583167780386491,
+    "total_samples": 5000,
+    "total_errors": 0,
+    "error_rate": 0.0,
+    "confusion_matrix": [
+      [
+        455,
+        68
+      ],
+      [
+        3485,
+        992
+      ]
+    ]
+  }
+}

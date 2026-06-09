@@ -1,0 +1,117 @@
+{
+  "session_id": 1929,
+  "chunk_timestamp": 198,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste Ramswaroop ji, this is a call from Karnataka Bank. I am calling to inform you that your account has become dormant.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, kya hai yeh dormant account? Thik hai, bataiye.",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, it means there have been no transactions in your account for a while. To reactivate it, you will need to visit one of our branches with your official ID proof.",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Theek hai, main samajh gaya. Lekin kya yeh phone se nahi ho sakta?",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Nahi, sir. As per our policy, reactivation cannot be done over the phone. You must visit a branch.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Ok, ji. Maine samajh liya. Maine ID proof lekar branch jaunga.",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, sir. If you have any questions or need assistance, please do not hesitate to ask.",
+      "timestamp_end": 70.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Dhanyavad, ji. Main ab branch jaunga.",
+      "timestamp_end": 80.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. Have a great day.",
+      "timestamp_end": 90.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Aapka bhi din achha ho, ji.",
+      "timestamp_end": 100.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, is there anything else I can assist you with today?",
+      "timestamp_end": 110.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Nahi, ji. Bas itna hi.",
+      "timestamp_end": 120.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Ok, sir. We appreciate your cooperation. Have a great day.",
+      "timestamp_end": 130.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Aapka bhi din achha ho.",
+      "timestamp_end": 140.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, Ramswaroop ji. Khuda hafiz.",
+      "timestamp_end": 150.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Khuda hafiz, ji.",
+      "timestamp_end": 160.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, we will now end the call.",
+      "timestamp_end": 170.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Theek hai, ji.",
+      "timestamp_end": 180.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad.",
+      "timestamp_end": 190.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "cautious",
+    "pace": "measured",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 198s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "Dormant Account Reactivation: Agent calls to inform a user that their account has become dormant and explains the official, in-branch procedure to reactivate it."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

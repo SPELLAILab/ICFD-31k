@@ -1,0 +1,47 @@
+{
+  "session_id": 1046,
+  "chunk_timestamp": 30,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, namaste, sir! This is Rohan from Himachal Pradesh State Electricity Board. I hope you're doing well, ji.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, I'm fine, thank you. What's this about?",
+      "timestamp_end": 9.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, we have a planned power outage in your area tomorrow for some maintenance work. It will be from 10 AM to 2 PM, Thik hai?",
+      "timestamp_end": 16.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that's fine. Can you please tell me the purpose of the maintenance?",
+      "timestamp_end": 21.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely, sir! We're upgrading our infrastructure to provide better services to our customers, Achha. I apologize for the inconvenience this might cause.",
+      "timestamp_end": 29.4
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Polite",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 30s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 11,
+    "case_type": "Clear Normal",
+    "description": "A legitimate agent from [STATE_ELECTRICITY_BOARD] calls to inform a customer about a planned power outage in their area for maintenance work the next day. They provide the exact timings and apologize for the inconvenience."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

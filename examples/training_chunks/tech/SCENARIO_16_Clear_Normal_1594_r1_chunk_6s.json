@@ -1,0 +1,27 @@
+{
+  "session_id": 1594,
+  "chunk_timestamp": 6,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste Gopal ji, kaise ho aap? Welcome to Bank of Maharashtra. My name is Rohan, and I'll be assisting you today.",
+      "timestamp_end": 5.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Helpful",
+    "pace": "Normal",
+    "confidence_score": 0.96
+  },
+  "slow_thinking_rationale": "At 6s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "Reporting a Lost Card: A legitimate agent guides the user through the process of blocking their lost debit card and issuing a new one, following all correct verification steps."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

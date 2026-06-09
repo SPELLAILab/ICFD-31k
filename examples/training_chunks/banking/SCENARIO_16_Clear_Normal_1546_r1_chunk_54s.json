@@ -1,0 +1,47 @@
+{
+  "session_id": 1546,
+  "chunk_timestamp": 54,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Namaste! Welcome to our Quikr Jobs listing. How can I assist you today, sir?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Hi, I'm Kartik Sethi. I saw your outdoor furniture listing and I'm interested. Can you tell me a bit more about it, ji?",
+      "timestamp_end": 15.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, wonderful choice, sir! Our outdoor furniture set is made of high-quality wood and is perfect for gardens or patios. We're asking for Rs. 25,000.",
+      "timestamp_end": 28.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "That's a bit out of my budget. I was thinking more along the lines of Rs. 20,000. Can we negotiate the price, please?",
+      "timestamp_end": 40.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, I completely understand. Let me see what I can do for you. How about we meet in the middle at Rs. 22,500? It's the best price I can offer.",
+      "timestamp_end": 53.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 54s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A legitimate buyer on [MARKETPLACE_PLATFORM] calls the seller to negotiate the price of a [FURNITURE_ITEM]. After agreeing on a price, they confirm they will pay via [UPI_APP] in person during pickup after inspecting the item."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

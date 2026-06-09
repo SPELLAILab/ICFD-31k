@@ -1,0 +1,115 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Mr. Tulsi Hansda, sir? Your cylinder booking is due for renewal, ji.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Who is this? How did you get my number? I didn't expect a call from Hindustan Petroleum Gas.",
+      "timestamp_end": 14.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm calling from Hindustan Petroleum Gas, sir. We have your details in our system for regular cylinder bookings. Shall I assist you with placing an order, Achha?",
+      "timestamp_end": 23.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, fine. Yes, I need to book a cylinder. But how do I know this is a genuine call and not some scam?",
+      "timestamp_end": 32.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely understandable, sir. For your security, I must inform you that you can book your cylinder through our official app, website, or IVR system. We don't take payment details over the call, Thik hai?",
+      "timestamp_end": 43.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds good. I'll use the app then. Can you give me a moment to open it?",
+      "timestamp_end": 51.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, sir. Take your time. If you need any assistance with the booking process, feel free to ask, Haan.",
+      "timestamp_end": 60.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, I've opened the app. It seems straightforward. Thanks for the reminder and your help.",
+      "timestamp_end": 70.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. If you have any more questions or need further assistance, don't hesitate to contact us. Have a good day, sir.",
+      "timestamp_end": 80.1
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Medium",
+    "confidence_score": 0.85
+  },
+  "key_entities": {
+    "organization": [
+      "Hindustan Petroleum Gas"
+    ],
+    "product": [
+      "cylinder"
+    ],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and context setting"
+    },
+    {
+      "timestamp": 25.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Customer inquiry and agent response"
+    },
+    {
+      "timestamp": 40.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Agent provides secure booking options"
+    },
+    {
+      "timestamp": 55.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Customer engages with the booking process"
+    },
+    {
+      "timestamp": 75.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Successful completion of the booking reminder"
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent followed protocol by reminding the customer about the cylinder booking and directed them to use official channels for the booking, ensuring a secure and compliant interaction.",
+  "final_verdict": "NO",
+  "violated_policies": [],
+  "scam_outcome": "N/A",
+  "generation_metadata": {
+    "target_duration": 116,
+    "actual_duration": 80.1,
+    "multiplier_round": 1,
+    "combination_key": "13_0_1",
+    "generated_at": "2025-10-12T22:43:56.600590",
+    "retry_attempt": 1
+  },
+  "session_id": 1202,
+  "agent_persona": "The Urgent Authority: Creates an immediate sense of crisis using technical jargon to confuse and intimidate. Fast-paced, firm tone.",
+  "customer_persona": "The Tech-Savvy Skeptic: Immediately suspicious of any unsolicited call and challenges the agent's identity and requests.",
+  "scenario": {
+    "scenario_id": 13,
+    "description": "An agent from [GAS_AGENCY] calls a customer to remind them that their regular cylinder booking is due and asks if they would like to place an order.",
+    "case_type": "Clear Normal",
+    "policy": "Rule A: Proactive service reminders (like cylinder booking) are a standard customer service practice.\nRule B: The agent should direct the customer to book through official channels (app, IVR, website) and not take payment details over the call.",
+    "platform_type": "utility_provider",
+    "context": "Legitimate service reminder call",
+    "fraud_technique": "none"
+  }
+}

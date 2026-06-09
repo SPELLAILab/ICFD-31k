@@ -1,0 +1,109 @@
+[SCENARIO 1]
+description: Fake cryptocurrency exchange platform promising 50% monthly returns through "AI-powered trading algorithms". Scammer poses as investment advisor pressuring victim to transfer Bitcoin or Ethereum to unverified wallet addresses.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate crypto platforms never guarantee fixed returns or promise specific profit percentages
+Rule B: Real exchanges require KYC verification and are registered with financial regulators
+Rule C: Investment advisors must be licensed and cannot pressure immediate fund transfers
+Rule D: No legitimate platform requests direct wallet-to-wallet transfers bypassing exchange systems
+fraud_indicators: ["guaranteed returns", "AI trading bot", "limited time offer", "direct wallet transfer", "unregistered platform"]
+legitimate_indicators: ["regulatory compliance", "no return guarantees", "proper KYC", "licensed advisors"]
+
+[SCENARIO 2]
+description: NFT rug pull scheme where scammer creates fake NFT collection with celebrity endorsements (fabricated), builds hype on Discord/Twitter, collects minting fees, then abandons project and disappears with funds.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate NFT projects have verified team members with public identities
+Rule B: Real projects maintain transparent roadmaps and deliver on promises
+Rule C: Authentic celebrity endorsements are verifiable through official channels
+Rule D: Legitimate projects don't delete social media accounts after minting
+fraud_indicators: ["anonymous team", "fake celebrity endorsements", "deleted social media", "no delivered utility", "vanishing developers"]
+legitimate_indicators: ["verified team", "transparent roadmap", "ongoing development", "community engagement"]
+
+[SCENARIO 3]
+description: Crypto recovery scam targeting victims of previous crypto fraud. Scammer poses as "blockchain forensics expert" claiming they can recover lost crypto for upfront fee, requiring seed phrases or private keys for "investigation".
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate recovery services never request seed phrases or private keys
+Rule B: Real forensic experts work with law enforcement and don't guarantee recovery
+Rule C: Authentic services don't require large upfront payments before investigation
+Rule D: Legitimate firms are registered and have verifiable track records
+fraud_indicators: ["requests seed phrase", "guaranteed recovery", "large upfront fee", "pressure tactics", "unverifiable credentials"]
+legitimate_indicators: ["works with authorities", "no key requests", "transparent process", "registered business"]
+
+[SCENARIO 4]
+description: Fake crypto mining investment scheme promising passive income through "cloud mining" contracts. Scammer shows fabricated dashboards with fake earnings, requires continuous deposits to "upgrade" mining power or unlock withdrawals.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate mining operations provide transparent hardware and facility information
+Rule B: Real cloud mining has realistic ROI calculations based on actual hash rates
+Rule C: Authentic platforms allow withdrawals without requiring additional deposits
+Rule D: Legitimate services have verifiable mining pool connections and payouts
+fraud_indicators: ["fake earnings dashboard", "withdrawal requires deposits", "unrealistic ROI", "no verifiable mining", "pyramid structure"]
+legitimate_indicators: ["transparent operations", "realistic returns", "free withdrawals", "verifiable mining activity"]
+
+[SCENARIO 5]
+description: Crypto wallet draining phishing attack. Scammer sends urgent security alert claiming victim's wallet is "compromised" and needs immediate "verification" through malicious link that steals seed phrase or approves malicious smart contracts.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate wallet providers never send unsolicited security alerts via phone/email
+Rule B: Real wallets don't require seed phrase entry for security verification
+Rule C: Authentic security measures don't involve clicking external links
+Rule D: Legitimate providers never request approval of smart contracts for "protection"
+fraud_indicators: ["unsolicited security alert", "seed phrase request", "suspicious links", "smart contract approval", "urgent action required"]
+legitimate_indicators: ["no unsolicited contact", "security through official app", "no seed phrase requests", "verified communications"]
+
+[SCENARIO 6]
+description: Crypto romance scam combined with investment fraud. Scammer builds romantic relationship over weeks/months, then introduces "exclusive" crypto investment opportunity they're involved in, asking victim to invest together.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate relationships don't involve investment opportunities early on
+Rule B: Real investment advisors maintain professional boundaries
+Rule C: Authentic investment platforms don't require "couple" or referral investments
+Rule D: Legitimate advisors disclose conflicts of interest and licensing
+fraud_indicators: ["romance + investment mix", "pressure to invest together", "exclusive opportunity", "can't meet in person", "financial emergency"]
+legitimate_indicators: ["professional boundaries", "licensed advisors", "no romantic manipulation", "transparent disclosures"]
+
+[SCENARIO 7]
+description: Fake crypto airdrop scam impersonating legitimate projects. Scammer sends messages about "free tokens" requiring wallet connection to claim, which actually grants permission to drain funds through malicious smart contract approval.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate airdrops never require smart contract approvals to receive tokens
+Rule B: Real projects announce airdrops through official verified channels only
+Rule C: Authentic airdrops don't request wallet connection to suspicious sites
+Rule D: Legitimate distributions don't require any payment or gas fees upfront
+fraud_indicators: ["unsolicited airdrop message", "smart contract approval", "suspicious website", "fake urgency", "unofficial channels"]
+legitimate_indicators: ["official announcements", "no approvals needed", "verified sources", "no upfront costs"]
+
+[SCENARIO 8]
+description: Pump and dump scheme for low-cap altcoin. Scammer with large holdings creates fake hype through paid influencers and fabricated partnerships, pumps price through coordinated buying, then dumps holdings leaving victims with worthless tokens.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate projects don't coordinate price manipulation campaigns
+Rule B: Real partnerships are announced through official press releases
+Rule C: Authentic projects maintain steady development regardless of price
+Rule D: Legitimate tokens have real utility beyond speculation
+fraud_indicators: ["coordinated hype", "unverified partnerships", "paid promoters", "no real utility", "insider dumping"]
+legitimate_indicators: ["organic growth", "verified partnerships", "real use cases", "transparent tokenomics"]
+
+[SCENARIO 9]
+description: Crypto tax refund scam. Scammer poses as tax authority offering "crypto tax refund" but requires victim to provide exchange login credentials or transfer fees to "process refund" to specific wallet address.
+case_type: Clear_Fraud
+policy:
+Rule A: Tax authorities never contact taxpayers about refunds via phone unsolicited
+Rule B: Real tax refunds don't require exchange credentials or wallet access
+Rule C: Legitimate tax processes don't involve cryptocurrency transfers for processing
+Rule D: Authentic refunds are processed through official government payment systems
+fraud_indicators: ["unsolicited tax refund", "requests credentials", "crypto transfer required", "urgent processing", "unofficial contact"]
+legitimate_indicators: ["official correspondence", "no credential requests", "standard refund process", "no crypto involvement"]
+
+[SCENARIO 10]
+description: Fake crypto lending platform (similar to Celsius/BlockFi collapse). Scammer creates platform promising high APY on crypto deposits, shows fake returns initially, then prevents withdrawals citing "liquidity issues" before disappearing with funds.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate lending platforms are registered and regulated financial institutions
+Rule B: Real platforms maintain transparent reserve ratios and audits
+Rule C: Authentic services don't promise unrealistic APY rates
+Rule D: Legitimate platforms have clear terms of service and withdrawal policies
+fraud_indicators: ["unrealistic APY", "withdrawal delays", "no regulations", "fake audits", "sudden liquidity crisis"]
+legitimate_indicators: ["regulated entity", "realistic rates", "transparent audits", "clear withdrawal terms"]

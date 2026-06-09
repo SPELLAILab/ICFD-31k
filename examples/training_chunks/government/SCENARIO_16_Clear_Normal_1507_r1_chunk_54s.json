@@ -1,0 +1,62 @@
+{
+  "session_id": 1507,
+  "chunk_timestamp": 54,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Mr. Devendra Verma, this is Agent Kumar from the insurance desk at Sir Ganga Ram Hospital Delhi. We need to expedite your cashless claim process, sir.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, okay. What do I need to do, sir?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "You need to sign the claim form and provide your insurance policy number. It's a procedural requirement, ji.",
+      "timestamp_end": 16.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, where do I sign? And what's the policy number, sir?",
+      "timestamp_end": 22.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Your policy number is on the card issued by Standard Chartered Bank. Please verify it and sign on page 3 and 5 of the claim form.",
+      "timestamp_end": 30.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, I have signed. What's next, sir?",
+      "timestamp_end": 37.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Now, please return the signed forms to me. I'll take care of the rest, sir. You'll receive a confirmation from our office shortly.",
+      "timestamp_end": 44.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir. Thank you for your help.",
+      "timestamp_end": 50.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "trust",
+    "pace": "medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 54s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "An agent from the insurance desk at [HOSPITAL_NAME] calls a patient who is about to be discharged, guiding them on the documents and forms they need to sign for the cashless claim process with their insurance provider."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

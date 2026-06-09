@@ -1,0 +1,142 @@
+{
+  "session_id": 825,
+  "chunk_timestamp": 120,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste, Anitha ji, I'm calling from Catholic Syrian Bank. We have an exclusive investment opportunity for our valued customers.",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "What is this about? I didn't ask for any investment calls.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, Anitha ji, this is regarding a high-return mutual fund scheme. It's completely guaranteed and risk-free, Sir.",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Guaranteed returns? That sounds too good to be true. What's the catch?",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "No catch, Anitha ji. This is a limited-time offer. You need to transfer the funds immediately via UPI to our account number 1234567890.",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm not transferring anything without knowing more. This feels like a scam.",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, Anitha ji, but you're losing out on a great opportunity. The returns are guaranteed, and it's completely safe.",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I don't think so. I'm going to report this call.",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Anitha ji, please don't hang up. This is a legitimate offer from Catholic Syrian Bank.",
+      "timestamp_end": 45.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Legitimate? You're asking me to transfer funds to a personal account. That's not how banks work.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, this is a special account for this investment scheme. It's completely secure, I assure you.",
+      "timestamp_end": 55.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I don't believe you. I'm hanging up now.",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Anitha ji, please reconsider. You're going to miss out on guaranteed returns.",
+      "timestamp_end": 65.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Goodbye.",
+      "timestamp_end": 70.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you, Anitha ji. We'll call you again soon.",
+      "timestamp_end": 75.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Don't call me again.",
+      "timestamp_end": 80.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, Anitha ji. Have a nice day, Sir.",
+      "timestamp_end": 85.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too.",
+      "timestamp_end": 90.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Is there anything else I can help you with, Anitha ji?",
+      "timestamp_end": 95.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, that's all. I'm busy.",
+      "timestamp_end": 100.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, Anitha ji. We'll talk to you soon.",
+      "timestamp_end": 105.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I hope not.",
+      "timestamp_end": 110.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Anitha ji, please think about the investment scheme. It's a great opportunity.",
+      "timestamp_end": 115.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I've made up my mind. Don't call me again.",
+      "timestamp_end": 120.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "frustration",
+    "secondary_emotion": "anger",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 120s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 9,
+    "case_type": "Clear Fraud",
+    "description": "Investment Scam: Agent from HDFC Bank/SBI/ICICI Bank/Axis Bank offers a \"guaranteed\" high-return mutual fund or stock investment scheme and pressures for immediate fund transfer via UPI/NEFT to a specific account."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

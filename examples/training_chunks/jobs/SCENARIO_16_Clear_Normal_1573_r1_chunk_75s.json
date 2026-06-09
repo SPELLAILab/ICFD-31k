@@ -1,0 +1,57 @@
+{
+  "session_id": 1573,
+  "chunk_timestamp": 75,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste, sir. Welcome to Standard Chartered Bank. My name is Rohan, and I'll be happy to assist you today. How can I help you, sir?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Hi Rohan, ji. My debit card is lost. I need to block it and get a new one issued.",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, sir. Sorry to hear that. Can you please confirm your date of birth and registered mobile number for verification purposes?",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai. My date of birth is 12th February 1990, and my mobile number is 9812345678.",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you, sir. I've verified your details. Now, I'll go ahead and block your card. You will receive a confirmation SMS on your registered mobile number.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds good. What's the process for getting a new card?",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, a new card will be issued and dispatched to your registered address within 7-10 working days. You will also receive an SMS with the dispatch details.",
+      "timestamp_end": 70.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Helpful",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 75s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "Reporting a Lost Card: A legitimate agent guides the user through the process of blocking their lost debit card and issuing a new one, following all correct verification steps."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

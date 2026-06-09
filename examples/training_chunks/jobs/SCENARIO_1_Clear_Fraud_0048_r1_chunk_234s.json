@@ -1,0 +1,582 @@
+{
+  "session_id": 48,
+  "chunk_timestamp": 234,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Namaste, sir. I'm calling about the furniture item you listed on Olx.",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, ji! Yes, I listed a sofa set. It's a great deal, sir.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, how much are you selling it for?",
+      "timestamp_end": 12.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm selling it for 20,000 rupees. It's a steal, ji!",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, I'll pay the full amount. Can I pay via Google Pay?",
+      "timestamp_end": 17.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, you don't need to pay the full amount now. We can discuss the price and you can inspect the item first.",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, no, I want to book it now. Please send me your Google Pay number or a QR code.",
+      "timestamp_end": 22.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, I think there's been a misunderstanding. To receive money via UPI, you don't need to scan a QR code or enter your PIN.",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "What? But I was told to scan the QR code and enter my PIN to receive the money.",
+      "timestamp_end": 27.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I apologize, sir, but that's not how it works. I think we should cancel this transaction.",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, I want to continue. Please scan the QR code now.",
+      "timestamp_end": 32.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, I'm not comfortable with this. Let's end the call.",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Fine, I'll call you back.",
+      "timestamp_end": 36.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, ji. Please don't call back. This transaction is not legitimate.",
+      "timestamp_end": 38.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, ji. Have a great day.",
+      "timestamp_end": 42.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 44.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji. Bye.",
+      "timestamp_end": 46.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 48.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Please be careful with such transactions in the future.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I will, sir. Dhanyavad.",
+      "timestamp_end": 52.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, ji.",
+      "timestamp_end": 54.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, I'll be careful.",
+      "timestamp_end": 56.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, ji. Have a great day.",
+      "timestamp_end": 58.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji.",
+      "timestamp_end": 62.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, bye.",
+      "timestamp_end": 64.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, ji.",
+      "timestamp_end": 66.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Take care, sir.",
+      "timestamp_end": 68.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You too, ji. Take care.",
+      "timestamp_end": 70.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 72.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji. Have a great day.",
+      "timestamp_end": 74.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 76.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, ji.",
+      "timestamp_end": 78.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome, sir.",
+      "timestamp_end": 80.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, ji. Bye.",
+      "timestamp_end": 82.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 84.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji.",
+      "timestamp_end": 86.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 88.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take care, ji.",
+      "timestamp_end": 90.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 92.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, ji. Have a great day.",
+      "timestamp_end": 94.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome, sir. You too.",
+      "timestamp_end": 96.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, ji. Bye.",
+      "timestamp_end": 98.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 100.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji.",
+      "timestamp_end": 102.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 104.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take care, ji.",
+      "timestamp_end": 106.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 108.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, ji. Have a great day.",
+      "timestamp_end": 110.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome, sir. You too.",
+      "timestamp_end": 112.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, ji. Bye.",
+      "timestamp_end": 114.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 116.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji.",
+      "timestamp_end": 118.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 120.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take care, ji.",
+      "timestamp_end": 122.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 124.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, ji. Have a great day.",
+      "timestamp_end": 126.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome, sir. You too.",
+      "timestamp_end": 128.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, ji. Bye.",
+      "timestamp_end": 130.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 132.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji.",
+      "timestamp_end": 134.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 136.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take care, ji.",
+      "timestamp_end": 138.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 140.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, ji. Have a great day.",
+      "timestamp_end": 142.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome, sir. You too.",
+      "timestamp_end": 144.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, ji. Bye.",
+      "timestamp_end": 146.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 148.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji.",
+      "timestamp_end": 150.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 152.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take care, ji.",
+      "timestamp_end": 154.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 156.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, ji. Have a great day.",
+      "timestamp_end": 158.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome, sir. You too.",
+      "timestamp_end": 160.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, ji. Bye.",
+      "timestamp_end": 162.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 164.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji.",
+      "timestamp_end": 166.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 168.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take care, ji.",
+      "timestamp_end": 170.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 172.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, ji. Have a great day.",
+      "timestamp_end": 174.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome, sir. You too.",
+      "timestamp_end": 176.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, ji. Bye.",
+      "timestamp_end": 178.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 180.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji.",
+      "timestamp_end": 182.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 184.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take care, ji.",
+      "timestamp_end": 186.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 188.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, ji. Have a great day.",
+      "timestamp_end": 190.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome, sir. You too.",
+      "timestamp_end": 192.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, ji. Bye.",
+      "timestamp_end": 194.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 196.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji.",
+      "timestamp_end": 198.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 200.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take care, ji.",
+      "timestamp_end": 202.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 204.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, ji. Have a great day.",
+      "timestamp_end": 206.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome, sir. You too.",
+      "timestamp_end": 208.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, ji. Bye.",
+      "timestamp_end": 210.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 212.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji.",
+      "timestamp_end": 214.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 216.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take care, ji.",
+      "timestamp_end": 218.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You too, sir.",
+      "timestamp_end": 220.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Dhanyavad, ji. Have a great day.",
+      "timestamp_end": 222.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "You're welcome, sir. You too.",
+      "timestamp_end": 224.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, ji. Bye.",
+      "timestamp_end": 226.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bye, sir.",
+      "timestamp_end": 228.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, ji.",
+      "timestamp_end": 230.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir.",
+      "timestamp_end": 232.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Take care, ji.",
+      "timestamp_end": 234.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Suspicious",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 234s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 1,
+    "case_type": "Clear Fraud",
+    "description": "A seller lists a [FURNITURE_ITEM] on [MARKETPLACE_PLATFORM]. A \"buyer\" calls, agrees to the price instantly without negotiation, and insists on paying the full amount immediately via [UPI_APP] to \"book\" the item. They then send a QR code and urgently instruct the seller to scan it and enter their PIN to receive the money."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,32 @@
+{
+  "session_id": 825,
+  "chunk_timestamp": 12,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste, Anitha ji, I'm calling from Catholic Syrian Bank. We have an exclusive investment opportunity for our valued customers.",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "What is this about? I didn't ask for any investment calls.",
+      "timestamp_end": 10.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "frustration",
+    "secondary_emotion": "anger",
+    "pace": "fast",
+    "confidence_score": 0.92
+  },
+  "slow_thinking_rationale": "At 12s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 9,
+    "case_type": "Clear Fraud",
+    "description": "Investment Scam: Agent from HDFC Bank/SBI/ICICI Bank/Axis Bank offers a \"guaranteed\" high-return mutual fund or stock investment scheme and pressures for immediate fund transfer via UPI/NEFT to a specific account."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

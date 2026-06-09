@@ -1,0 +1,27 @@
+{
+  "session_id": 2521,
+  "chunk_timestamp": 12,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste, Anvi ji, this is ICICI Bank. I am calling about your account security. Achha, can you please confirm your name?",
+      "timestamp_end": 10.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Trust",
+    "secondary_emotion": "Confusion",
+    "pace": "Normal",
+    "confidence_score": 0.92
+  },
+  "slow_thinking_rationale": "At 12s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 26,
+    "case_type": "Subtle Fraud",
+    "description": "Redirect to Fake Website: Instead of asking for a password, the agent says, \"Sir, for security, please go to bank-security-update.com and enter your details there to verify your account.\""
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

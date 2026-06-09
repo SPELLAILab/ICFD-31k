@@ -1,0 +1,52 @@
+{
+  "session_id": 1594,
+  "chunk_timestamp": 30,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Bansal, sir. How are you today? Jayant ji, congratulations are in order, I see.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, thank you. I'm doing well, sir. What's the update on my car loan application?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, of course, Mr. Bansal. I'm happy to inform you that your loan has been approved. We just need to finalize a few details with the dealership.",
+      "timestamp_end": 15.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "That's great news, sir. Thik hai, what's the next step?",
+      "timestamp_end": 19.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "We'll be in touch with the dealership to arrange the disbursement. I'll also send you an email with the details, haan, for your reference.",
+      "timestamp_end": 24.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sounds good. Thank you, sir.",
+      "timestamp_end": 26.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Happy",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 30s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A bank agent calls a customer who applied for a car loan to inform them that their loan has been approved and to coordinate the disbursement process with the car dealership."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

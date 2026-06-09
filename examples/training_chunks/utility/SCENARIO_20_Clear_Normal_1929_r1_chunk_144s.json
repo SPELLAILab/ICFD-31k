@@ -1,0 +1,72 @@
+{
+  "session_id": 1929,
+  "chunk_timestamp": 144,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Good morning, this is Rohan from the District Education Office. May I speak with Simran Kaur, please?",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, this is Simran Kaur. How can I help you, sir?",
+      "timestamp_end": 18.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Good morning, Ms. Kaur. I am calling to collect some data for our annual report on student enrollment. Can you please provide me with the total number of students enrolled in your school?",
+      "timestamp_end": 35.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, let me check that for you. We have around 500 students enrolled this year.",
+      "timestamp_end": 46.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you, Ms. Kaur. Can you also tell me the number of students enrolled in each class, from 1st to 12th standard?",
+      "timestamp_end": 62.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, sir. Let me just check our records. We have 50 students in 1st standard, 55 in 2nd, and so on. I can email you the detailed breakdown if you'd like.",
+      "timestamp_end": 81.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "That would be great, thank you. Please email it to our official email address. I will make sure to include it in our report.",
+      "timestamp_end": 95.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sir, can I ask what this data will be used for?",
+      "timestamp_end": 104.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, Ms. Kaur. This data will be used for our annual report to track student enrollment trends and allocate resources accordingly.",
+      "timestamp_end": 120.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that makes sense. I will send you the detailed breakdown by email today.",
+      "timestamp_end": 132.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Professional",
+    "pace": "Measured",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 144s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "A representative from the District Education Office calls a school principal to collect data on student enrollment for an annual report."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

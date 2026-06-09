@@ -1,0 +1,47 @@
+{
+  "session_id": 1994,
+  "chunk_timestamp": 48,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste Navjot ji, kaise ho aap? Main Jana Small Finance Bank se bol raha hoon.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Main thik hu, sir. Aap kaun hain?",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Navjot ji, aapka account dormant ho gaya hai. Aapko pata hai ki aapko kya karna hoga usse reactivate karne ke liye?",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Nahin sir, mujhe pata nahin. Kya main isse phone se kar sakti hoon?",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Nahin Navjot ji, aapko branch mein jana hoga aur official ID proof lekar jana hoga. Hum isse phone se nahi kar sakte.",
+      "timestamp_end": 45.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Helpful",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 48s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "Dormant Account Reactivation: Agent calls to inform a user that their account has become dormant and explains the official, in-branch procedure to reactivate it."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

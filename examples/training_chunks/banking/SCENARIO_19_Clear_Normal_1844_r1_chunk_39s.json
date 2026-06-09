@@ -1,0 +1,47 @@
+{
+  "session_id": 1844,
+  "chunk_timestamp": 39,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Kulwinder Kaur Virk? Namaste, ji!",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes, this is Kulwinder. Who is this?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, good morning, ma'am! My name is Rohan, and I'm calling from the public works department. We're reaching out to inform you that there will be some road repairs happening on your street tomorrow.",
+      "timestamp_end": 20.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, okay... What time will the repairs start? I have to go to the bank, you see, Suryoday Small Finance Bank.",
+      "timestamp_end": 28.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "The repairs will start at 9 AM and should be completed by 5 PM, sir... I mean, ma'am. You might want to plan an alternate route to the bank, Thik hai?",
+      "timestamp_end": 37.4
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Positive",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 39s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 19,
+    "case_type": "Clear Normal",
+    "description": "An agent from the public works department calls a resident to inform them that their road will be temporarily closed for repairs the next day."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

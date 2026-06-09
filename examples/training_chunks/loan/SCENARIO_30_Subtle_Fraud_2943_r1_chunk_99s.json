@@ -1,0 +1,52 @@
+{
+  "session_id": 2943,
+  "chunk_timestamp": 99,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello Sir, I am from the Post Office. A parcel for you has been returned, but the address is unclear. Can you please confirm your full address for re-delivery?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, okay... My address is... (pauses) Wait, let me check... (background noise) Ah, yes... It's 123, Sector 4, Gurgaon",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, thank you, Sir! And can I also have your date of birth, please? Just for our records, ji?",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "(distracted) Date of birth... (pauses) 12th February, 1990... (background noise) Look, can we make it quick? I'm in the middle of something",
+      "timestamp_end": 55.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely, Sir! I just need to confirm a few more details... (pauses) Can you also tell me your full name, please?",
+      "timestamp_end": 65.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "(sighs) Santanu Pal... Look, is this really necessary? Can't you just deliver the parcel?",
+      "timestamp_end": 80.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Anxious",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 99s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 30,
+    "case_type": "Subtle Fraud",
+    "description": "An agent calls, \"Sir, I am from the Post Office. A parcel for you has been returned, but the address is unclear. Can you please confirm your full address and date of birth for re-delivery?\" The scammer is phishing for a valid name, address, and DOB combination for identity theft, using a harmless pretext."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

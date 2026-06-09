@@ -1,0 +1,57 @@
+{
+  "session_id": 1546,
+  "chunk_timestamp": 57,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Smita Sheth? Namaste, ji!",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Smita. Who's calling?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm Rohan from Karnataka Bank. We've reviewed your car loan application, and I'm thrilled to inform you that it's been approved, Achha?",
+      "timestamp_end": 17.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "That's great news! However, I'd like to verify some details. Can you please tell me the loan amount and the interest rate?",
+      "timestamp_end": 25.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Certainly, ma'am. Your loan amount is 10 lakhs, and the interest rate is 9.5% per annum. We'll be coordinating with the car dealership for the disbursement process, Thik hai?",
+      "timestamp_end": 35.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds good. But I'd prefer to discuss this in person at the bank. Can we schedule a meeting?",
+      "timestamp_end": 42.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "I completely understand your concern, Smita ji. However, our process typically involves coordinating with the dealership over the phone to expedite the disbursement. Would you like me to explain the process in more detail?",
+      "timestamp_end": 53.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 57s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A bank agent calls a customer who applied for a car loan to inform them that their loan has been approved and to coordinate the disbursement process with the car dealership."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

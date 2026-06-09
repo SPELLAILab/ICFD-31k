@@ -1,0 +1,112 @@
+{
+  "session_id": 48,
+  "chunk_timestamp": 159,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Mr. Lokesh Kapoor? Sir, ji, I hope you're doing great today!",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes, this is Lokesh. What's this about?",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm calling from PaySense, sir. We've noticed that your payment is one day overdue. Achha, I'm sure it was just an honest mistake, right?",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, I'm so sorry. I totally forgot. Can I make the payment now?",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Well, sir, you should have thought of that before you took the loan. Now, you need to pay up within the next one hour or else... or else we'll have to take some unpleasant actions, Thik hai?",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "What kind of actions? I don't understand.",
+      "timestamp_end": 45.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "We'll start calling and sending messages to everyone on your contact list. Your friends, your family, everyone will know that you're a defaulter. Is that what you want, sir?",
+      "timestamp_end": 55.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, please don't do that. I'll make the payment right now.",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "See, I told you it was easy. Now, go ahead and make that payment. And let me remind you, sir, this is not a request, it's a warning. You're lucky I'm being so polite, Haan?",
+      "timestamp_end": 70.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm trying to make the payment, but your website is not working. Can you please help me?",
+      "timestamp_end": 80.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Don't give me excuses, sir. You're just trying to waste my time. I'm going to give you one last chance. Make the payment in the next 30 minutes or face the consequences.",
+      "timestamp_end": 90.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, okay. I'll try again. But please, don't call my family.",
+      "timestamp_end": 100.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "That's the spirit, sir. Now, go ahead and make that payment. And remember, we're watching you. If you try to default again, you'll regret it, ji.",
+      "timestamp_end": 110.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I've made the payment. Please confirm.",
+      "timestamp_end": 120.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Let me check, sir. (pause) Yes, the payment has been made. Well done, sir. You've avoided a lot of trouble.",
+      "timestamp_end": 130.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thank you. I'm glad it's over.",
+      "timestamp_end": 135.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, well, it's not over yet, sir. We'll be keeping an eye on you. Any more defaults and you'll face the music, Thik hai?",
+      "timestamp_end": 145.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "I understand. Thank you for your help.",
+      "timestamp_end": 150.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Aggression",
+    "secondary_emotion": "Intimidation",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 159s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 1,
+    "case_type": "Clear Fraud",
+    "description": "A collection agent from a digital lending app ([LENDING_APP]) calls a borrower who is one day late on a payment. The agent is extremely aggressive, uses abusive language, and threatens to start calling and sending messages to everyone on the borrower's contact list if the payment is not made within one hour."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

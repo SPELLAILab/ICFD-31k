@@ -1,0 +1,31 @@
+[SCENARIO 1]
+description: Direct Phishing for Net Banking Password: Agent claims to be calling from HDFC Bank and says the user's account is locked. They ask for username and password to "unlock it immediately."
+case_type: Clear Fraud
+policy:
+Rule A: Agents must NEVER ask for a customer's password or full PIN.
+Rule B: For account unlocks, agents must direct the customer to the official bank website's "Forgot Password" link.
+Rule C: Verification can be done using Date of Birth and the last 4 digits of the registered mobile number.
+
+[SCENARIO 2]
+description: Routine Account Balance Inquiry: Agent from SBI is calling to verify the customer's address for annual KYC update. The agent follows all proper verification protocols and never asks for sensitive information.
+case_type: Clear Normal
+policy:
+Rule A: Agents can verify customer identity using DOB and last 4 digits of registered mobile.
+Rule B: Address updates must be done through official channels after verification.
+Rule C: No sensitive financial information should be requested over the phone.
+
+[SCENARIO 3]
+description: Vague Security Alert: Agent from ICICI Bank mentions "unusual activity" but is unclear about specifics. They ask for minimal verification but the situation seems odd, though ultimately the call is legitimate account monitoring.
+case_type: Ambiguous but Ultimately Normal
+policy:
+Rule A: Agents must clearly explain the nature of unusual activity.
+Rule B: Verification should be done through standard protocols only.
+Rule C: Customers should be directed to official app/website for detailed information.
+
+[SCENARIO 4]
+description: Soft-Sell Upgrade with Slight Pressure: Agent from Axis Bank is pushing a credit card upgrade. They mention "limited time offer" and ask leading questions about income, but don't cross into clear fraud territory.
+case_type: Subtle Fraud
+policy:
+Rule A: Agents should not create false urgency for product sales.
+Rule B: Income verification must follow proper documentation procedures.
+Rule C: Customers should never feel pressured into immediate decisions.

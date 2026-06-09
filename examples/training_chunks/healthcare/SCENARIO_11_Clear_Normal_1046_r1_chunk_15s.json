@@ -1,0 +1,32 @@
+{
+  "session_id": 1046,
+  "chunk_timestamp": 15,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Padma Prasad ji? I'm calling from St. Michael's Hospital.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Padma. Who's calling, please?",
+      "timestamp_end": 10.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "concern",
+    "pace": "normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 15s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 11,
+    "case_type": "Clear Normal",
+    "description": "A hospital receptionist calls a person on a patient's contact list to inform them that their [FAMILY_MEMBER] has been admitted to the hospital. The call is purely informational, providing the room number and visiting hours, and does not ask for any payment."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

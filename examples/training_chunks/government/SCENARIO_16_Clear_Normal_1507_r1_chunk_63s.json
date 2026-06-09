@@ -1,0 +1,52 @@
+{
+  "session_id": 1507,
+  "chunk_timestamp": 63,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Ravindra Jha, this is Rohan from Fino Payments Bank. Sir, we've reviewed your resume and would like to proceed with the next steps for the position.",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, thank you, sir. I'm excited about the opportunity.",
+      "timestamp_end": 17.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, Ravindra. We need to discuss the salary expectations and notice period. Can you please share your current salary and expected salary for this role?",
+      "timestamp_end": 29.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sir, my current salary is 25,000 and I'm expecting around 35,000 for this role. Haan, I'm flexible though.",
+      "timestamp_end": 42.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Okay, noted. And what's your notice period with your current employer?",
+      "timestamp_end": 50.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "It's two months, sir. But I can try to negotiate it.",
+      "timestamp_end": 59.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Optimism",
+    "pace": "Moderate",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 63s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A recruiter calls a candidate to discuss their salary expectations and notice period for a potential job opportunity."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

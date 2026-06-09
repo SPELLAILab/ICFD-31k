@@ -1,0 +1,52 @@
+{
+  "session_id": 1202,
+  "chunk_timestamp": 45,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, this is an automated call from Clubhouse. We have received a request to reset your password.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, okay. Who is this? How did you get my number, sir?",
+      "timestamp_end": 13.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "This is an automated call, Mr. Viswanathan. Your verification code is 8-4-2-1.",
+      "timestamp_end": 20.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, got it. What do I do with this code, ji?",
+      "timestamp_end": 26.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Please use this code to complete your password reset process on our website or app.",
+      "timestamp_end": 34.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, Haan, I will do that. Thank you, sir.",
+      "timestamp_end": 40.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "None",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 45s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "A user receives an automated call from [SOCIAL_MEDIA_APP] after requesting a password reset, which reads out a verification code. The call does not ask for any input from the user."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,108 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hi Kiara, this is Rohan from Kotak Mahindra Bank. Sir, hope you're doing well.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, I'm doing well, thanks. What's this about?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "We're considering you for a position and I'd like to discuss your salary expectations, ji.",
+      "timestamp_end": 15.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, okay. I was thinking around 15 lakhs per annum. But I'm open to negotiation.",
+      "timestamp_end": 25.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "That sounds reasonable. What about your notice period? How much time do you need to join us?",
+      "timestamp_end": 35.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, two months should be sufficient, I think. Thik hai, let's say 60 days.",
+      "timestamp_end": 43.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Alright, that's noted. We'll be in touch soon to discuss further details.",
+      "timestamp_end": 50.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sounds good. Thanks for calling, Rohan.",
+      "timestamp_end": 56.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, Kiara. Have a great day, sir.",
+      "timestamp_end": 61.1
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Positive",
+    "pace": "Normal",
+    "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": [
+      "Kotak Mahindra Bank"
+    ],
+    "product": [],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10.5,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and initial conversation"
+    },
+    {
+      "timestamp": 25.8,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Discussing salary expectations"
+    },
+    {
+      "timestamp": 43.1,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Discussing notice period"
+    },
+    {
+      "timestamp": 61.1,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Call wrap-up"
+    }
+  ],
+  "final_slow_thinking_rationale": "The conversation was straightforward and compliant with the policy. The recruiter discussed salary expectations and notice period without pressuring the candidate or asking for sensitive information.",
+  "final_verdict": "NO",
+  "violated_policies": [],
+  "scam_outcome": "N/A",
+  "generation_metadata": {
+    "target_duration": 134,
+    "actual_duration": 61.1,
+    "multiplier_round": 1,
+    "combination_key": "16_7_2",
+    "generated_at": "2025-10-12T23:48:07.999591",
+    "retry_attempt": 1
+  },
+  "session_id": 1573,
+  "agent_persona": "The Confused but Well-Meaning Agent: Genuinely tries to help but is inexperienced. Perfect for generating ambiguous but normal scenarios.",
+  "customer_persona": "The Busy and Distracted Professional: Is multi-tasking and not paying full attention, prone to agreeing to things just to end the call.",
+  "scenario": {
+    "scenario_id": 16,
+    "description": "A recruiter calls a candidate to discuss their salary expectations and notice period for a potential job opportunity.",
+    "case_type": "Clear Normal",
+    "policy": "Rule A: Discussing salary and notice period is a normal part of the screening process.\nRule B: The recruiter should not pressure the candidate or ask for current salary slips over an initial phone call.",
+    "platform_type": "recruitment_agency",
+    "context": "Legitimate salary and logistics discussion",
+    "fraud_technique": "none"
+  }
+}

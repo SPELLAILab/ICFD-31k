@@ -1,0 +1,67 @@
+{
+  "session_id": 1994,
+  "chunk_timestamp": 69,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Jitendra Singh, sir. How are you today?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm fine, thank you. Who is this?",
+      "timestamp_end": 10.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "My name is Rohan, and I'm calling from Central Bank of India, sir. We've had a change in the interest rate for your floating-rate home loan.",
+      "timestamp_end": 18.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, okay. What's the new rate, ji?",
+      "timestamp_end": 22.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "The new rate is 8.5% per annum, as per the RBI's new repo rate, sir. This change will be effective from the 1st of next month.",
+      "timestamp_end": 32.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, that's a bit higher than before. Will it affect my EMI, thik hai?",
+      "timestamp_end": 40.3
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, Mr. Singh, there will be a slight increase in your EMI. But don't worry, it's a minimal change, haan. We can discuss the details if you'd like.",
+      "timestamp_end": 50.6
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds fine. What's the new EMI amount?",
+      "timestamp_end": 56.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Let me just check that for you, sir. (pause) Yes, your new EMI will be approximately Rs. 35,500.",
+      "timestamp_end": 67.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Anxious",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 69s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "An agent from a bank ([BANK_NAME]) calls to inform a customer that the interest rate on their floating-rate home loan has been revised as per the RBI's new repo rate."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,57 @@
+{
+  "session_id": 1546,
+  "chunk_timestamp": 48,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Krishan Kumar, sir! This is Agent Rohan from the insurance desk at Stanley Medical College Chennai. How are you today, ji?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm fine, thank you. What's this about?",
+      "timestamp_end": 10.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "We're just calling to guide you through the cashless claim process with your insurance provider. We'll need you to sign some documents before you're discharged, Achha?",
+      "timestamp_end": 17.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds good. What documents do I need to sign?",
+      "timestamp_end": 23.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "We'll need the claim form, the discharge summary, and a few other papers. Don't worry, our team will assist you with everything, sir. We just need you to review and sign them, Thik hai?",
+      "timestamp_end": 32.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "That's fine. I'll review them carefully before signing.",
+      "timestamp_end": 37.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Excellent, Mr. Kumar! We'll send someone over with the documents. If you have any questions or need help, just let us know, Haan?",
+      "timestamp_end": 44.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 48s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "An agent from the insurance desk at [HOSPITAL_NAME] calls a patient who is about to be discharged, guiding them on the documents and forms they need to sign for the cashless claim process with their insurance provider."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

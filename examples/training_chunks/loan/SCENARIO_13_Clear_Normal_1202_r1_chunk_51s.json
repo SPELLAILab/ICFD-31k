@@ -1,0 +1,47 @@
+{
+  "session_id": 1202,
+  "chunk_timestamp": 51,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Mr. Tulsi Hansda, sir? Your cylinder booking is due for renewal, ji.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Who is this? How did you get my number? I didn't expect a call from Hindustan Petroleum Gas.",
+      "timestamp_end": 14.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm calling from Hindustan Petroleum Gas, sir. We have your details in our system for regular cylinder bookings. Shall I assist you with placing an order, Achha?",
+      "timestamp_end": 23.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, fine. Yes, I need to book a cylinder. But how do I know this is a genuine call and not some scam?",
+      "timestamp_end": 32.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely understandable, sir. For your security, I must inform you that you can book your cylinder through our official app, website, or IVR system. We don't take payment details over the call, Thik hai?",
+      "timestamp_end": 43.4
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 51s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "An agent from [GAS_AGENCY] calls a customer to remind them that their regular cylinder booking is due and asks if they would like to place an order."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

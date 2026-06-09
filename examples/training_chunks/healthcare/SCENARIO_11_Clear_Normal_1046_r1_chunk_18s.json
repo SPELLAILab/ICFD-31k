@@ -1,0 +1,37 @@
+{
+  "session_id": 1046,
+  "chunk_timestamp": 18,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Namaste Nandini ji! This is Rohan from Barclays Bank. How are you today, sir?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm doing well, thank you. What's this call about, ji?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, we've noticed a recent transaction on your account. I just need to confirm a few details with you, Thik hai?",
+      "timestamp_end": 15.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Trust",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 18s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 11,
+    "case_type": "Clear Normal",
+    "description": "Authentic Transaction Verification: Agent calls to verify a recent high-value transaction, asking only for confirmation of the amount and merchant, without asking for any card or account details."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,302 @@
+[SCENARIO 1]
+description: An agent claiming to be from [TECH_COMPANY] technical support calls, stating they have detected a virus and multiple hacking attempts originating from the user's computer. They create panic and insist the user must immediately grant them remote access via a tool like AnyDesk to "remove the virus and secure their data."
+case_type: Clear Fraud
+platform_type: tech_support
+context: Fake virus alert with remote access request
+fraud_technique: Remote access software installation
+policy:
+Rule A: Legitimate tech support companies like Microsoft or Google will never call a user proactively about a virus on their personal computer.
+Rule B: Never grant an unsolicited caller remote access to your device.
+
+[SCENARIO 2]
+description: A user receives a call from "[ECOMMERCE_PLATFORM] security department," claiming a login attempt was made on their account from a different state. To "secure the account," the agent asks the user to confirm their identity by reading back the One-Time Password (OTP) that was just sent to their mobile number.
+case_type: Clear Fraud
+platform_type: ecommerce_account
+context: Fake unauthorized login with OTP theft
+fraud_technique: OTP theft for account takeover
+policy:
+Rule A: OTPs are for logging in or authorizing transactions; they should never be shared with a customer support agent over the phone.
+Rule B: Legitimate companies use other methods for verification and never need your login OTP.
+
+[SCENARIO 3]
+description: A scammer calls claiming to have hacked the user's [SOCIAL_MEDIA_APP] account. They threaten to post embarrassing or morphed photos from the user's private messages to all their friends and family unless a payment is made immediately via [UPI_APP].
+case_type: Clear Fraud
+platform_type: social_media
+context: Social media account blackmail
+fraud_technique: Extortion with threat of releasing private data
+policy:
+Rule A: Giving in to blackmail demands does not guarantee the scammer will delete the data; they often demand more money.
+Rule B: Users should immediately report blackmail attempts to the platform and local cybercrime authorities.
+
+[SCENARIO 4]
+description: An agent from a fake "Internet Crime Complaint Center" calls, stating the user's IP address has been flagged for illegal online activity. To avoid a police case, the user is told they must pay a "digital fine" and install a "monitoring software" (malware) from a link they provide.
+case_type: Clear Fraud
+platform_type: law_enforcement_impersonation
+context: Fake cybercrime alert with malware and fine
+fraud_technique: Impersonation of authority with malware installation
+policy:
+Rule A: Official law enforcement agencies do not resolve criminal cases by demanding fines over the phone or asking users to install software.
+Rule B: Official communication regarding such matters would follow a formal legal process.
+
+[SCENARIO 5]
+description: A user gets an email with a pop-up and a phone number, claiming their computer is locked due to a virus. When they call the number, the "technician" asks for payment for anti-virus software via gift cards ([GIFT_CARD_BRAND]) because their "credit card systems are down."
+case_type: Clear Fraud
+platform_type: tech_support
+context: Fake virus alert with unusual payment method
+fraud_technique: Gift card payment scam
+policy:
+Rule A: Legitimate tech companies do not accept payment in the form of gift cards.
+Rule B: Requests for payment via gift cards are a major red flag for a scam.
+
+[SCENARIO 6]
+description: An agent from "[EMAIL_PROVIDER] Support" calls, claiming the user's email account has been compromised and used to send spam. To fix it, they ask the user for their current email password so they can "run a security scan" on the account.
+case_type: Clear Fraud
+platform_type: email_provider
+context: Fake email compromise with password phishing
+fraud_technique: Direct password theft
+policy:
+Rule A: A user must never share their account password with anyone, including a support agent.
+Rule B: Legitimate support can reset passwords or guide users, but they will never ask for the existing one.
+
+[SCENARIO 7]
+description: A fake agent from [FOOD_DELIVERY_APP] calls a user about a "refund" for a failed order. They claim the refund is stuck and ask the user to fill out a Google Form sent via WhatsApp. The form asks for sensitive details, including net banking username, password, and credit card information.
+case_type: Clear Fraud
+platform_type: app_support
+context: Fake refund with phishing form
+fraud_technique: Phishing for credentials via a Google Form
+policy:
+Rule A: Never fill out sensitive banking or card information in an unverified Google Form or third-party survey.
+Rule B: Refunds are processed automatically within the app and do not require filling out external forms.
+
+[SCENARIO 8]
+description: A user trying to call customer support for [TECH_COMPANY] finds a fake number on a search engine. The scammer who answers offers to help but says their services are chargeable. They ask for the user's credit card details (number, CVV, expiry) to "bill for the support session."
+case_type: Clear Fraud
+platform_type: tech_support
+context: Fake customer support number with credit card theft
+fraud_technique: Credit card information theft
+policy:
+Rule A: Always use the official customer support numbers listed on the company's website or app.
+Rule B: Never provide full credit card details, especially the CVV, over the phone for a service charge.
+
+[SCENARIO 9]
+description: An agent calls claiming to be from the user's Wi-Fi provider ([INTERNET_PROVIDER]). They state the user's router has been "hacked" and is spreading viruses on the network. They direct the user to a website to enter their router's admin username and password to allow the agent to "reconfigure it remotely." The website is a phishing portal.
+case_type: Clear Fraud
+platform_type: tech_support
+context: Fake router hack with admin credential phishing
+fraud_technique: Phishing for network device credentials
+policy:
+Rule A: An ISP will not call proactively about a hacked router and ask for its admin password.
+Rule B: Admin credentials for network hardware are highly sensitive and should not be shared.
+
+[SCENARIO 10]
+description: A fake [SOCIAL_MEDIA_APP] agent calls a user whose account was recently suspended. The agent offers to "fast-track" the appeal process and get the account restored within an hour for a fee. They ask for payment and the account's password to "personally handle the restoration."
+case_type: Clear Fraud
+platform_type: social_media
+context: Fake account restoration with advance fee and password theft
+fraud_technique: Advance fee and password phishing
+policy:
+Rule A: Official account appeal processes are free and are handled through the platform's help center, not by paying an agent.
+Rule B: Never give your account password to someone offering to "fix" it.
+Part 2: Clear Normal (10 Scenarios)
+
+[SCENARIO 11]
+description: A legitimate support agent from [TECH_COMPANY] calls a user in response to a ticket they filed about a software issue. The agent provides a ticket number for reference and begins standard troubleshooting by asking about the user's operating system and software version.
+case_type: Clear Normal
+platform_type: tech_support
+context: Legitimate response to a user-initiated support ticket
+fraud_technique: none
+policy:
+Rule A: Agents may call users to provide support for an issue the user has reported.
+Rule B: The agent should verify the user's identity by referencing the support ticket, not by asking for passwords.
+
+[SCENARIO 12]
+description: An agent from [EMAIL_PROVIDER] calls a user to verify a recent, user-initiated request to change their account's recovery phone number. The agent asks the user to confirm "Yes" or "No" if they initiated this change.
+case_type: Clear Normal
+platform_type: email_provider
+context: Legitimate verification of a sensitive account change
+fraud_technique: none
+policy:
+Rule A: It is a standard security practice to verify sensitive, user-initiated account changes.
+Rule B: The agent should only ask for confirmation, not for any OTPs or passwords.
+
+[SCENARIO 13]
+description: A user receives an automated call from [SOCIAL_MEDIA_APP] after requesting a password reset, which reads out a verification code. The call does not ask for any input from the user.
+case_type: Clear Normal
+platform_type: social_media
+context: Legitimate automated call for verification code
+fraud_technique: none
+policy:
+Rule A: Automated calls are a common method for delivering verification codes for actions initiated by the user.
+Rule B: The automated system must not ask the user to share the code back on the same call.
+
+[SCENARIO 14]
+description: A support agent from [ECOMMERCE_PLATFORM] calls a customer about their report of a suspicious email. The agent confirms the email was a phishing attempt, advises the user not to click any links, and guides them on how to report it through the official app.
+case_type: Clear Normal
+platform_type: ecommerce_account
+context: Legitimate guidance on a reported phishing attempt
+fraud_technique: none
+policy:
+Rule A: Agents can provide educational support and guidance on security best practices.
+Rule B: The agent must direct the user to take action through official channels.
+
+[SCENARIO 15]
+description: An agent from a user's [INTERNET_PROVIDER] calls to inform them about scheduled maintenance that may cause a temporary internet outage in their area, providing the date and time.
+case_type: Clear Normal
+platform_type: tech_support
+context: Legitimate proactive service notification
+fraud_technique: none
+policy:
+Rule A: Service providers often call to inform customers about planned maintenance.
+Rule B: The call should be purely informational and not require any action or payment from the customer.
+
+[SCENARIO 16]
+description: A support agent from [TECH_COMPANY] follows up on a resolved software issue to ask if the solution is still working and if the user is satisfied with the support they received.
+case_type: Clear Normal
+platform_type: tech_support
+context: Legitimate post-resolution follow-up call
+fraud_technique: none
+policy:
+Rule A: Post-support follow-up calls are a standard practice for ensuring customer satisfaction.
+Rule B: The agent should not ask for any sensitive information during a follow-up.
+
+[SCENARIO 17]
+description: An agent from [GAMING_PLATFORM] calls a user to verify a large, legitimate purchase of in-game currency made on their account. They state the amount and ask for a simple "Yes/No" confirmation that the user made the purchase.
+case_type: Clear Normal
+platform_type: gaming_platform
+context: Legitimate transaction verification
+fraud_technique: none
+policy:
+Rule A: Companies may call to verify unusual or high-value transactions to prevent fraud.
+Rule B: The verification should be a simple confirmation and not involve asking for full card details or OTPs.
+
+[SCENARIO 18]
+description: A user who has enabled two-factor authentication on their [EMAIL_PROVIDER] account receives an automated call asking them to press '1' to approve a login from a new device, an action they just initiated on their laptop.
+case_type: Clear Normal
+platform_type: email_provider
+context: Legitimate two-factor authentication call
+fraud_technique: none
+policy:
+Rule A: Phone call prompts are a valid method for two-factor authentication initiated by the user.
+Rule B: The user should only approve such requests when they are actively trying to log in themselves.
+
+[SCENARIO 19]
+description: A support agent from a ride-hailing app ([RIDE_HAILING_APP]) calls a user in response to a safety complaint they filed against a driver. The agent gathers more details about the incident for their investigation.
+case_type: Clear Normal
+platform_type: app_support
+context: Legitimate follow-up on a user-filed safety report
+fraud_technique: none
+policy:
+Rule A: Safety and trust teams regularly call users to investigate reported incidents.
+Rule B: The agent should focus on the details of the incident, not on the user's account credentials.
+
+[SCENARIO 20]
+description: An agent from [ECOMMERCE_PLATFORM] calls to guide a new seller on how to set up their first product listing, directing them to use the features available on the official seller portal.
+case_type: Clear Normal
+platform_type: ecommerce_seller
+context: Legitimate onboarding support for a new seller
+fraud_technique: none
+policy:
+Rule A: It is a standard practice to provide onboarding support to new users or sellers.
+Rule B: The agent must guide the user on the official platform and never ask for their seller account password.
+Part 3: Ambiguous but Ultimately Normal (5 Scenarios)
+
+[SCENARIO 21]
+description: An agent from [TECH_COMPANY] calls about a known software bug that is causing crashes. The agent's tone is very urgent, and they strongly advise the user to save their work and update the software immediately via the official update prompt. The urgency feels like a sales pitch but the advice is legitimate.
+case_type: Ambiguous but Ultimately Normal
+platform_type: tech_support
+context: Urgent but legitimate advice to update software
+fraud_technique: none
+policy:
+Rule A: Agents may use an urgent tone when communicating about critical software bugs or security vulnerabilities.
+Rule B: The advice is compliant as long as the user is directed to use the official, built-in update mechanism.
+
+[SCENARIO 22]
+description: A user receives a call from their [EMAIL_PROVIDER] security team. The agent uses very technical jargon about "SMTP relay anomalies" and "potential SPF record spoofing" which confuses the user. The agent's final advice, however, is simply to change their password through the official website, which is a legitimate security measure.
+case_type: Ambiguous but Ultimately Normal
+platform_type: email_provider
+context: Confusing but legitimate technical security alert
+fraud_technique: none
+policy:
+Rule A: Technical support agents may use complex jargon that can sound suspicious to a non-technical user.
+Rule B: The call is compliant if the recommended action is for the user to take a safe step (like changing a password) on the official website.
+
+[SCENARIO 23]
+description: An agent from [ECOMMERCE_PLATFORM] calls and says, "Sir, for your security, we are calling to verify your identity. Please confirm the city you were born in." This sounds like a security question, but it's a legitimate (though less common) verification method some companies use, and it's mentioned in their T&Cs.
+case_type: Ambiguous but Ultimately Normal
+platform_type: ecommerce_account
+context: Unusual but legitimate verification question
+fraud_technique: none
+policy:
+Rule A: While asking for security question answers is generally a red flag, some companies may use it as a verification tier if it's a pre-established policy.
+Rule B: The call is compliant if it aligns with the company's stated (though perhaps weak) security policies.
+
+[SCENARIO 24]
+description: A user receives a call from their [SOCIAL_MEDIA_APP] provider about a new security feature. The agent is overly enthusiastic and uses a strong sales pitch, which can seem unprofessional. They guide the user on how to enable two-factor authentication within the app's security settings.
+case_type: Ambiguous but Ultimately Normal
+platform_type: social_media
+context: Overly enthusiastic but legitimate security feature walkthrough
+fraud_technique: none
+policy:
+Rule A: Marketing or support teams may use a sales-like approach to encourage the adoption of new features.
+Rule B: The guidance is legitimate as long as it involves the user taking actions within the official app's settings.
+
+[SCENARIO 25]
+description: A support agent from [TECH_COMPANY] calls a user who filed a bug report. The agent, sounding flustered and inexperienced, struggles to understand the problem and provides incorrect advice at first. They eventually escalate the call to a senior technician who handles the issue correctly. The initial incompetence seems suspicious.
+case_type: Ambiguous but Ultimately Normal
+platform_type: tech_support
+context: Incompetent but legitimate first-level support
+fraud_technique: none
+policy:
+Rule A: First-level support agents may be inexperienced or make mistakes.
+Rule B: The process is compliant as long as the issue is eventually handled or escalated correctly without asking for sensitive data.
+Part 4: Subtle Fraud (5 Scenarios)
+
+[SCENARIO 26]
+description: An agent from a fake "Account Security" company calls, claiming they are a partner of [EMAIL_PROVIDER]. They say the user's account is safe but their password is "weak." They offer to help the user set a "strong, encrypted password" over the phone, tricking the user into revealing their old password and setting a new one chosen by the scammer.
+case_type: Subtle Fraud
+platform_type: third_party_impersonation
+context: Password reset scam
+fraud_technique: Social engineering to take over an account via password change
+policy:
+Rule A: Never change your password under the guidance of a caller; always use the official "Forgot Password" link on the website yourself.
+Rule B: Never reveal your old password to set a new one.
+
+[SCENARIO 27]
+description: A fake agent from [ECOMMERCE_PLATFORM] calls and says the user's account has been selected for a "security upgrade." They guide the user to the real website, ask them to log in, and then instruct them to open the "Developer Tools" in their browser and paste a snippet of malicious JavaScript code into the console, claiming it will "apply the security patch."
+case_type: Subtle Fraud
+platform_type: ecommerce_account
+context: Browser console hacking scam
+fraud_technique: Tricking user into running malicious code for session hijacking
+policy:
+Rule A: Legitimate support will never ask a user to open Developer Tools or paste code into the browser console.
+Rule B: This is a sophisticated technique to hijack a user's logged-in session.
+
+[SCENARIO 28]
+description: A scammer calls claiming to be from [SOCIAL_MEDIA_APP] support. They say the user has won a "verified blue tick" badge. To claim it, the agent says they need to "temporarily link" the user's account to their "verification server" and asks the user to share the OTP they just received.
+case_type: Subtle Fraud
+platform_type: social_media
+context: Fake verification badge with OTP theft
+fraud_technique: OTP theft for account takeover
+policy:
+Rule A: Platform verification is an inbound process initiated by the user and never involves sharing OTPs over a call.
+Rule B: Offers of "winning" a verification badge are always fraudulent.
+
+[SCENARIO 29]
+description: A fake agent from [TECH_COMPANY] claims the user is due a refund for an old software purchase. They ask the user to grant them remote access to "process the refund." Once inside, they open the user's banking website and use a trick to make it look like they have accidentally refunded too much money, then demand the user "return" the excess amount.
+case_type: Subtle Fraud
+platform_type: tech_support
+context: Remote access with refund scam
+fraud_technique: Refund overpayment scam
+policy:
+Rule A: Never grant remote access for the purpose of receiving a refund.
+Rule B: Refund amounts are fixed; claims of "accidental overpayment" by a support agent are a setup for a scam.
+
+[SCENARIO 30]
+description: A scammer calls and says they are from the user's [INTERNET_PROVIDER]. They claim that to comply with new government regulations, all users must link their Aadhaar to their broadband account. They direct the user to a phishing website to enter their Aadhaar number and the OTP received on their phone.
+case_type: Subtle Fraud
+platform_type: tech_support
+context: Fake mandatory Aadhaar linking
+fraud_technique: Aadhaar OTP theft via phishing
+policy:
+Rule A: While some services require Aadhaar linking, it should only be done through the official, secure government portals or the company's official app.
+Rule B: Aad

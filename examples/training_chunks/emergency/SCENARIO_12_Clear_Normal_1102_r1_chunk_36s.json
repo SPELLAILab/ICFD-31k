@@ -1,0 +1,37 @@
+{
+  "session_id": 1102,
+  "chunk_timestamp": 36,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste Vinod ji, this is Agent Rohan from Jana Small Finance Bank. Is this a good time to talk, sir?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Kaun hai? Who is this? How did you get my number?",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, Vinod ji, we are calling regarding your new credit card application. We just need to confirm your address for delivery, thik hai?",
+      "timestamp_end": 30.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Cautious",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 36s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 12,
+    "case_type": "Clear Normal",
+    "description": "Credit Card Delivery Confirmation: Agent calls to confirm the user's address for the delivery of a new credit card they had applied for."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

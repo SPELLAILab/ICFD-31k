@@ -1,0 +1,47 @@
+{
+  "session_id": 1929,
+  "chunk_timestamp": 36,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Ms. Aadhya Singh? Sir, I'm calling from HDFC Bank.",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes, this is Aadhya. What's this about, ji?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Good morning, Ms. Singh. I'm calling to inform you that as per the RBI's new repo rate, the interest rate on your floating-rate home loan has been revised.",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, okay. What's the new rate, please? Thik hai, tell me.",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "The new interest rate will be 8.5% per annum. You will receive a detailed notification via email and SMS shortly.",
+      "timestamp_end": 35.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slight Concern",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 36s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "An agent from a bank ([BANK_NAME]) calls to inform a customer that the interest rate on their floating-rate home loan has been revised as per the RBI's new repo rate."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

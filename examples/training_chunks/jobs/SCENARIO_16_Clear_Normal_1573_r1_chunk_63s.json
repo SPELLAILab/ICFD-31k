@@ -1,0 +1,67 @@
+{
+  "session_id": 1573,
+  "chunk_timestamp": 63,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir. This is HDFC Bank. My name is Rohan. I'm calling regarding your car loan application.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes. Lovejit Singh speaking. What's the update, ji?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, I'm happy to inform you that your loan has been approved. We just need to coordinate with the dealership for the disbursement.",
+      "timestamp_end": 17.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, that's great news. Which dealership are we talking about? I was dealing with Mahindra First Choice.",
+      "timestamp_end": 24.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, sir. We have all the details. I'll just need to confirm a few things with you before we proceed.",
+      "timestamp_end": 31.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, please go ahead. I'm a bit busy, so let's keep it quick, please.",
+      "timestamp_end": 37.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Of course, sir. So, we'll be sending the payment directly to the dealership. You just need to ensure that all the paperwork is completed at your end.",
+      "timestamp_end": 45.6
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sounds good. What about the interest rate and tenure? Can you just confirm those for me?",
+      "timestamp_end": 53.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, sir. The interest rate is 9.5% and the tenure is 5 years as per your application. Shall I proceed with the disbursement process?",
+      "timestamp_end": 61.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Satisfaction",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 63s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A bank agent calls a customer who applied for a car loan to inform them that their loan has been approved and to coordinate the disbursement process with the car dealership."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

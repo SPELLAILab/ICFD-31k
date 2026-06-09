@@ -1,0 +1,77 @@
+{
+  "session_id": 2521,
+  "chunk_timestamp": 120,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Karthik Krishnan, this is Agent Thompson from Account Security, a partner of AOL Mail. How are you today, sir?",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm doing well, thank you, ji. What's this about?",
+      "timestamp_end": 17.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "We've been monitoring your account, and although it's safe, our system indicates that your password is a bit weak. We'd like to help you set a strong, encrypted password for better security.",
+      "timestamp_end": 30.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, that sounds good. I want my account to be secure. What do I need to do?",
+      "timestamp_end": 37.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'll guide you through it. Can you please tell me your current password so we can proceed with setting a new one?",
+      "timestamp_end": 46.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "My current password is... let me see... It's 'Karthik123'.",
+      "timestamp_end": 55.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you, Mr. Krishnan. Now, I'm going to give you a new password that is much stronger. It will be 'AOLSecure2023'. Can you please confirm that you've noted it down?",
+      "timestamp_end": 68.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, I've noted it down. AOLSecure2023. But why can't I choose my own password, sir?",
+      "timestamp_end": 76.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Our system generates passwords that are highly secure and less prone to hacking. This way, we ensure your account's maximum safety. Shall we proceed with setting this new password?",
+      "timestamp_end": 90.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds good. Let's do it. But how do I know this is really secure?",
+      "timestamp_end": 99.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "You can be assured, Mr. Krishnan, that our methods are compliant with all security standards. We're almost done here. Just to confirm, you've changed your password to AOLSecure2023, correct?",
+      "timestamp_end": 113.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Trust",
+    "secondary_emotion": "Cooperation",
+    "pace": "Medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 120s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 26,
+    "case_type": "Subtle Fraud",
+    "description": "An agent from a fake \"Account Security\" company calls, claiming they are a partner of [EMAIL_PROVIDER]. They say the user's account is safe but their password is \"weak.\" They offer to help the user set a \"strong, encrypted password\" over the phone, tricking the user into revealing their old password and setting a new one chosen by the scammer."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

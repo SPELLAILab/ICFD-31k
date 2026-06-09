@@ -1,0 +1,72 @@
+{
+  "session_id": 2164,
+  "chunk_timestamp": 102,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste, Indira ji, this is Rohan from Karur Vysya Bank. I'm calling about your overdue credit card bill, sir.",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, thik hai, what's the amount due? I thought I paid it already.",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, let me check that for you, ji. Yes, it seems there's still an amount of Rs. 10,000 pending. You need to clear this ASAP to avoid any further charges.",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir, I'll pay it. How do I do that?",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You can log into our app or visit our website to make the payment, Indira ji. Just click on the 'Pay Now' option and follow the instructions.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, I'll do that right away. But can you please confirm the amount again and the last date for payment?",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely, ji. The amount is Rs. 10,000 and the last date for payment is this Friday. Please make sure to clear it by then to avoid any penalties.",
+      "timestamp_end": 70.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, got it. I'll make the payment today itself.",
+      "timestamp_end": 80.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "That's great to hear, Indira ji. If you have any issues during the payment process, you can call our customer care number for assistance.",
+      "timestamp_end": 90.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir. Thank you for your help.",
+      "timestamp_end": 100.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Concern",
+    "secondary_emotion": "Frustration",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 102s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 22,
+    "case_type": "Ambiguous but Ultimately Normal",
+    "description": "Aggressive but Legitimate Collections Call: A collections agent uses a firm and demanding tone regarding a genuinely overdue credit card bill, but only asks for payment through official channels (e.g., the app or website)."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

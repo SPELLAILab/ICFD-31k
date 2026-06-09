@@ -1,0 +1,9 @@
+{
+  "mse": 1.7860924521315582,
+  "slope": -1.1113617032227192,
+  "intercept": 10.207980922213768,
+  "vocabulary_size": 7699,
+  "total_words": 117817,
+  "unique_ratio": 0.06534710610523099,
+  "pass": false
+}

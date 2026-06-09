@@ -1,0 +1,97 @@
+{
+  "session_id": 50,
+  "chunk_timestamp": 138,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Thomas, sir. My name is Rajiv, and I'm calling from Timeshare Solutions. We have a buyer interested in your timeshare, ji.",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, really? That sounds great. What's the next step, please?",
+      "timestamp_end": 17.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "The buyer is willing to pay a good price, but we need to expedite the process. There's a small fee for the listing and closing costs, which will be around $2,000, Achha?",
+      "timestamp_end": 29.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "That seems a bit steep. Can't it be deducted from the sale proceeds?",
+      "timestamp_end": 36.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I understand your concern, Mr. Thomas, but this is a standard procedure in the industry. The fee is necessary for the paperwork and to ensure a smooth transaction, sir.",
+      "timestamp_end": 46.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, I see. But can you tell me more about the buyer and how the payment will be made?",
+      "timestamp_end": 54.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "The buyer is a reputable individual, and the payment will be made through a wire transfer. We just need you to pay the upfront fees, and we'll take care of the rest, Thik hai?",
+      "timestamp_end": 64.7
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm not sure... This all seems a bit rushed. Can I have some time to think about it?",
+      "timestamp_end": 72.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "I understand your concerns, Mr. Thomas, but we need to act quickly to secure the sale. The buyer is ready to move forward, and if we don't finalize the deal soon, they might lose interest, sir.",
+      "timestamp_end": 83.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, alright. I'll do it. But can you guarantee that the sale will go through?",
+      "timestamp_end": 91.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "Absolutely, Mr. Thomas. We have a team of experts who will handle the entire process, and we'll ensure that the sale is completed successfully, ji. Now, let's proceed with the payment, Haan?",
+      "timestamp_end": 103.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, okay. I'll make the payment. But can you give me your account details and the payment instructions?",
+      "timestamp_end": 112.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'll send you an email with all the details, Mr. Thomas. Please make the payment to the account of Punjab & Sind Bank, and we'll take care of the rest, sir.",
+      "timestamp_end": 122.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, got it. I'll make the payment right away.",
+      "timestamp_end": 128.3
+    },
+    {
+      "speaker": "Agent",
+      "text": "Excellent, Mr. Thomas. We'll be in touch soon to finalize the sale, ji. Thank you for your cooperation, sir.",
+      "timestamp_end": 135.6
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "trust",
+    "secondary_emotion": "urgency",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 138s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 3,
+    "case_type": "Clear_Fraud",
+    "description": "Timeshare resale scam targeting existing timeshare owners. Scammer claims to have buyer ready but requires upfront fees for closing costs, taxes, or listing fees. Buyer never materializes and scammer disappears after payment."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

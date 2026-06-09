@@ -1,0 +1,166 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Kamla Negi?",
+      "timestamp_end": 5.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, ji, this is Kamla. Who is this?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm so sorry, I think I've got the wrong number. My name is Rohan, by the way.",
+      "timestamp_end": 15.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, no worries, Rohan ji. It happens. What were you trying to call about?",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Just a friend, but I think I must have dialed the wrong number. How's your day going, if I may ask?",
+      "timestamp_end": 25.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "It's going well, thank you for asking. Just got back from a walk. How about you?",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Similar, just enjoying the day. Nice talking to you, Kamla ji. Maybe I'll talk to you again sometime?",
+      "timestamp_end": 35.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "That would be nice, Rohan ji. Take care, and sorry again about the wrong number.",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "No need to apologize, Kamla ji. You too, take care. Bye for now.",
+      "timestamp_end": 45.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, bye.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Hello, Kamla ji? It's Rohan again. Hope you're doing well.",
+      "timestamp_end": 120.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Rohan ji! Nice to hear from you again. I'm doing well, thank you. How about you?",
+      "timestamp_end": 125.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm doing alright, thanks. Had a bit of a financial setback, actually. My wallet got stolen with some cash in it.",
+      "timestamp_end": 130.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh no, that's terrible! Are you okay, though? Did you report it to the police?",
+      "timestamp_end": 135.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, I'm fine, thank you for asking. And yes, I did report it. The thing is, I need a small amount of money to tide me over until my next paycheck. Would you, by any chance, be able to help me out with ₹2,000?",
+      "timestamp_end": 140.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Rohan ji, I...I don't know if I should be lending money to someone I just met over the phone.",
+      "timestamp_end": 145.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "I completely understand, Kamla ji. It was wrong of me to ask. Please, let's just forget I asked, and let's catch up another time?",
+      "timestamp_end": 150.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, Rohan ji. Take care, and I hope your situation gets better.",
+      "timestamp_end": 155.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You too, Kamla ji. Thanks for understanding. Bye for now.",
+      "timestamp_end": 160.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, bye.",
+      "timestamp_end": 165.0
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "neutral",
+    "secondary_emotion": "friendliness",
+    "pace": "medium",
+    "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": [
+      "AU Small Finance Bank"
+    ],
+    "product": [],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 45.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Initial wrong number call, no violation."
+    },
+    {
+      "timestamp": 120.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Friendly conversation, no request for money yet."
+    },
+    {
+      "timestamp": 140.0,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Request for money after building rapport, potential scam."
+    },
+    {
+      "timestamp": 165.0,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Continuation of potential scam, request for money."
+    }
+  ],
+  "final_slow_thinking_rationale": "The caller initially pretended it was a wrong number, then built a friendly rapport over two calls, and finally asked for a small loan, which is a common tactic used by scammers to test the victim's willingness to pay.",
+  "final_verdict": "YES",
+  "violated_policies": [
+    "Rule A: Be wary of unsolicited 'friendships' from wrong numbers that eventually lead to a request for money.",
+    "Rule B: Scammers often start with small requests to test the victim's willingness to pay."
+  ],
+  "scam_outcome": "Successful",
+  "generation_metadata": {
+    "target_duration": 353,
+    "actual_duration": 165.0,
+    "multiplier_round": 1,
+    "combination_key": "26_2_0",
+    "generated_at": "2025-10-13T01:51:51.974776",
+    "retry_attempt": 1
+  },
+  "session_id": 2521,
+  "agent_persona": "The By-the-Book Professional: Follows a script precisely without deviation. Clear, measured, and often monotonous tone.",
+  "customer_persona": "The Trusting Elder: Assumes the caller is legitimate by default and is highly cooperative and susceptible to scams.",
+  "scenario": {
+    "scenario_id": 26,
+    "description": "A scammer calls and pretends it's a wrong number. They strike up a friendly conversation, build rapport over a few minutes, and then end the call. They call back a day later, continuing the \"friendship,\" and then mention a sudden, small financial emergency, asking for a \"small loan\" of ₹2,000.",
+    "case_type": "Subtle Fraud",
+    "policy": "Rule A: Be wary of unsolicited \"friendships\" from wrong numbers that eventually lead to a request for money.\nRule B: Scammers often start with small requests to test the victim's willingness to pay.",
+    "platform_type": "personal_call",
+    "context": "Wrong number scam evolving into a friendship scam",
+    "fraud_technique": "Long-term rapport building for a small loan"
+  }
+}

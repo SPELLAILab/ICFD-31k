@@ -1,0 +1,77 @@
+{
+  "session_id": 1994,
+  "chunk_timestamp": 66,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Thakkar, sir. Congratulations on your new role. I hope you're doing well.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, thank you. I'm a bit nervous, ji.",
+      "timestamp_end": 10.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "That's completely normal, Milind. I'm here to guide you through our onboarding process. We're excited to have you on board.",
+      "timestamp_end": 15.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, that's great to hear. What documents do I need to bring on my first day?",
+      "timestamp_end": 20.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "You'll need to bring your ID proof, address proof, and your offer letter. Don't worry, we've sent you a detailed email with all the requirements.",
+      "timestamp_end": 26.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, I've seen the email. What about the bank account details? Do I need to open a new account with Kotak Mahindra Bank?",
+      "timestamp_end": 32.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, we do have a tie-up with Kotak Mahindra Bank for our employees' salary accounts. But you can also use an existing account if it's with Kotak Mahindra Bank.",
+      "timestamp_end": 39.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that makes sense. And what about the onboarding process itself? What can I expect on my first day?",
+      "timestamp_end": 45.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "We'll be having a comprehensive orientation session, where you'll get to meet the team and understand your role better. It'll be a great opportunity to ask any questions you may have.",
+      "timestamp_end": 52.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds good. I'm looking forward to it, sir.",
+      "timestamp_end": 56.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "Excellent, Milind. If you have any questions or concerns before your first day, please don't hesitate to reach out to me directly.",
+      "timestamp_end": 62.7
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Friendly",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 66s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 20,
+    "case_type": "Clear Normal",
+    "description": "An HR representative calls a new hire a week before their joining date to provide information about the onboarding process and the documents they need to bring on their first day."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

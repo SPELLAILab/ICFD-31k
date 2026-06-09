@@ -1,0 +1,130 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir! Congratulations, you've been shortlisted for the position you applied for on Fiverr. I'm calling from KPIT Technologies' HR department. How are you today, Raj?",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm doing great, thank you! I'm excited to hear about the opportunity. What's the next step?",
+      "timestamp_end": 20.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, we're thrilled to have you on board! To secure your interview slot, there's a small, completely refundable registration fee of ₹1,500. You can pay it via Mobikwik, ji.",
+      "timestamp_end": 32.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds like a great opportunity! I'm happy to pay the fee. Can you guide me through the payment process?",
+      "timestamp_end": 43.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Fantastic attitude, Raj! I'll send you the payment link. Just click on it, and you'll be redirected to the Mobikwik page. Haan, it's very simple.",
+      "timestamp_end": 55.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Got it, thank you! I'll make the payment right away. What's the next step after the payment?",
+      "timestamp_end": 66.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thik hai, once the payment is made, we'll send you a confirmation email with the interview details. You'll also receive a refund of the registration fee after you attend the interview, sir.",
+      "timestamp_end": 78.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "That sounds great! I'm looking forward to the interview. Thank you for your help, and I'll make the payment now.",
+      "timestamp_end": 90.3
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, Raj! We're excited to have you on board. If you have any questions, don't hesitate to reach out. All the best for your interview, and I hope you'll join our team soon!",
+      "timestamp_end": 102.6
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thank you, sir! I'll talk to you soon. Bye!",
+      "timestamp_end": 112.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, Raj! Have a great day, and we'll be in touch soon!",
+      "timestamp_end": 120.2
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Excitement",
+    "secondary_emotion": "Optimism",
+    "pace": "Fast",
+    "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": [
+      "KPIT Technologies",
+      "Fiverr",
+      "Tamilnad Mercantile Bank"
+    ],
+    "product": [
+      "Mobikwik"
+    ],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10.2,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and congratulatory message"
+    },
+    {
+      "timestamp": 32.1,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Request for payment to secure interview slot"
+    },
+    {
+      "timestamp": 55.2,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Guiding the customer through the payment process"
+    },
+    {
+      "timestamp": 78.1,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Confirmation of refund after attending the interview"
+    },
+    {
+      "timestamp": 102.6,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Closing the conversation with a positive note"
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent requested a payment to secure an interview slot, which is a clear violation of the policy. The customer, being naive and optimistic, didn't question the legitimacy of the request.",
+  "final_verdict": "YES",
+  "violated_policies": [
+    "Rule A: Reputable companies never charge a fee for interviews, registration, or job applications.",
+    "Rule B: Any request for payment to secure a job offer or interview is a clear indicator of fraud."
+  ],
+  "scam_outcome": "Successful",
+  "generation_metadata": {
+    "target_duration": 206,
+    "actual_duration": 120.2,
+    "multiplier_round": 1,
+    "combination_key": "1_4_7",
+    "generated_at": "2025-10-12T23:39:26.334402",
+    "retry_attempt": 1
+  },
+  "session_id": 48,
+  "agent_persona": "The Cheerful Salesperson: Upbeat, energetic, and highly positive. Focuses entirely on the benefits of a legitimate product or service.",
+  "customer_persona": "The Naive Optimist: Easily excited by the prospect of winning a prize or getting a refund, letting greed override skepticism.",
+  "scenario": {
+    "scenario_id": 1,
+    "description": "An agent claiming to be from the HR department of a major [IT_COMPANY] calls a candidate who applied on [JOB_PORTAL]. The agent says the candidate has been shortlisted and, to secure the interview slot, they must pay a \"refundable registration fee\" of ₹1,500 via [UPI_APP].",
+    "case_type": "Clear Fraud",
+    "policy": "Rule A: Reputable companies never charge a fee for interviews, registration, or job applications.\nRule B: Any request for payment to secure a job offer or interview is a clear indicator of fraud.",
+    "platform_type": "corporate",
+    "context": "Fake MNC job offer with registration fee",
+    "fraud_technique": "Advance fee for interview slot"
+  }
+}

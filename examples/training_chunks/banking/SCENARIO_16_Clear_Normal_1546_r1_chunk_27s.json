@@ -1,0 +1,47 @@
+{
+  "session_id": 1546,
+  "chunk_timestamp": 27,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir! This is Ramesh from Dropbox. How are you today, ji?",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm doing well, thank you. What's this call about, please?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "We're just following up on the software issue you had resolved recently. I hope everything is working smoothly now, haan?",
+      "timestamp_end": 16.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, everything seems fine. The solution worked as expected.",
+      "timestamp_end": 20.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, that's great to hear! We're always here to help. Can you tell me a little bit about your experience with our support team?",
+      "timestamp_end": 26.3
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Positive",
+    "secondary_emotion": "Neutral",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 27s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A support agent from [TECH_COMPANY] follows up on a resolved software issue to ask if the solution is still working and if the user is satisfied with the support they received."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

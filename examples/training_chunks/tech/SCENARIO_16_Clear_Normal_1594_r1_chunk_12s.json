@@ -1,0 +1,32 @@
+{
+  "session_id": 1594,
+  "chunk_timestamp": 12,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Namaste Moumita ji, how are you feeling today? Hope you're recovering well.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, I'm feeling a bit better, thank you. Just waiting to be discharged.",
+      "timestamp_end": 10.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Helpfulness",
+    "pace": "Normal",
+    "confidence_score": 0.97
+  },
+  "slow_thinking_rationale": "At 12s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "An agent from the insurance desk at [HOSPITAL_NAME] calls a patient who is about to be discharged, guiding them on the documents and forms they need to sign for the cashless claim process with their insurance provider."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

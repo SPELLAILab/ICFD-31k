@@ -1,0 +1,37 @@
+{
+  "session_id": 1046,
+  "chunk_timestamp": 36,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello Namrata ji, this is Rohan from Ashoka Tours & Travels. I hope you're doing well, sir. I'm calling to confirm the details of your holiday package to Goa that you booked with us yesterday.",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, hello! Yes, I did book a package. What details do you need to confirm?",
+      "timestamp_end": 18.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, thank you for confirming! I just need to verify your flight timings. You've booked a flight from Delhi to Goa, departing at 10:30 AM, and returning at 5:00 PM, right, ji?",
+      "timestamp_end": 29.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Friendly",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 36s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 11,
+    "case_type": "Clear Normal",
+    "description": "A legitimate travel agent from [TRAVEL_COMPANY] calls a customer to confirm the details of a holiday package to Goa that the customer had booked online a day earlier. The agent verifies the flight timings and hotel name."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

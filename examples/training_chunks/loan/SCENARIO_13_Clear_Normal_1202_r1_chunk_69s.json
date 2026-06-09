@@ -1,0 +1,57 @@
+{
+  "session_id": 1202,
+  "chunk_timestamp": 69,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Sara Khan? Sir, I'm calling from Intellect Design Arena.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Sara. Who's calling and how did you get my number, ji?",
+      "timestamp_end": 12.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm Rohan, the HR representative. We have your interview scheduled for tomorrow, and I just wanted to confirm your attendance, Achha?",
+      "timestamp_end": 20.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Tomorrow? Yeah, I'm coming. But how did you get my number? I didn't give it to anyone at ICICI Bank or anywhere else.",
+      "timestamp_end": 29.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "We must have gotten it from your application or maybe from a reference, madam. Anyway, you'll be meeting with Ms. Sharma tomorrow. Her number is 9876543210, in case you need to reach out.",
+      "timestamp_end": 41.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, got it. Ms. Sharma, 9876543210. But can I get a confirmation email or something? This call seems a bit... unusual, haan?",
+      "timestamp_end": 52.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I can definitely send you a confirmation email, Sara. Let me just check on that real quick. (pause) Yes, it's been sent. You should receive it shortly, Thik hai?",
+      "timestamp_end": 65.1
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Professional",
+    "secondary_emotion": "Cautious",
+    "pace": "Fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 69s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 13,
+    "case_type": "Clear Normal",
+    "description": "An HR agent from [IT_COMPANY] calls a candidate a day before their scheduled interview to confirm their attendance and share the contact details of the person they should connect with."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

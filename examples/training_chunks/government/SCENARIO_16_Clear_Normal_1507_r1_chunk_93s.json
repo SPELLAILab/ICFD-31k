@@ -1,0 +1,62 @@
+{
+  "session_id": 1507,
+  "chunk_timestamp": 93,
+  "cumulative_transcript": [
+    {
+      "speaker": "Customer",
+      "text": "Hello, sir. I need to talk to someone about something personal. I'm going through a tough time.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm here to listen, Chaitanya ji. What seems to be the matter? You can share with me.",
+      "timestamp_end": 20.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, it's just that I had a big argument with my family and I'm feeling really down. I don't know how to handle it, sir.",
+      "timestamp_end": 32.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "I understand, Chaitanya. Family issues can be very stressful. Have you tried talking to them about how you feel?",
+      "timestamp_end": 43.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, I tried, but it didn't work out. That's why I'm feeling so frustrated and alone, sir.",
+      "timestamp_end": 54.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sometimes, taking a break and giving each other space can help. Would you like some advice on how to approach the situation?",
+      "timestamp_end": 65.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, please tell me. I really need some guidance right now.",
+      "timestamp_end": 76.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Okay, Chaitanya. Why don't you try writing down your feelings and concerns, and then have a calm conversation with your family about it?",
+      "timestamp_end": 88.3
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "sadness",
+    "secondary_emotion": "frustration",
+    "pace": "medium",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 93s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A person calls their friend to tell them about a personal crisis (e.g., a breakup, a family argument) and seeks emotional support."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

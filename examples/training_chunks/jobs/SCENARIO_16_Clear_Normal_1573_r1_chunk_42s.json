@@ -1,0 +1,47 @@
+{
+  "session_id": 1573,
+  "chunk_timestamp": 42,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hi Kiara, this is Rohan from Kotak Mahindra Bank. Sir, hope you're doing well.",
+      "timestamp_end": 5.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, I'm doing well, thanks. What's this about?",
+      "timestamp_end": 10.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "We're considering you for a position and I'd like to discuss your salary expectations, ji.",
+      "timestamp_end": 15.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Oh, okay. I was thinking around 15 lakhs per annum. But I'm open to negotiation.",
+      "timestamp_end": 25.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "That sounds reasonable. What about your notice period? How much time do you need to join us?",
+      "timestamp_end": 35.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Slightly Positive",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 42s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "A recruiter calls a candidate to discuss their salary expectations and notice period for a potential job opportunity."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

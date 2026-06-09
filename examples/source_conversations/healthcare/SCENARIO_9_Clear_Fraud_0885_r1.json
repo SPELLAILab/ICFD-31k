@@ -1,0 +1,125 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Pandey. This is GTPL Broadband. We have a report that your router has been compromised and is spreading viruses on our network.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "What? Who is this? How did you get my number, sir?",
+      "timestamp_end": 18.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I'm calling from GTPL Broadband, your Wi-Fi provider. We need to reconfigure your router to stop the malware spread.",
+      "timestamp_end": 25.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "I didn't ask for any help. What proof do you have that my router is hacked, ji?",
+      "timestamp_end": 33.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "We've detected unusual activity from your IP. Please visit our website, and enter your router's admin username and password so we can fix this remotely.",
+      "timestamp_end": 43.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm not giving you any passwords. This sounds like a scam. How do I know you're really from GTPL?",
+      "timestamp_end": 51.9
+    },
+    {
+      "speaker": "Agent",
+      "text": "You can trust me, I'm from GTPL. Just go to the website, it's the only way to secure your router.",
+      "timestamp_end": 59.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, I won't do that. I'll call GTPL myself to verify. And what's with this website? You expect me to just give away my router's password?",
+      "timestamp_end": 69.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "Fine, but please hurry. Every minute your router is unsecured, it puts our entire network at risk.",
+      "timestamp_end": 76.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "I've had enough of this conversation. I'm hanging up. Don't call me again.",
+      "timestamp_end": 84.2
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "Frustration",
+    "secondary_emotion": "Anger",
+    "pace": "Fast",
+    "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": [
+      "GTPL Broadband"
+    ],
+    "product": [
+      "Router"
+    ],
+    "pii_requested": [
+      "Admin username and password"
+    ]
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 10.2,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction, no policy violation yet."
+    },
+    {
+      "timestamp": 25.1,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Still within bounds of a legitimate call."
+    },
+    {
+      "timestamp": 43.2,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Request for admin credentials violates policy."
+    },
+    {
+      "timestamp": 59.4,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Continued request for sensitive information."
+    },
+    {
+      "timestamp": 76.3,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Attempt to create a sense of urgency to comply."
+    }
+  ],
+  "final_slow_thinking_rationale": "The agent's request for the router's admin username and password directly violates the policy of not sharing sensitive credentials, especially in an unsolicited call scenario.",
+  "final_verdict": "YES",
+  "violated_policies": [
+    "Rule A: An ISP will not call proactively about a hacked router and ask for its admin password.",
+    "Rule B: Admin credentials for network hardware are highly sensitive and should not be shared."
+  ],
+  "scam_outcome": "Failed",
+  "generation_metadata": {
+    "target_duration": 269,
+    "actual_duration": 84.2,
+    "multiplier_round": 1,
+    "combination_key": "9_8_4",
+    "generated_at": "2025-10-13T01:07:51.324756",
+    "retry_attempt": 1
+  },
+  "session_id": 885,
+  "agent_persona": "The Minimalist: Terse and direct. Provides only the necessary information for a simple, legitimate task.",
+  "customer_persona": "The No-Nonsense Confrontational: Has a very low tolerance for unsolicited calls and will likely interrupt and hang up quickly.",
+  "scenario": {
+    "scenario_id": 9,
+    "description": "An agent calls claiming to be from the user's Wi-Fi provider ([INTERNET_PROVIDER]). They state the user's router has been \"hacked\" and is spreading viruses on the network. They direct the user to a website to enter their router's admin username and password to allow the agent to \"reconfigure it remotely.\" The website is a phishing portal.",
+    "case_type": "Clear Fraud",
+    "policy": "Rule A: An ISP will not call proactively about a hacked router and ask for its admin password.\nRule B: Admin credentials for network hardware are highly sensitive and should not be shared.",
+    "platform_type": "tech_support",
+    "context": "Fake router hack with admin credential phishing",
+    "fraud_technique": "Phishing for network device credentials"
+  }
+}

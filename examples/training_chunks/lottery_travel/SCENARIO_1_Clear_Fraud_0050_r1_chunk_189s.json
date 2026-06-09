@@ -1,0 +1,202 @@
+{
+  "session_id": 50,
+  "chunk_timestamp": 189,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, this is calling from Canara Bank. Am I speaking with Samaresh Dasgupta?",
+      "timestamp_end": 3.5
+    },
+    {
+      "speaker": "Customer",
+      "text": "Yes, this is Samaresh Dasgupta. How can I help you?",
+      "timestamp_end": 6.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, we have detected unusual activity on your net banking account and it has been locked for security reasons.",
+      "timestamp_end": 11.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Unusual activity? What kind of activity are you referring to, ji?",
+      "timestamp_end": 15.7
+    },
+    {
+      "speaker": "Agent",
+      "text": "Multiple failed login attempts from an unrecognized device, sir. To unlock it immediately, I need to verify your username and password.",
+      "timestamp_end": 21.7
+    },
+    {
+      "speaker": "Customer",
+      "text": "Hold on, you said you need my password? Isn't that against the bank's policy? Can you explain?",
+      "timestamp_end": 28.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "I understand your concern, but this is a standard verification step to protect your account, ma'am.",
+      "timestamp_end": 33.7
+    },
+    {
+      "speaker": "Customer",
+      "text": "Standard verification? Usually we use DOB and last four digits of the registered mobile number, right?",
+      "timestamp_end": 39.7
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, sir, but for an urgent unlock we also require the login credentials.",
+      "timestamp_end": 44.7
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, let me check my records. My username is 's.dasgupta123'. Is that correct?",
+      "timestamp_end": 50.7
+    },
+    {
+      "speaker": "Agent",
+      "text": "Perfect, now please tell me your password so we can proceed.",
+      "timestamp_end": 55.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sure, my password is '********', but before I give it, can you tell me which branch I'm talking to?",
+      "timestamp_end": 62.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "We are operating from the main branch in Bangalore, sir.",
+      "timestamp_end": 66.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Bangalore? I thought my account is linked to the Kolkata branch. Why Bangalore?",
+      "timestamp_end": 71.7
+    },
+    {
+      "speaker": "Agent",
+      "text": "Because the security team is centralized, sir.",
+      "timestamp_end": 75.7
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, can you give me a reference number for this call?",
+      "timestamp_end": 80.7
+    },
+    {
+      "speaker": "Agent",
+      "text": "Your reference number is 987654321. Please provide the password now.",
+      "timestamp_end": 86.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Before I do, could you tell me the official website link for password reset?",
+      "timestamp_end": 92.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sure, you can go to canarabank.com/unlock, but the quickest way is through this call.",
+      "timestamp_end": 98.7
+    },
+    {
+      "speaker": "Customer",
+      "text": "Hmm, that URL looks odd. Usually the bank's site is canarabank.co.in. Are you sure?",
+      "timestamp_end": 104.7
+    },
+    {
+      "speaker": "Agent",
+      "text": "Yes, sir, it's the correct link for urgent unlocks.",
+      "timestamp_end": 109.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, I'll give the password then: mypassword123.",
+      "timestamp_end": 114.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you, sir. Your account is now unlocked.",
+      "timestamp_end": 118.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Wait, I need to verify. Can you send me a SMS with the unlock confirmation?",
+      "timestamp_end": 123.7
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sure, the SMS will be sent shortly.",
+      "timestamp_end": 127.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Actually, I'm going to hang up now. Thank you.",
+      "timestamp_end": 131.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, before you hang up, we need to complete the verification to ensure your account is safe.",
+      "timestamp_end": 137.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I already gave you the password. Why do you need more?",
+      "timestamp_end": 142.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "We also need the last four digits of your registered mobile number for final confirmation.",
+      "timestamp_end": 148.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Sure, it's 6789. But why wasn't that asked earlier?",
+      "timestamp_end": 153.7
+    },
+    {
+      "speaker": "Agent",
+      "text": "Just a standard double-check, sir.",
+      "timestamp_end": 157.7
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, and can you tell me the name of the manager handling my account?",
+      "timestamp_end": 163.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "The manager is Mr. Rajesh Kumar.",
+      "timestamp_end": 167.7
+    },
+    {
+      "speaker": "Customer",
+      "text": "Is he available for a call? I would like to speak to him directly.",
+      "timestamp_end": 173.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "He is currently in a meeting, but I can take the details.",
+      "timestamp_end": 178.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, please note my request. Also, could you email me the transaction history for the last month?",
+      "timestamp_end": 185.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "urgent",
+    "secondary_emotion": "confident",
+    "pace": "fast",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 189s: Policy violation detected. Agent has made requests that breach security protocols. Conversation flagged as fraudulent.",
+  "final_verdict": "YES",
+  "scenario_info": {
+    "scenario_id": 1,
+    "case_type": "Clear Fraud",
+    "description": "Direct Phishing for Net Banking Password: Agent claims to be calling from HDFC Bank/SBI/ICICI Bank/Axis Bank and says the user's account is locked. They ask for username and password to \"unlock it immediately.\""
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

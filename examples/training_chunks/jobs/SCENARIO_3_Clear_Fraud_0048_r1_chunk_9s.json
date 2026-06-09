@@ -1,0 +1,27 @@
+{
+  "session_id": 48,
+  "chunk_timestamp": 9,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, Mr. Joshi, sir. I hope you're doing well. My name is Rohan, and I'm calling from the tax department. We've been trying to reach you regarding your tax refund, ji.",
+      "timestamp_end": 5.2
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Concern",
+    "secondary_emotion": "Urgency",
+    "pace": "Fast",
+    "confidence_score": 0.89
+  },
+  "slow_thinking_rationale": "At 9s: No policy violations detected yet. Conversation appears normal, continuing to monitor for suspicious activity.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 3,
+    "case_type": "Clear_Fraud",
+    "description": "Tax refund phishing scam. Scammer sends email or calls claiming victim is entitled to additional tax refund but needs to \"verify\" bank account information or Social Security number to process the refund electronically."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

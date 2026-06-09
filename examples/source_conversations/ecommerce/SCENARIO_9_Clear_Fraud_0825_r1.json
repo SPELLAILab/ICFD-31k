@@ -1,0 +1,149 @@
+{
+  "transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, sir. My name is Ramesh and I am calling from Utkarsh Small Finance Bank. How are you today, ji?",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "I'm busy. What's this about? Achha, just tell me.",
+      "timestamp_end": 17.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "I am calling regarding a transaction on your account, sir. We have a report of a company cheque being deposited into your account.",
+      "timestamp_end": 28.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes. I sold a food processor on Classifieds India. The buyer paid with a company cheque.",
+      "timestamp_end": 36.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "I see, sir. And did you notice anything unusual about the cheque?",
+      "timestamp_end": 44.9
+    },
+    {
+      "speaker": "Customer",
+      "text": "Unusual? Like what? The buyer sent a picture of the cheque. It's for 50,000 rupees, but the food processor only costs 10,000.",
+      "timestamp_end": 55.1
+    },
+    {
+      "speaker": "Agent",
+      "text": "I understand, sir. And what did the buyer ask you to do with the difference?",
+      "timestamp_end": 62.4
+    },
+    {
+      "speaker": "Customer",
+      "text": "They said it was an accounting error and asked me to deposit the cheque and transfer the difference back via PayZapp before the cheque clears.",
+      "timestamp_end": 72.6
+    },
+    {
+      "speaker": "Agent",
+      "text": "I see. Sir, I need to inform you that this is a classic scam methodology. Rule A and Rule B of our policy are being violated here.",
+      "timestamp_end": 84.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "What are you talking about? I just want to sell my food processor.",
+      "timestamp_end": 90.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, I understand, but we cannot allow you to transfer money back to the buyer based on an uncleared cheque. It's not safe, ji.",
+      "timestamp_end": 100.8
+    },
+    {
+      "speaker": "Customer",
+      "text": "Fine, I'll handle it myself. Thik hai, thank you for your concern.",
+      "timestamp_end": 107.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, please be careful. If you have any further questions, don't hesitate to call us back, sir.",
+      "timestamp_end": 114.0
+    }
+  ],
+  "multimodal_analysis": {
+    "dominant_emotion": "concern",
+    "secondary_emotion": "caution",
+    "pace": "measured",
+    "confidence_score": 0.8
+  },
+  "key_entities": {
+    "organization": [
+      "Utkarsh Small Finance Bank",
+      "Classifieds India"
+    ],
+    "product": [
+      "food processor"
+    ],
+    "pii_requested": []
+  },
+  "chunk_level_analysis": [
+    {
+      "timestamp": 15.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Introduction and context setting"
+    },
+    {
+      "timestamp": 30.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Transaction discussion starts"
+    },
+    {
+      "timestamp": 45.0,
+      "verdict_at_chunk": "NO",
+      "rationale_at_chunk": "Cheque details shared"
+    },
+    {
+      "timestamp": 60.0,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Overpayment and request to refund difference detected"
+    },
+    {
+      "timestamp": 75.0,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Policy violation confirmed"
+    },
+    {
+      "timestamp": 90.0,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Customer unaware of scam"
+    },
+    {
+      "timestamp": 105.0,
+      "verdict_at_chunk": "YES",
+      "rationale_at_chunk": "Agent advises caution"
+    }
+  ],
+  "final_slow_thinking_rationale": "The customer is being scammed with an overpayment and request to refund the difference via PayZapp before the cheque clears, which is a clear violation of Rule A and Rule B of our policy.",
+  "final_verdict": "YES",
+  "violated_policies": [
+    "Rule A: Never transfer money back to a buyer based on an uncleared cheque or unverified payment.",
+    "Rule B: Overpayment with a request to refund the difference is a classic scam methodology."
+  ],
+  "scam_outcome": "Successful",
+  "generation_metadata": {
+    "target_duration": 114,
+    "actual_duration": 114.0,
+    "multiplier_round": 1,
+    "combination_key": "9_2_4",
+    "generated_at": "2025-10-12T20:00:05.052259",
+    "retry_attempt": 1
+  },
+  "session_id": 825,
+  "agent_persona": "The By-the-Book Professional: Follows a script precisely without deviation. Clear, measured, and often monotonous tone.",
+  "customer_persona": "The No-Nonsense Confrontational: Has a very low tolerance for unsolicited calls and will likely interrupt and hang up quickly.",
+  "scenario": {
+    "scenario_id": 9,
+    "description": "A buyer on [MARKETPLACE_PLATFORM] offers to pay for a [HOME_APPLIANCE] with a company cheque. They send a picture of the cheque, which is for a much larger amount. They ask the seller to deposit the cheque and transfer the difference back via [UPI_APP] before the cheque clears, claiming an accounting error. The cheque is fake.",
+    "case_type": "Clear Fraud",
+    "policy": "Rule A: Never transfer money back to a buyer based on an uncleared cheque or unverified payment.\nRule B: Overpayment with a request to refund the difference is a classic scam methodology.",
+    "platform_type": "marketplace",
+    "context": "C2C marketplace transaction with fake cheque",
+    "fraud_technique": "Fake cheque overpayment scam"
+  }
+}

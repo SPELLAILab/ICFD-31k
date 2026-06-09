@@ -1,0 +1,26 @@
+Conv_ID,Fluency,Coherence,Realism,Emotion,Fraud_Label,Confidence,Key_Indicators
+CONV_004,3,3,3,1,DF,5,high pressure tactics
+CONV_005,5,5,5,5,DL,4,transparent purpose
+CONV_006,5,5,5,5,DL,4,clear reasons
+CONV_012,5,5,5,5,DL,4,appropriate request
+CONV_014,3,5,5,5,DL,4,details not clear but no pass asked
+CONV_015,5,5,3,3,DF,5,too good to be true
+CONV_017,5,5,3,3,DF,5,urgency
+CONV_018,5,5,5,5,DL,5,helpful
+CONV_029,5,5,5,3,DL,5,clear never asks
+CONV_032,5,5,5,3,DL,5,professional conduct
+CONV_034,5,5,5,3,DL,4,documented process
+CONV_036,3,1,5,1,PF,4,urgency
+CONV_037,5,1,5,1,DF,5,asked CV/personal details
+CONV_039,5,1,5,1,DF,5,asked for payment
+CONV_055,5,5,5,5,DL,5,transparent purpose
+CONV_070,5,1,5,1,DF,5,urgency clear
+CONV_076,3,5,5,5,DL,5,clear reason for contact
+CONV_077,5,5,5,5,DL,5,helpful
+CONV_082,5,1,5,1,DF,5,threats/fear
+CONV_083,5,5,5,5,PL,4,appropriate request
+CONV_085,5,5,5,5,DL,5,helpful saved time
+CONV_087,5,1,5,1,PF,3,asked for money
+CONV_092,5,1,5,3,PF,4,unnecessary convo
+CONV_095,3,1,5,3,PF,4,emotional pressure
+CONV_100,5,1,5,1,DF,4,not legitimate

@@ -1,0 +1,109 @@
+[SCENARIO 1]
+description: Fake disaster relief charity scam following major natural disaster (earthquake, hurricane, wildfire). Scammer creates website mimicking real charity, uses emotional images, and requests donations via wire transfer or gift cards with no tax receipts.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate charities are registered with IRS and state charity regulators
+Rule B: Real disaster relief organizations provide tax-deductible receipts and EIN numbers
+Rule C: Authentic charities accept credit cards and checks, rarely request gift cards or crypto
+Rule D: Legitimate organizations have verifiable track records and annual financial reports
+fraud_indicators: ["unregistered charity", "no EIN number", "gift card donations", "no tax receipts", "newly created website"]
+legitimate_indicators: ["IRS registration", "tax receipts", "verified charity status", "published financials", "charity navigator rating"]
+
+[SCENARIO 2]
+description: Cancer patient fundraising scam. Scammer creates fake GoFundMe or similar campaign with stolen photos of cancer patients, emotional backstory about expensive treatment not covered by insurance, and urgent pleas for help with medical bills.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate medical fundraisers can be verified through hospital social workers
+Rule B: Real campaigns have multiple social media connections and verifiable identity
+Rule C: Authentic medical fundraisers maintain transparency about fund usage
+Rule D: Legitimate campaigns have consistent story details across platforms
+fraud_indicators: ["stolen photos", "unverifiable patient", "no hospital confirmation", "inconsistent details", "pressure tactics"]
+legitimate_indicators: ["verifiable patient", "hospital confirmation", "transparent fund usage", "social connections", "consistent story"]
+
+[SCENARIO 3]
+description: Veterans charity scam soliciting donations for homeless veterans, PTSD treatment, or service dog programs. Scammer uses patriotic messaging and emotional appeals but charity is unregistered and funds go to personal accounts.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate veterans charities are registered 501(c)(3) organizations
+Rule B: Real veterans organizations have partnerships with VA and military bases
+Rule C: Authentic charities show specific program outcomes and beneficiaries
+Rule D: Legitimate organizations don't use high-pressure tactics or guilt
+fraud_indicators: ["unregistered organization", "no VA partnership", "vague programs", "high-pressure tactics", "no beneficiary verification"]
+legitimate_indicators: ["501(c)(3) status", "VA relationships", "transparent programs", "verified outcomes", "professional conduct"]
+
+[SCENARIO 4]
+description: Religious donation scam where scammer poses as religious leader or organization requesting emergency funds for church repairs, missionary work, or helping congregation members. Uses faith-based guilt and urgency to pressure donations.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate religious organizations have established congregations and verifiable locations
+Rule B: Real churches don't make unsolicited calls requesting immediate donations
+Rule C: Authentic religious fundraising goes through official church channels
+Rule D: Legitimate organizations provide receipts and financial transparency
+fraud_indicators: ["unsolicited call", "immediate payment demand", "unverifiable church", "pressure tactics", "no receipts"]
+legitimate_indicators: ["established congregation", "official channels", "transparent finances", "no pressure", "proper receipts"]
+
+[SCENARIO 5]
+description: Orphanage/child sponsorship scam in developing countries. Scammer shows photos of children needing food, education, or medical care, requests monthly sponsorship payments, but no orphanage exists and photos are stolen from internet.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate child sponsorship programs are run by established NGOs
+Rule B: Real programs provide regular updates, photos, and letters from sponsored children
+Rule C: Authentic organizations have in-country operations that can be verified
+Rule D: Legitimate sponsorships offer multiple ways to verify child's existence and well-being
+fraud_indicators: ["fake orphanage", "stolen photos", "no updates", "unverifiable location", "no NGO registration"]
+legitimate_indicators: ["established NGO", "regular updates", "verified facility", "multiple communication channels", "transparent operations"]
+
+[SCENARIO 6]
+description: Police/firefighter benevolent fund scam. Scammer calls claiming to represent local police or firefighter charity seeking donations, uses official-sounding names and pressure tactics implying support for first responders is civic duty.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate first responder charities don't use aggressive telemarketing
+Rule B: Real police/fire associations can be verified through department websites
+Rule C: Authentic charities allow time for research and don't demand immediate payment
+Rule D: Legitimate organizations clearly state how funds are used and overhead costs
+fraud_indicators: ["aggressive tactics", "unverifiable charity", "immediate payment demand", "vague fund usage", "implied obligation"]
+legitimate_indicators: ["verifiable charity", "no pressure", "transparent fund usage", "department endorsement", "clear information"]
+
+[SCENARIO 7]
+description: COVID-19 relief scam offering to help with vaccine distribution, testing, or treatment for charitable donations. Scammer exploits pandemic fears and uses government/health organization names without authorization.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate health programs are run by government agencies or verified healthcare organizations
+Rule B: Real pandemic relief doesn't require donations for personal access to services
+Rule C: Authentic programs don't solicit donations via phone or email
+Rule D: Legitimate health services have official government or hospital affiliations
+fraud_indicators: ["fake health program", "payment for services", "unauthorized use of names", "personal benefit claim", "urgency pressure"]
+legitimate_indicators: ["official government program", "free public services", "verified organization", "no solicitation", "proper authorization"]
+
+[SCENARIO 8]
+description: Animal rescue charity scam with emotional appeals about abused or abandoned animals needing immediate medical care. Shows heartbreaking photos of animals but charity doesn't exist and no animals are actually being helped.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate animal rescues are registered nonprofits with physical locations
+Rule B: Real rescues have veterinary partnerships and adoption programs
+Rule C: Authentic organizations maintain social media with regular updates on animals
+Rule D: Legitimate rescues allow facility visits and volunteer opportunities
+fraud_indicators: ["no physical location", "no vet partnerships", "minimal social media", "can't visit", "stolen photos"]
+legitimate_indicators: ["physical facility", "vet relationships", "active social media", "volunteer program", "adoption process"]
+
+[SCENARIO 9]
+description: Education scholarship scam for underprivileged children. Scammer claims to provide school supplies, tuition, or technology to disadvantaged students and requests donations, but programs don't exist and money goes to personal use.
+case_type: Subtle_Fraud
+policy:
+Rule A: Legitimate scholarship programs are run by established educational foundations
+Rule B: Real programs have school partnerships and verifiable beneficiaries
+Rule C: Authentic organizations provide annual reports showing students helped
+Rule D: Legitimate foundations have board members and transparent governance
+fraud_indicators: ["no school partnerships", "unverifiable students", "no annual reports", "vague outcomes", "minimal documentation"]
+legitimate_indicators: ["school partnerships", "verified beneficiaries", "transparent reporting", "established foundation", "clear governance"]
+
+[SCENARIO 10]
+description: Environmental conservation scam claiming to plant trees, save rainforests, or protect endangered species. Uses emotional appeals about climate change and wildlife, but no actual conservation work is performed and funds are pocketed.
+case_type: Clear_Fraud
+policy:
+Rule A: Legitimate conservation organizations have documented projects with GPS coordinates
+Rule B: Real environmental groups publish scientific reports and measurable outcomes
+Rule C: Authentic organizations have partnerships with governments or universities
+Rule D: Legitimate conservation work can be verified through satellite imagery or field visits
+fraud_indicators: ["no documented projects", "unverifiable claims", "no scientific reports", "no partnerships", "no proof of work"]
+legitimate_indicators: ["documented projects", "scientific validation", "government partnerships", "measurable outcomes", "transparent operations"]

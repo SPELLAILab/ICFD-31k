@@ -1,0 +1,62 @@
+{
+  "session_id": 1594,
+  "chunk_timestamp": 105,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Hello, is this Mr. Suresh Menon? Sir, ji, I'm calling from Passport Seva Kendra's support line.",
+      "timestamp_end": 10.2
+    },
+    {
+      "speaker": "Customer",
+      "text": "Haan, yes, this is Suresh. I had lodged a query on your website regarding my passport application status.",
+      "timestamp_end": 20.5
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, Mr. Menon, I've checked on your query, and it seems there was a minor issue with your application form. Can you please confirm your ticket number so I can assist you further?",
+      "timestamp_end": 34.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, my ticket number is... let me check... yes, it's PSKT202304001234.",
+      "timestamp_end": 46.8
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you, Mr. Menon. I've located your query. The issue was with the attachment of your ID proof. Can you please re-upload your ID proof, and we'll process your application?",
+      "timestamp_end": 60.3
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, sir. I'll do that right away. But can you also tell me how long it will take to process my application after I upload the required documents?",
+      "timestamp_end": 74.2
+    },
+    {
+      "speaker": "Agent",
+      "text": "Once we receive the correct documents, it usually takes about 3 to 4 working days to process the application. But I'll make a note to expedite your application, Mr. Menon.",
+      "timestamp_end": 90.1
+    },
+    {
+      "speaker": "Customer",
+      "text": "That's great, thank you so much for your help, sir. You've really clarified things for me.",
+      "timestamp_end": 100.5
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Helpful",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 105s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "An agent from the Passport Seva Kendra's support line calls a user back in response to a query the user had lodged on the official website. The agent provides the resolution or required information."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

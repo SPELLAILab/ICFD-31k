@@ -1,0 +1,122 @@
+{
+  "session_id": 1573,
+  "chunk_timestamp": 207,
+  "cumulative_transcript": [
+    {
+      "speaker": "Agent",
+      "text": "Namaste, sir. Welcome to Standard Chartered Bank. My name is Rohan, and I'll be happy to assist you today. How can I help you, sir?",
+      "timestamp_end": 10.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Hi Rohan, ji. My debit card is lost. I need to block it and get a new one issued.",
+      "timestamp_end": 20.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Achha, sir. Sorry to hear that. Can you please confirm your date of birth and registered mobile number for verification purposes?",
+      "timestamp_end": 30.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai. My date of birth is 12th February 1990, and my mobile number is 9812345678.",
+      "timestamp_end": 40.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Thank you, sir. I've verified your details. Now, I'll go ahead and block your card. You will receive a confirmation SMS on your registered mobile number.",
+      "timestamp_end": 50.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, that sounds good. What's the process for getting a new card?",
+      "timestamp_end": 60.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, a new card will be issued and dispatched to your registered address within 7-10 working days. You will also receive an SMS with the dispatch details.",
+      "timestamp_end": 70.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Alright, got it. Thank you, Rohan.",
+      "timestamp_end": 80.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. Is there anything else I can assist you with today?",
+      "timestamp_end": 90.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "No, that's all. Thanks again.",
+      "timestamp_end": 100.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. Have a great day, and feel free to reach out if you need any further assistance.",
+      "timestamp_end": 110.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, Rohan. You too, bye.",
+      "timestamp_end": 120.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Bye, sir.",
+      "timestamp_end": 130.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, just to confirm, you will receive an email with the details of the new card issuance process.",
+      "timestamp_end": 140.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Okay, thanks for letting me know.",
+      "timestamp_end": 150.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "You're welcome, sir. We're committed to providing you with the best possible service.",
+      "timestamp_end": 160.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Achha, thanks.",
+      "timestamp_end": 170.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Sir, if you have any questions or concerns, please don't hesitate to reach out to us.",
+      "timestamp_end": 180.0
+    },
+    {
+      "speaker": "Customer",
+      "text": "Thik hai, will do.",
+      "timestamp_end": 190.0
+    },
+    {
+      "speaker": "Agent",
+      "text": "Great, sir. We appreciate your business and look forward to serving you better in the future.",
+      "timestamp_end": 200.0
+    }
+  ],
+  "cumulative_audio_analysis": {
+    "dominant_emotion": "Neutral",
+    "secondary_emotion": "Helpful",
+    "pace": "Normal",
+    "confidence_score": 1.0
+  },
+  "slow_thinking_rationale": "At 207s: Conversation remains within policy guidelines. All requests are legitimate and follow proper procedures.",
+  "final_verdict": "NO",
+  "scenario_info": {
+    "scenario_id": 16,
+    "case_type": "Clear Normal",
+    "description": "Reporting a Lost Card: A legitimate agent guides the user through the process of blocking their lost debit card and issuing a new one, following all correct verification steps."
+  },
+  "combination_key": "",
+  "multiplier_round": 1,
+  "generated_at": null
+}

@@ -1,0 +1,302 @@
+[SCENARIO 1]
+description: An agent claiming to be from the state electricity board (like [STATE_ELECTRICITY_BOARD]) calls, stating that the customer's power will be disconnected at 9 PM tonight due to a pending bill from last month. They create extreme urgency and instruct the user to immediately pay a fine to a personal [UPI_APP] number to prevent the disconnection.
+case_type: Clear Fraud
+platform_type: utility_provider
+context: Fake electricity bill payment with disconnection threat
+fraud_technique: Urgency creation with payment to personal UPI
+policy:
+Rule A: Utility companies never ask for payments to be made to personal UPI numbers or bank accounts.
+Rule B: Official disconnection notices are sent via post or official SMS, providing at least 15 days of notice, not a few hours.
+
+[SCENARIO 2]
+description: A user receives a call from someone claiming to be from their mobile carrier ([MOBILE_CARRIER]). The agent states the user's SIM card will be blocked in two hours due to an incomplete KYC verification. To fix this, the agent asks the user to install a "KYC Verification App," which is actually a remote access tool like AnyDesk.
+case_type: Clear Fraud
+platform_type: telecom_provide
+context: SIM card blocking threat with remote access request
+fraud_technique: Remote access software installation for KYC
+policy:
+Rule A: Mobile carriers never ask customers to install third-party apps for KYC verification.
+Rule B: KYC updates are done at official stores or through the official carrier app, initiated by the customer.
+
+[SCENARIO 3]
+description: An agent impersonating an official from a gas agency ([GAS_AGENCY]) calls, claiming the customer's LPG subsidy has been blocked. To reactivate it, the agent asks the customer to share the OTP they will receive, claiming it's for "linking their Aadhaar" to the subsidy account.
+case_type: Clear Fraud
+platform_type: utility_provider
+context: Fake LPG subsidy reactivation with OTP theft
+fraud_technique: OTP theft for Aadhaar linking
+policy:
+Rule A: OTPs should never be shared with anyone over the phone, including for subsidy or KYC updates.
+Rule B: Government subsidies are managed through official portals, not via phone calls asking for OTPs.
+
+[SCENARIO 4]
+description: A user receives a call about their broadband connection ([INTERNET_PROVIDER]). The agent claims a major network outage is scheduled and to avoid service disruption, the user must pay an "advance security deposit" for a new router. The payment is demanded on a personal [UPI_APP] ID.
+case_type: Clear Fraud
+platform_type: telecom_provider
+context: Fake broadband outage with security deposit scam
+fraud_technique: Advance fee for fake equipment upgrade
+policy:
+Rule A: Service providers bill for equipment through official monthly statements, not via on-the-spot UPI payments to individuals.
+Rule B: Network maintenance does not require customers to pay a security deposit.
+
+[SCENARIO 5]
+description: A fake agent from [MOBILE_CARRIER] calls, offering a "free" upgrade to a 5G plan. To activate it, they claim the user must validate their existing 4G SIM by sharing the 20-digit number printed on the back of the SIM card, which can be used for a SIM swap attack.
+case_type: Clear Fraud
+platform_type: telecom_provider
+context: Fake 5G upgrade with SIM swap attempt
+fraud_technique: Phishing for SIM card number
+policy:
+Rule A: The full SIM card number should never be shared with anyone over the phone.
+Rule B: Plan upgrades are processed through the official company app or website, not by reading out card numbers.
+
+[SCENARIO 6]
+description: An "officer" from the water supply department calls, claiming the user's water meter is faulty and has recorded lower usage, resulting in a large pending fine. They threaten to disconnect the water supply and initiate legal action unless a "settlement fee" is paid immediately.
+case_type: Clear Fraud
+platform_type: utility_provider
+context: Fake faulty water meter with legal threats
+fraud_technique: Extortion with threat of legal action and service disconnection
+policy:
+Rule A: Fines for faulty equipment are communicated through official written notices and added to the bill.
+Rule B: Agents cannot threaten immediate legal action over the phone for a billing dispute.
+
+[SCENARIO 7]
+description: A caller from a fake "PM Solar Panel Scheme" claims the user has been selected for a government subsidy. To process the application, they ask the user to pay a "registration fee" and then share their bank account details and password on a phishing website sent via SMS.
+case_type: Clear Fraud
+platform_type: government_scheme
+context: Fake government subsidy with phishing link
+fraud_technique: Phishing for bank credentials
+policy:
+Rule A: Government schemes never ask for registration fees to be paid to personal accounts.
+Rule B: Bank passwords must never be entered on websites received via unverified links.
+
+[SCENARIO 8]
+description: An agent from [DTH_PROVIDER] calls, stating the user's account will be deactivated due to a "server issue." To fix it, they ask the user to open their [UPI_APP], where the agent will send a payment request. They falsely claim approving the request will "re-sync" the account.
+case_type: Clear Fraud
+platform_type: telecom_provider
+context: Fake DTH deactivation with UPI request scam
+fraud_technique: UPI request money scam disguised as a technical fix
+policy:
+Rule A: Technical issues are never resolved by asking customers to approve UPI payment requests.
+Rule B: Approving a UPI request always sends money from the user's account.
+
+[SCENARIO 9]
+description: A scammer impersonating a [MOBILE_CARRIER] employee calls about a "SIM card delivery" the user did not request. They ask the user to cancel it by forwarding an SMS they receive to a specific number. This SMS contains the request to initiate a port-out or SIM swap.
+case_type: Clear Fraud
+platform_type: telecom_provider
+context: Unauthorized SIM swap via SMS forwarding
+fraud_technique: Tricking user into authorizing SIM port-out
+policy:
+Rule A: Never forward official-looking SMS messages from your carrier to another number as instructed by a caller.
+Rule B: SIM porting or swapping must be initiated by the customer directly.
+
+[SCENARIO 10]
+description: A fake agent from [GAS_AGENCY] claims there is a gas leak detected from the user's cylinder. They create panic and say an emergency team is on the way, but an "emergency safety charge" must be paid upfront via [UPI_APP] before they can be dispatched.
+case_type: Clear Fraud
+platform_type: utility_provider
+context: Fake gas leak emergency with advance fee
+fraud_technique: Panic creation with advance fee for emergency service
+policy:
+Rule A: Emergency services for utilities like gas leaks do not require an upfront payment over the phone.
+Rule B: In a real emergency, the user should be advised to turn off the supply and await the official team.
+Part 2: Clear Normal (10 Scenarios)
+
+[SCENARIO 11]
+description: A legitimate agent from [STATE_ELECTRICITY_BOARD] calls to inform a customer about a planned power outage in their area for maintenance work the next day. They provide the exact timings and apologize for the inconvenience.
+case_type: Clear Normal
+platform_type: utility_provider
+context: Legitimate planned maintenance notification
+fraud_technique: none
+policy:
+Rule A: It is standard practice for utility companies to proactively inform customers about scheduled maintenance.
+Rule B: The agent must not ask for any personal information or payments during a notification call.
+
+[SCENARIO 12]
+description: A customer support agent from [MOBILE_CARRIER] calls a user in response to a complaint they filed about poor network coverage. The agent acknowledges the complaint, provides a ticket number, and informs them that a technical team will investigate the issue within 48 hours.
+case_type: Clear Normal
+platform_type: telecom_provider
+context: Legitimate follow-up on a customer complaint
+fraud_technique: none
+policy:
+Rule A: Agents may call customers to provide updates on service requests they have initiated.
+Rule B: The agent can verify the customer by referencing the complaint details, without asking for sensitive PII.
+
+[SCENARIO 13]
+description: An agent from [GAS_AGENCY] calls a customer to remind them that their regular cylinder booking is due and asks if they would like to place an order.
+case_type: Clear Normal
+platform_type: utility_provider
+context: Legitimate service reminder call
+fraud_technique: none
+policy:
+Rule A: Proactive service reminders (like cylinder booking) are a standard customer service practice.
+Rule B: The agent should direct the customer to book through official channels (app, IVR, website) and not take payment details over the call.
+
+[SCENARIO 14]
+description: A representative from [INTERNET_PROVIDER] calls an existing customer to market a higher-speed broadband plan. They explain the benefits and pricing and, if the customer is interested, guide them to the official app to process the upgrade.
+case_type: Clear Normal
+platform_type: telecom_provider
+context: Legitimate marketing and upsell call
+fraud_technique: none
+policy:
+Rule A: It is permissible for companies to make marketing calls to existing customers for plan upgrades.
+Rule B: The agent must direct the customer to official and secure channels to make any changes or payments.
+
+[SCENARIO 15]
+description: An agent from [MOBILE_CARRIER] calls to inform a postpaid customer that their monthly bill has been generated and is available on the app. They mention the due date and total amount.
+case_type: Clear Normal
+platform_type: telecom_provider
+context: Legitimate bill generation notification
+fraud_technique: none
+policy:
+Rule A: Agents may make automated or manual calls to notify customers about bill generation.
+Rule B: The agent must not ask for payment over the call but direct them to official payment channels.
+
+[SCENARIO 16]
+description: A technician from [INTERNET_PROVIDER] calls a customer to confirm a scheduled appointment for a new installation. They confirm the address and the agreed-upon time slot.
+case_type: Clear Normal
+platform_type: telecom_provider
+context: Legitimate appointment confirmation
+fraud_technique: none
+policy:
+Rule A: Technicians or agents may call to confirm the details of a customer-scheduled appointment.
+Rule B: The call should be limited to confirming logistical details like time and address.
+
+[SCENARIO 17]
+description: A survey agent calls on behalf of [DTH_PROVIDER] to ask about the customer's satisfaction with their channel packages and service quality.
+case_type: Clear Normal
+platform_type: telecom_provider
+context: Legitimate customer satisfaction survey
+fraud_technique: none
+policy:
+Rule A: Third-party or internal agents may conduct surveys on behalf of a service provider.
+Rule B: No personal or account security information should be requested during a survey call.
+
+[SCENARIO 18]
+description: An agent from the [STATE_ELECTRICITY_BOARD] calls a customer who recently moved to a new house to guide them on the process of getting their name changed on the electricity bill, instructing them to visit the nearest office with the required documents.
+case_type: Clear Normal
+platform_type: utility_provider
+context: Legitimate procedural guidance
+fraud_technique: none
+policy:
+Rule A: Agents can provide guidance on official procedures.
+Rule B: For sensitive actions like name changes, the agent must direct the customer to an official, in-person channel.
+
+[SCENARIO 19]
+description: A customer receives a call from their [MOBILE_CARRIER] about their international roaming pack expiring soon. The agent asks if they want to deactivate it to avoid charges.
+case_type: Clear Normal
+platform_type: telecom_provider
+context: Legitimate service deactivation offer
+fraud_technique: none
+policy:
+Rule A: Proactive calls to help customers avoid unnecessary charges are a legitimate service.
+Rule B: The agent should process the deactivation internally after customer consent, without needing sensitive info.
+
+[SCENARIO 20]
+description: An agent from [GAS_AGENCY] calls to inform the customer that the delivery person is on their way with their booked cylinder and will arrive in approximately one hour.
+case_type: Clear Normal
+platform_type: utility_provider
+context: Legitimate delivery status update
+fraud_technique: none
+policy:
+Rule A: Providing status updates for a scheduled delivery is a standard service.
+Rule B: The call should be purely informational.
+Part 3: Ambiguous but Ultimately Normal (5 Scenarios)
+
+[SCENARIO 21]
+description: An agent from [MOBILE_CARRIER]'s collections department calls with a firm and demanding tone about a genuinely overdue postpaid bill. The agent insists on immediate payment but only directs the customer to pay via the official app, website, or store.
+case_type: Ambiguous but Ultimately Normal
+platform_type: telecom_provider
+context: Aggressive but legitimate collections call
+fraud_technique: none
+policy:
+Rule A: Collections agents may adopt a firm tone for genuinely overdue accounts.
+Rule B: Agents must only direct customers to make payments through official channels.
+
+[SCENARIO 22]
+description: A technician from [INTERNET_PROVIDER] calls a customer about a reported network issue. The technician sounds very technical and asks the customer to perform a series of complex steps like checking router lights and restarting the device. Their technical jargon might sound suspicious, but the steps are legitimate troubleshooting procedures.
+case_type: Ambiguous but Ultimately Normal
+platform_type: telecom_provider
+context: Legitimate but confusing technical support
+fraud_technique: none
+policy:
+Rule A: Technicians may guide customers through complex but standard troubleshooting steps over the phone.
+Rule B: The agent must not ask for account passwords or ask to install remote access software.
+
+[SCENARIO 23]
+description: An agent from [STATE_ELECTRICITY_BOARD] calls a customer about a new "smart meter" installation. They use a slightly urgent tone, stating that the installation is mandatory and the team is in their area "today only." This sales-like pressure seems suspicious, but they correctly explain that there is no charge and the appointment can be booked via the official website.
+case_type: Ambiguous but Ultimately Normal
+platform_type: utility_provider
+context: High-pressure but legitimate service upgrade
+fraud_technique: none
+policy:
+Rule A: Agents may use marketing-like urgency to encourage adoption of new services.
+Rule B: The process is compliant as long as the booking and verification are handled through official channels.
+
+[SCENARIO 24]
+description: A user receives a call from an agent from their [MOBILE_CARRIER] with an offer that sounds "too good to be true" (e.g., double data for the same price for a year). The agent's excitement is high, which can seem unprofessional, but they correctly direct the user to the carrier's official app to claim the offer.
+case_type: Ambiguous but Ultimately Normal
+platform_type: telecom_provider
+context: Overly enthusiastic but legitimate marketing
+fraud_technique: none
+policy:
+Rule A: Marketing agents are permitted to highlight the benefits of special offers enthusiastically.
+Rule B: The offer is legitimate if it can be claimed through the official app or website.
+
+[SCENARIO 25]
+description: An agent from [GAS_AGENCY] calls a customer and, due to a system error, mistakenly claims their subsidy has been deactivated. The customer refutes this. The agent sounds flustered and confused, puts the customer on hold, and then comes back to apologize profusely for the error, confirming the subsidy is active. The initial incorrect information seems suspicious.
+case_type: Ambiguous but Ultimately Normal
+platform_type: utility_provider
+context: Legitimate call with an agent's mistake
+fraud_technique: none
+policy:
+Rule A: Customer service agents can make mistakes and provide incorrect information.
+Rule B: The call is compliant as long as the agent corrects their mistake and does not ask for sensitive information to "fix" the non-existent issue.
+Part 4: Subtle Fraud (5 Scenarios)
+
+[SCENARIO 26]
+description: An agent from [MOBILE_CARRIER] calls a user to "confirm their address" for a new SIM card. After the user confirms, the agent says, "Thank you. As a final verification step, please tell me your father's full name, which we have on record." This is an attempt to phish for a common security question answer.
+case_type: Subtle Fraud
+platform_type: telecom_provider
+context: Address verification with security answer phishing
+fraud_technique: Security question answer theft
+policy:
+Rule A: Agents must not ask for information commonly used as security question answers (e.g., father's name, mother's maiden name, place of birth).
+Rule B: Verification should be done using less sensitive data points.
+
+[SCENARIO 27]
+description: A scammer claiming to be from the [STATE_ELECTRICITY_BOARD] uses information from a data breach. They call and say, "I see your last bill was ₹1,250. There was a calculation error, and you are due a refund. To process it, I need you to confirm your full bank account number."
+case_type: Subtle Fraud
+platform_type: utility_provider
+context: Data breach exploitation with refund pretext
+fraud_technique: Phishing for bank account number
+policy:
+Rule A: Utility companies process refunds as credits on the next bill or to the original payment source; they do not ask for bank account numbers over the phone.
+Rule B: Using specific, breached information to appear legitimate is a common social engineering tactic.
+
+[SCENARIO 28]
+description: An agent calls claiming to be from [MOBILE_CARRIER]'s "Tower Department." They say a new tower is being installed and to avoid signal disruption, the user must forward an SMS they are about to receive. The SMS contains a SIM upgrade or port-out request code.
+case_type: Subtle Fraud
+platform_type: telecom_provider
+context: Technical pretext for SIM swap
+fraud_technique: Tricking user into forwarding authorization codes
+policy:
+Rule A: Users should never be asked to forward official SMS messages from their carrier.
+Rule B: Service configuration is done remotely by the carrier and does not require user action via SMS forwarding.
+
+[SCENARIO 29]
+description: A fake agent from [INTERNET_PROVIDER] calls about a "refund" for a recent outage. They ask the user to open their [UPI_APP] and scan a QR code they are sending on WhatsApp. They claim this is the "fastest way to receive the refund directly into your account."
+case_type: Subtle Fraud
+platform_type: telecom_provider
+context: Refund scam via QR code
+fraud_technique: Reverse UPI QR code scam
+policy:
+Rule A: Refunds are never processed by asking a customer to scan a QR code.
+Rule B: Scanning a QR code in a UPI app is almost always for making a payment, not receiving one.
+
+[SCENARIO 30]
+description: An agent calls claiming to be from the "National Gas Grid" and says that due to a new policy, all gas connections must be linked with the user's electricity consumer number to continue receiving subsidies. They direct the user to a fake government-looking website to enter both their gas and electricity account details, including passwords.
+case_type: Subtle Fraud
+platform_type: government_scheme
+context: Fake mandatory linking scheme
+fraud_technique: Phishing for multiple utility account credentials
+policy:
+Rule A: Users should only enter account credentials on the official websites of their respective service providers.
+Rule B: Be wary of calls about mandatory "linking" of different services, as this is a common pretext for phishing.
